@@ -1,0 +1,23 @@
+{% extends "!layout.html" %}
+
+{%- block htmltitle %}
+  {%- set title = "Open Government Canada CKAN Stack Release Log" -%}
+  {%- set titlesuffix = "" -%}
+  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+{%- endblock -%}
+
+{%- block sidebartitle %}
+
+  {# the logo helper function was removed in Sphinx 6 and deprecated since Sphinx 4 #}
+  {# the master_doc variable was renamed to root_doc in Sphinx 4 (master_doc still exists in later Sphinx versions) #}
+  {%- set _logo_url = logo_url|default(pathto('_static/' + (logo or ""), 1)) %}
+  {%- set _root_doc = root_doc|default(master_doc) %}
+  <a href="{{ pathto(_root_doc) }}" style="display: block !important;">
+    {%- if logo or logo_url %}
+      <img src="{{ _logo_url }}" class="logo" alt="{{ _('Logo') }}"/>
+    {%- endif %}
+  </a>
+
+  {%- include "searchbox.html" %}
+
+{%- endblock %}

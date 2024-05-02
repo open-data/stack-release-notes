@@ -1,0 +1,16 @@
+# IDEs
+.idea/
+*.code-workspace
+.python.env
+
+# Package Managers
+vendor/
+node_modules/
+/package-lock.json
+/venv/**
+
+# Misc.
+.DS_Store/
+
+# Build
+docs/build/**

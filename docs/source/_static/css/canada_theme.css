@@ -1,0 +1,56 @@
+:root{
+  --can-dark-blue: #26374a;
+  --can-light-blue: #284162;
+  --can-hover-blue: #0535d2;
+  --can-red: #FF0000;
+  --can-bg: #FFFFFF;
+  --can-grey-bg: #f5f5f5;
+}
+
+body .wy-nav-content-wrap{
+
+  background: var(--can-grey-bg) !important;
+
+}
+
+body nav.wy-nav-top{
+
+  background: var(--can-dark-blue) !important;
+
+}
+
+body nav.wy-nav-top a{
+
+  display: none !important;
+
+}
+
+body .wy-side-nav-search{
+
+  background: var(--can-bg) !important;
+
+}
+
+body .wy-nav-side{
+
+  background: var(--can-dark-blue) !important;
+  color: var(--can-bg) !important;
+
+}
+
+body .wy-nav-side .wy-menu a{
+
+  text-decoration: none;
+  transition-duration: 0.325s;
+  background: transparent !important;
+  color: var(--can-bg) !important;
+
+}
+
+body .wy-nav-side .wy-menu a:hover,
+body .wy-nav-side .wy-menu a:active,
+body .wy-nav-side .wy-menu a:focus{
+
+  text-decoration: underline;
+
+}
