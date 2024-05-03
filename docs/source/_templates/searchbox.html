@@ -1,0 +1,9 @@
+{%- if 'singlehtml' not in builder %}
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="javascript:void(0);" method="get">
+    <input type="text" name="q" placeholder="{{ _('Search releases') }}" aria-label="{{ _('Search releases') }}" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+{%- endif %}

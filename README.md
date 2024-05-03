@@ -1,1 +1,1 @@
-# Open Government Canada CKAN Stack
+# Open Government Canada CKAN Stack Releases

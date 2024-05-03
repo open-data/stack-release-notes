@@ -8,6 +8,8 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 
+# NOTE: you may need to run `export LC_ALL=C` before building
+
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -19,6 +21,9 @@ dev:
 	rm -rfv "$(BUILDDIR)/doctrees"
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	rm -rfv "$(BUILDDIR)/doctrees"
+	rm -fv "$(BUILDDIR)/html/genindex.html"
+	rm -fv "$(BUILDDIR)/html/search.html"
+	rm -fv "$(BUILDDIR)/html/searchindex.js"
 
 .PHONY: dev Makefile
 
@@ -26,3 +31,6 @@ dev:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	rm -fv "$(BUILDDIR)/html/genindex.html"
+	rm -fv "$(BUILDDIR)/html/search.html"
+	rm -fv "$(BUILDDIR)/html/searchindex.js"

@@ -1,23 +1,46 @@
 {% extends "!layout.html" %}
 
+
 {%- block htmltitle %}
-  {%- set title = "Open Government Canada CKAN Stack Release Log" -%}
+  {%- set title = "Open Government Canada CKAN Stack Releases" -%}
   {%- set titlesuffix = "" -%}
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 {%- endblock -%}
 
-{%- block sidebartitle %}
 
+{%- block sidebartitle %}
   {# the logo helper function was removed in Sphinx 6 and deprecated since Sphinx 4 #}
   {# the master_doc variable was renamed to root_doc in Sphinx 4 (master_doc still exists in later Sphinx versions) #}
   {%- set _logo_url = logo_url|default(pathto('_static/' + (logo or ""), 1)) %}
   {%- set _root_doc = root_doc|default(master_doc) %}
-  <a href="{{ pathto(_root_doc) }}" style="display: block !important;">
+  <a href="{{ pathto(_root_doc) }}" draggable="false" style="display: block !important;">
     {%- if logo or logo_url %}
-      <img src="{{ _logo_url }}" class="logo" alt="{{ _('Logo') }}"/>
+      <img src="{{ _logo_url }}" draggable="false" class="logo" alt="{{ _('Logo') }}"/>
     {%- endif %}
   </a>
-
   {%- include "searchbox.html" %}
+{%- endblock %}
 
+
+{%- block menu %}
+  <div class="local-toc">
+    <ul>
+      <!-- TODO: loop releases and anchor link here... -->
+      <li></li>
+    </ul>
+  </div>
+{%- endblock %}
+
+
+{%- block document %}
+  <div style="min-height: 100vh;">
+    {% if release_hashes.get(version) %}
+      {% for repo, info in release_hashes.get(version).items() %}
+        <div class="repo-heading">
+          <h3>{{ repo }}</h3>
+          <span>[<a href="{{ info.get('uri') ~ '/tree/' ~ info.get('hash') }}" target="_blank">{{ info.get('hash')|truncate(12)|replace('...', '') }}</a>]</span>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
 {%- endblock %}
