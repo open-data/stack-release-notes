@@ -196,6 +196,8 @@ def parsed_release_hashses():
 
     for release in release_tags:
 
+        print("Building from release tag: %s" % release)
+
         diff_filename = '_static/differences/%s.json' % release
         release_filename = '_static/releases/%s.json' % release
 
