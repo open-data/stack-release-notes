@@ -6,38 +6,50 @@
   --can-grey-bg: #f5f5f5;
 }
 
-body .wy-nav-content-wrap{
+h1#main-title{
+
+  margin-top: 0 !important;
+
+}
+
+a.link-disabled{
+
+  pointer-events: none !important;
+
+}
+
+.wy-nav-content-wrap{
 
   background: var(--can-grey-bg) !important;
 
 }
 
-body nav.wy-nav-top{
+nav.wy-nav-top{
 
   background: var(--can-dark-blue) !important;
 
 }
 
-body nav.wy-nav-top a{
+nav.wy-nav-top a{
 
   display: none !important;
 
 }
 
-body .wy-side-nav-search{
+.wy-side-nav-search{
 
   background: var(--can-bg) !important;
 
 }
 
-body .wy-nav-side{
+.wy-nav-side{
 
   background: var(--can-dark-blue) !important;
   color: var(--can-bg) !important;
 
 }
 
-body .wy-nav-side .wy-menu a{
+.wy-nav-side .wy-menu a{
 
   text-decoration: none;
   transition-duration: 0.325s;
@@ -46,81 +58,131 @@ body .wy-nav-side .wy-menu a{
 
 }
 
-body .wy-nav-side .wy-menu a:hover,
-body .wy-nav-side .wy-menu a:active,
-body .wy-nav-side .wy-menu a:focus{
+.wy-nav-side .wy-menu a:hover,
+.wy-nav-side .wy-menu a:active,
+.wy-nav-side .wy-menu a:focus{
 
-  text-decoration: underline;
+  text-decoration: underline !important;
 
 }
 
-body div.version-pill{
+li.release-nav-item{
 
-  background: var(--can-dark-blue) !important;
-  color: var(--can-bg) !important;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 12px 6px 14px;
-  border-radius: 25px;
-  display: inline-block;
   position: relative;
 
 }
 
-body div.version-pill::after{
+li.release-nav-item.scroll-active{
 
-  position: absolute;
-  right: 15px;
-  top: calc(50% + 2px);
-  transform: translateY(-50%);
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-
-  border-top: 5px solid var(--can-bg);
-
-  pointer-events: none !important;
+  background: var(--can-light-blue) !important;
 
 }
 
-form#version-select label{
+li.release-nav-item.scroll-active::after{
 
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--can-bg) !important;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right: 10px solid var(--can-bg) !important;
+
+}
+
+a.btn{
+
+  line-height: 1.75 !important;
+
+}
+
+a.btn:active{
+
+  padding: 10px 14px !important;
+
+}
+
+a.btn-sm:active{
+
+  padding: 5px 10px !important;
+
+}
+
+span.release-hash-label{
+
+  font-weight: 500;
+  font-size: 80%;
+
+}
+
+div.release-wrapper h3{
+
   margin: 0 !important;
 
 }
 
-form#version-select select#ver{
+div.release-wrapper h4{
 
-  background: var(--can-dark-blue) !important;
-  border: none !important;
-  border-radius: 0 !important;
-  color: var(--can-bg) !important;
-  font-size: 12px;
-  font-weight: 600;
-  box-shadow: none !important;
-  outline: none !important;
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  text-indent: 1px !important;
-  text-overflow: '' !important;
-  padding: 0 !important;
-  width: 68px !important;
-  padding-right: 15px !important;
+  margin: 0 !important;
+  margin-bottom: 10px !important;
 
 }
 
-div.repo-heading{
+ul.changes-list{
 
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: baseline;
-  justify-content: space-between;
+  list-style: circle;
+  padding-left: 15px;
+  margin-bottom: 24px !important;
+
+}
+
+ul.changes-list li{
+
+  list-style: circle;
+
+}
+
+span.change-canada-only{
+
+  color: var(--can-dark-blue);
+  font-weight: 600;
+
+}
+
+a.headerlink{
+
+  text-decoration: none !important;
+  color: var(--can-light-blue) !important;
+  transition-duration: 0.325s !important;
+  font-size: 75% !important;
+  margin-left: 8px !important;
+
+}
+
+a.headerlink:hover,
+a.headerlink:active,
+a.headerlink:focus{
+
+  color: var(--can-hover-blue) !important;
+
+}
+
+.release-repo-title{
+
+  position: relative;
+  padding-right: 25px;
+
+}
+
+.release-repo-title a.headerlink{
+
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 
 }
