@@ -28,7 +28,7 @@ jobs:
         git add ./docs/source/* || true
         git status || true
         git commit -m "bot(release): commit release files;" || true
-        git push origin HEAD:master --force || true
+        git push origin HEAD:main --force || true
 
     - name: Publish to GitHub Pages
       # only deploys to gh-pages if ref is main branch
