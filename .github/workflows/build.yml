@@ -1,0 +1,40 @@
+name: Build & Publish Release Notes
+on:
+  workflow_dispatch:
+  push:
+    tags:
+    - 'release/*'
+
+jobs:
+  sphinx-it-up:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Build Sphinx
+      run: |
+        cd ./docs
+        export LC_ALL=C
+        make dev
+
+    - name: Commit Release Files
+        id: commit_release_files
+        run: |
+          git config --global user.name ${{ secrets.GIT__USER_NAME }}
+          git config --global user.email ${{ secrets.GIT__USER_EMAIL }}
+          git add ./docs/source/* || true
+          git status || true
+          git commit -m "bot(release): commit release files;" || true
+          git push || true
+
+    - name: Publish to GitHub Pages
+      # only deploys to gh-pages if ref is main branch
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3.6.1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/build/html

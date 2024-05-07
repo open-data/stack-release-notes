@@ -50,7 +50,7 @@
         <div class="github-api-wrapper" id="github-{{ release }}">
           {% for repo, info in repos.items() %}
             <div class="github-api-container" id="github-{{ release }}-{{ repo }}">
-
+              <!-- TODO: output diffs from github API -->
             </div>
           {% endfor %}
         </div>
@@ -61,7 +61,7 @@
 
 
 {%- block document %}
-  <div style="min-height: 200vh;">
+  <div style="min-height: 100vh;">
     <div id="release-container">
       {% if release_hashes %}
         {% for release, repos in release_hashes.items() %}
@@ -102,14 +102,15 @@
             </div>
           {% else %}
             <section class="alert alert-info">
-              <p>There are currently no releases</p>
-              <p>To create a Stack release, follow <a>the instructions.</a></p>
+              <p><strong>There are currently no releases</strong></p>
+              <p>To create a Stack Release, follow <a target="_blank" href="https://github.com/open-data/ckan-stack-release-notes?tab=readme-ov-file#open-government-canada-ckan-stack-releases">the instructions.</a></p>
             </section>
           {% endif %}
         {% endfor %}
       {% else %}
         <section class="alert alert-info">
-          <p>There are currently no releases</p>
+          <p><strong>There are currently no releases</strong></p>
+          <p>To create a Stack Release, follow <a target="_blank" href="https://github.com/open-data/ckan-stack-release-notes?tab=readme-ov-file#open-government-canada-ckan-stack-releases">the instructions.</a></p>
         </section>
       {% endif %}
     </div>
