@@ -31,8 +31,6 @@ jobs:
         git push origin HEAD:main --force || true
 
     - name: Publish to GitHub Pages
-      # only deploys to gh-pages if ref is main branch
-      if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

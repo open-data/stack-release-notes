@@ -203,6 +203,9 @@ def parsed_release_hashses():
             print("File does not exist for release %s, skipping..." % release)
             continue
 
+        if prev_release:
+            print("Previous release is %s" % prev_release)
+
         if os.path.isfile(diff_filename):
             # we already have a diff file, load from that.
 
