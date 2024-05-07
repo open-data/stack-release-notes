@@ -163,7 +163,7 @@ def create_release_json_file():
         print("No release tags found, skipping...")
         return
 
-    filename = '_static/releases/%s.json' % release
+    filename = '_release_builds/releases/%s.json' % release
 
     if os.path.isfile(filename):
         print("File already exists for release %s, skipping..." % release)
@@ -198,8 +198,8 @@ def parsed_release_hashses():
 
         print("Building from release tag: %s" % release)
 
-        diff_filename = '_static/differences/%s.json' % release
-        release_filename = '_static/releases/%s.json' % release
+        diff_filename = '_release_builds/differences/%s.json' % release
+        release_filename = '_release_builds/releases/%s.json' % release
 
         if not os.path.isfile(release_filename):
             print("File does not exist for release %s, skipping..." % release)
@@ -224,7 +224,7 @@ def parsed_release_hashses():
             print("Generating diff file for release %s" % release)
 
             if prev_release:
-                prev_release_filename = '_static/releases/%s.json' % prev_release
+                prev_release_filename = '_release_builds/releases/%s.json' % prev_release
 
             # check between releases for commit hash differences.
             # if the hash is different, then there are code changes
@@ -274,7 +274,7 @@ def parsed_release_hashses():
         # fetch comparision from github API, and save to a file.
         # fetch any added change log files, and sace to a file.
         if release in parsed_release_hashses:
-            github_filename = '_static/github/%s.json' % release
+            github_filename = '_release_builds/github/%s.json' % release
             github_compare_dicts = {}
 
             if os.path.isfile(github_filename):
@@ -308,7 +308,7 @@ def parsed_release_hashses():
                         parsed_release_hashses[release][repo]['github'] = compare_dict
 
             # check file diffs for any new changelog files.
-            changelog_filename = '_static/change_logs/%s.json' % release
+            changelog_filename = '_release_builds/change_logs/%s.json' % release
             changelog_dicts = {}
             if os.path.isfile(changelog_filename):
                 # we already parsed the changelogs, load from that.
