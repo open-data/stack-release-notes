@@ -22,13 +22,13 @@ jobs:
         make dev
 
     - name: Commit Release Files
-        run: |
-          git config --global user.name ${{ secrets.GIT__USER_NAME }}
-          git config --global user.email ${{ secrets.GIT__USER_EMAIL }}
-          git add ./docs/source/* || true
-          git status || true
-          git commit -m "bot(release): commit release files;" || true
-          git push || true
+      run: |
+        git config --global user.name ${{ secrets.GIT__USER_NAME }}
+        git config --global user.email ${{ secrets.GIT__USER_EMAIL }}
+        git add ./docs/source/* || true
+        git status || true
+        git commit -m "bot(release): commit release files;" || true
+        git push || true
 
     - name: Publish to GitHub Pages
       # only deploys to gh-pages if ref is main branch
