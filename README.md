@@ -23,9 +23,9 @@ A GitHub workflow will run on tagging and generate the differences between all t
 
 If you make a mistake tagging this repo, you can manually fix it by deleting the tag and the related files for the tag:
 
-* `docs/source/_static/change_logs/<tag>.json`
-* `docs/source/_static/differences/<tag>.json`
-* `docs/source/_static/github/<tag>.json`
-* `docs/source/_static/releases/<tag>.json`
+* `docs/source/_release_builds/change_logs/<tag>.json`
+* `docs/source/_release_builds/differences/<tag>.json`
+* `docs/source/_release_builds/github/<tag>.json`
+* `docs/source/_release_builds/releases/<tag>.json`
 
 Once you have done that, you can re-tag this repo and the GitHub Workflow should run again.
