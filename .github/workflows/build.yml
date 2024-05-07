@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     tags:
-    - 'release/*'
+      - 'release/*'
 
 jobs:
   sphinx-it-up:
@@ -22,7 +22,6 @@ jobs:
         make dev
 
     - name: Commit Release Files
-        id: commit_release_files
         run: |
           git config --global user.name ${{ secrets.GIT__USER_NAME }}
           git config --global user.email ${{ secrets.GIT__USER_EMAIL }}
