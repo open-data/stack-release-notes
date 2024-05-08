@@ -157,13 +157,13 @@ span.change-sub-note{
 
 span.change-canada-only{
 
-  color: var(--can-info);
+  color: var(--can-red);
 
 }
 
 span.change-backport{
 
-  color: var(--can-red);
+  color: var(--can-info);
 
 }
 
