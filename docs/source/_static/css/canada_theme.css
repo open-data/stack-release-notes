@@ -4,6 +4,8 @@
   --can-hover-blue: #0535d2;
   --can-bg: #FFFFFF;
   --can-grey-bg: #f5f5f5;
+  --can-red: #dc3545;
+  --can-info: #17a2b8;
 }
 
 h1#main-title{
@@ -146,10 +148,22 @@ ul.changes-list li{
 
 }
 
+span.change-sub-note{
+
+  font-weight: 600;
+  margin-right: 6px;
+
+}
+
 span.change-canada-only{
 
-  color: var(--can-dark-blue);
-  font-weight: 600;
+  color: var(--can-info);
+
+}
+
+span.change-backport{
+
+  color: var(--can-red);
 
 }
 

@@ -1,5 +1,7 @@
 # Open Government Canada CKAN Stack Releases
 
+## [View the release notes](https://open-data.github.io/ckan-stack-release-notes/)
+
 This repository contains a Sphinx project that gathers information from various CKAN project repos, and stores their hashes in files. It also checks the difference of the hashes between this repo's release tags, and gathers change logs and comparison objects from the GitHub API.
 
 ## How to make a Stack Release

@@ -354,6 +354,7 @@ def parsed_release_hashses():
 
                         changelog_dicts[repo][change_type].append({
                             'canada_only': '.canada.' in file['filename'],
+                            'backport': '.backport.' in file['filename'],
                             'change_log': response.content.decode('utf8'),
                             'hash': file['sha'],
                         })

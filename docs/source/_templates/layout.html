@@ -90,7 +90,10 @@
                             <li>
                               {{ change.change_log }}
                               {% if change.canada_only %}
-                                <span class="change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              {% endif %}
+                              {% if change.backport %}
+                                <span class="change-sub-note change-backport"><sup><em>Backport</em></sup></span>
                               {% endif %}
                             </li>
                           {% endfor %}
