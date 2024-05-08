@@ -61,13 +61,13 @@
 
 
 {%- block document %}
-  {% set has_releases = false %}
+  {% set has_releases = {'value': 'False'} %}
   <div style="min-height: 100vh;">
     <div id="release-container">
       {% if release_hashes %}
         {% for release, repos in release_hashes.items() %}
           {% if repos %}
-            {% set has_releases = true %}
+            {% set _ = has_releases.update({'value': 'True'}) %}
             <div class="release-wrapper" id="{{ release }}">
               <h2>
                 {{ version_prefix }}{{ release }}
@@ -108,7 +108,7 @@
           {% endif %}
         {% endfor %}
       {% endif %}
-      {% if not has_releases %}
+      {% if has_releases['value'] == 'False' %}
         <section class="alert alert-info">
           <p><strong>There are currently no releases</strong></p>
           <p>To create a Stack Release, follow <a target="_blank" href="https://github.com/open-data/ckan-stack-release-notes?tab=readme-ov-file#open-government-canada-ckan-stack-releases">the instructions.</a></p>

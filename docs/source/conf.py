@@ -89,10 +89,10 @@ html_theme_display_version = True
 html_static_path = ['_static']
 html_css_files = [
     'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/css/theme.min.css',
-    'assets/css/canada_theme.css',
+    'css/canada_theme.css',
 ]
 html_js_files = [
-    'assets/js/canada.js',
+    'js/canada.js',
 ]
 html_show_sphinx = False
 html_logo = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/assets/sig-spl.svg'
