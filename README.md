@@ -19,6 +19,15 @@ release/2024.05.07.b
 
 A GitHub workflow will run on tagging and generate the differences between all the CKAN related projects, compile the Sphinx project, and publish it to GitHub Pages.
 
+### Tagging from GitHub
+
+It is important to only tag from GitHub and not locally as pushing local tags may cause issues with syncing tags and the GitHub workflow.
+
+1. [Create a new release](https://github.com/open-data/ckan-stack-release-notes/releases/new);
+2. Under `Choose a tag` dropdown, make a new tag, following the above format;
+3. Check `Set as pre-release` and `Publish release`;
+4. We only want the tag really, and do not need the release ZIPs. So delete the release (the tag will remain).
+
 ### I made a mistake tagging
 
 If you make a mistake tagging this repo, you can manually fix it by deleting the tag and the related files for the tag:
