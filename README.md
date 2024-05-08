@@ -28,6 +28,10 @@ It is important to only tag from GitHub and not locally as pushing local tags ma
 3. Check `Set as pre-release` and `Publish release`;
 4. We only want the tag really, and do not need the release ZIPs. So delete the release (the tag will remain).
 
+![Create a new tag and pre-release.](https://github.com/open-data/ckan-stack-release-notes/blob/main/.github/images/make-release.png?raw=true)
+
+![Delete the pre-release.](https://github.com/open-data/ckan-stack-release-notes/blob/main/.github/images/delete-release.png?raw=true)
+
 ### I made a mistake tagging
 
 If you make a mistake tagging this repo, you can manually fix it by deleting the tag and the related files for the tag:
