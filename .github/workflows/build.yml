@@ -1,5 +1,6 @@
 name: Build & Publish Release Notes
 on:
+  workflow_dispatch:
   push:
     tags:
       - 'release/*'
