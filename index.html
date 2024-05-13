@@ -31,6 +31,28 @@
   
     
       
+        <div class="github-api-wrapper" id="github-2024.05.13">
+          
+            <div class="github-api-container" id="github-2024.05.13-ckan">
+              <!-- TODO: output diffs from github API -->
+            </div>
+          
+            <div class="github-api-container" id="github-2024.05.13-ckanext-canada">
+              <!-- TODO: output diffs from github API -->
+            </div>
+          
+            <div class="github-api-container" id="github-2024.05.13-ckanext-dcat">
+              <!-- TODO: output diffs from github API -->
+            </div>
+          
+            <div class="github-api-container" id="github-2024.05.13-ckanext-xloader">
+              <!-- TODO: output diffs from github API -->
+            </div>
+          
+        </div>
+      
+    
+      
     
   
 
@@ -57,6 +79,10 @@
     <div id="release-side-nav">
       <ul class="release-nav">
         
+          
+            <li data-release="2024.05.13" class="release-nav-item"><a href="#2024.05.13">v.2024.05.13</a></li>
+          
+        
       </ul>
     </div>
   </div>
@@ -79,13 +105,234 @@
       
         
           
+            
+            <div class="release-wrapper" id="2024.05.13">
+              <h2>
+                v.2024.05.13
+                <a class="headerlink" href="#2024.05.13"><i class="fa-solid fa-link"></i></a>
+              </h2>
+              
+                <div class="panel panel-info" id="2024.05.13-ckan">
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan <span class="release-hash-label">[07391c039...b96adaba0]</span>
+                      <a class="headerlink" href="#2024.05.13-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Catch NotAuthorized and NotFound in Dataset Feed view, returning 403 and 404 respectfully instead of hitting 500 server error.
+
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Removals</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Disabled unused Group routes.
+
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/07391c039e483390b57e0569bfe7785dfcdc9638...b96adaba0a967fa1641c9f5ab5981e5b7ff8f90e">View it on GitHub</a>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info" id="2024.05.13-ckanext-canada">
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada <span class="release-hash-label">[a07d6ce4e...590a63215]</span>
+                      <a class="headerlink" href="#2024.05.13-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Added test coverage for Validation into DataStore.
+
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Added test coverage for Xloader into DataStore.
+
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Organization and Group views need a user session to view on Registry.
+
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Recombinant (Proactive Disclosure) dataset types search pages need session to view on Registry. Following a direct link to a Recombinant dataset will redirect you to the correct Owner Organization for that type. The searches will redirect to the default Dataset search on Portal.
+
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Only Sysadmins can view the Admin index page.
+
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Fixed search facet for portal_release_date.
+
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Fixed an issue with the search facet dictionary resizing inside loops.
+
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Improved HTML layouts and uniformity across search forms.
+
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Removals</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Removed old, unused Jinja2 macros.
+
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Remove the Suggest a Dataset status update link from Registry homepage
+
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/a07d6ce4e221ca7720baa87bf8a6ceaa9ea8e94f...590a632153b9ba6c187081c4880800ee2c9e2aaf">View it on GitHub</a>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info" id="2024.05.13-ckanext-dcat">
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-dcat <span class="release-hash-label">[569c5bc3c...c9f2f5fca]</span>
+                      <a class="headerlink" href="#2024.05.13-ckanext-dcat"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Catch NotAuthorized in view, returning 403 instead of hitting 500 server error.
+
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-dcat/compare/569c5bc3c03fad292506269d3a01bec67a5f5fdd...c9f2f5fca0a063b4b51afc32e98e579b03f6a3b1">View it on GitHub</a>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info" id="2024.05.13-ckanext-xloader">
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-xloader <span class="release-hash-label">[58b8c2fd3...e714cc0f2]</span>
+                      <a class="headerlink" href="#2024.05.13-ckanext-xloader"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              Leading and trailing white space now gets removed from cell values when loading into the DataStore.
+
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              Ignore empty rows when loading into the DataStore.
+
+                              
+                              
+                                <span class="change-sub-note change-backport"><sup><em>Backport</em></sup></span>
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/58b8c2fd37be58b8ef76b24cb9a48eebb6e7e6f1...e714cc0f266ea90eb247432c89a817eaeaf53a77">View it on GitHub</a>
+                  </div>
+                </div>
+              
+            </div>
+          
+        
+          
         
       
-      
-        <section class="alert alert-info">
-          <p><strong>There are currently no releases</strong></p>
-          <p>To create a Stack Release, follow <a target="_blank" href="https://github.com/open-data/ckan-stack-release-notes?tab=readme-ov-file#open-government-canada-ckan-stack-releases">the instructions.</a></p>
-        </section>
       
     </div>
   </div>
