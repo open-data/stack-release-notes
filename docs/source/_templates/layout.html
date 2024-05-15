@@ -2,7 +2,7 @@
 
 
 {%- block htmltitle %}
-  {%- set title = "Open Government Canada CKAN Stack Releases" -%}
+  {%- set title = "Open Government Canada Stack Releases" -%}
   {%- set titlesuffix = "" -%}
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 {%- endblock -%}
@@ -45,39 +45,48 @@
 
 {%- block extrabody %}
   {% if release_hashes %}
-    {% for release, repos in release_hashes.items() %}
-      {% if repos %}
-        <div class="github-api-wrapper" id="github-{{ release }}">
+    {% for release, project in release_hashes.items() %}
+      <div class="github-api-wrapper" id="github-{{ release }}"></div>
+        {% for project_name, repos in project.items() %}
           {% for repo, info in repos.items() %}
             <div class="github-api-container" id="github-{{ release }}-{{ repo }}">
               <!-- TODO: output diffs from github API -->
             </div>
           {% endfor %}
-        </div>
-      {% endif %}
+        {% endfor %}
+      </div>
     {% endfor %}
   {% endif %}
 {% endblock %}
 
 
 {%- block document %}
-  {% set has_releases = {'value': 'False'} %}
   <div style="min-height: 100vh;">
     <div id="release-container">
       {% if release_hashes %}
-        {% for release, repos in release_hashes.items() %}
-          {% if repos %}
-            {% set _ = has_releases.update({'value': 'True'}) %}
-            <div class="release-wrapper" id="{{ release }}">
-              <h2>
-                {{ version_prefix }}{{ release }}
-                <a class="headerlink" href="#{{ release }}"><i class="fa-solid fa-link"></i></a>
-              </h2>
+        {% for release, project in release_hashes.items() %}
+          <div class="release-wrapper" id="{{ release }}">
+            <h2>
+              {{ version_prefix }}{{ release }}
+              <a class="headerlink" href="#{{ release }}"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            {% for project_name, repos in project.items() %}
+              {% set panel_class = 'panel-default' %}
+              {% if project_name == 'ckan' %}
+                {% set panel_class = 'panel-danger' %}
+              {% elif project_name == 'django' %}
+                {% set panel_class = 'panel-success' %}
+              {% elif project_name == 'drupal' %}
+                {% set panel_class = 'panel-info' %}
+              {% endif %}
+              {# not using color for now, as it makes it very busy #}
+              {% set panel_class = 'panel-info' %}
               {% for repo, info in repos.items() %}
-                <div class="panel panel-info" id="{{ release }}-{{ repo }}">
+                <div class="panel {{ panel_class }} project-panel project-panel-{{ project_name }}" id="{{ release }}-{{ repo }}">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/{{ project_name }}.png" alt="" /></div>
                   <div class="panel-heading panel-title">
                     <h3 class="release-repo-title">
-                      {{ repo }} <span class="release-hash-label">[{{ info.prev|truncate(12)|replace('...', '') }}...{{ info.head|truncate(12)|replace('...', '') }}]</span>
+                      {{ repo }}
                       <a class="headerlink" href="#{{ release }}-{{ repo }}"><i class="fa-solid fa-link"></i></a>
                     </h3>
                   </div>
@@ -101,14 +110,14 @@
                       {% endfor %}
                     {% endif %}
                     <a class="btn btn-primary btn-sm" target="_blank" href="{{ info.uri }}/compare/{{ info.prev }}...{{ info.head }}">View it on GitHub</a>
+                    <span class="release-hash-label">[{{ info.prev|truncate(12)|replace('...', '') }}...{{ info.head|truncate(12)|replace('...', '') }}]</span>
                   </div>
                 </div>
               {% endfor %}
-            </div>
-          {% endif %}
+            {% endfor %}
+          </div>
         {% endfor %}
-      {% endif %}
-      {% if has_releases['value'] == 'False' %}
+      {% else %}
         <section class="alert alert-info">
           <p><strong>There are currently no releases</strong></p>
           <p>To create a Stack Release, follow <a target="_blank" href="https://github.com/open-data/ckan-stack-release-notes?tab=readme-ov-file#open-government-canada-ckan-stack-releases">the instructions.</a></p>

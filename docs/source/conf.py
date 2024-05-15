@@ -6,25 +6,37 @@ import subprocess
 import requests
 
 STACK = {
-    'https://github.com/open-data/ckan.git'                     : 'canada-v2.9',
-    'https://github.com/ckan/ckanapi.git'                       : 'master',
-    'https://github.com/open-data/ckanext-canada.git'           : 'master',
-    'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-v2.9',
-    'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-v2.9',
-    'https://github.com/open-data/ckanext-dcat.git'             : 'canada-v2.9',
-    'https://github.com/ckan/ckanext-dsaudit.git'               : 'master',
-    'https://github.com/ckan/ckanext-excelforms.git'            : 'main',
-    'https://github.com/ckan/ckanext-fluent.git'                : 'master',
-    'https://github.com/open-data/ckanext-gcnotify.git'         : 'master',
-    'https://github.com/open-data/ckanext-openapiview.git'      : 'main',
-    'https://github.com/open-data/ckanext-power-bi.git'         : 'main',
-    'https://github.com/open-data/ckanext-recombinant.git'      : 'master',
-    'https://github.com/ckan/ckanext-scheming.git'              : 'master',
-    'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.9',
-    'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.9',
-    'https://github.com/open-data/ckanext-xloader.git'          : 'canada-v2.9',
-    'https://github.com/ckan/ckantoolkit.git'                   : 'master',
-    'https://github.com/open-data/goodtables.git'               : 'canada',
+    'ckan': {
+        'https://github.com/open-data/ckan.git'                     : 'canada-v2.9',
+        'https://github.com/ckan/ckanapi.git'                       : 'master',
+        'https://github.com/open-data/ckanext-canada.git'           : 'master',
+        'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-v2.9',
+        'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-v2.9',
+        'https://github.com/open-data/ckanext-dcat.git'             : 'canada-v2.9',
+        'https://github.com/ckan/ckanext-dsaudit.git'               : 'master',
+        'https://github.com/ckan/ckanext-excelforms.git'            : 'main',
+        'https://github.com/ckan/ckanext-fluent.git'                : 'master',
+        'https://github.com/open-data/ckanext-gcnotify.git'         : 'master',
+        'https://github.com/open-data/ckanext-openapiview.git'      : 'main',
+        'https://github.com/open-data/ckanext-power-bi.git'         : 'main',
+        'https://github.com/open-data/ckanext-recombinant.git'      : 'master',
+        'https://github.com/ckan/ckanext-scheming.git'              : 'master',
+        'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.9',
+        'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.9',
+        'https://github.com/open-data/ckanext-xloader.git'          : 'canada-v2.9',
+        'https://github.com/ckan/ckantoolkit.git'                   : 'master',
+        'https://github.com/open-data/goodtables.git'               : 'canada',
+    },
+    'django': {
+        'https://github.com/open-data/oc_search.git'                : 'master',
+        'https://github.com/open-data/SolrClient.git'               : 'master',
+        'https://github.com/open-data/oc_searches.git'              : 'main',
+    },
+    'drupal': {
+        'https://github.com/open-data/opengov.git'                  : 'master',
+        'https://github.com/open-data/og.git'                       : 'master',
+        'https://github.com/open-data/gcweb_bootstrap.git'          : 'master',
+    },
 }
 
 FRONTEND_VERSION_PREFIX = 'v.'
@@ -66,7 +78,7 @@ REMOVAL_LABEL = 'Removals'
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Open Government Canada CKAN Stack'
+project = 'Open Government Canada Stack'
 copyright = '2024 Open Government Initiative - Initiative sur le gouvernement ouvert'
 author = ''
 release = '1.0'
@@ -142,16 +154,21 @@ def get_release_hashes():
 
     print("Gathering release information for %s" % release)
 
-    for repo, branch in STACK.items():
+    for project_name, project_stack in STACK.items():
 
-        latest_hash = get_latest_commit_hash(repo, branch)
-        repo_uri = repo.replace('.git', '')
-        repo_name = repo_uri.split('/')[-1]
+        if project_name not in release_hashes:
+            release_hashes[project_name] = {}
 
-        release_hashes[repo_name] = {
-            'uri': repo_uri,
-            'hash': latest_hash,
-        }
+        for repo, branch in project_stack.items():
+
+            latest_hash = get_latest_commit_hash(repo, branch)
+            repo_uri = repo.replace('.git', '')
+            repo_name = repo_uri.split('/')[-1]
+
+            release_hashes[project_name][repo_name] = {
+                'uri': repo_uri,
+                'hash': latest_hash,
+            }
 
     return release_hashes
 
@@ -244,25 +261,38 @@ def parsed_release_hashses():
 
                 if prev_release_dict:
 
-                    for repo, info in prev_release_dict.items():
-                        # a repo in the previous release is no longer in
-                        # the next release. Consider this a removal.
-                        if repo not in release_dict:
-                            parsed_release_hashses[release][repo] = 'Removed'
+                    for project_name, prev_project_stack in prev_release_dict.items():
 
-                    for repo, info in release_dict.items():
-                        # the repo was not in the previous release,
-                        # consider it an initial release for that repo.
-                        if repo not in prev_release_dict:
-                            parsed_release_hashses[release][repo] = 'Initial Release'
-                        # the commit hash between the releases is different,
-                        # so this is a code release.
-                        elif info['hash'] != prev_release_dict[repo]['hash']:
-                            parsed_release_hashses[release][repo] = {
-                                'uri': info['uri'],
-                                'prev': prev_release_dict[repo]['hash'],
-                                'head': info['hash'],
-                            }
+                        if project_name not in release_dict:
+                            print("Project %s no longer exists in the stack. Skipping..." % project_name)
+                            continue
+
+                        if project_name not in parsed_release_hashses[release]:
+                            parsed_release_hashses[release][project_name] = {}
+
+                        for repo, info in prev_project_stack.items():
+                            # a repo in the previous release is no longer in
+                            # the next release. Consider this a removal.
+                            if repo not in release_dict[project_name]:
+                                parsed_release_hashses[release][project_name][repo] = {
+                                    'message': 'Repository discontinued',
+                                }
+
+                        for repo, info in release_dict[project_name].items():
+                            # the repo was not in the previous release,
+                            # consider it an initial release for that repo.
+                            if repo not in prev_project_stack:
+                                parsed_release_hashses[release][project_name][repo] = {
+                                    'message': 'Repository added',
+                                }
+                            # the commit hash between the releases is different,
+                            # so this is a code release.
+                            elif info['hash'] != prev_project_stack[repo]['hash']:
+                                parsed_release_hashses[release][project_name][repo] = {
+                                    'uri': info['uri'],
+                                    'prev': prev_project_stack[repo]['hash'],
+                                    'head': info['hash'],
+                                }
 
             # save object to diff file.
             os.makedirs(os.path.dirname(diff_filename), exist_ok=True)
@@ -290,11 +320,16 @@ def parsed_release_hashses():
 
                 print("Fetching info from GitHub API for release %s" % release)
 
-                for repo, info in parsed_release_hashses[release].items():
-                    endpoint = info['uri'].replace('https://github.com', 'https://api.github.com/repos')
-                    endpoint += '/compare/%s...%s' % (info['prev'], info['head'])
-                    response = requests.get(endpoint)
-                    github_compare_dicts[repo] = json.loads(response.content)
+                for project_name, project_stack in parsed_release_hashses[release].items():
+
+                    if project_name not in github_compare_dicts:
+                        github_compare_dicts[project_name] = {}
+
+                    for repo, info in project_stack.items():
+                        endpoint = info['uri'].replace('https://github.com', 'https://api.github.com/repos')
+                        endpoint += '/compare/%s...%s' % (info['prev'], info['head'])
+                        response = requests.get(endpoint)
+                        github_compare_dicts[project_name][repo] = json.loads(response.content)
 
                 # save object to compare file.
                 os.makedirs(os.path.dirname(github_filename), exist_ok=True)
@@ -303,9 +338,10 @@ def parsed_release_hashses():
 
             # add github compare API info to parsed object for front-end.
             if github_compare_dicts:
-                for repo, compare_dict in github_compare_dicts.items():
-                    if repo in parsed_release_hashses[release]:
-                        parsed_release_hashses[release][repo]['github'] = compare_dict
+                for project_name, project_stack in github_compare_dicts.items():
+                    for repo, compare_dict in project_stack.items():
+                        if repo in parsed_release_hashses[release][project_name]:
+                            parsed_release_hashses[release][project_name][repo]['github'] = compare_dict
 
             # check file diffs for any new changelog files.
             changelog_filename = '_release_builds/change_logs/%s.json' % release
@@ -322,42 +358,47 @@ def parsed_release_hashses():
 
                 print("Fetching new change logs from GitHub for release %s" % release)
 
-                for repo, compare_dict in github_compare_dicts.items():
-                    for file in compare_dict.get('files', []):
-                        # look only for filenames that are in `changes/` directory.
-                        if 'changes/' not in file['filename']:
-                            continue
-                        # look only for files that have been added.
-                        if not file['status'] == 'added':
-                            continue
-                        if repo not in changelog_dicts:
-                            changelog_dicts[repo] = {}
+                for project_name, project_stack in github_compare_dicts.items():
 
-                        response = requests.get(file['raw_url'])
+                    if project_name not in changelog_dicts:
+                        changelog_dicts[project_name] = {}
 
-                        change_type = file['filename'].split('.')[-1]
+                    for repo, compare_dict in project_stack.items():
+                        for file in compare_dict.get('files', []):
+                            # look only for filenames that are in `changes/` directory.
+                            if 'changes/' not in file['filename']:
+                                continue
+                            # look only for files that have been added.
+                            if not file['status'] == 'added':
+                                continue
+                            if repo not in changelog_dicts[project_name]:
+                                changelog_dicts[project_name][repo] = {}
 
-                        # human readable labels.
-                        if change_type in FIX_TYPES:
-                            change_type = FIX_LABEL
-                        elif change_type in FEATURE_TYPES:
-                            change_type = FEATURE_LABEL
-                        elif change_type in CHANGES_TYPES:
-                            change_type = CHANGES_LABEL
-                        elif change_type in MIGRATION_TYPES:
-                            change_type = MIGRATION_LABEL
-                        elif change_type in REMOVAL_TYPES:
-                            change_type = REMOVAL_LABEL
+                            response = requests.get(file['raw_url'])
 
-                        if change_type not in changelog_dicts[repo]:
-                            changelog_dicts[repo][change_type] = []
+                            change_type = file['filename'].split('.')[-1]
 
-                        changelog_dicts[repo][change_type].append({
-                            'canada_only': '.canada.' in file['filename'],
-                            'backport': '.backport.' in file['filename'],
-                            'change_log': response.content.decode('utf8'),
-                            'hash': file['sha'],
-                        })
+                            # human readable labels.
+                            if change_type in FIX_TYPES:
+                                change_type = FIX_LABEL
+                            elif change_type in FEATURE_TYPES:
+                                change_type = FEATURE_LABEL
+                            elif change_type in CHANGES_TYPES:
+                                change_type = CHANGES_LABEL
+                            elif change_type in MIGRATION_TYPES:
+                                change_type = MIGRATION_LABEL
+                            elif change_type in REMOVAL_TYPES:
+                                change_type = REMOVAL_LABEL
+
+                            if change_type not in changelog_dicts[project_name][repo]:
+                                changelog_dicts[project_name][repo][change_type] = []
+
+                            changelog_dicts[project_name][repo][change_type].append({
+                                'canada_only': '.canada.' in file['filename'],
+                                'backport': '.backport.' in file['filename'],
+                                'change_log': response.content.decode('utf8'),
+                                'hash': file['sha'],
+                            })
 
                 # save object to change log file.
                 os.makedirs(os.path.dirname(changelog_filename), exist_ok=True)
@@ -366,9 +407,10 @@ def parsed_release_hashses():
 
             # add github compare API info to parsed object for front-end.
             if changelog_dicts:
-                for repo, changelog_dict in changelog_dicts.items():
-                    if repo in parsed_release_hashses[release]:
-                        parsed_release_hashses[release][repo]['change_logs'] = changelog_dict
+                for project_name, project_stack in changelog_dicts.items():
+                    for repo, changelog_dict in project_stack.items():
+                        if repo in parsed_release_hashses[release][project_name]:
+                            parsed_release_hashses[release][project_name][repo]['change_logs'] = changelog_dict
 
     sorted_dict = dict(reversed(parsed_release_hashses.items()))
     parsed_release_hashses = sorted_dict
@@ -378,8 +420,29 @@ def parsed_release_hashses():
     return parsed_release_hashses
 
 
+def get_filled_releases():
+    release_tags = get_release_tags(order='-v:refname')
+    release_hashes = parsed_release_hashses()
+
+    filled_release_hashes = {}
+
+    for release, project in release_hashes.items():
+        release_has_diffs = False
+        for project_name, repos in project.items():
+            if repos:
+                release_has_diffs = True
+                if release not in filled_release_hashes:
+                    filled_release_hashes[release] = {}
+                filled_release_hashes[release][project_name] = repos
+        if not release_has_diffs:
+            release_tags.remove(release)
+
+    return release_tags, filled_release_hashes
+
+
+release_tags, release_hashes = get_filled_releases()
 html_context = {
-    'release_tags': get_release_tags(order='-v:refname')[:-1],
-    'release_hashes': parsed_release_hashses(),
+    'release_tags': release_tags,
+    'release_hashes': release_hashes,
     'version_prefix': FRONTEND_VERSION_PREFIX,
 }
