@@ -1,116 +1,120 @@
 {
     "ckan": {
-        "Bugfixes": [
-            {
-                "canada_only": true,
-                "backport": false,
-                "change_log": "Catch NotAuthorized and NotFound in Dataset Feed view, returning 403 and 404 respectfully instead of hitting 500 server error.\n",
-                "hash": "e9400a1a776bff3567fe75f04fac8c1ae5c2eca0"
-            }
-        ],
-        "Removals": [
-            {
-                "canada_only": true,
-                "backport": false,
-                "change_log": "Disabled unused Group routes.\n",
-                "hash": "7ea634448e2a5ccd00f0af5d7db658ad549fa0b5"
-            }
-        ]
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Catch NotAuthorized and NotFound in Dataset Feed view, returning 403 and 404 respectfully instead of hitting 500 server error.\n",
+                    "hash": "e9400a1a776bff3567fe75f04fac8c1ae5c2eca0"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Disabled unused Group routes.\n",
+                    "hash": "7ea634448e2a5ccd00f0af5d7db658ad549fa0b5"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for Validation into DataStore.\n",
+                    "hash": "61196a7d2d72e6c58215b9609a9d9400ae48f638"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for Xloader into DataStore.\n",
+                    "hash": "0871750b70de819f53140e8b89bd014f45061287"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Organization and Group views need a user session to view on Registry.\n",
+                    "hash": "7e2e9642447d273a36d5ff8ff9be052e64020587"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Recombinant (Proactive Disclosure) dataset types search pages need session to view on Registry. Following a direct link to a Recombinant dataset will redirect you to the correct Owner Organization for that type. The searches will redirect to the default Dataset search on Portal.\n",
+                    "hash": "58e3d842a4d60e449f79b97cc6689f7827048dd6"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Only Sysadmins can view the Admin index page.\n",
+                    "hash": "eac31d2d57b54228dae1b912a752fb614e6dd50f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed search facet for portal_release_date.\n",
+                    "hash": "e67a80f44875ff8fb26d5d1c82a8aeea4ab82cb2"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the search facet dictionary resizing inside loops.\n",
+                    "hash": "d078757d5d867c12a26d4deb89edf122771c3124"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improved HTML layouts and uniformity across search forms.\n",
+                    "hash": "c0848d38709ed99fe336d589ff41697ad3868332"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removed old, unused Jinja2 macros.\n",
+                    "hash": "21159d39f02fcb3c062c75c9755213aeafac209b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove the Suggest a Dataset status update link from Registry homepage\n",
+                    "hash": "75063f9e610a3529a28242b9f88b173f4fa825a8"
+                }
+            ]
+        },
+        "ckanext-dcat": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Catch NotAuthorized in view, returning 403 instead of hitting 500 server error.\n",
+                    "hash": "7947ad5cf510735be08e1def00acb1649bccb58e"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Leading and trailing white space now gets removed from cell values when loading into the DataStore.\n",
+                    "hash": "b1fc8ed9cf3ba5d8872bb3c380cf6c26d49bd3d5"
+                },
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Ignore empty rows when loading into the DataStore.\n",
+                    "hash": "e77b2ac2fe34b81b9c5426e1312a3b858e6f60a6"
+                }
+            ]
+        }
     },
-    "ckanext-canada": {
-        "Features": [
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Added test coverage for Validation into DataStore.\n",
-                "hash": "61196a7d2d72e6c58215b9609a9d9400ae48f638"
-            },
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Added test coverage for Xloader into DataStore.\n",
-                "hash": "0871750b70de819f53140e8b89bd014f45061287"
-            },
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Organization and Group views need a user session to view on Registry.\n",
-                "hash": "7e2e9642447d273a36d5ff8ff9be052e64020587"
-            },
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Recombinant (Proactive Disclosure) dataset types search pages need session to view on Registry. Following a direct link to a Recombinant dataset will redirect you to the correct Owner Organization for that type. The searches will redirect to the default Dataset search on Portal.\n",
-                "hash": "58e3d842a4d60e449f79b97cc6689f7827048dd6"
-            }
-        ],
-        "Bugfixes": [
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Only Sysadmins can view the Admin index page.\n",
-                "hash": "eac31d2d57b54228dae1b912a752fb614e6dd50f"
-            },
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Fixed search facet for portal_release_date.\n",
-                "hash": "e67a80f44875ff8fb26d5d1c82a8aeea4ab82cb2"
-            },
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Fixed an issue with the search facet dictionary resizing inside loops.\n",
-                "hash": "d078757d5d867c12a26d4deb89edf122771c3124"
-            }
-        ],
-        "Changes": [
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Improved HTML layouts and uniformity across search forms.\n",
-                "hash": "c0848d38709ed99fe336d589ff41697ad3868332"
-            }
-        ],
-        "Removals": [
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Removed old, unused Jinja2 macros.\n",
-                "hash": "21159d39f02fcb3c062c75c9755213aeafac209b"
-            },
-            {
-                "canada_only": false,
-                "backport": false,
-                "change_log": "Remove the Suggest a Dataset status update link from Registry homepage\n",
-                "hash": "75063f9e610a3529a28242b9f88b173f4fa825a8"
-            }
-        ]
-    },
-    "ckanext-dcat": {
-        "Bugfixes": [
-            {
-                "canada_only": true,
-                "backport": false,
-                "change_log": "Catch NotAuthorized in view, returning 403 instead of hitting 500 server error.\n",
-                "hash": "7947ad5cf510735be08e1def00acb1649bccb58e"
-            }
-        ]
-    },
-    "ckanext-xloader": {
-        "Features": [
-            {
-                "canada_only": true,
-                "backport": false,
-                "change_log": "Leading and trailing white space now gets removed from cell values when loading into the DataStore.\n",
-                "hash": "b1fc8ed9cf3ba5d8872bb3c380cf6c26d49bd3d5"
-            },
-            {
-                "canada_only": false,
-                "backport": true,
-                "change_log": "Ignore empty rows when loading into the DataStore.\n",
-                "hash": "e77b2ac2fe34b81b9c5426e1312a3b858e6f60a6"
-            }
-        ]
-    }
+    "django": {},
+    "drupal": {}
 }
