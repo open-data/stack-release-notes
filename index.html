@@ -7,7 +7,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/css/theme.min.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/canada_theme.css?v=bbc2ef93" />
+      <link rel="stylesheet" type="text/css" href="_static/css/canada_theme.css?v=67b6ffb7" />
 
   
     <link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/assets/favicon.ico"/>
@@ -163,8 +163,7 @@
                         <ul class="changes-list">
                           
                             <li>
-                              Added new `datatable_field_headers` block to the `datatables_view` template.
-
+                              <p>Added new <code>datatable_field_headers</code> block to the <code>datatables_view</code> template.</p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -172,8 +171,7 @@
                             </li>
                           
                             <li>
-                              DataStore Dump endpoint no longer includes the _id field/column.
-
+                              <p>DataStore Dump endpoint no longer includes the _id field/column.</p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -203,8 +201,7 @@
                         <ul class="changes-list">
                           
                             <li>
-                              Fixed an issue with the Organization Autocomplete endpoint not working properly.
-
+                              <p>Fixed an issue with the Organization Autocomplete endpoint not working properly.</p>
                               
                               
                             </li>
@@ -232,8 +229,7 @@
                         <ul class="changes-list">
                           
                             <li>
-                              Published Resources will now use the Recombinant Data Dictionary for the Datatables Views' column headers.
-
+                              <p>Published Resources will now use the Recombinant Data Dictionary for the Datatables Views' column headers.</p>
                               
                               
                             </li>
@@ -269,8 +265,7 @@
                         <ul class="changes-list">
                           
                             <li>
-                              Added anonymous search term logging to the application. This will be used to identify trends in search and to areas for improvement in search results.
-
+                              <p>Added anonymous search term logging to the application. This will be used to identify trends in search and to areas for improvement in search results.</p>
                               
                               
                             </li>
@@ -281,22 +276,20 @@
                         <ul class="changes-list">
                           
                             <li>
-                              Update the Record and Search Download pages to link directly to the parent search page.
+                              <p>Update the Record and Search Download pages to link directly to the parent search page.
 It was using the session variable, however this is not reliable if the end user has multiple
 web browser tabs open to multiple searches, switches languages or undertakes some action
-which can confuse the previous logic.
-
+which can confuse the previous logic.</p>
                               
                               
                             </li>
                           
                             <li>
-                              The "More like this" results in the Open Data search had been reformatted to work
+                              <p>The "More like this" results in the Open Data search had been reformatted to work
 with CKAN's dataset page. This returns just a basic HTML list. Search has been
 updated so then when users click on this link in the Open Data search results page
 they are shown the Search app's default well formatted More-like-this results page.
-CKAN will continue to receive the expected basic list.
-
+CKAN will continue to receive the expected basic list.</p>
                               
                               
                             </li>
@@ -324,7 +317,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Updated the Python requirements for the Solr Client project.
+                              <p>Updated the Python requirements for the Solr Client project.</p>
                               
                               
                             </li>
@@ -352,8 +345,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Publish new ATI Modernization Action Plan Tracker
-
+                              <p>Publish new ATI Modernization Action Plan Tracker</p>
                               
                               
                             </li>
@@ -397,8 +389,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Catch NotAuthorized and NotFound in Dataset Feed view, returning 403 and 404 respectfully instead of hitting 500 server error.
-
+                              <p>Catch NotAuthorized and NotFound in Dataset Feed view, returning 403 and 404 respectfully instead of hitting 500 server error.</p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -411,8 +402,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Disabled unused Group routes.
-
+                              <p>Disabled unused Group routes.</p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -442,29 +432,25 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Added test coverage for Validation into DataStore.
-
+                              <p>Added test coverage for Validation into DataStore.</p>
                               
                               
                             </li>
                           
                             <li>
-                              Added test coverage for Xloader into DataStore.
-
+                              <p>Added test coverage for Xloader into DataStore.</p>
                               
                               
                             </li>
                           
                             <li>
-                              Organization and Group views need a user session to view on Registry.
-
+                              <p>Organization and Group views need a user session to view on Registry.</p>
                               
                               
                             </li>
                           
                             <li>
-                              Recombinant (Proactive Disclosure) dataset types search pages need session to view on Registry. Following a direct link to a Recombinant dataset will redirect you to the correct Owner Organization for that type. The searches will redirect to the default Dataset search on Portal.
-
+                              <p>Recombinant (Proactive Disclosure) dataset types search pages need session to view on Registry. Following a direct link to a Recombinant dataset will redirect you to the correct Owner Organization for that type. The searches will redirect to the default Dataset search on Portal.</p>
                               
                               
                             </li>
@@ -475,22 +461,19 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Only Sysadmins can view the Admin index page.
-
+                              <p>Only Sysadmins can view the Admin index page.</p>
                               
                               
                             </li>
                           
                             <li>
-                              Fixed search facet for portal_release_date.
-
+                              <p>Fixed search facet for portal_release_date.</p>
                               
                               
                             </li>
                           
                             <li>
-                              Fixed an issue with the search facet dictionary resizing inside loops.
-
+                              <p>Fixed an issue with the search facet dictionary resizing inside loops.</p>
                               
                               
                             </li>
@@ -501,8 +484,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Improved HTML layouts and uniformity across search forms.
-
+                              <p>Improved HTML layouts and uniformity across search forms.</p>
                               
                               
                             </li>
@@ -513,15 +495,13 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Removed old, unused Jinja2 macros.
-
+                              <p>Removed old, unused Jinja2 macros.</p>
                               
                               
                             </li>
                           
                             <li>
-                              Remove the Suggest a Dataset status update link from Registry homepage
-
+                              <p>Remove the Suggest a Dataset status update link from Registry homepage</p>
                               
                               
                             </li>
@@ -549,8 +529,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Catch NotAuthorized in view, returning 403 instead of hitting 500 server error.
-
+                              <p>Catch NotAuthorized in view, returning 403 instead of hitting 500 server error.</p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -580,8 +559,7 @@ CKAN will continue to receive the expected basic list.
                         <ul class="changes-list">
                           
                             <li>
-                              Leading and trailing white space now gets removed from cell values when loading into the DataStore.
-
+                              <p>Leading and trailing white space now gets removed from cell values when loading into the DataStore.</p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -589,8 +567,7 @@ CKAN will continue to receive the expected basic list.
                             </li>
                           
                             <li>
-                              Ignore empty rows when loading into the DataStore.
-
+                              <p>Ignore empty rows when loading into the DataStore.</p>
                               
                               
                                 <span class="change-sub-note change-backport"><sup><em>Backport</em></sup></span>
