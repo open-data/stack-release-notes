@@ -4,6 +4,34 @@ import re
 import os
 import subprocess
 import requests
+import copy
+from markupsafe import Markup
+from markdown import markdown
+from bleach import clean as bleach_clean, ALLOWED_TAGS, ALLOWED_ATTRIBUTES
+
+MARKDOWN_TAGS = set([
+    'del', 'dd', 'dl', 'dt', 'h1', 'h2',
+    'h3', 'img', 'kbd', 'p', 'pre', 's',
+    'sup', 'sub', 'strike', 'br', 'hr'
+]).union(ALLOWED_TAGS)
+
+MARKDOWN_ATTRIBUTES = copy.deepcopy(ALLOWED_ATTRIBUTES)
+MARKDOWN_ATTRIBUTES.setdefault('img', []).extend(['src', 'alt', 'title'])
+
+# find all tags but ignore < in the strings so that we can use it correctly in markdown
+RE_MD_HTML_TAGS = re.compile('<[^><]*>')
+
+class literal(Markup):
+    """
+    Represents an HTML literal.
+    """
+    __slots__ = ()
+
+    @classmethod
+    def escape(cls, s):
+        if s is None:
+            return Markup("")
+        return super(literal, cls).escape(s)
 
 STACK = {
     'ckan': {
@@ -440,9 +468,30 @@ def get_filled_releases():
     return release_tags, filled_release_hashes
 
 
+def render_markdown(data):
+    """
+    Returns the data as rendered markdown
+
+    :param auto_link: Should ckan specific links be created e.g. `group:xxx`
+    :type auto_link: bool
+    :param allow_html: If True then html entities in the markdown data.
+        This is dangerous if users have added malicious content.
+        If False all html tags are removed.
+    :type allow_html: bool
+    """
+    if not data:
+        return ''
+    data = RE_MD_HTML_TAGS.sub('', data.strip())
+    data = bleach_clean(
+        markdown(data), strip=True,
+        tags=MARKDOWN_TAGS, attributes=MARKDOWN_ATTRIBUTES)
+    return literal(data)
+
+
 release_tags, release_hashes = get_filled_releases()
 html_context = {
     'release_tags': release_tags,
     'release_hashes': release_hashes,
     'version_prefix': FRONTEND_VERSION_PREFIX,
+    'render_markdown': render_markdown,
 }

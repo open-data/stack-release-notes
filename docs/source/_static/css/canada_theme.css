@@ -177,6 +177,13 @@ ul.changes-list li{
 
 }
 
+ul.changes-list li p,
+ul.changes-list li span{
+
+  display: inline;
+
+}
+
 span.change-sub-note{
 
   font-weight: 600;

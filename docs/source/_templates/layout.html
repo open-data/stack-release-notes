@@ -97,7 +97,7 @@
                         <ul class="changes-list">
                           {% for change in changes %}
                             <li>
-                              {{ change.change_log }}
+                              {{ render_markdown(change.change_log) }}
                               {% if change.canada_only %}
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               {% endif %}
