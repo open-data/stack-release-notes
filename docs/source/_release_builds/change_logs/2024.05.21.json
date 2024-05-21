@@ -1,0 +1,87 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added new `datatable_field_headers` block to the `datatables_view` template.\n",
+                    "hash": "99a126b3b53bc4ad9d685f372399e641e0e4cf72"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "DataStore Dump endpoint no longer includes the _id field/column.\n",
+                    "hash": "2e1c1b74f2ddad0b01ddda81a83364bc826920e9"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Organization Autocomplete endpoint not working properly.\n",
+                    "hash": "2b424fc0c72d8e1d3952f19b2cab16c8b5c96201"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Published Resources will now use the Recombinant Data Dictionary for the Datatables Views' column headers.\n",
+                    "hash": "0ff98e5cd7bf7a90d51b2ca1d11d0b1ac53cee94"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added anonymous search term logging to the application. This will be used to identify trends in search and to areas for improvement in search results.\n",
+                    "hash": "12b170fea6db2bb327b4683dab043d487230b8eb"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update the Record and Search Download pages to link directly to the parent search page.\nIt was using the session variable, however this is not reliable if the end user has multiple\nweb browser tabs open to multiple searches, switches languages or undertakes some action\nwhich can confuse the previous logic.\n",
+                    "hash": "49127972f7b53e56691f62a79e576c376ce62919"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The \"More like this\" results in the Open Data search had been reformatted to work\nwith CKAN's dataset page. This returns just a basic HTML list. Search has been\nupdated so then when users click on this link in the Open Data search results page\nthey are shown the Search app's default well formatted More-like-this results page.\nCKAN will continue to receive the expected basic list.\n",
+                    "hash": "e8c32510a5c40b2243f98f94fbac672f25fe0bd5"
+                }
+            ]
+        },
+        "SolrClient": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the Python requirements for the Solr Client project.",
+                    "hash": "f4b0de50196a04f2aafd350de8713ac37e86190d"
+                }
+            ]
+        },
+        "oc_searches": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Publish new ATI Modernization Action Plan Tracker\n",
+                    "hash": "7bed5420924aca48c2433a501946b5fad5cec133"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}

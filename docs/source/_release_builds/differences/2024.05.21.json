@@ -1,0 +1,37 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "b96adaba0a967fa1641c9f5ab5981e5b7ff8f90e",
+            "head": "ee6e7b5cfdcd953b03d053610a5bfa96e0a9aabc"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "590a632153b9ba6c187081c4880800ee2c9e2aaf",
+            "head": "3508fcec8868cc47f5296b872bd439a04bf406a1"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "8034803c6ac45eba1345e6390e5cc038d751d142",
+            "head": "2720826011b4cc9aa450730b74450ed8fe25713b"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "a3dfa82bd1bdbac0b27dc2560a065aacb5c4d126",
+            "head": "a0e5ccfa5bae56d08f128237a327183bccec3105"
+        },
+        "SolrClient": {
+            "uri": "https://github.com/open-data/SolrClient",
+            "prev": "a70d3274ba6e90657cb77c05131db436f33b256b",
+            "head": "822df1308916392f9fbf5b3d4cd7f509468ae7e8"
+        },
+        "oc_searches": {
+            "uri": "https://github.com/open-data/oc_searches",
+            "prev": "aa4fe319412f869ba19c54a6bb92d79d78c3712b",
+            "head": "2f56adda14d1092922da69bc0989c80a866c9e99"
+        }
+    },
+    "drupal": {}
+}
