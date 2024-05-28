@@ -34,13 +34,19 @@ It is important to only tag from GitHub and not locally as pushing local tags ma
 
 ![Delete the pre-release.](https://github.com/open-data/stack-release-notes/blob/main/.github/images/delete-release.png?raw=true)
 
-### I made a mistake tagging
+### I Made a Mistake
 
-If you make a mistake tagging this repo, you can manually fix it by deleting the tag and the related files for the tag:
+#### General Project Repo Mistakes
+
+If you built the release notes already and need to fix another project repo (e.g. missing change logs), you can manually fix it by deleting the related files for the release tag:
 
 * `docs/source/_release_builds/change_logs/<tag>.json`
 * `docs/source/_release_builds/differences/<tag>.json`
 * `docs/source/_release_builds/github/<tag>.json`
 * `docs/source/_release_builds/releases/<tag>.json`
 
-Once you have done that, you can re-tag this repo and the GitHub Workflow should run again.
+Once you have done that, you can manually use the `workflow_dispatch` on the [Build & Publish Release Notes](https://github.com/open-data/stack-release-notes/actions/workflows/build.yml) GitHub Workflow.
+
+#### Release Tag Mistakes
+
+If you made a mistake tagging this repo (e.g. incorrect release tag format), you can manually delete the tag and the related files above. Once you have done that, you can re-tag the repo and the GitHub Workflow will run again.
