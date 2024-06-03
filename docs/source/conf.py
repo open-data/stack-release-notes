@@ -35,12 +35,12 @@ class literal(Markup):
 
 STACK = {
     'ckan': {
-        'https://github.com/open-data/ckan.git'                     : 'canada-v2.9',
+        'https://github.com/open-data/ckan.git'                     : 'canada-py3',
         'https://github.com/ckan/ckanapi.git'                       : 'master',
         'https://github.com/open-data/ckanext-canada.git'           : 'master',
-        'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-v2.9',
-        'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-v2.9',
-        'https://github.com/open-data/ckanext-dcat.git'             : 'canada-v2.9',
+        'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-py3',
+        'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-py3',
+        'https://github.com/open-data/ckanext-dcat.git'             : 'canada-py3',
         'https://github.com/ckan/ckanext-dsaudit.git'               : 'master',
         'https://github.com/ckan/ckanext-excelforms.git'            : 'main',
         'https://github.com/ckan/ckanext-fluent.git'                : 'master',
@@ -49,11 +49,11 @@ STACK = {
         'https://github.com/open-data/ckanext-power-bi.git'         : 'main',
         'https://github.com/open-data/ckanext-recombinant.git'      : 'master',
         'https://github.com/ckan/ckanext-scheming.git'              : 'master',
-        'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.9',
-        'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.9',
-        'https://github.com/open-data/ckanext-xloader.git'          : 'canada-v2.9',
+        'https://github.com/open-data/ckanext-security.git'         : 'canada-py3',
+        'https://github.com/open-data/ckanext-validation.git'       : 'canada-py3',
+        'https://github.com/open-data/ckanext-xloader.git'          : 'canada-py3',
         'https://github.com/ckan/ckantoolkit.git'                   : 'master',
-        'https://github.com/open-data/goodtables.git'               : 'canada',
+        'https://github.com/open-data/goodtables.git'               : 'canada-py3',
     },
     'django': {
         'https://github.com/open-data/oc_search.git'                : 'master',
