@@ -1,0 +1,106 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released Python 3 compatible code.\n",
+                    "hash": "b54e089ac414336ced4343a60c1d9511661f904b"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Released Python 3 compatible code.\n",
+                    "hash": "b54e089ac414336ced4343a60c1d9511661f904b"
+                }
+            ]
+        },
+        "ckanext-dcat": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released Python 3 compatible code.\n",
+                    "hash": "b54e089ac414336ced4343a60c1d9511661f904b"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Released Python 3 compatible code.\n",
+                    "hash": "b54e089ac414336ced4343a60c1d9511661f904b"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released Python 3 compatible code.\n",
+                    "hash": "b54e089ac414336ced4343a60c1d9511661f904b"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released Python 3 compatible code.\n",
+                    "hash": "b54e089ac414336ced4343a60c1d9511661f904b"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added new link to the Open Map viewer page that links to the Google Analytics CKAN resource page\nfor the maps that are currently being displayed.\n\nTo enable the new link, set the RAMP_GA_RESOURCE_EN and RAMP_GA_RESOURCE_FR values in the Django settings file.\n",
+                    "hash": "e2e0803715f4e971e3027cf36015dc4612faf390"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a new option to the Open Data search to allow reverse alphabetical sorting.\nAt the same time now stripping white space from titles when indexing and also\nremoved title capitalization styling on dataset titles.\n",
+                    "hash": "f3e95aa5f06ce6f2b74d1ee44d8efdb117721ce5"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Upgrade core and contributed modules to Drupal 10\n",
+                    "hash": "ba0b1befc57c5a1bfa49bda51341136af35cb340"
+                }
+            ]
+        },
+        "og": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Upgrade core and contributed modules to Drupal 10 for the open-government profile\n",
+                    "hash": "502c2aa313edfc60e13d5565ad205e9e60e578b9"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "acc1a29866e7fa73ea781cc2263ae674eb7e762e",
+            "head": "2f535dd1c4ce3dde089720a197447bd984272699"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "6d9e428b6447d856829cc1b7b936d56a04111e17",
+            "head": "b6c97720dc21cbab6de48953ea09d1e5dce5f316"
+        },
+        "ckanext-dcat": {
+            "uri": "https://github.com/open-data/ckanext-dcat",
+            "prev": "c9f2f5fca0a063b4b51afc32e98e579b03f6a3b1",
+            "head": "c71562611ed584459149f6a62413c83fd5729824"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "2720826011b4cc9aa450730b74450ed8fe25713b",
+            "head": "37337fa1c272eaf256e4ba7299f98f83eed56c8f"
+        },
+        "ckanext-security": {
+            "uri": "https://github.com/open-data/ckanext-security",
+            "prev": "72139bea36f1a8afd6edee6b636fccbaaca4d758",
+            "head": "14a9635d80d69d7e7bd81519623e59a38f18d14e"
+        },
+        "ckanext-validation": {
+            "uri": "https://github.com/open-data/ckanext-validation",
+            "prev": "b3fd804a16b389bd8aabe675561dc415a0f4e82e",
+            "head": "b9e85320360e9b0589ae272e1c5d3f0ad709606e"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "9e4b752589380ba836192dc80fad5e3b3bc3989c",
+            "head": "99f94d03683f5ccea1cc0947c09b5343163623c0"
+        },
+        "oc_searches": {
+            "uri": "https://github.com/open-data/oc_searches",
+            "prev": "2f56adda14d1092922da69bc0989c80a866c9e99",
+            "head": "2bcb76a58e8d516c1fe3906a342f77fb8b922032"
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "uri": "https://github.com/open-data/opengov",
+            "prev": "3837aae6dd10a1de3f51021ccfddd499b200101e",
+            "head": "71c02225ee716d568f6e55648e9cd27a11576fb4"
+        },
+        "og": {
+            "uri": "https://github.com/open-data/og",
+            "prev": "dd9b7c70e8090ab29fae3d69d7b8cc7013b18557",
+            "head": "937d69d51a33bd7e11835766b0199810773718ac"
+        }
+    }
+}
