@@ -57,8 +57,9 @@ STACK = {
     },
     'django': {
         'https://github.com/open-data/oc_search.git'                : 'master',
-        'https://github.com/open-data/SolrClient.git'               : 'master',
-        'https://github.com/open-data/oc_searches.git'              : 'main',
+        # Not included for now.
+        # 'https://github.com/open-data/SolrClient.git'               : 'master',
+        # 'https://github.com/open-data/oc_searches.git'              : 'main',
     },
     'drupal': {
         'https://github.com/open-data/opengov.git'                  : 'master',

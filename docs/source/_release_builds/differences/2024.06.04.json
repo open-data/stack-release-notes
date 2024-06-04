@@ -36,11 +36,6 @@
             "uri": "https://github.com/open-data/oc_search",
             "prev": "9e4b752589380ba836192dc80fad5e3b3bc3989c",
             "head": "99f94d03683f5ccea1cc0947c09b5343163623c0"
-        },
-        "oc_searches": {
-            "uri": "https://github.com/open-data/oc_searches",
-            "prev": "2f56adda14d1092922da69bc0989c80a866c9e99",
-            "head": "2bcb76a58e8d516c1fe3906a342f77fb8b922032"
         }
     },
     "drupal": {

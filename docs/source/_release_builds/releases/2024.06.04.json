@@ -81,14 +81,6 @@
         "oc_search": {
             "uri": "https://github.com/open-data/oc_search",
             "hash": "99f94d03683f5ccea1cc0947c09b5343163623c0"
-        },
-        "SolrClient": {
-            "uri": "https://github.com/open-data/SolrClient",
-            "hash": "822df1308916392f9fbf5b3d4cd7f509468ae7e8"
-        },
-        "oc_searches": {
-            "uri": "https://github.com/open-data/oc_searches",
-            "hash": "2bcb76a58e8d516c1fe3906a342f77fb8b922032"
         }
     },
     "drupal": {
