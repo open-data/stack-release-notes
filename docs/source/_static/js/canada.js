@@ -32,8 +32,10 @@ window.addEventListener('load', function(){
 
           $('div.release-wrapper').each(function(_index, _wrapper){
 
-            let target = $(_wrapper).offset().top;
+            let offset = $(_wrapper).offset().top;
             let id = $(_wrapper).attr('id');
+            let heading = $(_wrapper).children('h2');
+            let target = offset - $(heading).height() - 10;
 
             if( position == 0 ){
 

@@ -45,17 +45,19 @@
 
 {%- block extrabody %}
   {% if release_hashes %}
-    {% for release, project in release_hashes.items() %}
-      <div class="github-api-wrapper" id="github-{{ release }}"></div>
-        {% for project_name, repos in project.items() %}
-          {% for repo, info in repos.items() %}
-            <div class="github-api-container" id="github-{{ release }}-{{ repo }}">
-              <!-- TODO: output diffs from github API -->
-            </div>
+    <div id="git-diff-wrapper">
+      {% for release, project in release_hashes.items() %}
+        <div class="github-api-wrapper" id="github-{{ release }}">
+          {% for project_name, repos in project.items() %}
+            {% for repo, info in repos.items() %}
+              <div class="github-api-container" id="github-{{ release }}-{{ repo }}">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
-      </div>
-    {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   {% endif %}
 {% endblock %}
 

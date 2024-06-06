@@ -129,15 +129,15 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_display_version = True
 html_static_path = ['_static']
 html_css_files = [
-    'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/css/theme.min.css',
+    'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/css/theme.min.css',
     'css/canada_theme.css',
 ]
 html_js_files = [
     'js/canada.js',
 ]
 html_show_sphinx = False
-html_logo = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/assets/sig-spl.svg'
-html_favicon = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/assets/favicon.ico'
+html_logo = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/assets/sig-spl.svg'
+html_favicon = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/assets/favicon.ico'
 
 # -- Custom options -------------------------------------------------
 
