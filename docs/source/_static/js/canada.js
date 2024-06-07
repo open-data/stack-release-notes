@@ -62,7 +62,34 @@ window.addEventListener('load', function(){
 
       }
 
+      function _bind_mobile_menu(){
+
+        function _fix_mobile_menu(){
+
+          let menuShifts = $('.shift');
+
+          if( menuShifts.length > 0 ){
+
+            $(menuShifts).each(function(_index, _menuShift){
+
+              $(_menuShift).removeClass('shift');
+
+            });
+
+          }
+
+        }
+
+        $(window).on('resize orientationchange', function(_event){
+          if( $(window).width() >= 768 ){
+            _fix_mobile_menu();
+          }
+        });
+
+      }
+
       _bind_active_menu_item();
+      _bind_mobile_menu();
 
     }
     // END Release Side Nav END

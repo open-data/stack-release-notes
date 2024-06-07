@@ -61,9 +61,21 @@ nav.wy-nav-top i{
   position: relative !important;
   overflow: initial !important;
   height: auto !important;
-  margin-left: 85% !important;
+  margin-left: 0 !important;
   left: initial !important;
   top: initial !important;
+
+}
+
+.wy-nav-content-wrap.shift .wy-nav-content::after{
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.625);
 
 }
 
