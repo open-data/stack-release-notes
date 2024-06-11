@@ -1,0 +1,96 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Registry Organizations to CSV script.\n",
+                    "hash": "313955a95aecdb2be86ad2d28b589384b695261d"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Ignore the `metadata_modified` Resource field in the \"Post to Portal\" code. Fixing a major issue where a Dataset's `metadata_modified` field would be updated, and a lot of activities would be created on the Portal.\n",
+                    "hash": "d53a69d21d098f100b498d2d815353d7316ddd8a"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Moved FAQ page content from Markdown files into a Jinja template. Moved the French translated strings into the PO file.\n",
+                    "hash": "cd86495d08080b950443dca57b2cfca7731fa296"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add support for French Boolean search keywords and add a note to the technical documentation\nexplaining how to use Boolean search terms including:\n  - AND / ET\n  - OR / OU\n  - MOT / PAS\n  - Quotation marks \"\"\n  - Parenthesis ()\n  - Asterisks *\n",
+                    "hash": "94b6aab7f0135720375935a9a8079721c47b93c5"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated Search to use the latest version of WET/CDTS, 5.0.1\n",
+                    "hash": "09fc3a67c2c9ff4c6c4bec47367664e340037ca5"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed issue with the \"Show similar records\" links in the Travel PD search\n",
+                    "hash": "4256ef82e8ff2c95a39893e25bd6a9ec664ee2ab"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "upgrade libraries wet to v4.0.79 and gcweb to v15.0.0\n",
+                    "hash": "10a4d3635fcf89811bfdaaee55e1a7c9e4b6d2df"
+                }
+            ]
+        },
+        "og": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "upgrade libraries wet to v4.0.79 and gcweb to v15.0.0\n",
+                    "hash": "10a4d3635fcf89811bfdaaee55e1a7c9e4b6d2df"
+                }
+            ]
+        },
+        "gcweb_bootstrap": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "upgrade cdts to v5.0.1, wet to v4.0.79 and gcweb to v15.0.0\n",
+                    "hash": "170d9417c297c848047ca0e766ff97ba521bca9c"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "open-3420: resolve issues with analytics page by removing obsolute ie8 libraries\n",
+                    "hash": "5015c046241dc76f7ad0d6a35fd80fdcbd22e6f2"
+                }
+            ]
+        }
+    }
+}
