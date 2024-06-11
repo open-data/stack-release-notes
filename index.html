@@ -31,6 +31,36 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.06.11">
+          
+            
+              <div class="github-api-container" id="github-2024.06.11-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.06.11-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.06.11-opengov">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.06.11-og">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.06.11-gcweb_bootstrap">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.06.04">
           
             
@@ -178,6 +208,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.06.11" class="release-nav-item"><a href="#2024.06.11">v.2024.06.11</a></li>
+          
             <li data-release="2024.06.04" class="release-nav-item"><a href="#2024.06.04">v.2024.06.04</a></li>
           
             <li data-release="2024.05.28" class="release-nav-item"><a href="#2024.05.28">v.2024.05.28</a></li>
@@ -206,6 +238,235 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2024.06.11">
+            <h2>
+              v.2024.06.11
+              <a class="headerlink" href="#2024.06.11"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.06.11-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.06.11-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed an issue with the Registry Organizations to CSV script.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Ignore the <code>metadata_modified</code> Resource field in the "Post to Portal" code. Fixing a major issue where a Dataset's <code>metadata_modified</code> field would be updated, and a lot of activities would be created on the Portal.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Moved FAQ page content from Markdown files into a Jinja template. Moved the French translated strings into the PO file.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/b6c97720dc21cbab6de48953ea09d1e5dce5f316...e077094b7e262b744768f9ea69da29edf6bcdd27">View it on GitHub</a>
+                    <span class="release-hash-label">[b6c97720d...e077094b7]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2024.06.11-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2024.06.11-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Add support for French Boolean search keywords and add a note to the technical documentation
+explaining how to use Boolean search terms including:
+  - AND / ET
+  - OR / OU
+  - MOT / PAS
+  - Quotation marks ""
+  - Parenthesis ()
+  - Asterisks *</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Updated Search to use the latest version of WET/CDTS, 5.0.1</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed issue with the "Show similar records" links in the Travel PD search</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/99f94d03683f5ccea1cc0947c09b5343163623c0...bf802cc4fe805fa0cd9e76cb7879d44839d41b64">View it on GitHub</a>
+                    <span class="release-hash-label">[99f94d036...bf802cc4f]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2024.06.11-opengov">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      opengov
+                      <a class="headerlink" href="#2024.06.11-opengov"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>upgrade libraries wet to v4.0.79 and gcweb to v15.0.0</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/opengov/compare/71c02225ee716d568f6e55648e9cd27a11576fb4...96456839d06678aaec74ce56e4942744baf30ce3">View it on GitHub</a>
+                    <span class="release-hash-label">[71c02225e...96456839d]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2024.06.11-og">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      og
+                      <a class="headerlink" href="#2024.06.11-og"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>upgrade libraries wet to v4.0.79 and gcweb to v15.0.0</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/937d69d51a33bd7e11835766b0199810773718ac...8d53248abf93cfbaf18a3622b21d8390277b2661">View it on GitHub</a>
+                    <span class="release-hash-label">[937d69d51...8d53248ab]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2024.06.11-gcweb_bootstrap">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      gcweb_bootstrap
+                      <a class="headerlink" href="#2024.06.11-gcweb_bootstrap"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>upgrade cdts to v5.0.1, wet to v4.0.79 and gcweb to v15.0.0</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>open-3420: resolve issues with analytics page by removing obsolute ie8 libraries</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/gcweb_bootstrap/compare/9af9b868bc8567953fda093d45cce1ceb77bfb5b...534a9cbabf194d7ad2280c854038cc7fb1e3e775">View it on GitHub</a>
+                    <span class="release-hash-label">[9af9b868b...534a9cbab]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2024.06.04">
             <h2>
