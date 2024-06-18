@@ -131,6 +131,7 @@ html_static_path = ['_static']
 html_css_files = [
     'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/css/theme.min.css',
     'css/canada_theme.css',
+    'https://use.fontawesome.com/releases/v5.15.4/css/all.css',
 ]
 html_js_files = [
     'js/canada.js',
