@@ -1,0 +1,42 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "2f535dd1c4ce3dde089720a197447bd984272699",
+            "head": "95d119bcaadb50d4da41d0220d6c19f649602eae"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "e077094b7e262b744768f9ea69da29edf6bcdd27",
+            "head": "1b9297f302d6d082174fc6e635806faf73774f25"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "37337fa1c272eaf256e4ba7299f98f83eed56c8f",
+            "head": "f0904c95384dbebf45b5778c74239bcdc05e5b94"
+        },
+        "ckanext-scheming": {
+            "uri": "https://github.com/ckan/ckanext-scheming",
+            "prev": "9a33dcd330211468ea0bed85391277e2e596f388",
+            "head": "83a66ca19d962c0ddd3c12fb4a5abffb0ea9c4de"
+        },
+        "ckanext-validation": {
+            "uri": "https://github.com/open-data/ckanext-validation",
+            "prev": "b9e85320360e9b0589ae272e1c5d3f0ad709606e",
+            "head": "bc5c2f7a744fec500b27c77d4db57e6a9771cbd3"
+        },
+        "ckanext-xloader": {
+            "uri": "https://github.com/open-data/ckanext-xloader",
+            "prev": "e714cc0f266ea90eb247432c89a817eaeaf53a77",
+            "head": "177d93aea6876903d8ebc4237fe91da68da9d525"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "bf802cc4fe805fa0cd9e76cb7879d44839d41b64",
+            "head": "eabdd87b17e7522be2f475c171b9adc95bad99fc"
+        }
+    },
+    "drupal": {}
+}

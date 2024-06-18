@@ -1,0 +1,81 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `--max-idle-time` option to the `ckan jobs worker` command.\n",
+                    "hash": "9f0685d288735bfa5759424fff3275df661a0cbb"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Create and Update PD Record forms now have better error messaging.\n",
+                    "hash": "0161e1220bb9ee554163ad4702cf98f59f3051a5"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Uploading an XLS file will now redirect the user to the correct Recombinant Resource.\n",
+                    "hash": "2fdb90c2093882051d7161a6457e3fc3a442e879"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Prevent duplicate `dataset_type`, `resource_name`, `published_resource_id`, and `triggers` dict keys across table definitions.\n",
+                    "hash": "d2088d92bb4cf4274dff8d38deeae038f18d8098"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for Recombinant table definitions.\n",
+                    "hash": "4b44bf10d6e9d78b1bef5a33405f1561ca71ff83"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added capability for designated job worker queues per resource.\n",
+                    "hash": "88b3745d689135ca916e3c54065ae230c91744e7"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added capability for designated job worker queues per resource.\n",
+                    "hash": "88b3745d689135ca916e3c54065ae230c91744e7"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added very basic automated tests for the Grants and Contributions PD Search\n",
+                    "hash": "111958ccf89b367be79575d96cb52d0deb2bdca0"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
