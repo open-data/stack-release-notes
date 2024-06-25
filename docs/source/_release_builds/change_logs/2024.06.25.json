@@ -1,0 +1,56 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a schema for performing password resets, allowing for better frameworking for password requirements and error messages.\n",
+                    "hash": "0f91ae064908c05adf22e9b2302438a7557dc343"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the `CanadaSecurityPlugin` class for the improved frameworking from `ckanext-security`.\n",
+                    "hash": "96128a1ac694ba39679fa0e12fa5998ea4faab71"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Minor changes to the FAQ page for the Registry users.",
+                    "hash": "5508987f9284bd9675031f1e251394e288e7c85e"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Adds `ckanext.security.min_password_length` config option to set minimum password length requirement.\n",
+                    "hash": "14c3a75f23ecc2bf714a703aaa1d56e242524c53"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Adds `ckanext.security.nzism_compliant_passwords` config option to set password complexity requirements.\n",
+                    "hash": "9a21ca8a964c9dddd8ef8f1c9690aeb526a8cd01"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Improved the frameworking of the Security plugin to allow for better password requirements and error messages.\n",
+                    "hash": "98663caddc5c4776c40a3671d1a5031366799531"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
