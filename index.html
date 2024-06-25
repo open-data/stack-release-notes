@@ -32,6 +32,24 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.06.25">
+          
+            
+              <div class="github-api-container" id="github-2024.06.25-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.06.25-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.06.25-ckanext-security">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.06.18">
           
             
@@ -245,6 +263,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.06.25" class="release-nav-item"><a href="#2024.06.25">v.2024.06.25</a></li>
+          
             <li data-release="2024.06.18" class="release-nav-item"><a href="#2024.06.18">v.2024.06.18</a></li>
           
             <li data-release="2024.06.11" class="release-nav-item"><a href="#2024.06.11">v.2024.06.11</a></li>
@@ -277,6 +297,145 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2024.06.25">
+            <h2>
+              v.2024.06.25
+              <a class="headerlink" href="#2024.06.25"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.06.25-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2024.06.25-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added a schema for performing password resets, allowing for better frameworking for password requirements and error messages.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/95d119bcaadb50d4da41d0220d6c19f649602eae...44417ec1c803cabe3f2286185400650f77fa9838">View it on GitHub</a>
+                    <span class="release-hash-label">[95d119bca...44417ec1c]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.06.25-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.06.25-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Updated the <code>CanadaSecurityPlugin</code> class for the improved frameworking from <code>ckanext-security</code>.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Minor changes to the FAQ page for the Registry users.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/1b9297f302d6d082174fc6e635806faf73774f25...24ef4387df3a42c263a02198e5ef28ef2dcb4bfc">View it on GitHub</a>
+                    <span class="release-hash-label">[1b9297f30...24ef4387d]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.06.25-ckanext-security">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-security
+                      <a class="headerlink" href="#2024.06.25-ckanext-security"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Adds <code>ckanext.security.use_ivalidators</code> config option to control monkey-patching or <code>IValidators</code> implementation.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Adds <code>ckanext.security.min_password_length</code> config option to set minimum password length requirement.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Adds <code>ckanext.security.nzism_compliant_passwords</code> config option to set password complexity requirements.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Improved the frameworking of the Security plugin to allow for better password requirements and error messages.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/14a9635d80d69d7e7bd81519623e59a38f18d14e...939815fa7019b264e34087fce62a07fb6e796ffe">View it on GitHub</a>
+                    <span class="release-hash-label">[14a9635d8...939815fa7]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2024.06.18">
             <h2>
