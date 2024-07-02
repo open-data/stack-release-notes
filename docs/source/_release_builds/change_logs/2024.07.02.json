@@ -1,0 +1,34 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update 'Get started' sentence on the FAQ page for the Registry users.\n",
+                    "hash": "c862f406993cc2b95de1c59372bf3154c5df87f9"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Trim Proactive Disclosure text fields to 28kB for Solr record indexing. This affects PD types that do not use the Advanced Search (Django) app.\n",
+                    "hash": "ef83ba5b8a907cf4720fe58359433cc837e177cf"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "format money(float) type to 2 decimal places to improve precision\n",
+                    "hash": "0692f765db2e483a650df9169196490be4a0898b"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
