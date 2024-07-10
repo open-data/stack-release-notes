@@ -1,0 +1,37 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added validation for Datastore field names. They can no longer contain Control characters.\n",
+                    "hash": "c8ac742bb0ea15227786ecc4ec952ce20d725d82"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "add 3 open maps file formats: COG, APRX, PBF\n",
+                    "hash": "24bc081680736b9bccc6a7b9709983682d6ce537"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added support for Service Canada's Survey Invitation Manager (https://github.com/ServiceCanada/invitation-manager).\n\nBy default this feature is disabled. In order to enable it:\n\n1. Add \"IM_ENABLED = True\" to the Django project's settings.py file\n2. Extract the contents of the Invitation-manager release to the \"search/templates/snippets/im\" directory in the project\n3. Configure IM appropriately using the \"im.json\" and \"config.JSON\" files.\n",
+                    "hash": "b393820cb5e1e43429eb97a654f3746954849040"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
