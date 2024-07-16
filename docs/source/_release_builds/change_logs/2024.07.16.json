@@ -1,0 +1,92 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Updated `datastore_field_name` validator error message to align with the backend error message.\n",
+                    "hash": "597b828cf6b9bea869ab750d60599e6e69c11268"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `Show All` and `Hide All` to Datatables view form for column visibility.\n",
+                    "hash": "2d81ec8b8e35b73636e94ff8aeaf0b10c8783737"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Datastore dump XML format now conforms to the standards for XML element names.\n",
+                    "hash": "4fc16e464455b72ed3393d94855539151e9afb71"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "New `canada_theme` plugin contains merged Internal and Public templates, assets, and new `is_registry` global.\n",
+                    "hash": "c12dffa68e54d47c24d607fa072c291290785cc8"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added new CSS layout for Datatables' column visibility modal.\n",
+                    "hash": "c3c6d3139961b27f5215956487449cd474c9fbd4"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Load the GCWeb and WET assets and scripts from the CDTS CDN.\n",
+                    "hash": "60a109e3bdf1e75470f0c2b1fc24683d2eed5c05"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Use the WET JS Builder to comply with the CDTS templates. Updated the error template. The Registry now uses the WET Application templates.\n",
+                    "hash": "37490e2fd83903d213fd59a836ab7771dbc857b7"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed inline colons for French in various templates. E.g. `Date Published:` -> `Date de publication :`\n",
+                    "hash": "96b0135407002c844fbada8686c7e63f1195855d"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Bugfix for the validation report not rendering because it does not recognize this.ckan",
+                    "hash": "b35bb0255f6b368c6d3122e6d18f8a159f2e0ca9"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Bugfix for the validation report not rendering because it does not recognize this.ckan",
+                    "hash": "b35bb0255f6b368c6d3122e6d18f8a159f2e0ca9"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Updated `fields` error output messages to align with the new DataStore fields sub-schema.\n",
+                    "hash": "deb0c7b307d0fafbe4a033919cddcb51cf4f92a4"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
