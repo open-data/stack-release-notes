@@ -32,6 +32,38 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.08.07">
+          
+            
+              <div class="github-api-container" id="github-2024.08.07-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.08.07-ckanext-gcnotify">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.08.07-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.08.07-ckanext-security">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.08.07-ckanext-xloader">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.08.07-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.07.16">
           
             
@@ -335,6 +367,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.08.07" class="release-nav-item"><a href="#2024.08.07">v.2024.08.07</a></li>
+          
             <li data-release="2024.07.16" class="release-nav-item"><a href="#2024.07.16">v.2024.07.16</a></li>
           
             <li data-release="2024.07.09" class="release-nav-item"><a href="#2024.07.09">v.2024.07.09</a></li>
@@ -375,6 +409,292 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2024.08.07">
+            <h2>
+              v.2024.08.07
+              <a class="headerlink" href="#2024.08.07"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.08.07-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.08.07-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Translated more colons for French.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Money fields for PD types now get rounded to 2 decimals when inserting into the database.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The Makefile no longer falls back to <code>/tmp</code> for the temporary directory. It will always use the <code>PD_TMP_DIRECTORY</code> or <code>TMPDIR</code> environment variables. You can now supply <code>tmpdir=/path/to/tmp/directory</code>. The Makefile will fail if no temporary directory is found.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added UI for sysadmins to unlock user accounts.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Integrate survey pop-up using GC invitation-manager on dataset pages.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Add validation for no commas allowed to proactive publication reference number fields.
+The change applies to:
+  - adminaircraft.yaml
+  - ati.yaml
+  - briefingt.yaml
+  - consultations.yaml
+  - contracts.yaml
+  - grants.yaml
+  - hospitalityq.yaml
+  - qpnotes.yaml
+  - reclassification.yaml
+  - travelq.yaml
+  - wrongdoing.yaml</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Show password requirements for "Password" and "Confirm Password" fields on new user registration page.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed the Openness Report script. Moved the code inside of the CKAN app context. Use the <code>ckan canada openness-report</code> command now.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Removals</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Remove alert about contracts proactive publication from the Registry login and home pages.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/fe1a5719bf56c1a8b1becf529cbb2fd99cf32f1f...63f6de7116886a9336fbcfa6871ceddf94845202">View it on GitHub</a>
+                    <span class="release-hash-label">[fe1a5719b...63f6de711]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.08.07-ckanext-gcnotify">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-gcnotify
+                      <a class="headerlink" href="#2024.08.07-ckanext-gcnotify"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Adds <code>notify_lockout</code> to support the mailer from <code>ckanext-security</code> for Account Lockout.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-gcnotify/compare/40df11d62398a3c22cc93ea99c7f1efe39a8ceb8...15ebfcc01225fb281519d19ffcaca9c5c14965d5">View it on GitHub</a>
+                    <span class="release-hash-label">[40df11d62...15ebfcc01]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.08.07-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2024.08.07-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Increased the verbosity of the combine command.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/629402f0766ae4948a8d1c0349dfdc9bf8802b64...d7d97a72963c0e11dc1bb70a37a35ab3dbb962bd">View it on GitHub</a>
+                    <span class="release-hash-label">[629402f07...d7d97a729]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.08.07-ckanext-security">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-security
+                      <a class="headerlink" href="#2024.08.07-ckanext-security"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added support for the GC Notify mailer overrides.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/0c826045e784b7d0dbdd1c5cd84f33b582441f4f...2acf49226665515cbe01a2f5a889cb0b38ef1d6f">View it on GitHub</a>
+                    <span class="release-hash-label">[0c826045e...2acf49226]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.08.07-ckanext-xloader">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-xloader
+                      <a class="headerlink" href="#2024.08.07-ckanext-xloader"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Always close temporary files during exception handling. Added exception handling for REDIS Job Queue timeouts.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/c880ec38c8a0e246143fe265756f789c956d8490...b78d01f19fa199fde05706678e3501aaf877b24d">View it on GitHub</a>
+                    <span class="release-hash-label">[c880ec38c...b78d01f19]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2024.08.07-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2024.08.07-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4>Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Minor field name and code changes to the NAP 5 Tracker to sync it with the latest data from the portal</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4>Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added English and French versions of a new Search Tips page to the Search app.
+  - https://search.open.canada.ca/page/help/?opendata
+  - https://rechercher.ouvert.canada.ca/page/aide/</p>
+<p>At the moments, the search tips only appear on the Open Data Search page. Other
+PD types will be added at a later date.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/9c196509405fbbf0451e53596e152a757c013d92...8b206626af168d28e6858161226f579ae2f87e6c">View it on GitHub</a>
+                    <span class="release-hash-label">[9c1965094...8b206626a]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2024.07.16">
             <h2>
