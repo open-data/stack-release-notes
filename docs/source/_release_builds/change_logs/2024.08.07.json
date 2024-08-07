@@ -1,0 +1,129 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Translated more colons for French.\n",
+                    "hash": "b45b3a49e047a30b0b58b9f01f4a7b97945d51c3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Money fields for PD types now get rounded to 2 decimals when inserting into the database.\n",
+                    "hash": "87c390d5dc4e8377205379592ab026eef0afc4e3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Makefile no longer falls back to `/tmp` for the temporary directory. It will always use the `PD_TMP_DIRECTORY` or `TMPDIR` environment variables. You can now supply `tmpdir=/path/to/tmp/directory`. The Makefile will fail if no temporary directory is found.\n",
+                    "hash": "a671a54ef5050c39d5a78f5cf4c9c21bf524e43b"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added UI for sysadmins to unlock user accounts.\n",
+                    "hash": "ba7e69505bc2190c4691b1ad984777e04df62c45"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Integrate survey pop-up using GC invitation-manager on dataset pages.",
+                    "hash": "7e537624c03e9ddba4220fd61d413e0065b88628"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add validation for no commas allowed to proactive publication reference number fields.\nThe change applies to:\n  - adminaircraft.yaml\n  - ati.yaml\n  - briefingt.yaml\n  - consultations.yaml\n  - contracts.yaml\n  - grants.yaml\n  - hospitalityq.yaml\n  - qpnotes.yaml\n  - reclassification.yaml\n  - travelq.yaml\n  - wrongdoing.yaml\n",
+                    "hash": "2b892478ae4dcb97d0391d231b8a9424b6863782"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Show password requirements for \"Password\" and \"Confirm Password\" fields on new user registration page.",
+                    "hash": "8a320c07830d08be21618df76faaca851929a334"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed the Openness Report script. Moved the code inside of the CKAN app context. Use the `ckan canada openness-report` command now.\n",
+                    "hash": "63f5baec2458e7558f762fceec9156e65c69e050"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove alert about contracts proactive publication from the Registry login and home pages.",
+                    "hash": "8611fd6893a22701ce1a2e77d3ce62a3b79a4a41"
+                }
+            ]
+        },
+        "ckanext-gcnotify": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Adds `notify_lockout` to support the mailer from `ckanext-security` for Account Lockout.\n",
+                    "hash": "467f440f33c4d7234db2c04172d8ea0c00f3e32e"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Increased the verbosity of the combine command.\n",
+                    "hash": "3ee5b2b9da106119b487410d414a932cba562ae4"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added support for the GC Notify mailer overrides.\n",
+                    "hash": "733429aaeb949c05877d4a05a1ffbfc31ca42f83"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Always close temporary files during exception handling. Added exception handling for REDIS Job Queue timeouts.\n",
+                    "hash": "c543fd8fbc307775053d311f6f4c42cd591ebb27"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Minor field name and code changes to the NAP 5 Tracker to sync it with the latest data from the portal\n",
+                    "hash": "a6fe35e218e657d4dda4f04d5aa478a357d33d08"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added English and French versions of a new Search Tips page to the Search app.\n  - https://search.open.canada.ca/page/help/?opendata\n  - https://rechercher.ouvert.canada.ca/page/aide/\n\nAt the moments, the search tips only appear on the Open Data Search page. Other\nPD types will be added at a later date.\n",
+                    "hash": "88f463b0423ea3d39162d691897e60fad7909a05"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
