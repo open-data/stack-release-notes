@@ -1,0 +1,54 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Contextual temporary database table `datastore_user` now only gets created if it does not already exist.\n",
+                    "hash": "b7cf29f5484e77845445d38a377667f57aef4d27"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added casting to `NUMERIC` for the DAC triggers to support old `money` column types.\n",
+                    "hash": "b744e468f01d2bd9e26fa78a08dab493d2d7e48a"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Proactive Disclosure `money` field values now always display as a money format in DataTables and Update Single Record form.\n",
+                    "hash": "efc49dc659a236313bd9141dbf8f56963cf38d4b"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The `run-triggers` command now catches Validation errors and continues.\n",
+                    "hash": "3290ab51d5b5b2c469c3c8873b1f22895613f1d6"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added parsing for money strings when writing to Excel sheets to support old `money` column types.\n",
+                    "hash": "bc79e787c286c84bd20ee8166e519d99f1ca4416"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed the `remove-broken` command by also deleting the Resources.\n",
+                    "hash": "554da510d11aa722cc64db27dbbcb9046799740f"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
