@@ -7,7 +7,7 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/css/theme.min.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/canada_theme.css?v=35b31b4b" />
+      <link rel="stylesheet" type="text/css" href="_static/css/canada_theme.css?v=234a46b2" />
       <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
 
   
@@ -450,7 +450,7 @@
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -467,7 +467,7 @@
                           
                         </ul>
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -495,18 +495,7 @@
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
-                        <ul class="changes-list">
-                          
-                            <li>
-                              <p>The <code>run-triggers</code> command now catches Validation errors and continues.</p>
-                              
-                              
-                            </li>
-                          
-                        </ul>
-                      
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -517,6 +506,17 @@
                           
                             <li>
                               <p>Fixed the <code>remove-broken</code> command by also deleting the Resources.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>The <code>run-triggers</code> command now catches Validation errors and continues.</p>
                               
                               
                             </li>
@@ -556,30 +556,7 @@
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
-                        <ul class="changes-list">
-                          
-                            <li>
-                              <p>Translated more colons for French.</p>
-                              
-                              
-                            </li>
-                          
-                            <li>
-                              <p>Money fields for PD types now get rounded to 2 decimals when inserting into the database.</p>
-                              
-                              
-                            </li>
-                          
-                            <li>
-                              <p>The Makefile no longer falls back to <code>/tmp</code> for the temporary directory. It will always use the <code>PD_TMP_DIRECTORY</code> or <code>TMPDIR</code> environment variables. You can now supply <code>tmpdir=/path/to/tmp/directory</code>. The Makefile will fail if no temporary directory is found.</p>
-                              
-                              
-                            </li>
-                          
-                        </ul>
-                      
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -596,18 +573,42 @@
                           
                             <li>
                               <p>Add validation for no commas allowed to proactive publication reference number fields.
-The change applies to:
-  - adminaircraft.yaml
-  - ati.yaml
-  - briefingt.yaml
-  - consultations.yaml
-  - contracts.yaml
-  - grants.yaml
-  - hospitalityq.yaml
-  - qpnotes.yaml
-  - reclassification.yaml
-  - travelq.yaml
-  - wrongdoing.yaml</p>
+The change applies to:</p>
+<ul>
+<li>
+<p>adminaircraft.yaml</p>
+</li>
+<li>
+<p>ati.yaml</p>
+</li>
+<li>
+<p>briefingt.yaml</p>
+</li>
+<li>
+<p>consultations.yaml</p>
+</li>
+<li>
+<p>contracts.yaml</p>
+</li>
+<li>
+<p>grants.yaml</p>
+</li>
+<li>
+<p>hospitalityq.yaml</p>
+</li>
+<li>
+<p>qpnotes.yaml</p>
+</li>
+<li>
+<p>reclassification.yaml</p>
+</li>
+<li>
+<p>travelq.yaml</p>
+</li>
+<li>
+<p>wrongdoing.yaml</p>
+</li>
+</ul>
                               
                               
                             </li>
@@ -620,7 +621,7 @@ The change applies to:
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -631,11 +632,34 @@ The change applies to:
                           
                         </ul>
                       
-                        <h4>Removals</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-trash change-canada-type-icon"></i>&nbsp;&nbsp;Removals</h4>
                         <ul class="changes-list">
                           
                             <li>
                               <p>Remove alert about contracts proactive publication from the Registry login and home pages.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Translated more colons for French.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Money fields for PD types now get rounded to 2 decimals when inserting into the database.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The Makefile no longer falls back to <code>/tmp</code> for the temporary directory. It will always use the <code>PD_TMP_DIRECTORY</code> or <code>TMPDIR</code> environment variables. You can now supply <code>tmpdir=/path/to/tmp/directory</code>. The Makefile will fail if no temporary directory is found.</p>
                               
                               
                             </li>
@@ -659,7 +683,7 @@ The change applies to:
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -687,7 +711,7 @@ The change applies to:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -715,7 +739,7 @@ The change applies to:
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -745,7 +769,7 @@ The change applies to:
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -783,26 +807,32 @@ The change applies to:
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
-                              <p>Minor field name and code changes to the NAP 5 Tracker to sync it with the latest data from the portal</p>
+                              <p>Added English and French versions of a new Search Tips page to the Search app.</p>
+<ul>
+<li>
+<p>https://search.open.canada.ca/page/help/?opendata</p>
+</li>
+<li>
+<p>https://rechercher.ouvert.canada.ca/page/aide/</p>
+</li>
+</ul>
+<p>At the moments, the search tips only appear on the Open Data Search page. Other
+PD types will be added at a later date.</p>
                               
                               
                             </li>
                           
                         </ul>
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
-                              <p>Added English and French versions of a new Search Tips page to the Search app.
-  - https://search.open.canada.ca/page/help/?opendata
-  - https://rechercher.ouvert.canada.ca/page/aide/</p>
-<p>At the moments, the search tips only appear on the Open Data Search page. Other
-PD types will be added at a later date.</p>
+                              <p>Minor field name and code changes to the NAP 5 Tracker to sync it with the latest data from the portal</p>
                               
                               
                             </li>
@@ -842,7 +872,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -888,24 +918,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
-                        <ul class="changes-list">
-                          
-                            <li>
-                              <p>New <code>canada_theme</code> plugin contains merged Internal and Public templates, assets, and new <code>is_registry</code> global.</p>
-                              
-                              
-                            </li>
-                          
-                            <li>
-                              <p>Added new CSS layout for Datatables' column visibility modal.</p>
-                              
-                              
-                            </li>
-                          
-                        </ul>
-                      
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -928,7 +941,7 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -939,6 +952,23 @@ PD types will be added at a later date.</p>
                           
                             <li>
                               <p>Bugfix for the validation report not rendering because it does not recognize this.ckan</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>New <code>canada_theme</code> plugin contains merged Internal and Public templates, assets, and new <code>is_registry</code> global.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added new CSS layout for Datatables' column visibility modal.</p>
                               
                               
                             </li>
@@ -962,7 +992,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -992,7 +1022,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1022,7 +1052,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1068,7 +1098,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1115,7 +1145,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1151,7 +1181,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1201,22 +1231,22 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
-                              <p>Update 'Get started' sentence on the FAQ page for the Registry users.</p>
+                              <p>Trim Proactive Disclosure text fields to 28kB for Solr record indexing. This affects PD types that do not use the Advanced Search (Django) app.</p>
                               
                               
                             </li>
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
-                              <p>Trim Proactive Disclosure text fields to 28kB for Solr record indexing. This affects PD types that do not use the Advanced Search (Django) app.</p>
+                              <p>Update 'Get started' sentence on the FAQ page for the Registry users.</p>
                               
                               
                             </li>
@@ -1257,7 +1287,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1318,7 +1348,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1348,7 +1378,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1382,7 +1412,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1403,7 +1433,7 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1449,7 +1479,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1479,7 +1509,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1507,18 +1537,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
-                        <ul class="changes-list">
-                          
-                            <li>
-                              <p>Uploading an XLS file will now redirect the user to the correct Recombinant Resource.</p>
-                              
-                              
-                            </li>
-                          
-                        </ul>
-                      
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1529,6 +1548,17 @@ PD types will be added at a later date.</p>
                           
                             <li>
                               <p>Added test coverage for Recombinant table definitions.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Uploading an XLS file will now redirect the user to the correct Recombinant Resource.</p>
                               
                               
                             </li>
@@ -1569,7 +1599,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1599,7 +1629,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1637,7 +1667,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1681,7 +1711,7 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1698,7 +1728,7 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1734,40 +1764,54 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
                               <p>Add support for French Boolean search keywords and add a note to the technical documentation
-explaining how to use Boolean search terms including:
-  - AND / ET
-  - OR / OU
-  - MOT / PAS
-  - Quotation marks ""
-  - Parenthesis ()
-  - Asterisks *</p>
+explaining how to use Boolean search terms including:</p>
+<ul>
+<li>
+<p>AND / ET</p>
+</li>
+<li>
+<p>OR / OU</p>
+</li>
+<li>
+<p>MOT / PAS</p>
+</li>
+<li>
+<p>Quotation marks ""</p>
+</li>
+<li>
+<p>Parenthesis ()</p>
+</li>
+<li>
+<p>Asterisks *</p>
+</li>
+</ul>
                               
                               
                             </li>
                           
                         </ul>
                       
-                        <h4>Changes</h4>
-                        <ul class="changes-list">
-                          
-                            <li>
-                              <p>Updated Search to use the latest version of WET/CDTS, 5.0.1</p>
-                              
-                              
-                            </li>
-                          
-                        </ul>
-                      
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
                               <p>Fixed issue with the "Show similar records" links in the Travel PD search</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Updated Search to use the latest version of WET/CDTS, 5.0.1</p>
                               
                               
                             </li>
@@ -1799,7 +1843,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1827,7 +1871,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1855,7 +1899,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1866,7 +1910,7 @@ explaining how to use Boolean search terms including:
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1910,7 +1954,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1940,7 +1984,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1968,7 +2012,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -1998,7 +2042,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2026,7 +2070,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2056,7 +2100,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2094,7 +2138,7 @@ explaining how to use Boolean search terms including:
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2107,7 +2151,7 @@ for the maps that are currently being displayed.</p>
                           
                         </ul>
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2145,7 +2189,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2173,7 +2217,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2217,7 +2261,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2247,7 +2291,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2283,7 +2327,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2300,7 +2344,7 @@ removed title capitalization styling on dataset titles.</p>
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2344,7 +2388,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2382,7 +2426,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2410,7 +2454,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2446,7 +2490,7 @@ removed title capitalization styling on dataset titles.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2457,7 +2501,7 @@ removed title capitalization styling on dataset titles.</p>
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2498,7 +2542,7 @@ CKAN will continue to receive the expected basic list.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Changes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2526,7 +2570,7 @@ CKAN will continue to receive the expected basic list.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2570,7 +2614,7 @@ CKAN will continue to receive the expected basic list.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2583,7 +2627,7 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
-                        <h4>Removals</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-trash change-canada-type-icon"></i>&nbsp;&nbsp;Removals</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2613,7 +2657,7 @@ CKAN will continue to receive the expected basic list.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2642,7 +2686,7 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2665,18 +2709,7 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
-                        <h4>Changes</h4>
-                        <ul class="changes-list">
-                          
-                            <li>
-                              <p>Improved HTML layouts and uniformity across search forms.</p>
-                              
-                              
-                            </li>
-                          
-                        </ul>
-                      
-                        <h4>Removals</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-trash change-canada-type-icon"></i>&nbsp;&nbsp;Removals</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2687,6 +2720,17 @@ CKAN will continue to receive the expected basic list.</p>
                           
                             <li>
                               <p>Remove the Suggest a Dataset status update link from Registry homepage</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Improved HTML layouts and uniformity across search forms.</p>
                               
                               
                             </li>
@@ -2710,7 +2754,7 @@ CKAN will continue to receive the expected basic list.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Bugfixes</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
                         <ul class="changes-list">
                           
                             <li>
@@ -2740,7 +2784,7 @@ CKAN will continue to receive the expected basic list.</p>
                   <div class="panel-body">
                     
                       
-                        <h4>Features</h4>
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
                         <ul class="changes-list">
                           
                             <li>
