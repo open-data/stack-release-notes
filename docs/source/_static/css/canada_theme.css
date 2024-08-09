@@ -249,6 +249,36 @@ ul.changes-list li span{
 
 }
 
+ul.changes-list ul{
+
+  list-style: disc;
+  padding-left: 30px;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+
+}
+
+ul.changes-list ul li{
+
+  list-style: disc;
+
+}
+
+ul.changes-list ol{
+
+  list-style: decimal;
+  padding-left: 30px;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+
+}
+
+ul.changes-list ol li{
+
+  list-style: decimal;
+
+}
+
 span.change-sub-note{
 
   font-weight: 600;
@@ -265,6 +295,18 @@ span.change-canada-only{
 span.change-backport{
 
   color: var(--can-info);
+
+}
+
+.change-canada-type-title{
+
+  position: relative;
+
+}
+
+.change-canada-type-icon::before{
+
+  color: rgba(0, 0, 0, 0.525);
 
 }
 

@@ -12,7 +12,8 @@ from bleach import clean as bleach_clean, ALLOWED_TAGS, ALLOWED_ATTRIBUTES
 MARKDOWN_TAGS = set([
     'del', 'dd', 'dl', 'dt', 'h1', 'h2',
     'h3', 'img', 'kbd', 'p', 'pre', 's',
-    'sup', 'sub', 'strike', 'br', 'hr'
+    'sup', 'sub', 'strike', 'br', 'hr',
+    'ul', 'ol', 'li',
 ]).union(ALLOWED_TAGS)
 
 MARKDOWN_ATTRIBUTES = copy.deepcopy(ALLOWED_ATTRIBUTES)
@@ -97,6 +98,15 @@ REMOVAL_TYPES = [
     'removal',
 ]
 REMOVAL_LABEL = 'Removals'
+
+LABEL_MAP = [FEATURE_LABEL, FIX_LABEL, REMOVAL_LABEL, CHANGES_LABEL, MIGRATION_LABEL]
+LABEL_ICONS = {
+    FEATURE_LABEL: 'fa-code-fork',
+    FIX_LABEL: 'fa-wrench',
+    REMOVAL_LABEL: 'fa-trash',
+    CHANGES_LABEL: 'fa-code',
+    MIGRATION_LABEL: 'fa-database',
+}
 
 
 # Configuration file for the Sphinx documentation builder.
@@ -440,7 +450,11 @@ def parsed_release_hashses():
                 for project_name, project_stack in changelog_dicts.items():
                     for repo, changelog_dict in project_stack.items():
                         if repo in parsed_release_hashses[release][project_name]:
-                            parsed_release_hashses[release][project_name][repo]['change_logs'] = changelog_dict
+                            sorted_dict = {}
+                            for _key in LABEL_MAP:
+                                if _key in changelog_dict:
+                                    sorted_dict[_key] = changelog_dict[_key]
+                            parsed_release_hashses[release][project_name][repo]['change_logs'] = sorted_dict
 
     sorted_dict = dict(reversed(parsed_release_hashses.items()))
     parsed_release_hashses = sorted_dict
@@ -481,8 +495,18 @@ def render_markdown(data):
         If False all html tags are removed.
     :type allow_html: bool
     """
+    #FIXME: sublists
     if not data:
         return ''
+    markdown_lists = [
+        '\n  -',
+        '\n  *',
+        '\n  +',
+        '\n  1.',
+    ]
+    for match in markdown_lists:
+        if match in data:
+            data = data.replace(match, '\n%s' % match)
     data = RE_MD_HTML_TAGS.sub('', data.strip())
     data = bleach_clean(
         markdown(data), strip=True,
@@ -494,6 +518,7 @@ release_tags, release_hashes = get_filled_releases()
 html_context = {
     'release_tags': release_tags,
     'release_hashes': release_hashes,
+    'type_icons': LABEL_ICONS,
     'version_prefix': FRONTEND_VERSION_PREFIX,
     'render_markdown': render_markdown,
 }
