@@ -1,0 +1,46 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add feature to delete selected rows from pd preview table.",
+                    "hash": "b5f74bcf0593b2b3a03ae5214998371863cfcf45"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "- Fix translation for content type\n- Add space with colon (:) on forms\n",
+                    "hash": "7b27cf2fb82178028909e40ae0b378dedc49fdef"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improvements made to the Contracts search to better handle minor data variations.\nResult is fewer indexing errors reported during loading of contracts data.\n",
+                    "hash": "8df5a9f99dc87aa486c7ef96089ce9988dc3dc39"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "og": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display invitation-manager survey pop-up on select pages and views\n",
+                    "hash": "280d1841aabf841483f34cca966c199bc161f56f"
+                }
+            ]
+        }
+    }
+}
