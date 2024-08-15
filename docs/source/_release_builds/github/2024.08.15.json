@@ -1,0 +1,467 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "url": "https://api.github.com/repos/open-data/ckanext-canada/compare/0317430b5d84e249b1ba3b5688be64cef71c7c40...44b433d1632b2519301de009ce761d3c3b0ad843",
+            "html_url": "https://github.com/open-data/ckanext-canada/compare/0317430b5d84e249b1ba3b5688be64cef71c7c40...44b433d1632b2519301de009ce761d3c3b0ad843",
+            "permalink_url": "https://github.com/open-data/ckanext-canada/compare/open-data:0317430...open-data:44b433d",
+            "diff_url": "https://github.com/open-data/ckanext-canada/compare/0317430b5d84e249b1ba3b5688be64cef71c7c40...44b433d1632b2519301de009ce761d3c3b0ad843.diff",
+            "patch_url": "https://github.com/open-data/ckanext-canada/compare/0317430b5d84e249b1ba3b5688be64cef71c7c40...44b433d1632b2519301de009ce761d3c3b0ad843.patch",
+            "base_commit": {
+                "sha": "0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                "node_id": "C_kwDOAGzkrtoAKDAzMTc0MzBiNWQ4NGUyNDliMWJhM2I1Njg4YmU2NGNlZjcxYzdjNDA",
+                "commit": {
+                    "author": {
+                        "name": "Rabia Sajjad",
+                        "email": "rabiasajjad.dev@gmail.com",
+                        "date": "2024-08-14T13:48:09Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2024-08-14T13:48:09Z"
+                    },
+                    "message": "Merge pull request #1498 from open-data/select-delete\n\nadd feature to delete selected pd records",
+                    "tree": {
+                        "sha": "7647119a2f30897a91e43011f75a6de192488149",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/7647119a2f30897a91e43011f75a6de192488149"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmvLWZCRC1aQ7uu5UhlAAAFtsQAEbXCumXogYftJk2g7CeVj6m\nXX2YlVPEymU97d3jP/f7wESxADxOpgeEY/WCbDsKTkXXLPFWmnMLgKKiGeHZWlpE\nDc1c/EPk6qnYd7YADN58ovt57knPoUz9EbNVkwbKVucggc8rRc+Zkm8GCz5o+nAR\nQeV52b/WhH6udyUEzI5ENLGEjTURPRf0I/apK36K00D2Wi9TpX0AJuPjJQf03SlR\n6rhg/5jP2q6tHYb81B9tyjPcTbAi4qLgJ8yHSo/LfKFgVFSVA4THo1A2p3IZLmBX\nNOX0fd+pUxiVKBgAc1XbyY3wtvc+KgjYU5Un4kbpBG2+0RZazQc0eQOfLhcyXiaN\n2/wG4LqZ80k36YwOcMW6r4zHQZIhOT22GIiSEbi1xTOdiJibuN4j4i6E32VldsrT\nW70DCro+jVmYDCstlV52UHmMk3dDaokbdxmnQ5l6Pz2ENlesV26Wk+QA00O8bOp7\n0FEMXlNPHMkrgUPdMI0GJl/HGdKN7R2M9KnUpMYSgFmRLDM8h67Tx4xdCGkMoKrr\niv11yZLzOrOrPJOiboKgLA8HAWj4OOA9giKVYLQKk321RpUbLlZMEuWDnPTyXzih\nQem8rDQwTGJ8BFatUGuUgnLs9eAUt9cJWB8z/7ydNos8fKKczo3sAp6iV7Xvb+WS\nHxOJ/WQ7r+H4CMQaFk/U\n=z6ne\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree 7647119a2f30897a91e43011f75a6de192488149\nparent 58b492ef4fa88e41e4105846e2658f311a0da1ad\nparent 52f0f0d13f456a88ab6d367c4139aae3fc569f52\nauthor Rabia Sajjad <rabiasajjad.dev@gmail.com> 1723643289 -0400\ncommitter GitHub <noreply@github.com> 1723643289 -0400\n\nMerge pull request #1498 from open-data/select-delete\n\nadd feature to delete selected pd records"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40/comments",
+                "author": {
+                    "login": "RabiaSajjad",
+                    "id": 25936398,
+                    "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/RabiaSajjad",
+                    "html_url": "https://github.com/RabiaSajjad",
+                    "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                    "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                    "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                    "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                    "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "58b492ef4fa88e41e4105846e2658f311a0da1ad",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/58b492ef4fa88e41e4105846e2658f311a0da1ad",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/58b492ef4fa88e41e4105846e2658f311a0da1ad"
+                    },
+                    {
+                        "sha": "52f0f0d13f456a88ab6d367c4139aae3fc569f52",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/52f0f0d13f456a88ab6d367c4139aae3fc569f52",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/52f0f0d13f456a88ab6d367c4139aae3fc569f52"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                "node_id": "C_kwDOAGzkrtoAKDAzMTc0MzBiNWQ4NGUyNDliMWJhM2I1Njg4YmU2NGNlZjcxYzdjNDA",
+                "commit": {
+                    "author": {
+                        "name": "Rabia Sajjad",
+                        "email": "rabiasajjad.dev@gmail.com",
+                        "date": "2024-08-14T13:48:09Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2024-08-14T13:48:09Z"
+                    },
+                    "message": "Merge pull request #1498 from open-data/select-delete\n\nadd feature to delete selected pd records",
+                    "tree": {
+                        "sha": "7647119a2f30897a91e43011f75a6de192488149",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/7647119a2f30897a91e43011f75a6de192488149"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmvLWZCRC1aQ7uu5UhlAAAFtsQAEbXCumXogYftJk2g7CeVj6m\nXX2YlVPEymU97d3jP/f7wESxADxOpgeEY/WCbDsKTkXXLPFWmnMLgKKiGeHZWlpE\nDc1c/EPk6qnYd7YADN58ovt57knPoUz9EbNVkwbKVucggc8rRc+Zkm8GCz5o+nAR\nQeV52b/WhH6udyUEzI5ENLGEjTURPRf0I/apK36K00D2Wi9TpX0AJuPjJQf03SlR\n6rhg/5jP2q6tHYb81B9tyjPcTbAi4qLgJ8yHSo/LfKFgVFSVA4THo1A2p3IZLmBX\nNOX0fd+pUxiVKBgAc1XbyY3wtvc+KgjYU5Un4kbpBG2+0RZazQc0eQOfLhcyXiaN\n2/wG4LqZ80k36YwOcMW6r4zHQZIhOT22GIiSEbi1xTOdiJibuN4j4i6E32VldsrT\nW70DCro+jVmYDCstlV52UHmMk3dDaokbdxmnQ5l6Pz2ENlesV26Wk+QA00O8bOp7\n0FEMXlNPHMkrgUPdMI0GJl/HGdKN7R2M9KnUpMYSgFmRLDM8h67Tx4xdCGkMoKrr\niv11yZLzOrOrPJOiboKgLA8HAWj4OOA9giKVYLQKk321RpUbLlZMEuWDnPTyXzih\nQem8rDQwTGJ8BFatUGuUgnLs9eAUt9cJWB8z/7ydNos8fKKczo3sAp6iV7Xvb+WS\nHxOJ/WQ7r+H4CMQaFk/U\n=z6ne\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree 7647119a2f30897a91e43011f75a6de192488149\nparent 58b492ef4fa88e41e4105846e2658f311a0da1ad\nparent 52f0f0d13f456a88ab6d367c4139aae3fc569f52\nauthor Rabia Sajjad <rabiasajjad.dev@gmail.com> 1723643289 -0400\ncommitter GitHub <noreply@github.com> 1723643289 -0400\n\nMerge pull request #1498 from open-data/select-delete\n\nadd feature to delete selected pd records"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40/comments",
+                "author": {
+                    "login": "RabiaSajjad",
+                    "id": 25936398,
+                    "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/RabiaSajjad",
+                    "html_url": "https://github.com/RabiaSajjad",
+                    "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                    "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                    "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                    "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                    "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "58b492ef4fa88e41e4105846e2658f311a0da1ad",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/58b492ef4fa88e41e4105846e2658f311a0da1ad",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/58b492ef4fa88e41e4105846e2658f311a0da1ad"
+                    },
+                    {
+                        "sha": "52f0f0d13f456a88ab6d367c4139aae3fc569f52",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/52f0f0d13f456a88ab6d367c4139aae3fc569f52",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/52f0f0d13f456a88ab6d367c4139aae3fc569f52"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 3,
+            "behind_by": 0,
+            "total_commits": 3,
+            "commits": [
+                {
+                    "sha": "3c03ba013d345264280be6679d099e23adf150b6",
+                    "node_id": "C_kwDOAGzkrtoAKDNjMDNiYTAxM2QzNDUyNjQyODBiZTY2NzlkMDk5ZTIzYWRmMTUwYjY",
+                    "commit": {
+                        "author": {
+                            "name": "Rabia Sajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-08-15T15:23:23Z"
+                        },
+                        "committer": {
+                            "name": "Rabia Sajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-08-15T15:23:23Z"
+                        },
+                        "message": "update ministers json",
+                        "tree": {
+                            "sha": "a06b32f435df939b6e3bdaabe22e295e147e0a30",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/a06b32f435df939b6e3bdaabe22e295e147e0a30"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/3c03ba013d345264280be6679d099e23adf150b6",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/3c03ba013d345264280be6679d099e23adf150b6",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/3c03ba013d345264280be6679d099e23adf150b6",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/3c03ba013d345264280be6679d099e23adf150b6/comments",
+                    "author": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/0317430b5d84e249b1ba3b5688be64cef71c7c40"
+                        }
+                    ]
+                },
+                {
+                    "sha": "30d89c7b738ff8247bc8bd12294ebc12bdaa935c",
+                    "node_id": "C_kwDOAGzkrtoAKDMwZDg5YzdiNzM4ZmY4MjQ3YmM4YmQxMjI5NGViYzEyYmRhYTkzNWM",
+                    "commit": {
+                        "author": {
+                            "name": "Rabia Sajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-08-15T15:26:20Z"
+                        },
+                        "committer": {
+                            "name": "Rabia Sajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-08-15T15:26:20Z"
+                        },
+                        "message": "add changelog for PR# 1502",
+                        "tree": {
+                            "sha": "3762f05b38c57620c57019cc6ea36f0570b03810",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/3762f05b38c57620c57019cc6ea36f0570b03810"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/30d89c7b738ff8247bc8bd12294ebc12bdaa935c",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/30d89c7b738ff8247bc8bd12294ebc12bdaa935c",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/30d89c7b738ff8247bc8bd12294ebc12bdaa935c",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/30d89c7b738ff8247bc8bd12294ebc12bdaa935c/comments",
+                    "author": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "3c03ba013d345264280be6679d099e23adf150b6",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/3c03ba013d345264280be6679d099e23adf150b6",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/3c03ba013d345264280be6679d099e23adf150b6"
+                        }
+                    ]
+                },
+                {
+                    "sha": "44b433d1632b2519301de009ce761d3c3b0ad843",
+                    "node_id": "C_kwDOAGzkrtoAKDQ0YjQzM2QxNjMyYjI1MTkzMDFkZTAwOWNlNzYxZDNjM2IwYWQ4NDM",
+                    "commit": {
+                        "author": {
+                            "name": "Rabia Sajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-08-15T15:47:27Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2024-08-15T15:47:27Z"
+                        },
+                        "message": "Merge pull request #1502 from open-data/update-ministers-json\n\nupdate ministers json",
+                        "tree": {
+                            "sha": "3762f05b38c57620c57019cc6ea36f0570b03810",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/3762f05b38c57620c57019cc6ea36f0570b03810"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/44b433d1632b2519301de009ce761d3c3b0ad843",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmviMPCRC1aQ7uu5UhlAAAsggQAJA4IiyOhyk2YM2zeAi4jbua\nmo5B0APli+kMpTZ4B5KCkhyUX/Tk/5lnDuVXMePS/QCiLyIk2NqH5qFpKlqE6w26\nDCDC/pb/P7TiK9xJ49gdOAaJDHTMPPPtm1NChYvPY5ARsaRfLQvHf2jNMYS6vlZ8\nGSsHUJ+R5qS4/fiE/qiW15YP9+JvFS9ksNuVEciqUo6+AMDELcSoZ2BvfvMInPKf\nBKovSoTc364vTwKq5fiGI15BC4DmSLuwR3Ybyfocec10hbpALv7JPjm4GYgfroG2\nzZypu3g2KxPhbySvvZA/F7kmA7TjYw+wOcAhxPFS7XGJYV6zH4025FsvghCMsuwK\nKP/VmIqm4zpC9DMvDFZwvECpCLsV8SRVelM+f9b8uAcoDTgUilpJQegQDs3JLY1X\nKiMY0MZBMStnX9L9Tv2bpKCnXLs0A3MRIKzcU+qo4+xMZ/NN6+96wbvr80oqwDIt\nS26ys4Yq00ix48ewoHuUJ1Cup3iU52Cgh/uLFdrDWnIIaElAAhc6F+ieo18SEOZx\nCmthpDx3GZCbb7b3j524j/Kv6GszgaljdeURRG0Iji1ncQOy2iOC5o3MFu8jBtQw\n4D3HPKbG71pHLmCpdVF0q7/p02myKSBzjs4ycsZAeRKKgnGCokm4xPUM5UFBm6jy\nlCB2kSArdQ/6QE+Sif0m\n=3L7u\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree 3762f05b38c57620c57019cc6ea36f0570b03810\nparent 0317430b5d84e249b1ba3b5688be64cef71c7c40\nparent 30d89c7b738ff8247bc8bd12294ebc12bdaa935c\nauthor Rabia Sajjad <rabiasajjad.dev@gmail.com> 1723736847 -0400\ncommitter GitHub <noreply@github.com> 1723736847 -0400\n\nMerge pull request #1502 from open-data/update-ministers-json\n\nupdate ministers json"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/44b433d1632b2519301de009ce761d3c3b0ad843",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/44b433d1632b2519301de009ce761d3c3b0ad843",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/44b433d1632b2519301de009ce761d3c3b0ad843/comments",
+                    "author": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0317430b5d84e249b1ba3b5688be64cef71c7c40",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/0317430b5d84e249b1ba3b5688be64cef71c7c40"
+                        },
+                        {
+                            "sha": "30d89c7b738ff8247bc8bd12294ebc12bdaa935c",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/30d89c7b738ff8247bc8bd12294ebc12bdaa935c",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/30d89c7b738ff8247bc8bd12294ebc12bdaa935c"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "56f8d77a1731ed8d43c9f67664b93ef83a78ae59",
+                    "filename": "bin/download_minister.py",
+                    "status": "modified",
+                    "additions": 1,
+                    "deletions": 1,
+                    "changes": 2,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/44b433d1632b2519301de009ce761d3c3b0ad843/bin%2Fdownload_minister.py",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/44b433d1632b2519301de009ce761d3c3b0ad843/bin%2Fdownload_minister.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/bin%2Fdownload_minister.py?ref=44b433d1632b2519301de009ce761d3c3b0ad843",
+                    "patch": "@@ -5,7 +5,7 @@\n import sys\n import os.path\n from datetime import date\n-from urllib import urlopen\n+from urllib.request import urlopen\n from bs4 import BeautifulSoup\n import re\n "
+                },
+                {
+                    "sha": "2bd4a32bfac90665a32f49295bbdf7af2c62b065",
+                    "filename": "changes/1502.changes",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/44b433d1632b2519301de009ce761d3c3b0ad843/changes%2F1502.changes",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/44b433d1632b2519301de009ce761d3c3b0ad843/changes%2F1502.changes",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F1502.changes?ref=44b433d1632b2519301de009ce761d3c3b0ad843",
+                    "patch": "@@ -0,0 +1 @@\n+Update the ministers json file\n\\ No newline at end of file"
+                },
+                {
+                    "sha": "45842f9a208a6ada672e7bd92452e4baa3b0cbb2",
+                    "filename": "ckanext/canada/tables/choices/minister.json",
+                    "status": "modified",
+                    "additions": 7,
+                    "deletions": 0,
+                    "changes": 7,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/44b433d1632b2519301de009ce761d3c3b0ad843/ckanext%2Fcanada%2Ftables%2Fchoices%2Fminister.json",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/44b433d1632b2519301de009ce761d3c3b0ad843/ckanext%2Fcanada%2Ftables%2Fchoices%2Fminister.json",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Ftables%2Fchoices%2Fminister.json?ref=44b433d1632b2519301de009ce761d3c3b0ad843",
+                    "patch": "@@ -723,6 +723,13 @@\n     \"ministers\":[\n       {\n         \"end_date\":\"\",\n+        \"name\":\"Steven MacKinnon\",\n+        \"name_en\":\"MacKinnon, Steven (Hon.)\",\n+        \"name_fr\":\"MacKinnon, Steven (L’hon.)\",\n+        \"start_date\":\"2024-07-19T00:00:00\"\n+      },\n+      {\n+        \"end_date\":\"2024-07-19T09:23:59\",\n         \"name\":\"Seamus O'Regan\",\n         \"name_en\":\"O'Regan, Seamus (Hon.)\",\n         \"name_fr\":\"O'Regan, Seamus (L’hon.)\","
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update the ministers json file",
+                    "hash": "2bd4a32bfac90665a32f49295bbdf7af2c62b065"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
