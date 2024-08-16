@@ -1,0 +1,27 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Check for `None` type in update_pd_record for the money field\n",
+                    "hash": "8ca07735891a2b30a7dd3128ffbba696a118ea01"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Have added a new custom Solr field type that is very similar to the existing string type but allows for\ncase-insensitive matching. Intended for key fields like Reference Numbers or other identifiers.\n\nThe following Custom Search Fields were updated:\n\n - QP Notes: reference_number\n - Briefing Titles: tracking_number\n - Travel: ref_number\n - Grants: \trecipient_legal_name,\n            recipient_country,\n            ref_number,\n            recipient_postal_code,\n            recipient_city_en,\n            recipient_city_fr,\n            naics_identifier\n\n\n",
+                    "hash": "f35a2b6ab080b846636659223058c73a707445a3"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
