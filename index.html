@@ -32,6 +32,22 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.08.16">
+          
+            
+              <div class="github-api-container" id="github-2024.08.16-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.08.16-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.08.15">
           
             
@@ -413,6 +429,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.08.16" class="release-nav-item"><a href="#2024.08.16">v.2024.08.16</a></li>
+          
             <li data-release="2024.08.15" class="release-nav-item"><a href="#2024.08.15">v.2024.08.15</a></li>
           
             <li data-release="2024.08.14" class="release-nav-item"><a href="#2024.08.14">v.2024.08.14</a></li>
@@ -461,6 +479,100 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2024.08.16">
+            <h2>
+              v.2024.08.16
+              <a class="headerlink" href="#2024.08.16"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.08.16-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.08.16-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Check for <code>None</code> type in update_pd_record for the money field</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/44b433d1632b2519301de009ce761d3c3b0ad843...0b399f270a848103de917263405a228ed0fe78e5">View it on GitHub</a>
+                    <span class="release-hash-label">[44b433d16...0b399f270]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2024.08.16-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2024.08.16-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Have added a new custom Solr field type that is very similar to the existing string type but allows for
+case-insensitive matching. Intended for key fields like Reference Numbers or other identifiers.</p>
+<p>The following Custom Search Fields were updated:</p>
+<ul>
+<li>QP Notes: reference_number</li>
+<li>Briefing Titles: tracking_number</li>
+<li>Travel: ref_number</li>
+<li>Grants:  recipient_legal_name,
+            recipient_country,
+            ref_number,
+            recipient_postal_code,
+            recipient_city_en,
+            recipient_city_fr,
+            naics_identifier</li>
+</ul>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/797471e833b4a003e3225f24a80d3d112b3075f7...1ff0732ba6218656d89f275a249d18e9b2cbcc09">View it on GitHub</a>
+                    <span class="release-hash-label">[797471e83...1ff0732ba]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2024.08.15">
             <h2>
