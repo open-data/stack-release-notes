@@ -1,0 +1,30 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Enabling upload of the QPNOTES-nil.csv file now that there is nothing-to-report data for QPNOTES PDs.",
+                    "hash": "e8f041f344bd7c21cb20567e338671985320adce"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The URL on resource pages shows English URL from cloudstorage for resources uploaded to the datastore. The immediate fix is to remove the URL since it is repetitive. This would not have any impact on UX because users can use the blue button to download resources.",
+                    "hash": "d5bbcba5efbef6d59a22836683bc3c8ca13142bf"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "add published_resource_id for the QPNOTES-nil.csv resource file. Needed for PR 1507",
+                    "hash": "466172d38f163af0deeb1a5c67e604f50b4e7678"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
