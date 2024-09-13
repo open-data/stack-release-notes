@@ -1,0 +1,41 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "- show title with truncated link text\n- show title in breadcrumbs\n- increase breadcrumb length to 80 for package and resource\n- increase title length from ckan's default 80 to 150 before truncating\n- use the breadcrumb trail guidance to not display the current page\nat the end of the breadcrumb trail (linked or unlinked) for the Portal only\nhttps://design.canada.ca/common-design-patterns/breadcrumb-trail.html\n",
+                    "hash": "3fa1d5200de0ea6cf051d43f30ed1a3caad01517"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add an alert on login page for users to change password in order to comply with the new password requirements.",
+                    "hash": "248a851833efa2f207b800b1ba5492df116d4ab1"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "nap5: enforce validation on status, progress fields\n",
+                    "hash": "ddd1741106b6a1353cbd473f2cb061b65b6d7554"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removed 100,000 row limit from search result downloads\n",
+                    "hash": "507d7439522f968b7ba55e39d407bf938cc392db"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
