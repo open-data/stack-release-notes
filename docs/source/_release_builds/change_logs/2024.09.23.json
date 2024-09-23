@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Display accented characters properly in Excel for filtered results downloaded using datatablesview.\n",
+                    "hash": "34912e19fca296ea9849c31f1f1c5773a634e84d"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Bugfix for character encoding on title_en and title_fr columns on the Open Government Portal Department List dataset\n",
+                    "hash": "3fed28b4ac000a581b97afc941c33fcddcdd3958"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
