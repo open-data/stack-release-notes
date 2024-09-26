@@ -1,0 +1,118 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the binding of the `table-toggle-more` JS CKAN module.\n",
+                    "hash": "2292abd112a838394f0f1b9ac4c5f224c12f1ee5"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Markdown no longer renders heading and image tags for accessibility reasons.\n",
+                    "hash": "6ce59a81d83f999fae4d466b578692f4d1424eb5"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "DataStore now supports foreign key constraints. Supply `foreign_keys` dictionary to the `datastore_create` action method.\n",
+                    "hash": "cc8a128b868477001185821329d4013987508c68"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Create and Update PD Record views will now log the fatal warnings with their tracebacks instead of eating errors.\n",
+                    "hash": "4704a26ba46d663d06d09252633dc9d406984c35"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "DataDictionary description fields now renders the markdown contents.\n",
+                    "hash": "bd305d13367711484dad7901ccac4b095ea588ae"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Released new Service Inventory schema.\n",
+                    "hash": "0039315baa554d4a23afb49040bb46383a7f9c1f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Re-enable service inventory in the Makefile. Search will continue to stay disabled at this time.\nAdd filters for service inventory tables for populating the following fields:\n  - num_applications_total\n  - program_name_en and program_name_fr\n  - performance\n  - target_met\n",
+                    "hash": "b333ad10f03686388ea8a94a0c3f86546fe9c550"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `format_trigger_error` method to format Database errors in a pythonian way to support language translations in the CKAN framework.\n",
+                    "hash": "55cb0d35a1eb2ec74fb29fdf8e96accafe96af07"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The DataDictionary form will now show the Recombinant resource's schema as readonly fields. The DataDictionary front-end will now show non-schema fields such as any additional fields added by filter scripts, allowing normal usage of DataDictionary for these fields.\n",
+                    "hash": "cddea0c7d9ccf9b19b207b6dc45620b59cf9ed92"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Occurence from field schemas will now display in the Excel reference sheet and in the DataDictionary front-end.\n",
+                    "hash": "969907c3cfe98547c43000a8531c64c2e06145fb"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Uploading an Excel file now requires all worksheets to pass validation for the records to be committed to the database.\n",
+                    "hash": "af59c885f4d38198be1022bd2af99e1eb06692e6"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with full text choices not spanning 2 columns in the Excel reference sheet.\n",
+                    "hash": "3172ebd34dbd42cd5c30608ba77edac5231c443a"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Recombinant field schemas now support `max_chars`, limitting the field value to a character count with an excel formula. Use the `max_char_error` Database trigger/function from the Canada extension.\n",
+                    "hash": "4f81dd5f287dd6555366494ba41b971323192d11"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The `datastore_info` action method now shows the field schema in the field info for Recombinant resources and Published resources.\n",
+                    "hash": "c66871d7ec7ea7ef8d842c22f7e5d0951b05ccc2"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Recombinant chromos now support DataStore foreign key constraints. The Recombinant plugin limits all foreign key usages to Recombinant resources.\n",
+                    "hash": "6309dafa131c8f597635fa3806a57d812b332d7e"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
