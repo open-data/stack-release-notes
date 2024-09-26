@@ -32,6 +32,24 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.09.26">
+          
+            
+              <div class="github-api-container" id="github-2024.09.26-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.09.26-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.09.26-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.09.23">
           
             
@@ -469,6 +487,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.09.26" class="release-nav-item"><a href="#2024.09.26">v.2024.09.26</a></li>
+          
             <li data-release="2024.09.23" class="release-nav-item"><a href="#2024.09.23">v.2024.09.23</a></li>
           
             <li data-release="2024.09.13" class="release-nav-item"><a href="#2024.09.13">v.2024.09.13</a></li>
@@ -525,6 +545,224 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2024.09.26">
+            <h2>
+              v.2024.09.26
+              <a class="headerlink" href="#2024.09.26"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.09.26-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2024.09.26-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>DataStore now supports foreign key constraints. Supply <code>foreign_keys</code> dictionary to the <code>datastore_create</code> action method.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed an issue with the binding of the <code>table-toggle-more</code> JS CKAN module.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Markdown no longer renders heading and image tags for accessibility reasons.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/939d61e656a75baf9740d69d42cae9c29c3412f1...c2b1c08885f75f9ec6259b0549492a2522973722">View it on GitHub</a>
+                    <span class="release-hash-label">[939d61e65...c2b1c0888]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.09.26-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.09.26-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released new Service Inventory schema.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Re-enable service inventory in the Makefile. Search will continue to stay disabled at this time.
+Add filters for service inventory tables for populating the following fields:</p>
+<ul>
+<li>
+<p>num_applications_total</p>
+</li>
+<li>
+<p>program_name_en and program_name_fr</p>
+</li>
+<li>
+<p>performance</p>
+</li>
+<li>
+<p>target_met</p>
+</li>
+</ul>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Create and Update PD Record views will now log the fatal warnings with their tracebacks instead of eating errors.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>DataDictionary description fields now renders the markdown contents.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/0c40c2b6973c4b0f828592fd22df1696f1b73ed4...9b8cc8e87d5269d5450338c1be29d2c6c90b7518">View it on GitHub</a>
+                    <span class="release-hash-label">[0c40c2b69...9b8cc8e87]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.09.26-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2024.09.26-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Recombinant field schemas now support <code>max_chars</code>, limitting the field value to a character count with an excel formula. Use the <code>max_char_error</code> Database trigger/function from the Canada extension.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The <code>datastore_info</code> action method now shows the field schema in the field info for Recombinant resources and Published resources.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Recombinant chromos now support DataStore foreign key constraints. The Recombinant plugin limits all foreign key usages to Recombinant resources.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed an issue with full text choices not spanning 2 columns in the Excel reference sheet.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>format_trigger_error</code> method to format Database errors in a pythonian way to support language translations in the CKAN framework.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The DataDictionary form will now show the Recombinant resource's schema as readonly fields. The DataDictionary front-end will now show non-schema fields such as any additional fields added by filter scripts, allowing normal usage of DataDictionary for these fields.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The Occurence from field schemas will now display in the Excel reference sheet and in the DataDictionary front-end.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Uploading an Excel file now requires all worksheets to pass validation for the records to be committed to the database.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/eb030994b34fb36f9e92ebade6c9fabd590a01d2...10d1ebc891596dab75601dc86a4461c9882e3735">View it on GitHub</a>
+                    <span class="release-hash-label">[eb030994b...10d1ebc89]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2024.09.23">
             <h2>
