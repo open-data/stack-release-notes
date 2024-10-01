@@ -1,0 +1,34 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "fix: datatables column headings missing spaces\nremove broken nbsp-replacement code instead of fixing\n(doesn't handle other whitespace characters)\n",
+                    "hash": "1b396f24a03b4ce7ed7d7bd38b183a862634121e"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list after changes on Sept 19, 2024.",
+                    "hash": "9f80bc041bccbfc0ecd245af3331d6e461a61851"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed language switching in Flask requests that was affecting the XLSX DataDictionary and JSON Schema downloads.\n",
+                    "hash": "03c06cd28eaae34c2503154523fc0b71af063a66"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
