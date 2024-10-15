@@ -1,0 +1,32 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "c2b1c08885f75f9ec6259b0549492a2522973722",
+            "head": "d8d0e9647c9a34757106a0151c26d8b5442bcee3"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "9a60d2fb44ba35ff88756f0a4bcc83042dcf9dd9",
+            "head": "7986755ea35777ce37c09dbf75e7f883747acdad"
+        },
+        "ckanext-excelforms": {
+            "uri": "https://github.com/ckan/ckanext-excelforms",
+            "prev": "e8d7e3fe973b221756dbbee024ec9ef507e67c6a",
+            "head": "296785eaba81ea3a159b4ed9eaff9f00fb5e6a15"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "f5226596a26d066bf2ea21bd29778bea1c739421",
+            "head": "2b5ae29e85f8bf2a281576d28533c01b3f103e65"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "d38300eca38bf3e9ca43b77aef134aebdd62cba0",
+            "head": "0cb1b617869e2916cd3fe649e851d0810120d2bf"
+        }
+    },
+    "drupal": {}
+}

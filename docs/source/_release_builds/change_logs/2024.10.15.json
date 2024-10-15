@@ -1,0 +1,83 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `ckan_phase` block to the `package_form` template to allow for no-phased dataset forms.\n",
+                    "hash": "8a2c8a5c3f830591dc1db435b83ea4a2f2d6bf91"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Markdown help popup content has been updated.\n",
+                    "hash": "fe6ac547a6e37b7fc8432c598a2f4324be5a3018"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Standard Service filter script not handling null `performance` fields.\n",
+                    "hash": "f37596b597e73abe1d1e4541312f175c3cef5b77"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Reclassification Search has been implemented on OC Search. For now, the Proactive Disclosure Makefile is being modified to rebuild both the Drupal and Django searches during the nightly rebuild.\n",
+                    "hash": "6f0ea7f914da622589bf780d444bd7d3af4be226"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Markdown help popup has been translated.\n",
+                    "hash": "d6ab7da2e906b0a5ea01cac2a35ce75de10f03b8"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added additional Resource formats sprite sheet and added supported Resource formats:\n\n* FLV\n* MKV\n* MP4\n",
+                    "hash": "489114e6f1874f8c7e770a473030fbc57d9f863c"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with Activity Streams and purged packages.\n",
+                    "hash": "70f102a722de7e24e6f2898e02c5aa4bc79224f6"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Excel `_text` field error formulae are now case sensitive.\n",
+                    "hash": "b5e7aeb0640ae480f4120fe6646b7ddbabb600f5"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add a link to \"Proactive disclosure\" to the existing breadcrumb trail for searches. \nThe Open Data search is excluded and will continue to have a custom breadcrumb trail.",
+                    "hash": "eafd80a5e3dc6eed72ebdd8929d7363fc4434a2c"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
