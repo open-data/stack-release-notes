@@ -1,0 +1,118 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `PackageSync` model for the `package_sync` table which tracks the PortalUpdater process and saves the states for the packages.\n",
+                    "hash": "4225be3968224b8d2d59dcdcfcc1798dcddecf25"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The number of resources per dataset can now be limited with the `ckanext.canada.max_resources_per_dataset` config option.\n",
+                    "hash": "a5b8f8dc052d81de61490a0597c58d4702b72be8"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display resource metadata such as Language, Format etc. on the resource page under 'Additional Information'.",
+                    "hash": "57f7027997d964f5b512b2c2dfb95725e8811a80"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The old GCPedia links now link to the Operations Guide. Text `GCPEDIA` changed to `Operations Guide`.\n",
+                    "hash": "c61a73b31cdedb0ac230ef8d04a092abd7f452ef"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Adding the Django Search to the PD Makefile for the Hospitalityq type.\n",
+                    "hash": "bcc211ae86cdd32cfcf7b04559add30968e24be9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove rebuilding the following searches from the Makefike:\n- reclassification\n- hospitalityq\nThe above searches are now rebuilt using the Django search.",
+                    "hash": "dc907e28a87f3892cfe5f58cee035581023bdc52"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `--include-types` and `--exclude-types` options to the `delete-activities` command.\n",
+                    "hash": "2b909ba299d2eafdb7fe4f7aa4a5954a1120ca46"
+                }
+            ]
+        },
+        "ckanext-cloudstorage": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Set the `filesize` attribute in the uploader class so CKAN can set the Resource file size metadata field in `package_update`.\n",
+                    "hash": "e64c002a2eeb02e51e9e5794639a53cb5d01c000"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add custom code and fields to the Open Data search to allow searching by Department name or acronym.\nFor example, \"Treasury Board Secretariat\" or \"TBS\". Quotes are not required.\n",
+                    "hash": "6c55f36bc33381ba855c47a809e474a5b8717644"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a new Django template filter <code>\"intformat\"</code> that allows developer to apply custom python integer formatting.\n",
+                    "hash": "84b865acb3caf88c2efcc0332715596c853d18e2"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improved error handling of the data_import_ckan_json command to avoid throwing a second exception when try to log very large error messages.\n",
+                    "hash": "249838aeb24aad9ab9cb2b60a970d96cf3825601"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "og": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update Drupal core to version 10.2.10 to apply security updates for SA-CORE-2024-002.\nUpdate Drupal Facet contributed module to apply security updates for SA-CONTRIB-2024-047.",
+                    "hash": "a8df0f9d686163f1b3c9b6c130692b28a78ffa95"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Pass empty string for referer_url to avoid exception in the PHP explode function. \nThis behaviour is new in PHP8. ",
+                    "hash": "b2fd0ed59fbe1bd923bdca862dbc38a4a29629d8"
+                }
+            ]
+        },
+        "gcweb_bootstrap": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fix version numbers in composer.json for wet to v4.0.79 and gcweb to v15.0.0\n",
+                    "hash": "420c5a0786d19a3d144875f22295da56e67f545f"
+                }
+            ]
+        }
+    }
+}
