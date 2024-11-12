@@ -32,6 +32,40 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.11.12">
+          
+            
+              <div class="github-api-container" id="github-2024.11.12-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.11.12-ckanext-cloudstorage">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.11.12-ckanext-scheming">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.11.12-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.11.12-og">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.11.12-gcweb_bootstrap">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.10.15">
           
             
@@ -541,6 +575,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.11.12" class="release-nav-item"><a href="#2024.11.12">v.2024.11.12</a></li>
+          
             <li data-release="2024.10.15" class="release-nav-item"><a href="#2024.10.15">v.2024.10.15</a></li>
           
             <li data-release="2024.10.01" class="release-nav-item"><a href="#2024.10.01">v.2024.10.01</a></li>
@@ -603,6 +639,272 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2024.11.12">
+            <h2>
+              v.2024.11.12
+              <a class="headerlink" href="#2024.11.12"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.11.12-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.11.12-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>PackageSync</code> model for the <code>package_sync</code> table which tracks the PortalUpdater process and saves the states for the packages.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The number of resources per dataset can now be limited with the <code>ckanext.canada.max_resources_per_dataset</code> config option.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Display resource metadata such as Language, Format etc. on the resource page under 'Additional Information'.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The old GCPedia links now link to the Operations Guide. Text <code>GCPEDIA</code> changed to <code>Operations Guide</code>.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Adding the Django Search to the PD Makefile for the Hospitalityq type.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Remove rebuilding the following searches from the Makefike:
+- reclassification
+- hospitalityq
+The above searches are now rebuilt using the Django search.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added <code>--include-types</code> and <code>--exclude-types</code> options to the <code>delete-activities</code> command.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/7986755ea35777ce37c09dbf75e7f883747acdad...6e940c9c3ee4db4156537679c0236fe37632735b">View it on GitHub</a>
+                    <span class="release-hash-label">[7986755ea...6e940c9c3]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.11.12-ckanext-cloudstorage">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-cloudstorage
+                      <a class="headerlink" href="#2024.11.12-ckanext-cloudstorage"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Set the <code>filesize</code> attribute in the uploader class so CKAN can set the Resource file size metadata field in <code>package_update</code>.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-cloudstorage/compare/a264d6b7525ca3e36cd0c69427087b7bf4c1923e...1cf3674a6a0675cda5e6c448e9c8990d640ea3c2">View it on GitHub</a>
+                    <span class="release-hash-label">[a264d6b75...1cf3674a6]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.11.12-ckanext-scheming">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-scheming
+                      <a class="headerlink" href="#2024.11.12-ckanext-scheming"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-scheming/compare/27035f4d5b3722c2bc64d39b6c2b1d76c9883636...5ce30cf2856aee97fa7b49de46847f8119dad355">View it on GitHub</a>
+                    <span class="release-hash-label">[27035f4d5...5ce30cf28]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2024.11.12-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2024.11.12-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Add custom code and fields to the Open Data search to allow searching by Department name or acronym.
+For example, "Treasury Board Secretariat" or "TBS". Quotes are not required.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added a new Django template filter "intformat" that allows developer to apply custom python integer formatting.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Improved error handling of the data_import_ckan_json command to avoid throwing a second exception when try to log very large error messages.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/0cb1b617869e2916cd3fe649e851d0810120d2bf...525370deb791fa0e1580da0253dab2aeff18279a">View it on GitHub</a>
+                    <span class="release-hash-label">[0cb1b6178...525370deb]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2024.11.12-og">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      og
+                      <a class="headerlink" href="#2024.11.12-og"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Update Drupal core to version 10.2.10 to apply security updates for SA-CORE-2024-002.
+Update Drupal Facet contributed module to apply security updates for SA-CONTRIB-2024-047.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Pass empty string for referer_url to avoid exception in the PHP explode function. 
+This behaviour is new in PHP8.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/799cfb02bf4d45d71e405d3f1802ee1c83d2f235...c6e6f8c3e467b77f3ea53c0764a75b5d9babbae5">View it on GitHub</a>
+                    <span class="release-hash-label">[799cfb02b...c6e6f8c3e]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2024.11.12-gcweb_bootstrap">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      gcweb_bootstrap
+                      <a class="headerlink" href="#2024.11.12-gcweb_bootstrap"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fix version numbers in composer.json for wet to v4.0.79 and gcweb to v15.0.0</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/gcweb_bootstrap/compare/534a9cbabf194d7ad2280c854038cc7fb1e3e775...0e4d58d69912fea7b6b2fd465f32f53a7676a90e">View it on GitHub</a>
+                    <span class="release-hash-label">[534a9cbab...0e4d58d69]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2024.10.15">
             <h2>
