@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add new Indigenous language \"Innu-Aimun\" to presets.yaml.",
+                    "hash": "7a5122825cd2058d4eb249fef50f9f4311b3a391"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
