@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Service Inventory primary key fields no longer allow commas.\n",
+                    "hash": "d83b7994416f9ea334e5897acea9039491920a00"
+                }
+            ]
+        },
+        "ckanext-cloudstorage": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed syntax issue with the new `calculate-filesizes` CLI command.\n",
+                    "hash": "06cf857ac964789984b1a8ef421f72454dd95fe3"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

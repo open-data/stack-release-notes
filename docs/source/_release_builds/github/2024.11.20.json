@@ -1,0 +1,895 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "url": "https://api.github.com/repos/open-data/ckanext-canada/compare/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d...f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+            "html_url": "https://github.com/open-data/ckanext-canada/compare/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d...f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+            "permalink_url": "https://github.com/open-data/ckanext-canada/compare/open-data:1fdbfac...open-data:f316763",
+            "diff_url": "https://github.com/open-data/ckanext-canada/compare/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d...f3167636ce7e219bcbd61933f453d7ffaca0b6b7.diff",
+            "patch_url": "https://github.com/open-data/ckanext-canada/compare/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d...f3167636ce7e219bcbd61933f453d7ffaca0b6b7.patch",
+            "base_commit": {
+                "sha": "1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                "node_id": "C_kwDOAGzkrtoAKDFmZGJmYWM0N2VkMGNiOThhOTA2NmMwMWM2ZTFiZWRjMjFjODM3MGQ",
+                "commit": {
+                    "author": {
+                        "name": "Rabia Sajjad",
+                        "email": "rabiasajjad.dev@gmail.com",
+                        "date": "2024-11-14T19:35:37Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2024-11-14T19:35:37Z"
+                    },
+                    "message": "Merge pull request #1531 from open-data/lang-Innu-Aimun\n\nadd new indigenous language to presets.yaml",
+                    "tree": {
+                        "sha": "9e24d21ef8bac4aabe79a992189fc95b44f62e0e",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/9e24d21ef8bac4aabe79a992189fc95b44f62e0e"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnNlEJCRC1aQ7uu5UhlAAAiUEQAJD9SM7QqJ5B/M/xjxZJBewx\nrpU9OTZ7ly2DwhugtgjLOnQsMj944tn/NF0NJD+vI9lR3WiCof91OQ214xCUhDDs\nmpG+r7zOX9FBC/+iomqePRP9hk7YDhJk/lB2fcxSmYPRJv097xpYJO936oMG1hFw\npmk2dOFhYf1uYzXpBGSnVxu2dwALmQe/4ESFRVZwyC6lDSYAwu0I+eYWycaH/kLH\nTvZi6yDMbf+oclCGvofrjmCuTMtNU5rIEpMfXKF6Xdyiks4IEF40LNrVO5X8Xj/3\nTrweimpZh+MOy0tOnHpMawNgsoh8keRVT3PoXosjTV4MavPcGNLTCLCgZpFJMIFc\no6EJA+Bbe36JFP4ahDN0He8d7XXM3AFSLLQvjl+eptWjFarHBrvYCu+PC4jrFC/G\nhWCcG6hZ8LIN1GnBLys9gzmdkubYdku6kLrQfRKNXBypHT496adU7lrqis5/WFSY\n/IKf1SsNLEwwoogFIAa5ulTS0iM7c37D/I4gmHrXrKZShRDqc9+KTowfzFkPO0JO\nwlo8s4D36ich+9EPCikhut1YXk/U3CVtiolIqBBb7qlP4gk6iV82iuTrvikgG+St\nRzn2CE9jRwl8+TWpzTUlsRxmSXaGaaB9tPrsNCViddsF+bOCqV9wAJm+7oh2yfT9\nmqMrMonB0awzJTL9BS/p\n=36pg\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree 9e24d21ef8bac4aabe79a992189fc95b44f62e0e\nparent 6e940c9c3ee4db4156537679c0236fe37632735b\nparent 9fdb25ae34322fc6a08817372ca0388d007862b5\nauthor Rabia Sajjad <rabiasajjad.dev@gmail.com> 1731612937 -0500\ncommitter GitHub <noreply@github.com> 1731612937 -0500\n\nMerge pull request #1531 from open-data/lang-Innu-Aimun\n\nadd new indigenous language to presets.yaml",
+                        "verified_at": "2024-11-14T19:35:39Z"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d/comments",
+                "author": {
+                    "login": "RabiaSajjad",
+                    "id": 25936398,
+                    "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/RabiaSajjad",
+                    "html_url": "https://github.com/RabiaSajjad",
+                    "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                    "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                    "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                    "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                    "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "6e940c9c3ee4db4156537679c0236fe37632735b",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/6e940c9c3ee4db4156537679c0236fe37632735b",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/6e940c9c3ee4db4156537679c0236fe37632735b"
+                    },
+                    {
+                        "sha": "9fdb25ae34322fc6a08817372ca0388d007862b5",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/9fdb25ae34322fc6a08817372ca0388d007862b5",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/9fdb25ae34322fc6a08817372ca0388d007862b5"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                "node_id": "C_kwDOAGzkrtoAKDFmZGJmYWM0N2VkMGNiOThhOTA2NmMwMWM2ZTFiZWRjMjFjODM3MGQ",
+                "commit": {
+                    "author": {
+                        "name": "Rabia Sajjad",
+                        "email": "rabiasajjad.dev@gmail.com",
+                        "date": "2024-11-14T19:35:37Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2024-11-14T19:35:37Z"
+                    },
+                    "message": "Merge pull request #1531 from open-data/lang-Innu-Aimun\n\nadd new indigenous language to presets.yaml",
+                    "tree": {
+                        "sha": "9e24d21ef8bac4aabe79a992189fc95b44f62e0e",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/9e24d21ef8bac4aabe79a992189fc95b44f62e0e"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnNlEJCRC1aQ7uu5UhlAAAiUEQAJD9SM7QqJ5B/M/xjxZJBewx\nrpU9OTZ7ly2DwhugtgjLOnQsMj944tn/NF0NJD+vI9lR3WiCof91OQ214xCUhDDs\nmpG+r7zOX9FBC/+iomqePRP9hk7YDhJk/lB2fcxSmYPRJv097xpYJO936oMG1hFw\npmk2dOFhYf1uYzXpBGSnVxu2dwALmQe/4ESFRVZwyC6lDSYAwu0I+eYWycaH/kLH\nTvZi6yDMbf+oclCGvofrjmCuTMtNU5rIEpMfXKF6Xdyiks4IEF40LNrVO5X8Xj/3\nTrweimpZh+MOy0tOnHpMawNgsoh8keRVT3PoXosjTV4MavPcGNLTCLCgZpFJMIFc\no6EJA+Bbe36JFP4ahDN0He8d7XXM3AFSLLQvjl+eptWjFarHBrvYCu+PC4jrFC/G\nhWCcG6hZ8LIN1GnBLys9gzmdkubYdku6kLrQfRKNXBypHT496adU7lrqis5/WFSY\n/IKf1SsNLEwwoogFIAa5ulTS0iM7c37D/I4gmHrXrKZShRDqc9+KTowfzFkPO0JO\nwlo8s4D36ich+9EPCikhut1YXk/U3CVtiolIqBBb7qlP4gk6iV82iuTrvikgG+St\nRzn2CE9jRwl8+TWpzTUlsRxmSXaGaaB9tPrsNCViddsF+bOCqV9wAJm+7oh2yfT9\nmqMrMonB0awzJTL9BS/p\n=36pg\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree 9e24d21ef8bac4aabe79a992189fc95b44f62e0e\nparent 6e940c9c3ee4db4156537679c0236fe37632735b\nparent 9fdb25ae34322fc6a08817372ca0388d007862b5\nauthor Rabia Sajjad <rabiasajjad.dev@gmail.com> 1731612937 -0500\ncommitter GitHub <noreply@github.com> 1731612937 -0500\n\nMerge pull request #1531 from open-data/lang-Innu-Aimun\n\nadd new indigenous language to presets.yaml",
+                        "verified_at": "2024-11-14T19:35:39Z"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d/comments",
+                "author": {
+                    "login": "RabiaSajjad",
+                    "id": 25936398,
+                    "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/RabiaSajjad",
+                    "html_url": "https://github.com/RabiaSajjad",
+                    "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                    "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                    "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                    "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                    "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "6e940c9c3ee4db4156537679c0236fe37632735b",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/6e940c9c3ee4db4156537679c0236fe37632735b",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/6e940c9c3ee4db4156537679c0236fe37632735b"
+                    },
+                    {
+                        "sha": "9fdb25ae34322fc6a08817372ca0388d007862b5",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/9fdb25ae34322fc6a08817372ca0388d007862b5",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/9fdb25ae34322fc6a08817372ca0388d007862b5"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 4,
+            "behind_by": 0,
+            "total_commits": 4,
+            "commits": [
+                {
+                    "sha": "39d91d8e8dc222bb5595c7899bb7cbbf96f844d0",
+                    "node_id": "C_kwDOAGzkrtoAKDM5ZDkxZDhlOGRjMjIyYmI1NTk1Yzc4OTliYjdjYmJmOTZmODQ0ZDA",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T19:54:43Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T19:54:43Z"
+                        },
+                        "message": "fix(pd): service primary key commas;\n\n- Cannot have commas in any of the primary keys for service.",
+                        "tree": {
+                            "sha": "08ad853d6b7f6aa6937ae0872d554d740a88065d",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/08ad853d6b7f6aa6937ae0872d554d740a88065d"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/39d91d8e8dc222bb5595c7899bb7cbbf96f844d0",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/39d91d8e8dc222bb5595c7899bb7cbbf96f844d0",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/39d91d8e8dc222bb5595c7899bb7cbbf96f844d0",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/39d91d8e8dc222bb5595c7899bb7cbbf96f844d0/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d"
+                        }
+                    ]
+                },
+                {
+                    "sha": "2831a3e29c324559e71d15909b053c0f8d29a7d8",
+                    "node_id": "C_kwDOAGzkrtoAKDI4MzFhM2UyOWMzMjQ1NTllNzFkMTU5MDliMDUzYzBmOGQyOWE3ZDg",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T19:57:09Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T19:57:09Z"
+                        },
+                        "message": "feat(misc): changelog;\n\n- Added change log file.",
+                        "tree": {
+                            "sha": "caf6c4d79760080c56ccd1bc5c2a0fdbdea25cea",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/caf6c4d79760080c56ccd1bc5c2a0fdbdea25cea"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/2831a3e29c324559e71d15909b053c0f8d29a7d8",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/2831a3e29c324559e71d15909b053c0f8d29a7d8",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/2831a3e29c324559e71d15909b053c0f8d29a7d8",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/2831a3e29c324559e71d15909b053c0f8d29a7d8/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "39d91d8e8dc222bb5595c7899bb7cbbf96f844d0",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/39d91d8e8dc222bb5595c7899bb7cbbf96f844d0",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/39d91d8e8dc222bb5595c7899bb7cbbf96f844d0"
+                        }
+                    ]
+                },
+                {
+                    "sha": "5c2e3cf2ecda69c3f089a535b6aca949adc9a86b",
+                    "node_id": "C_kwDOAGzkrtoAKDVjMmUzY2YyZWNkYTY5YzNmMDg5YTUzNWI2YWNhOTQ5YWRjOWE4NmI",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T20:32:21Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T20:32:21Z"
+                        },
+                        "message": "fix(tests): service example record not as reference;\n\n- Copy example record instead of referencing it.",
+                        "tree": {
+                            "sha": "27bafecf6584e8dcefc54fc55231a566d2c05616",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/27bafecf6584e8dcefc54fc55231a566d2c05616"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/5c2e3cf2ecda69c3f089a535b6aca949adc9a86b",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/5c2e3cf2ecda69c3f089a535b6aca949adc9a86b",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/5c2e3cf2ecda69c3f089a535b6aca949adc9a86b",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/5c2e3cf2ecda69c3f089a535b6aca949adc9a86b/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "2831a3e29c324559e71d15909b053c0f8d29a7d8",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/2831a3e29c324559e71d15909b053c0f8d29a7d8",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/2831a3e29c324559e71d15909b053c0f8d29a7d8"
+                        }
+                    ]
+                },
+                {
+                    "sha": "f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "node_id": "C_kwDOAGzkrtoAKGYzMTY3NjM2Y2U3ZTIxOWJjYmQ2MTkzM2Y0NTNkN2ZmYWNhMGI2Yjc",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                            "date": "2024-11-20T20:57:47Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2024-11-20T20:57:47Z"
+                        },
+                        "message": "Merge pull request #1535 from open-data/fix/service-commas-in-primary-keys\n\nService Inventory No Commas in Primary Key Fields",
+                        "tree": {
+                            "sha": "27bafecf6584e8dcefc54fc55231a566d2c05616",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/27bafecf6584e8dcefc54fc55231a566d2c05616"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnPk1LCRC1aQ7uu5UhlAAA+SsQADd4UKbbUy+UBMGwA4KK4K2z\noOt1i8eWd0qc9plRBkzSTWxXP6rPDzdnkXzipmjBHKeMc7mHv9/BAlAk9Bc4NsZY\nxlMBJVwOMi3xazzOf6+wRnuAbzWEc87aKqT88IlaXGurN/bpi2em8g0Um9J6stYs\n+y3lG3rydeFK90X9qBdz8VRUVFx6qVKjpHnbdv3wI7zl/iRFeoHaZCu8mYo8LDbF\n8cRC8x6Olwnz1v7gngKcMWkGzSKIh3kMIYxDoH8bgbu3GI2/ASCRSrpcaY43e5KW\nPMnf236x+7V0qobnuhm5tbe4ODM5yYXjPUBx+KwA/SadysMtaJTqFyqWGUFCALji\n+ti/NRqgkxKUgU9YVHcgby8YjxbKoyi/AJ7dNaOdtPhy8Gw+jK5bHzTkU1seQwlg\nnJUJIjJINNbsLJjq/sBkM1As0DGXD5TTbThTS07C2ans76Tft9LKvcoafVW2njv5\niFbDnhSRs89RLnmWeZYV4zj4OIdkqzld8Hv5FKfVydis5k7OP2VnapSbDVAXhcRb\nHfQQaOJRaPuLoZOB0Chzj6pWQWvBqDcExec1p4k0tSBDZxCPPUy3BblPIwWEpn/V\nISPAlwL6pgi7b0R/yjmouFX9MriPUrA/os3eh7bx7Y4S8UUPuxwaC1Ks3S140Znr\na8q98+m7T3EcipqVetVK\n=9XiC\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree 27bafecf6584e8dcefc54fc55231a566d2c05616\nparent 1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d\nparent 5c2e3cf2ecda69c3f089a535b6aca949adc9a86b\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1732136267 -0500\ncommitter GitHub <noreply@github.com> 1732136267 -0500\n\nMerge pull request #1535 from open-data/fix/service-commas-in-primary-keys\n\nService Inventory No Commas in Primary Key Fields",
+                            "verified_at": "2024-11-20T20:57:49Z"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d"
+                        },
+                        {
+                            "sha": "5c2e3cf2ecda69c3f089a535b6aca949adc9a86b",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/5c2e3cf2ecda69c3f089a535b6aca949adc9a86b",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/5c2e3cf2ecda69c3f089a535b6aca949adc9a86b"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "d83b7994416f9ea334e5897acea9039491920a00",
+                    "filename": "changes/1535.hotfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/changes%2F1535.hotfix",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/changes%2F1535.hotfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F1535.hotfix?ref=f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "patch": "@@ -0,0 +1 @@\n+Service Inventory primary key fields no longer allow commas."
+                },
+                {
+                    "sha": "afcfb8aa2bdc087def90d5aee4d1a2aca513971b",
+                    "filename": "ckanext/canada/i18n/ckanext-canada.pot",
+                    "status": "modified",
+                    "additions": 23,
+                    "deletions": 13,
+                    "changes": 36,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Fi18n%2Fckanext-canada.pot",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Fi18n%2Fckanext-canada.pot",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Fi18n%2Fckanext-canada.pot?ref=f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "patch": "@@ -8,7 +8,7 @@ msgid \"\"\n msgstr \"\"\n \"Project-Id-Version: ckanext-canada 0.4.0\\n\"\n \"Report-Msgid-Bugs-To: EMAIL@ADDRESS\\n\"\n-\"POT-Creation-Date: 2024-11-12 15:06+0000\\n\"\n+\"POT-Creation-Date: 2024-11-20 16:24+0000\\n\"\n \"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n\"\n \"Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n\"\n \"Language-Team: LANGUAGE <LL@li.org>\\n\"\n@@ -781,7 +781,7 @@ msgid \"{num} deleted.\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:2348 ckanext/canada/view.py:707\n+#: ckanext/canada/tables/service.yaml:2373 ckanext/canada/view.py:707\n msgid \"Number required\"\n msgstr \"\"\n \n@@ -952,7 +952,7 @@ msgstr \"\"\n #. SQL Trigger String for PD Type: ati\n #. SQL Trigger String for PD Type: service\n #: ckanext/canada/tables/ati.yaml:142 ckanext/canada/tables/ati.yaml:254\n-#: ckanext/canada/tables/service.yaml:1532 ckanext/canada/tables/service.yaml:2345\n+#: ckanext/canada/tables/service.yaml:1540 ckanext/canada/tables/service.yaml:2370\n msgid \"This value must not be negative\"\n msgstr \"\"\n \n@@ -1358,54 +1358,64 @@ msgid \"Service Identification Information & Metrics\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1531\n+#: ckanext/canada/tables/service.yaml:1539\n msgid \"This field must be either a number, \\\"NA\\\", or \\\"ND\\\"\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1533 ckanext/canada/tables/service.yaml:2346\n+#: ckanext/canada/tables/service.yaml:1541 ckanext/canada/tables/service.yaml:2371\n msgid \"This field has a maximum length of {} characters.\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1534 ckanext/canada/tables/service.yaml:2347\n+#: ckanext/canada/tables/service.yaml:1542 ckanext/canada/tables/service.yaml:2372\n msgid \"Invalid choice: {}\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1535 ckanext/canada/tables/service.yaml:2349\n+#: ckanext/canada/tables/service.yaml:1543 ckanext/canada/tables/service.yaml:2374\n msgid \"Invalid input syntax for type integer: {}\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1536 ckanext/canada/tables/service.yaml:2350\n+#: ckanext/canada/tables/service.yaml:1544 ckanext/canada/tables/service.yaml:2375\n msgid \"This field is required due to a response in a different field.\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1537 ckanext/canada/tables/service.yaml:2351\n+#: ckanext/canada/tables/service.yaml:1545 ckanext/canada/tables/service.yaml:2376\n msgid \"This text must be provided in both languages\"\n msgstr \"\"\n \n+#. SQL Trigger String for PD Type: service\n+#: ckanext/canada/tables/service.yaml:1546 ckanext/canada/tables/service.yaml:2377\n+msgid \"Comma is not allowed in Service ID Number field\"\n+msgstr \"\"\n+\n #. SQL Constraint Error String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1346\n+#: ckanext/canada/tables/service.yaml:1351\n msgid \"\"\n \"Cannot delete record(s) because the Fiscal Year, Service ID Number is \"\n \"referenced in at least one Service Standards & Performance Results record.\"\n msgstr \"\"\n \n #. Resource Title for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1611\n+#: ckanext/canada/tables/service.yaml:1620\n msgid \"Service Standards & Performance Results\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1948 ckanext/canada/tables/service.yaml:2344\n+#: ckanext/canada/tables/service.yaml:1967 ckanext/canada/tables/service.yaml:2369\n msgid \"This field must be a single number between 0 and 1 representing a percentage.\"\n msgstr \"\"\n \n+#. SQL Trigger String for PD Type: service\n+#: ckanext/canada/tables/service.yaml:2378\n+msgid \"Comma is not allowed in Service Standard ID field\"\n+msgstr \"\"\n+\n #. SQL Constraint Error String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:2252\n+#: ckanext/canada/tables/service.yaml:2271\n msgid \"\"\n \"Cannot create record because the Service ID Number does not exist in the \"\n \"Service Identification Information & Metrics resource for that fiscal year.\""
+                },
+                {
+                    "sha": "76ec6b2081a162ace1033f66901b7f1a0dc56de1",
+                    "filename": "ckanext/canada/i18n/en/LC_MESSAGES/ckanext-canada.po",
+                    "status": "modified",
+                    "additions": 31,
+                    "deletions": 20,
+                    "changes": 51,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Fi18n%2Fen%2FLC_MESSAGES%2Fckanext-canada.po",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Fi18n%2Fen%2FLC_MESSAGES%2Fckanext-canada.po",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Fi18n%2Fen%2FLC_MESSAGES%2Fckanext-canada.po?ref=f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "patch": "@@ -7,7 +7,7 @@ msgid \"\"\n msgstr \"\"\n \"Project-Id-Version:  CKAN\\n\"\n \"Report-Msgid-Bugs-To: EMAIL@ADDRESS\\n\"\n-\"POT-Creation-Date: 2024-11-12 15:06+0000\\n\"\n+\"POT-Creation-Date: 2024-11-20 16:24+0000\\n\"\n \"PO-Revision-Date: 2014-01-23 13:04+0000\\n\"\n \"Last-Translator: Sean Hammond <sean.hammond@okfn.org>\\n\"\n \"Language: en\\n\"\n@@ -795,7 +795,7 @@ msgid \"{num} deleted.\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:2348 ckanext/canada/view.py:707\n+#: ckanext/canada/tables/service.yaml:2373 ckanext/canada/view.py:707\n msgid \"Number required\"\n msgstr \"\"\n \n@@ -969,8 +969,8 @@ msgstr \"\"\n #. SQL Trigger String for PD Type: ati\n #. SQL Trigger String for PD Type: service\n #: ckanext/canada/tables/ati.yaml:142 ckanext/canada/tables/ati.yaml:254\n-#: ckanext/canada/tables/service.yaml:1532\n-#: ckanext/canada/tables/service.yaml:2345\n+#: ckanext/canada/tables/service.yaml:1540\n+#: ckanext/canada/tables/service.yaml:2370\n msgid \"This value must not be negative\"\n msgstr \"\"\n \n@@ -1386,63 +1386,74 @@ msgid \"Service Identification Information & Metrics\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1531\n+#: ckanext/canada/tables/service.yaml:1539\n msgid \"This field must be either a number, \\\"NA\\\", or \\\"ND\\\"\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1533\n-#: ckanext/canada/tables/service.yaml:2346\n+#: ckanext/canada/tables/service.yaml:1541\n+#: ckanext/canada/tables/service.yaml:2371\n msgid \"This field has a maximum length of {} characters.\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1534\n-#: ckanext/canada/tables/service.yaml:2347\n+#: ckanext/canada/tables/service.yaml:1542\n+#: ckanext/canada/tables/service.yaml:2372\n msgid \"Invalid choice: {}\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1535\n-#: ckanext/canada/tables/service.yaml:2349\n+#: ckanext/canada/tables/service.yaml:1543\n+#: ckanext/canada/tables/service.yaml:2374\n msgid \"Invalid input syntax for type integer: {}\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1536\n-#: ckanext/canada/tables/service.yaml:2350\n+#: ckanext/canada/tables/service.yaml:1544\n+#: ckanext/canada/tables/service.yaml:2375\n msgid \"This field is required due to a response in a different field.\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1537\n-#: ckanext/canada/tables/service.yaml:2351\n+#: ckanext/canada/tables/service.yaml:1545\n+#: ckanext/canada/tables/service.yaml:2376\n msgid \"This text must be provided in both languages\"\n msgstr \"\"\n \n+#. SQL Trigger String for PD Type: service\n+#: ckanext/canada/tables/service.yaml:1546\n+#: ckanext/canada/tables/service.yaml:2377\n+msgid \"Comma is not allowed in Service ID Number field\"\n+msgstr \"\"\n+\n #. SQL Constraint Error String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1346\n+#: ckanext/canada/tables/service.yaml:1351\n msgid \"\"\n \"Cannot delete record(s) because the Fiscal Year, Service ID Number is \"\n \"referenced in at least one Service Standards & Performance Results \"\n \"record.\"\n msgstr \"\"\n \n #. Resource Title for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1611\n+#: ckanext/canada/tables/service.yaml:1620\n msgid \"Service Standards & Performance Results\"\n msgstr \"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1948\n-#: ckanext/canada/tables/service.yaml:2344\n+#: ckanext/canada/tables/service.yaml:1967\n+#: ckanext/canada/tables/service.yaml:2369\n msgid \"\"\n \"This field must be a single number between 0 and 1 representing a \"\n \"percentage.\"\n msgstr \"\"\n \n+#. SQL Trigger String for PD Type: service\n+#: ckanext/canada/tables/service.yaml:2378\n+msgid \"Comma is not allowed in Service Standard ID field\"\n+msgstr \"\"\n+\n #. SQL Constraint Error String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:2252\n+#: ckanext/canada/tables/service.yaml:2271\n msgid \"\"\n \"Cannot create record because the Service ID Number does not exist in the \"\n \"Service Identification Information & Metrics resource for that fiscal \""
+                },
+                {
+                    "sha": "f408b69f11786917e07e66afae27906dc069df11",
+                    "filename": "ckanext/canada/i18n/fr/LC_MESSAGES/ckanext-canada.po",
+                    "status": "modified",
+                    "additions": 34,
+                    "deletions": 22,
+                    "changes": 56,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Fi18n%2Ffr%2FLC_MESSAGES%2Fckanext-canada.po",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Fi18n%2Ffr%2FLC_MESSAGES%2Fckanext-canada.po",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Fi18n%2Ffr%2FLC_MESSAGES%2Fckanext-canada.po?ref=f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "patch": "@@ -8,7 +8,7 @@ msgid \"\"\n msgstr \"\"\n \"Project-Id-Version: PROJECT VERSION\\n\"\n \"Report-Msgid-Bugs-To: EMAIL@ADDRESS\\n\"\n-\"POT-Creation-Date: 2024-11-12 15:06+0000\\n\"\n+\"POT-Creation-Date: 2024-11-20 16:24+0000\\n\"\n \"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n\"\n \"Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n\"\n \"Language: fr\\n\"\n@@ -239,8 +239,9 @@ msgstr \"Tâche inconnue \"\n #: ckanext/canada/logic.py:547\n #, python-format\n msgid \"No Portal Sync information found for package %s\"\n-msgstr \"Aucune information de synchronisation du portail n'a été \"\n-\"trouvée pour le jeu de données %s\"\n+msgstr \"\"\n+\"Aucune information de synchronisation du portail n'a été trouvée pour le \"\n+\"jeu de données %s\"\n \n #: ckanext/canada/plugins.py:709\n #: ckanext/canada/templates/scheming/package/snippets/package_form.html:25\n@@ -844,7 +845,7 @@ msgid \"{num} deleted.\"\n msgstr \"{num} supprimé.\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:2348 ckanext/canada/view.py:707\n+#: ckanext/canada/tables/service.yaml:2373 ckanext/canada/view.py:707\n msgid \"Number required\"\n msgstr \"Nombre requis\"\n \n@@ -1045,8 +1046,8 @@ msgstr \"Veuillez entrer une valeur comprise entre 1 et 12\"\n #. SQL Trigger String for PD Type: ati\n #. SQL Trigger String for PD Type: service\n #: ckanext/canada/tables/ati.yaml:142 ckanext/canada/tables/ati.yaml:254\n-#: ckanext/canada/tables/service.yaml:1532\n-#: ckanext/canada/tables/service.yaml:2345\n+#: ckanext/canada/tables/service.yaml:1540\n+#: ckanext/canada/tables/service.yaml:2370\n msgid \"This value must not be negative\"\n msgstr \"Cette valeur ne doit être négative\"\n \n@@ -1535,42 +1536,48 @@ msgid \"Service Identification Information & Metrics\"\n msgstr \"Information et paramètres sur l’identification des services\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1531\n+#: ckanext/canada/tables/service.yaml:1539\n msgid \"This field must be either a number, \\\"NA\\\", or \\\"ND\\\"\"\n msgstr \"Ce champ doit être un chiffre, \\\"NA\\\", ou \\\"ND\\\"\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1533\n-#: ckanext/canada/tables/service.yaml:2346\n+#: ckanext/canada/tables/service.yaml:1541\n+#: ckanext/canada/tables/service.yaml:2371\n msgid \"This field has a maximum length of {} characters.\"\n msgstr \"Ce champ ne peut excéder une longueur maximale de {} caractères.\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1534\n-#: ckanext/canada/tables/service.yaml:2347\n+#: ckanext/canada/tables/service.yaml:1542\n+#: ckanext/canada/tables/service.yaml:2372\n msgid \"Invalid choice: {}\"\n msgstr \"Choix non valide : {}\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1535\n-#: ckanext/canada/tables/service.yaml:2349\n+#: ckanext/canada/tables/service.yaml:1543\n+#: ckanext/canada/tables/service.yaml:2374\n msgid \"Invalid input syntax for type integer: {}\"\n msgstr \"Syntaxe d'entrée invalide pour le type entier : {}\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1536\n-#: ckanext/canada/tables/service.yaml:2350\n+#: ckanext/canada/tables/service.yaml:1544\n+#: ckanext/canada/tables/service.yaml:2375\n msgid \"This field is required due to a response in a different field.\"\n msgstr \"Ce champ est requis en raison d'une réponse présente dans un autre champ.\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1537\n-#: ckanext/canada/tables/service.yaml:2351\n+#: ckanext/canada/tables/service.yaml:1545\n+#: ckanext/canada/tables/service.yaml:2376\n msgid \"This text must be provided in both languages\"\n msgstr \"Ce texte doit être fourni dans les deux langues\"\n \n+#. SQL Trigger String for PD Type: service\n+#: ckanext/canada/tables/service.yaml:1546\n+#: ckanext/canada/tables/service.yaml:2377\n+msgid \"Comma is not allowed in Service ID Number field\"\n+msgstr \"La virgule n’est pas autorisée dans le champ du Numéro d'identification du service\"\n+\n #. SQL Constraint Error String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1346\n+#: ckanext/canada/tables/service.yaml:1351\n msgid \"\"\n \"Cannot delete record(s) because the Fiscal Year, Service ID Number is \"\n \"referenced in at least one Service Standards & Performance Results \"\n@@ -1581,22 +1588,27 @@ msgstr \"\"\n \"\\\"Normes de service et résultats du rendement\\\"\"\n \n #. Resource Title for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1611\n+#: ckanext/canada/tables/service.yaml:1620\n msgid \"Service Standards & Performance Results\"\n msgstr \"Normes de service et résultats du rendement\"\n \n #. SQL Trigger String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:1948\n-#: ckanext/canada/tables/service.yaml:2344\n+#: ckanext/canada/tables/service.yaml:1967\n+#: ckanext/canada/tables/service.yaml:2369\n msgid \"\"\n \"This field must be a single number between 0 and 1 representing a \"\n \"percentage.\"\n msgstr \"\"\n \"Ce champ doit inscrire un seul et unique chiffre entre 0 et 1 \"\n \"représentant un pourcentage\"\n \n+#. SQL Trigger String for PD Type: service\n+#: ckanext/canada/tables/service.yaml:2378\n+msgid \"Comma is not allowed in Service Standard ID field\"\n+msgstr \"La virgule n’est pas autorisée dans le champ du Numéro d'identification de la norme relative aux services\"\n+\n #. SQL Constraint Error String for PD Type: service\n-#: ckanext/canada/tables/service.yaml:2252\n+#: ckanext/canada/tables/service.yaml:2271\n msgid \"\"\n \"Cannot create record because the Service ID Number does not exist in the \"\n \"Service Identification Information & Metrics resource for that fiscal \""
+                },
+                {
+                    "sha": "1646aa141524237db4ca45a2f401cc965ab7eb97",
+                    "filename": "ckanext/canada/tables/service.yaml",
+                    "status": "modified",
+                    "additions": 33,
+                    "deletions": 6,
+                    "changes": 39,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Ftables%2Fservice.yaml",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Ftables%2Fservice.yaml",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Ftables%2Fservice.yaml?ref=f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "patch": "@@ -53,10 +53,15 @@ resources:\n     obligation: Mandatory\n     excel_required: true\n     form_required: true\n+    excel_error_formula: 'OR({default_formula},LEN({cell})-LEN(SUBSTITUTE({cell},\",\",\"\"))>0)'\n     format_type: Free text\n     validation:\n-      en: This field must not be empty.\n-      fr: Ce champ ne doit pas être vide.\n+      en: |\n+        This field must not be empty.\n+        This field cannot contain commas.\n+      fr: |\n+        Ce champ ne doit pas être vide.\n+        Ce champ ne peut pas contenir de virgules.\n     occurrence: Single\n     datastore_type: text\n \n@@ -1357,6 +1362,9 @@ resources:\n         errors := errors || choice_error(NEW.fiscal_yr, {fiscal_yr}, 'fiscal_yr');\n \n         errors := errors || required_error(NEW.service_id, 'service_id');\n+        IF NEW.service_id LIKE '%,%' THEN\n+          errors := errors || ARRAY[['service_id', {service_id_comma_error}]];\n+        END IF;\n \n         errors := errors || required_error(NEW.service_name_en, 'service_name_en');\n         NEW.service_name_en := trim_lead_trailing(NEW.service_name_en);\n@@ -1535,6 +1543,7 @@ resources:\n     integer_type_error: 'Invalid input syntax for type integer: {}'\n     conditional_required_error: This field is required due to a response in a different field.\n     both_lang_error: This text must be provided in both languages\n+    service_id_comma_error: Comma is not allowed in Service ID Number field\n \n   examples:\n     record:\n@@ -1648,9 +1657,14 @@ resources:\n     obligation: Mandatory\n     excel_required: true\n     form_required: true\n+    excel_error_formula: 'OR({default_formula},LEN({cell})-LEN(SUBSTITUTE({cell},\",\",\"\"))>0)'\n     validation:\n-      en: This field must not be empty.\n-      fr: Ce champ ne doit pas être vide.\n+      en: |\n+        This field must not be empty.\n+        This field cannot contain commas.\n+      fr: |\n+        Ce champ ne doit pas être vide.\n+        Ce champ ne peut pas contenir de virgules.\n     format_type: Free text\n     occurrence: Single\n     datastore_type: text\n@@ -1726,9 +1740,14 @@ resources:\n     obligation: Mandatory\n     excel_required: true\n     form_required: true\n+    excel_error_formula: 'OR({default_formula},LEN({cell})-LEN(SUBSTITUTE({cell},\",\",\"\"))>0)'\n     validation:\n-      en: This field must not be empty.\n-      fr: Ce champ ne doit pas être vide.\n+      en: |\n+        This field must not be empty.\n+        This field cannot contain commas.\n+      fr: |\n+        Ce champ ne doit pas être vide.\n+        Ce champ ne peut pas contenir de virgules.\n     format_type: Free text\n     occurrence: Single\n     datastore_type: text\n@@ -2263,6 +2282,9 @@ resources:\n         errors := errors || choice_error(NEW.fiscal_yr, {fiscal_yr}, 'fiscal_yr');\n \n         errors := errors || required_error(NEW.service_id, 'service_id');\n+        IF NEW.service_id LIKE '%,%' THEN\n+          errors := errors || ARRAY[['service_id', {service_id_comma_error}]];\n+        END IF;\n \n         errors := errors || required_error(NEW.service_name_en, 'service_name_en');\n         NEW.service_name_en := trim_lead_trailing(NEW.service_name_en);\n@@ -2273,6 +2295,9 @@ resources:\n         errors := errors || max_char_error(NEW.service_name_fr, 250, 'service_name_fr');\n \n         errors := errors || required_error(NEW.service_standard_id, 'service_standard_id');\n+        IF NEW.service_standard_id LIKE '%,%' THEN\n+          errors := errors || ARRAY[['service_standard_id', {service_standard_id_comma_error}]];\n+        END IF;\n \n         errors := errors || required_error(NEW.service_standard_en, 'service_standard_en');\n         NEW.service_standard_en := trim_lead_trailing(NEW.service_standard_en);\n@@ -2349,6 +2374,8 @@ resources:\n     integer_type_error: 'Invalid input syntax for type integer: {}'\n     conditional_required_error: This field is required due to a response in a different field.\n     both_lang_error: This text must be provided in both languages\n+    service_id_comma_error: Comma is not allowed in Service ID Number field\n+    service_standard_id_comma_error: Comma is not allowed in Service Standard ID field\n \n   examples:\n     record:"
+                },
+                {
+                    "sha": "525d17edb8484b3efa5c340a4d4b53cee4306ad7",
+                    "filename": "ckanext/canada/tests/test_service.py",
+                    "status": "modified",
+                    "additions": 42,
+                    "deletions": 7,
+                    "changes": 49,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Ftests%2Ftest_service.py",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f3167636ce7e219bcbd61933f453d7ffaca0b6b7/ckanext%2Fcanada%2Ftests%2Ftest_service.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Ftests%2Ftest_service.py?ref=f3167636ce7e219bcbd61933f453d7ffaca0b6b7",
+                    "patch": "@@ -30,21 +30,37 @@ def test_example(self):\n         \"\"\"\n         Example data should load\n         \"\"\"\n-        record = get_chromo('service')['examples']['record']\n+        record = get_chromo('service')['examples']['record'].copy()\n         self.lc.action.datastore_upsert(\n             resource_id=self.resource_id,\n             records=[record])\n \n \n+    def test_primary_key_commas(self):\n+        \"\"\"\n+        Commas in primary keys should error\n+        \"\"\"\n+        record = get_chromo('service')['examples']['record'].copy()\n+        record['service_id'] = 'this,is,a,failure'\n+        with pytest.raises(ValidationError) as ve:\n+            self.lc.action.datastore_upsert(\n+                resource_id=self.resource_id,\n+                records=[record])\n+        err = ve.value.error_dict\n+        assert 'records' in err\n+        assert 'service_id' in err['records'][0]\n+        assert err['records'][0]['service_id'] == ['Comma is not allowed in Service ID Number field']\n+\n+\n     def test_foreign_constraint(self):\n         \"\"\"\n         Trying to delete a Service record when there are Standard records referencing it should raise an exception\n         \"\"\"\n-        record = get_chromo('service')['examples']['record']\n+        record = get_chromo('service')['examples']['record'].copy()\n         self.lc.action.datastore_upsert(\n             resource_id=self.resource_id,\n             records=[record])\n-        record = get_chromo('service-std')['examples']['record']\n+        record = get_chromo('service-std')['examples']['record'].copy()\n         self.lc.action.datastore_upsert(\n             resource_id=self.resource_cid,\n             records=[record])\n@@ -346,7 +362,7 @@ def setup_method(self, method):\n \n \n     def _make_parent_record(self):\n-        record = get_chromo('service')['examples']['record']\n+        record = get_chromo('service')['examples']['record'].copy()\n         self.lc.action.datastore_upsert(\n             resource_id=self.resource_pid,\n             records=[record])\n@@ -357,17 +373,36 @@ def test_example(self):\n         Example data should load\n         \"\"\"\n         self._make_parent_record()\n-        record = get_chromo('service-std')['examples']['record']\n+        record = get_chromo('service-std')['examples']['record'].copy()\n         self.lc.action.datastore_upsert(\n             resource_id=self.resource_id,\n             records=[record])\n \n \n+    def test_primary_key_commas(self):\n+        \"\"\"\n+        Commas in primary keys should error\n+        \"\"\"\n+        record = get_chromo('service-std')['examples']['record'].copy().copy()\n+        record['service_id'] = 'this,is,a,failure'\n+        record['service_standard_id'] = 'this,is,a,failure'\n+        with pytest.raises(ValidationError) as ve:\n+            self.lc.action.datastore_upsert(\n+                resource_id=self.resource_id,\n+                records=[record])\n+        err = ve.value.error_dict\n+        assert 'records' in err\n+        assert 'service_id' in err['records'][0]\n+        assert 'service_standard_id' in err['records'][0]\n+        assert err['records'][0]['service_id'] == ['Comma is not allowed in Service ID Number field']\n+        assert err['records'][0]['service_standard_id'] == ['Comma is not allowed in Service Standard ID field']\n+\n+\n     def test_foreign_constraint(self):\n         \"\"\"\n         Trying to create a Standard record referencing a nonexistent Service record should raise an exception\n         \"\"\"\n-        record = get_chromo('service-std')['examples']['record']\n+        record = get_chromo('service-std')['examples']['record'].copy()\n         with pytest.raises(ValidationError) as ve:\n             self.lc.action.datastore_upsert(\n                 resource_id=self.resource_id,\n@@ -425,7 +460,7 @@ def test_duolang_fields(self):\n         Fields with both _en and _fr should require eachother\n         \"\"\"\n         self._make_parent_record()\n-        record = get_chromo('service-std')['examples']['record'].copy()\n+        record = get_chromo('service-std')['examples']['record'].copy().copy()\n \n         record['channel_comments_en'] = 'Not Blank'\n         record['channel_comments_fr'] = None"
+                }
+            ]
+        },
+        "ckanext-cloudstorage": {
+            "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/compare/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2...3799984c733559064b32a2eedd27308c6d16bf0e",
+            "html_url": "https://github.com/open-data/ckanext-cloudstorage/compare/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2...3799984c733559064b32a2eedd27308c6d16bf0e",
+            "permalink_url": "https://github.com/open-data/ckanext-cloudstorage/compare/open-data:1cf3674...open-data:3799984",
+            "diff_url": "https://github.com/open-data/ckanext-cloudstorage/compare/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2...3799984c733559064b32a2eedd27308c6d16bf0e.diff",
+            "patch_url": "https://github.com/open-data/ckanext-cloudstorage/compare/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2...3799984c733559064b32a2eedd27308c6d16bf0e.patch",
+            "base_commit": {
+                "sha": "1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                "node_id": "C_kwDOB5AGptoAKDFjZjM2NzRhNmEwNjc1Y2RhNWU2YzQ0OGU5Yzg5OTBkNjQwZWEzYzI",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                        "date": "2024-11-12T14:22:24Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2024-11-12T14:22:24Z"
+                    },
+                    "message": "Merge pull request #10 from open-data/feature/resource-filesizes\n\nResource File Sizes",
+                    "tree": {
+                        "sha": "00c2f3f045222a90a48e38e45c1c46be4d40baec",
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/git/trees/00c2f3f045222a90a48e38e45c1c46be4d40baec"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/git/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnM2SgCRC1aQ7uu5UhlAAAv3cQAEYG04m22YEqLAP+xr9qsKbr\nhAbc2tXRtTJ2pLsLmQU4IkN87uy3fAbKxdQ/AD0+ikuCU53aAfT/qG5qkzZHIi1I\nX0CrcROWaxCn634lVZ91Dp0QQ+ntYCAfWF9Yi9cAgDcYVx15IUsIwabWd3l5DCjP\n7EqCDbrefRJB6rAKh9QyKzKAUe4cfcPAowQ7coy5els1mun4Ebug/5iL09PcCYwp\n9JlEcDjqbBz9nV2zLHO5GApNLsTMpKjW7p+IjQVCqkgW2kwAug4IgFPNEFaJzKiL\nUfCWokVUdhxMWxWZ1JCnBiMFQ8i7PFTB2eAOfEQyVAON82q5hb/dlTKeacx3I0mj\nJXwlWhg/w797E43DZj6BITHKiZN+Gf/ek1+wgidQk7kxC5+FlQb1kZd39WoQY72M\naj2/k774SY7VsH0Pxy7Q/PN5VMrEF+K3jCtHXPt/TjMjcM0LGZXGlQoLe2HgDD6W\nei2r6ocm6J9MHlOXC4BUrCjUI/tN4CHn1eVZw/k92nofJTWkN/XoJqAusRh8nThX\nHoUuCqTV1K5t9EEJKItkXN3om9HUW0KVEHWvCu2gRKdqm3HoYWNevjYYDUcL/m0+\nMT5/Cmjewrkya8v1tGPq/2RzmwwjofrNjsOTz5l616ZMHK18dXb4MmaOuw0rqYE6\nYta6M0eC+OmgyfekNLnM\n=WS2Y\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree 00c2f3f045222a90a48e38e45c1c46be4d40baec\nparent a264d6b7525ca3e36cd0c69427087b7bf4c1923e\nparent 6430c58418c11ec8621de36972e051b557182284\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1731421344 -0500\ncommitter GitHub <noreply@github.com> 1731421344 -0500\n\nMerge pull request #10 from open-data/feature/resource-filesizes\n\nResource File Sizes",
+                        "verified_at": "2024-11-12T14:27:28Z"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "a264d6b7525ca3e36cd0c69427087b7bf4c1923e",
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/a264d6b7525ca3e36cd0c69427087b7bf4c1923e",
+                        "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/a264d6b7525ca3e36cd0c69427087b7bf4c1923e"
+                    },
+                    {
+                        "sha": "6430c58418c11ec8621de36972e051b557182284",
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/6430c58418c11ec8621de36972e051b557182284",
+                        "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/6430c58418c11ec8621de36972e051b557182284"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                "node_id": "C_kwDOB5AGptoAKDFjZjM2NzRhNmEwNjc1Y2RhNWU2YzQ0OGU5Yzg5OTBkNjQwZWEzYzI",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                        "date": "2024-11-12T14:22:24Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2024-11-12T14:22:24Z"
+                    },
+                    "message": "Merge pull request #10 from open-data/feature/resource-filesizes\n\nResource File Sizes",
+                    "tree": {
+                        "sha": "00c2f3f045222a90a48e38e45c1c46be4d40baec",
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/git/trees/00c2f3f045222a90a48e38e45c1c46be4d40baec"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/git/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnM2SgCRC1aQ7uu5UhlAAAv3cQAEYG04m22YEqLAP+xr9qsKbr\nhAbc2tXRtTJ2pLsLmQU4IkN87uy3fAbKxdQ/AD0+ikuCU53aAfT/qG5qkzZHIi1I\nX0CrcROWaxCn634lVZ91Dp0QQ+ntYCAfWF9Yi9cAgDcYVx15IUsIwabWd3l5DCjP\n7EqCDbrefRJB6rAKh9QyKzKAUe4cfcPAowQ7coy5els1mun4Ebug/5iL09PcCYwp\n9JlEcDjqbBz9nV2zLHO5GApNLsTMpKjW7p+IjQVCqkgW2kwAug4IgFPNEFaJzKiL\nUfCWokVUdhxMWxWZ1JCnBiMFQ8i7PFTB2eAOfEQyVAON82q5hb/dlTKeacx3I0mj\nJXwlWhg/w797E43DZj6BITHKiZN+Gf/ek1+wgidQk7kxC5+FlQb1kZd39WoQY72M\naj2/k774SY7VsH0Pxy7Q/PN5VMrEF+K3jCtHXPt/TjMjcM0LGZXGlQoLe2HgDD6W\nei2r6ocm6J9MHlOXC4BUrCjUI/tN4CHn1eVZw/k92nofJTWkN/XoJqAusRh8nThX\nHoUuCqTV1K5t9EEJKItkXN3om9HUW0KVEHWvCu2gRKdqm3HoYWNevjYYDUcL/m0+\nMT5/Cmjewrkya8v1tGPq/2RzmwwjofrNjsOTz5l616ZMHK18dXb4MmaOuw0rqYE6\nYta6M0eC+OmgyfekNLnM\n=WS2Y\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree 00c2f3f045222a90a48e38e45c1c46be4d40baec\nparent a264d6b7525ca3e36cd0c69427087b7bf4c1923e\nparent 6430c58418c11ec8621de36972e051b557182284\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1731421344 -0500\ncommitter GitHub <noreply@github.com> 1731421344 -0500\n\nMerge pull request #10 from open-data/feature/resource-filesizes\n\nResource File Sizes",
+                        "verified_at": "2024-11-12T14:27:28Z"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "a264d6b7525ca3e36cd0c69427087b7bf4c1923e",
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/a264d6b7525ca3e36cd0c69427087b7bf4c1923e",
+                        "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/a264d6b7525ca3e36cd0c69427087b7bf4c1923e"
+                    },
+                    {
+                        "sha": "6430c58418c11ec8621de36972e051b557182284",
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/6430c58418c11ec8621de36972e051b557182284",
+                        "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/6430c58418c11ec8621de36972e051b557182284"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 1,
+            "behind_by": 0,
+            "total_commits": 1,
+            "commits": [
+                {
+                    "sha": "3799984c733559064b32a2eedd27308c6d16bf0e",
+                    "node_id": "C_kwDOB5AGptoAKDM3OTk5ODRjNzMzNTU5MDY0YjMyYTJlZWRkMjczMDhjNmQxNmJmMGU",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T21:16:40Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-11-20T21:16:40Z"
+                        },
+                        "message": "fix(cli): syntax;\n\n- Set filesizes syntax issue.",
+                        "tree": {
+                            "sha": "fc2cb6fc8cde31eb99031c247fa03b563f6d7d52",
+                            "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/git/trees/fc2cb6fc8cde31eb99031c247fa03b563f6d7d52"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/git/commits/3799984c733559064b32a2eedd27308c6d16bf0e",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/3799984c733559064b32a2eedd27308c6d16bf0e",
+                    "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/3799984c733559064b32a2eedd27308c6d16bf0e",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/3799984c733559064b32a2eedd27308c6d16bf0e/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                            "url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/commits/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2",
+                            "html_url": "https://github.com/open-data/ckanext-cloudstorage/commit/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "06cf857ac964789984b1a8ef421f72454dd95fe3",
+                    "filename": "changes/0001.canada.hotfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-cloudstorage/blob/3799984c733559064b32a2eedd27308c6d16bf0e/changes%2F0001.canada.hotfix",
+                    "raw_url": "https://github.com/open-data/ckanext-cloudstorage/raw/3799984c733559064b32a2eedd27308c6d16bf0e/changes%2F0001.canada.hotfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/contents/changes%2F0001.canada.hotfix?ref=3799984c733559064b32a2eedd27308c6d16bf0e",
+                    "patch": "@@ -0,0 +1 @@\n+Fixed syntax issue with the new `calculate-filesizes` CLI command."
+                },
+                {
+                    "sha": "664d7d2137ff05850670f60c0feda66dc6165dd4",
+                    "filename": "ckanext/cloudstorage/utils.py",
+                    "status": "modified",
+                    "additions": 1,
+                    "deletions": 1,
+                    "changes": 2,
+                    "blob_url": "https://github.com/open-data/ckanext-cloudstorage/blob/3799984c733559064b32a2eedd27308c6d16bf0e/ckanext%2Fcloudstorage%2Futils.py",
+                    "raw_url": "https://github.com/open-data/ckanext-cloudstorage/raw/3799984c733559064b32a2eedd27308c6d16bf0e/ckanext%2Fcloudstorage%2Futils.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-cloudstorage/contents/ckanext%2Fcloudstorage%2Futils.py?ref=3799984c733559064b32a2eedd27308c6d16bf0e",
+                    "patch": "@@ -509,7 +509,7 @@ def set_filesizes(resource_id=None, verbose=False):\n             continue\n         if verbose:\n             click.echo('[%s/%s] File size for resource %s is %s bytes.' % (_i, _max, resource.get('id'), filesize))\n-        if int(filesize) == int(resource.get('size')):\n+        if resource.get('size') and int(filesize) == int(resource.get('size')):\n             if verbose:\n                 click.echo('[%s/%s] File size for resource %s is not different. Skipping...' % (_i, _max, resource.get('id')))\n             continue"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
