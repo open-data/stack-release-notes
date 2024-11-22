@@ -1,0 +1,28 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add validation fields to info schema.\nAdd missing translations for validation:\n- Validation timestamp\n- Validation status\n",
+                    "hash": "3a8a2bed9ee211d83b4cd84f26d098a60b4d29d6"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed a reference assignment error in the deleting views code block of PortalUpdater. PortalUpdater will now give a system exit code 1 if there are any errors in the process.\n",
+                    "hash": "1b6138b59f6cf11b46567075ae4109b377b4f489"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add translations for the resource field validation_status",
+                    "hash": "a4e232e4eae48a4931f8dafa0d003a27cd5235c8"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
