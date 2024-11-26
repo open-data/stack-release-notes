@@ -1,0 +1,43 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Resource file size now displays in a human-readable format.\n",
+                    "hash": "f1b959ee199bdc1d732b72641b2b44aa991a5452"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated description copy for Service Inventory `Fiscal Year` fields. Updated maximum characters for `Service Name` fields from `250` to `350`.\n",
+                    "hash": "6c477da2caa0073c67d5de86012fe64af1d5584f"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "`max_chars` schema field argument now displays in Data Dictionaries as `Character Limit`\n",
+                    "hash": "fea349da649cf6de48c5c05d420527e040156fc0"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "gcweb_bootstrap": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "- Remove the social media pillars from template\n- Remove the citation feature\n",
+                    "hash": "9db01848c8d0eac694fc597beb110f2a392523b8"
+                }
+            ]
+        }
+    }
+}
