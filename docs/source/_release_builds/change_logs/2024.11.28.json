@@ -1,0 +1,36 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed Service Inventory `service_name` fields character limit increase to `350` at the DB level.\n",
+                    "hash": "e8c02ea3dcc174c7560680138096939b84cb5680"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "You can now specify a REDIS queue with `ckanext.validation.queue_name` config option.\n",
+                    "hash": "095272dd89e6cec7027731b084c2f001b8f39974"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "You can now specify a REDIS queue with `ckanext.xloader.queue_name` config option.\n",
+                    "hash": "316b6bc8d7cd9428e50e941ba7d2312979fa3293"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
