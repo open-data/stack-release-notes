@@ -1,0 +1,658 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "url": "https://api.github.com/repos/open-data/ckanext-canada/compare/f71b5d79d16f2548057a7a4796b2319e2a833a74...f5e312fc3f4343285db630a580f02863c1630952",
+            "html_url": "https://github.com/open-data/ckanext-canada/compare/f71b5d79d16f2548057a7a4796b2319e2a833a74...f5e312fc3f4343285db630a580f02863c1630952",
+            "permalink_url": "https://github.com/open-data/ckanext-canada/compare/open-data:f71b5d7...open-data:f5e312f",
+            "diff_url": "https://github.com/open-data/ckanext-canada/compare/f71b5d79d16f2548057a7a4796b2319e2a833a74...f5e312fc3f4343285db630a580f02863c1630952.diff",
+            "patch_url": "https://github.com/open-data/ckanext-canada/compare/f71b5d79d16f2548057a7a4796b2319e2a833a74...f5e312fc3f4343285db630a580f02863c1630952.patch",
+            "base_commit": {
+                "sha": "f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                "node_id": "C_kwDOAGzkrtoAKGY3MWI1ZDc5ZDE2ZjI1NDgwNTdhN2E0Nzk2YjIzMTllMmE4MzNhNzQ",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-11-28T14:44:19Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-11-28T14:44:19Z"
+                    },
+                    "message": "fix(pd): service name max char;\n\n- Fixed max char at DB level.",
+                    "tree": {
+                        "sha": "b90729f330a4ce4c59db3daf85c49db78bf1ea22",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/b90729f330a4ce4c59db3daf85c49db78bf1ea22"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "19f053cc7336e6c92f00a7b9fb779d5b133b7f67",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/19f053cc7336e6c92f00a7b9fb779d5b133b7f67",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/19f053cc7336e6c92f00a7b9fb779d5b133b7f67"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                "node_id": "C_kwDOAGzkrtoAKGY3MWI1ZDc5ZDE2ZjI1NDgwNTdhN2E0Nzk2YjIzMTllMmE4MzNhNzQ",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-11-28T14:44:19Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-11-28T14:44:19Z"
+                    },
+                    "message": "fix(pd): service name max char;\n\n- Fixed max char at DB level.",
+                    "tree": {
+                        "sha": "b90729f330a4ce4c59db3daf85c49db78bf1ea22",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/b90729f330a4ce4c59db3daf85c49db78bf1ea22"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "19f053cc7336e6c92f00a7b9fb779d5b133b7f67",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/19f053cc7336e6c92f00a7b9fb779d5b133b7f67",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/19f053cc7336e6c92f00a7b9fb779d5b133b7f67"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 1,
+            "behind_by": 0,
+            "total_commits": 1,
+            "commits": [
+                {
+                    "sha": "f5e312fc3f4343285db630a580f02863c1630952",
+                    "node_id": "C_kwDOAGzkrtoAKGY1ZTMxMmZjM2Y0MzQzMjg1ZGI2MzBhNTgwZjAyODYzYzE2MzA5NTI",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-01T01:19:14Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-01T01:19:14Z"
+                        },
+                        "message": "feat(pd): service big int;\n\n- Update volume fields to bigint.",
+                        "tree": {
+                            "sha": "24f0e7336edd84b7b45b6637ba310b5886bc9770",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/24f0e7336edd84b7b45b6637ba310b5886bc9770"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/f5e312fc3f4343285db630a580f02863c1630952",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f5e312fc3f4343285db630a580f02863c1630952",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/f5e312fc3f4343285db630a580f02863c1630952",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f5e312fc3f4343285db630a580f02863c1630952/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/f71b5d79d16f2548057a7a4796b2319e2a833a74",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/f71b5d79d16f2548057a7a4796b2319e2a833a74"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "4849981d7510afcfeb64041dd7dac1cf6942d275",
+                    "filename": "changes/0011.changes",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f5e312fc3f4343285db630a580f02863c1630952/changes%2F0011.changes",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f5e312fc3f4343285db630a580f02863c1630952/changes%2F0011.changes",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F0011.changes?ref=f5e312fc3f4343285db630a580f02863c1630952",
+                    "patch": "@@ -0,0 +1 @@\n+Updated Service Inventory fields `volume_meeting_target` and `total_volume` from `int` to `bigint`"
+                },
+                {
+                    "sha": "cad5927dfc84f113e4af6a9ac2c9ee3c7def0341",
+                    "filename": "ckanext/canada/tables/service.yaml",
+                    "status": "modified",
+                    "additions": 2,
+                    "deletions": 2,
+                    "changes": 4,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/f5e312fc3f4343285db630a580f02863c1630952/ckanext%2Fcanada%2Ftables%2Fservice.yaml",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/f5e312fc3f4343285db630a580f02863c1630952/ckanext%2Fcanada%2Ftables%2Fservice.yaml",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Ftables%2Fservice.yaml?ref=f5e312fc3f4343285db630a580f02863c1630952",
+                    "patch": "@@ -2006,7 +2006,7 @@ resources:\n       en: This value must not be negative.\n       fr: Cette valeur ne doit être négative.\n     occurrence: Single\n-    datastore_type: int\n+    datastore_type: bigint\n     excel_error_formula: 'OR({default_formula},NOT(ISNUMBER({cell})),{cell}<0)'\n \n   # DEP 2-14\n@@ -2031,7 +2031,7 @@ resources:\n       en: This value must not be negative.\n       fr: Cette valeur ne doit être négative.\n     occurrence: Single\n-    datastore_type: int\n+    datastore_type: bigint\n     excel_error_formula: 'OR({default_formula},NOT(ISNUMBER({cell})),{cell}<0)'\n \n   # DEP 2-15"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "url": "https://api.github.com/repos/open-data/oc_search/compare/0a028fcbaab23881a5d189743cd9bba7c608e5f9...9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+            "html_url": "https://github.com/open-data/oc_search/compare/0a028fcbaab23881a5d189743cd9bba7c608e5f9...9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+            "permalink_url": "https://github.com/open-data/oc_search/compare/open-data:0a028fc...open-data:9685a3c",
+            "diff_url": "https://github.com/open-data/oc_search/compare/0a028fcbaab23881a5d189743cd9bba7c608e5f9...9685a3c7a2e72af0913e4bdd464f43160f2227e7.diff",
+            "patch_url": "https://github.com/open-data/oc_search/compare/0a028fcbaab23881a5d189743cd9bba7c608e5f9...9685a3c7a2e72af0913e4bdd464f43160f2227e7.patch",
+            "base_commit": {
+                "sha": "0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                "node_id": "C_kwDOD-wqodoAKDBhMDI4ZmNiYWFiMjM4ODFhNWQxODk3NDNjZDliYmE3YzYwOGU1Zjk",
+                "commit": {
+                    "author": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-11-27T21:35:23Z"
+                    },
+                    "committer": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-11-27T21:35:23Z"
+                    },
+                    "message": "OPEN-3686: First Draft of Custom Search dev guide",
+                    "tree": {
+                        "sha": "4270d16cdf3bcf391fd39f915495f713078677d9",
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/trees/4270d16cdf3bcf391fd39f915495f713078677d9"
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/git/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/oc_search/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                "html_url": "https://github.com/open-data/oc_search/commit/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9/comments",
+                "author": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "9f4f35193a5eaa2ce4b343915be919267a70c9d0",
+                        "url": "https://api.github.com/repos/open-data/oc_search/commits/9f4f35193a5eaa2ce4b343915be919267a70c9d0",
+                        "html_url": "https://github.com/open-data/oc_search/commit/9f4f35193a5eaa2ce4b343915be919267a70c9d0"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                "node_id": "C_kwDOD-wqodoAKDBhMDI4ZmNiYWFiMjM4ODFhNWQxODk3NDNjZDliYmE3YzYwOGU1Zjk",
+                "commit": {
+                    "author": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-11-27T21:35:23Z"
+                    },
+                    "committer": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-11-27T21:35:23Z"
+                    },
+                    "message": "OPEN-3686: First Draft of Custom Search dev guide",
+                    "tree": {
+                        "sha": "4270d16cdf3bcf391fd39f915495f713078677d9",
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/trees/4270d16cdf3bcf391fd39f915495f713078677d9"
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/git/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/oc_search/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                "html_url": "https://github.com/open-data/oc_search/commit/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9/comments",
+                "author": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "9f4f35193a5eaa2ce4b343915be919267a70c9d0",
+                        "url": "https://api.github.com/repos/open-data/oc_search/commits/9f4f35193a5eaa2ce4b343915be919267a70c9d0",
+                        "html_url": "https://github.com/open-data/oc_search/commit/9f4f35193a5eaa2ce4b343915be919267a70c9d0"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 2,
+            "behind_by": 0,
+            "total_commits": 2,
+            "commits": [
+                {
+                    "sha": "4d549d1c860aa824d35698dde5ae919e60e55eda",
+                    "node_id": "C_kwDOD-wqodoAKDRkNTQ5ZDFjODYwYWE4MjRkMzU2OThkZGU1YWU5MTllNjBlNTVlZGE",
+                    "commit": {
+                        "author": {
+                            "name": "thriuin",
+                            "email": "ross.thompson@tbs-sct.gc.ca",
+                            "date": "2024-11-28T21:28:22Z"
+                        },
+                        "committer": {
+                            "name": "thriuin",
+                            "email": "ross.thompson@tbs-sct.gc.ca",
+                            "date": "2024-11-28T21:28:22Z"
+                        },
+                        "message": "OPEN-3686: First Draft of Custom Search dev guide",
+                        "tree": {
+                            "sha": "42cff35e673958c7c78fbfd0a91a28f045dc818c",
+                            "url": "https://api.github.com/repos/open-data/oc_search/git/trees/42cff35e673958c7c78fbfd0a91a28f045dc818c"
+                        },
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/commits/4d549d1c860aa824d35698dde5ae919e60e55eda",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/commits/4d549d1c860aa824d35698dde5ae919e60e55eda",
+                    "html_url": "https://github.com/open-data/oc_search/commit/4d549d1c860aa824d35698dde5ae919e60e55eda",
+                    "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/4d549d1c860aa824d35698dde5ae919e60e55eda/comments",
+                    "author": {
+                        "login": "thriuin",
+                        "id": 1249972,
+                        "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/thriuin",
+                        "html_url": "https://github.com/thriuin",
+                        "followers_url": "https://api.github.com/users/thriuin/followers",
+                        "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                        "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                        "repos_url": "https://api.github.com/users/thriuin/repos",
+                        "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "thriuin",
+                        "id": 1249972,
+                        "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/thriuin",
+                        "html_url": "https://github.com/thriuin",
+                        "followers_url": "https://api.github.com/users/thriuin/followers",
+                        "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                        "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                        "repos_url": "https://api.github.com/users/thriuin/repos",
+                        "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                            "url": "https://api.github.com/repos/open-data/oc_search/commits/0a028fcbaab23881a5d189743cd9bba7c608e5f9",
+                            "html_url": "https://github.com/open-data/oc_search/commit/0a028fcbaab23881a5d189743cd9bba7c608e5f9"
+                        }
+                    ]
+                },
+                {
+                    "sha": "9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+                    "node_id": "C_kwDOD-wqodoAKDk2ODVhM2M3YTJlNzJhZjA5MTNlNGJkZDQ2NGY0MzE2MGYyMjI3ZTc",
+                    "commit": {
+                        "author": {
+                            "name": "thriuin",
+                            "email": "ross.thompson@tbs-sct.gc.ca",
+                            "date": "2024-11-29T21:54:50Z"
+                        },
+                        "committer": {
+                            "name": "thriuin",
+                            "email": "ross.thompson@tbs-sct.gc.ca",
+                            "date": "2024-11-29T21:54:50Z"
+                        },
+                        "message": "OPEN-3686: First Draft of Custom Search dev guide",
+                        "tree": {
+                            "sha": "867ecad3c83ed968c71488250f69d4aeab57a3c0",
+                            "url": "https://api.github.com/repos/open-data/oc_search/git/trees/867ecad3c83ed968c71488250f69d4aeab57a3c0"
+                        },
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/commits/9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/commits/9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+                    "html_url": "https://github.com/open-data/oc_search/commit/9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+                    "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/9685a3c7a2e72af0913e4bdd464f43160f2227e7/comments",
+                    "author": {
+                        "login": "thriuin",
+                        "id": 1249972,
+                        "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/thriuin",
+                        "html_url": "https://github.com/thriuin",
+                        "followers_url": "https://api.github.com/users/thriuin/followers",
+                        "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                        "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                        "repos_url": "https://api.github.com/users/thriuin/repos",
+                        "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "thriuin",
+                        "id": 1249972,
+                        "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/thriuin",
+                        "html_url": "https://github.com/thriuin",
+                        "followers_url": "https://api.github.com/users/thriuin/followers",
+                        "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                        "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                        "repos_url": "https://api.github.com/users/thriuin/repos",
+                        "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "4d549d1c860aa824d35698dde5ae919e60e55eda",
+                            "url": "https://api.github.com/repos/open-data/oc_search/commits/4d549d1c860aa824d35698dde5ae919e60e55eda",
+                            "html_url": "https://github.com/open-data/oc_search/commit/4d549d1c860aa824d35698dde5ae919e60e55eda"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "3ac00109578a519480e2525c4e079507c8515034",
+                    "filename": "docs/Custom_searches.md",
+                    "status": "modified",
+                    "additions": 173,
+                    "deletions": 129,
+                    "changes": 302,
+                    "blob_url": "https://github.com/open-data/oc_search/blob/9685a3c7a2e72af0913e4bdd464f43160f2227e7/docs%2FCustom_searches.md",
+                    "raw_url": "https://github.com/open-data/oc_search/raw/9685a3c7a2e72af0913e4bdd464f43160f2227e7/docs%2FCustom_searches.md",
+                    "contents_url": "https://api.github.com/repos/open-data/oc_search/contents/docs%2FCustom_searches.md?ref=9685a3c7a2e72af0913e4bdd464f43160f2227e7",
+                    "patch": "@@ -11,7 +11,7 @@ Before developing a custom search, be sure to set up and run the OC Search appli\n These are the basic steps to create a new <a href=\"https://open.canada.ca/en/proactive-disclosure\">proactive disclosure</a> search. Steps did not have to be\n done in exactly this order, but most are needed.\n \n-- In the Django Admin interface create, create the database records that describe the Search. These\n+- In the [Django Administration interface](https://docs.djangoproject.com/en/5.1/ref/contrib/admin/) create, create the database records that describe the Search. These\n objects include:\n   - Search,\n   - Fields, and\n@@ -53,7 +53,7 @@ This is a general guide and the steps do not need to be completed exactly in thi\n \n 1. Select a unique Search type ID.\n 1. Create a new blank Solr core and copy in the synonym configuration files.\n-1. Create a new Search model using the Django Admin web UI.\n+1. Create a new Search model using the [Django Administration web UI](https://docs.djangoproject.com/en/5.1/ref/contrib/admin/).\n    - Create new Fields associated with the new search instance using the Django Admin web UI\n    - Create new Codes associated with the new Fields using the Django admin web UI. (_optional_)\n 1. Apply the search model to the blank Solr core to create a custom schema for the search model using the `create_solr_core` command\n@@ -94,11 +94,11 @@ By convention, the Solr core name uses the pattern `search_<recombinant type nam\n \n After copying the synonym text files, use the Solr Admin UI,to _reload the new core_ in order to activate the new configuration files.\n \n-![Screenshot of using the Solr Admin UI to reload a Solr core.](./images/Reload-Solr-Core.png)\n+<img src=\"./images/Reload-Solr-Core.png\" alt=\"Screenshot of using the Solr Admin UI to reload a Solr core.\" style=\"inline-size: min-content;\"></img>\n \n-The core is now ready to be used by Search. In a future step, you will apply a custom search model to Solr.\n+After reloading, the core is ready to be configured by Search. In a future step, you will apply a custom search model to Solr.\n \n-*Note* this step may need to be repeated in the future when changes are made to the Search model. Often when changing s Solr\n+__Note__ this step may need to be repeated during development when changes are made to the Search model. Often when changing s Solr\n schema it can be necessary to rebuild the Solr core from scratch.\n \n ## 3. Create a New Search model with Fields and Codes ##\n@@ -108,61 +108,68 @@ The search model consists of three database components:\n - fields which always associated with a given search, and\n - codes (_optional_) which are always associated with a given field.\n \n-Codes can be regular codes, or Chronologic Codes which are codes that are associated with a date range.\n+_Note_ Codes can be regular codes, or Chronologic Codes which are codes that are associated with a date range.\n Regular Codes can be used in almost all cases.\n \n-![Image of the 3 database components of a search definition](./images/db-model.png)\n+<img alt=\"Image of the 3 database components of a search definition\" src=\"./images/db-model.png\"></img>\n \n-Begin by creating a new search model using the Django admin UI. If you do not already have a Django admin\n-account, create one using the Djagno command-line tool.\n+Begin by creating a new search record using the [Django Administration UI](https://docs.djangoproject.com/en/5.1/ref/contrib/admin/). If you do not already have a Django admin\n+account, create one using the [Django command-line tool](https://docs.djangoproject.com/en/5.1/ref/django-admin/#createsuperuser).\n \n ```Shell\n   python .\\manage.py createsuperuser --username <new account name> --email <email address>\n ```\n \n ### 3.1 New Search Record ###\n \n-First create a Search record, by clicking on the Search type in the Django Administration menu.\n+Start by creating a Search record. Click on the Search type in the Django Administration menu.\n \n Then click the \"*Add search*\" button. Use the multi-tab interface to edit the Search record's\n fields. Complete the form as needed, then click the _Save_ button. Mandatory fields are indicated with an\n asterisk.\n \n-![Screenhot of the Django Admin Search object menu item](./images/admin-ui-search-model.png)\n+![Screen-shot of the Django Admin Search object menu item](./images/admin-ui-search-model.png)\n \n \n-#### General Tab\n+#### 3.1.1 General Tab\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Search ID  | Unique Search object identifier | contracts |\n-| Solr Core Name | Name of the core on the Solr service | search_contracts |\n-| Solr debugging | Enabled Solr debugging in response. Normally should be disabled |  |\n-| Unique ID Identifier | The field(s) that form the primary key. For compound keys, separate fields with commands | owner_org,ref_number |\n-| Alternate Record Format | Searches may contain a secondary data format, like Nothing-To-Report. Provide an identifier | NTR |\n-| Search Title (English) | English Page Title | \"Search Government Contracts over $10,000\" |\n-| Search Title (French) | French Page Title | \"Recherche des contrats gouvernementaux de plus de 10 000 $\" |\n-| Download Dataset Link Text (English) | Text for the link to the CKAN dataset page | \"Dataset Page\" |\n-| Download Dataset URL (English) | The link to the CKAN dataset page | \"https://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7\" |\n-| Download Dataset Link Text (Français) | French text for the link to the CKAN dataset page | \"Ensemble de données\"  |\n-| Download Dataset URL (French) | The link to the French CKAN dataset page | \"https://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7\" |\n-| Description (English) | Optional brief description of the Search |  |\n-| Description (Français)  | Optional brief French description of the Search | \"Search for stuff\" |\n-| About the search message (English) | Text for the \"About this Information\" section on the Search page | \"This search...\" |\n-| About the search message (Français) | French test for the \"About this Information\" section on the Search page  | \"À propos de cette recherche...\" |\n-| Search alias (English)  | An English readable name to use in the search url | contracts |\n-| Search alias (Français)  | A French readable name to use in the search url | contrats |\n-| Last imported on | Optional field for internal use - not required |  |\n-\n-#### Disabled Tab\n+These field describe  the main aspects of the search including its unique ID, Solr core, and aliases.\n+\n+| *Field*                               | *Description*                                                                               | *Example Value*                                                                |\n+|---------------------------------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|\n+| Search ID                             | Unique Search object identifier                                                             | contracts                                                                      |\n+| Solr Core Name                        | Name of the core on the Solr service                                                        | search_contracts                                                               |\n+| Solr debugging                        | Enabled Solr debugging in response. Normally should be disabled                             |                                                                                |\n+| Unique ID Identifier                  | The field(s) that form the primary key. For compound keys, separate fields with commands    | owner_org,ref_number                                                           |\n+| Alternate Record Format               | Searches may contain a secondary data format, like Nothing-To-Report. Provide an identifier | NTR                                                                            |\n+| Search Title (English)                | English Page Title                                                                          | \"Search Government Contracts over $10,000\"                                     |\n+| Search Title (French)                 | French Page Title                                                                           | \"Recherche des contrats gouvernementaux de plus de 10 000 $\"                   |\n+| Download Dataset Link Text (English)  | Text for the link to the CKAN dataset page                                                  | \"Dataset Page\"                                                                 |\n+| Download Dataset URL (English)        | The link to the CKAN dataset page                                                           | \"https://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7\"  |\n+| Download Dataset Link Text (Français) | French text for the link to the CKAN dataset page                                           | \"Ensemble de données\"                                                          |\n+| Download Dataset URL (French)         | The link to the French CKAN dataset page                                                    | \"https://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7\"  |\n+| Description (English)                 | Optional brief description of the Search                                                    |                                                                                |\n+| Description (Français)                | Optional brief French description of the Search                                             | \"Search for stuff\"                                                             |\n+| About the search message (English)    | Text for the \"About this Information\" section on the Search page                            | \"This search...\"                                                               |\n+| About the search message (Français)   | French test for the \"About this Information\" section on the Search page                     | \"À propos de cette recherche...\"                                               |\n+| Search alias (English)                | An English readable name to use in the search url                                           | contracts                                                                      |\n+| Search alias (Français)               | A French readable name to use in the search url                                             | contrats                                                                       |\n+| Last imported on                      | Optional field for internal use - not required                                              |                                                                                |\n+\n+#### 3.1.2 Disabled Tab\n+\n+These fields allow the system administrator to temporarily disable a search. When disabled, the disabled message specified here\n+will be displayed in place of the usual search.\n \n | Field                             | Description                                                                     |\n-| --------------------------------- | ------------------------------------------------------------------------------- |\n+|-----------------------------------|---------------------------------------------------------------------------------|\n | Search is disabled                | Yes/No field. Select to replace the Search page with a plain not-available pate |\n | Disabled Search Message - English | Message to show on the not-available page                                       |\n | Disabled Search Message - French  | French message to show on the not-available page                                |\n \n-#### Results\n+#### 3.1.3 Results\n+\n+These fields control different aspects of how the search results are displayed.\n \n | *Field* | *Description* | *Example Value* |\n | --------| ------------- | --------------- |\n@@ -176,158 +183,195 @@ asterisk.\n | Enable JSON format response | Yes or No. Allows returning Search results as a JSON objects | Default is false |\n | Enable raw Solr format response | Yes or No. _DO NOT USE_ in production. For debugging only | Default is false |\n \n-#### Templates\n+#### 3.1.4 Templates\n \n The Search application allows the developer to override multiple components of the Search web pages, including the Search page itself.\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Search Page Template | Django template file to use on the Search page. Can use the default template page or a custom page. | search.html |\n-| Record Page Template | Django template file to use on the individual Record page. There is a generic default page, but in most cases a custom page is needed. | search_snippets/custom/contracts/contracts_record.html |\n-| Breadcrumb Snippet Path | Django template snippet to use for the the page breadcrumbs. There is a generic default page, or a custom one can be used. | search_snippets/default_breadcrumb.html |\n-| Footer Snippet Path | Django template snippet to use for the the page footer. There is generic default snippet or a custom one can be used. | search_snippets/default_footer.html |\n-| Search Information Message Snippet Path | A template snippet for an message located at the top of every page. Currently not used.  | search_snippets/default_info_message.html |\n-| About Search Message Snippet Path | A template snippet for the \"About this information\" message. Template is only displayed if an \"About...\" message is set in the first tab. There is a default template. | search_snippets/default_about_message.html |\n-| Custom Javascript for Header file path | A JavaScript file that can be loaded for the custom search page | search_snippets/default_header.js |\n-| Custom CSS file path | A CSS file that can be loaded for the custom search page | search_snippets/default_header.css |\n-| Custom Javascript for Body file path | Rarely, used, this is a custom JavaScript file that can be loaded into the body of the file. Field can be left blank. | search_snippets/custom/data/fgp_viewer.js |\n-| Custom Search Item snippet | A template snippet for the individual search records on the search page. Although there is a default template, almost certainly a custom template will be needed. | search_snippets/custom/contracts/contracts_search_item.html |\n-| Custom Record snippet  | A template snippet for a whole record on the record page. Although there is a default template, almost certainly a custom template will be needed. Alternatively, the entire individual record page can be replaced with a custom page. | search_snippets/custom/hospitalityq/hospitalityq_record_item.html |\n-| Custom Record Breadcrumb snippet | A template snippet to use for the the record page breadcrumbs. There is a generic default page, or a custom one can be used. | search_snippets/default_record_breadcrumb.html |\n-| More-like-This Page Template | The More-like-this template page for this search. There is a default page, or a customized version can be used | more_like_this.html |\n-\n-#### More Like This ####\n+| *Field*                                 | *Description*                                                                                                                                                                                                                           | *Example Value* |\n+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --------------- |\n+| Search Page Template                    | Django template file to use on the Search page. Can use the default template page or a custom page.                                                                                                                                     | search.html |\n+| Record Page Template                    | Django template file to use on the individual Record page. There is a generic default page, but in most cases a custom page is needed.                                                                                                  | search_snippets/custom/contracts/contracts_record.html |\n+| Breadcrumb Snippet Path                 | Django template snippet to use for the the page breadcrumbs. There is a generic default page, or a custom one can be used.                                                                                                              | search_snippets/default_breadcrumb.html |\n+| Footer Snippet Path                     | Django template snippet to use for the the page footer. There is generic default snippet or a custom one can be used.                                                                                                                   | search_snippets/default_footer.html |\n+| Search Information Message Snippet Path | A template snippet for an message located at the top of every page. Currently not used.                                                                                                                                                 | search_snippets/default_info_message.html |\n+| About Search Message Snippet Path       | A template snippet for the \"About this information\" message. Template is only displayed if an \"About...\" message is set in the first tab. There is a default template.                                                                  | search_snippets/default_about_message.html |\n+| Custom Javascript for Header file path  | A JavaScript file that can be loaded for the custom search page                                                                                                                                                                         | search_snippets/default_header.js |\n+| Custom CSS file path                    | A CSS file that can be loaded for the custom search page                                                                                                                                                                                | search_snippets/default_header.css |\n+| Custom Javascript for Body file path    | Rarely, used, this is a custom JavaScript file that can be loaded into the body of the file. Field can be left blank.                                                                                                                   | search_snippets/custom/data/fgp_viewer.js |\n+| Custom Search Item snippet              | A template snippet for the individual search records on the search page. Although there is a default template, almost certainly a custom template will be needed.                                                                       | search_snippets/custom/contracts/contracts_search_item.html |\n+| Custom Record snippet                   | A template snippet for a whole record on the record page. Although there is a default template, almost certainly a custom template will be needed. Alternatively, the entire individual record page can be replaced with a custom page. | search_snippets/custom/hospitalityq/hospitalityq_record_item.html |\n+| Custom Record Breadcrumb snippet        | A template snippet to use for the the record page breadcrumbs. There is a generic default page, or a custom one can be used.                                                                                                            | search_snippets/default_record_breadcrumb.html |\n+| More-like-This Page Template            | The More-like-this template page for this search. There is a default page, or a customized version can be used                                                                                                                          | more_like_this.html |\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Enable More-Like-This | By default, most searches disable this functionality | False |\n-| No. Items returned for More-Like-This  | Number of items to show on the page | 10 |\n+#### 3.1.5 More Like This ####\n+\n+These fields can be used to enable [More-Like-This](https://solr.apache.org/guide/solr/latest/query-guide/morelikethis.html) functionality in the Search\n+\n+| *Field*                               | *Description*                                          | *Example Value* |\n+|---------------------------------------|--------------------------------------------------------|-----------------|\n+| Enable More-Like-This                 | By default, most searches disable this functionality   | False           |\n+| No. Items returned for More-Like-This | Number of items to show on the page                    | 10              |\n \n \n ### 3.2. Add New Fields to the Search ###\n \n Field components describe the individual fields that make up the records that are being loaded into Search.\n \n-Each field is associated with a specific Search model. The Field Model UI consists of five tabs.\n+Each field is associated with a specific Search instance. The Field Record UI groups all of its composing fields into five tabs.\n \n-#### General ####\n+#### 3.2.1 General ####\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Unique Field Identifier | A code identifier that is unique to this search. |  |\n-| Search ID | Select the associated Search |  |\n-| English Label | Default English label |  |\n-| French Label | Default French label |  |\n-| Format Name | The format is used to indicate of the field belongs to the primary Search type or another format like Nothing-to-report. Normally this is the same string as the Search ID | contracts or contracts-nil |\n-| Solr Field Type | Select the solr schema type |  |\n-| Language | English, French, or Bilingual  |  |\n-| Copy Field | Create generic Solr copy fields |  |\n-| Contains Code Values | Indicate if the field has associated Code values |  |\n-| Extra Solr Copy Fields | Additional copy fields for purposes other export |  |\n+These fields specify the unique Field identifier, links the Field to a Search instance, and describe the field.\n \n-#### Solr Attributes ####\n+| *Field*                   | *Description*                                                                                                                                                              | *Example Value*                                                  |\n+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|\n+| Unique Field Identifier   | A code sytle identifier that is unique to this search and the database. Spaces and special characters should be avoided.                                                   | vendor_en                                                        |\n+| Search ID                 | Select the associated Search                                                                                                                                               | hospitalityq                                                     |\n+| English Label             | Desciptive fault English label                                                                                                                                             | Name of commercial establishment or vendor involved              |\n+| French Label              | Descriptive default French label                                                                                                                                           | Nom des établissements commerciaux ou des fournisseurs concernés |\n+| Format Name               | The format is used to indicate of the field belongs to the primary Search type or another format like Nothing-to-report. Normally this is the same string as the Search ID | contracts or contracts-nil                                       |\n+| Solr Field Type           | Select the solr schema type                                                                                                                                                | Search Text English                                              |\n+| Language                  | English, French, or Bilingual                                                                                                                                              | English                                                          |\n+| Copy Field                | Create generic Solr copy field. Useful for creating exportable copies of the data                                                                                          | vendor_en_str                                                    |\n+| Contains Code Values      | Indicate if the field has associated Code values                                                                                                                           | No                                                               |\n+| Extra Solr Copy Fields    | Additional copy fields for purposes other then export                                                                                                                      |                                                                  |\n \n-These choices are associated with Solr field attributes.\n+#### 3.2.2 Solr Attributes ####\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Stored in Solr | Save value to Solr |  |\n-| Indexed in Solr | Field is searchable |  |\n-| Multiple Values | Field has multiple values |  |\n-| Multi-value Delimiter | Character used to delimit values in the CSV source file |  |\n-| Monetary Field | Is a monetary field, useful for special formatting |  |\n+These choices can be used to directly set Solr field attributes in the Solr schema that is created.\n+*Note* this is where multi-value fields are set. Search will automatically handle multi-value fields. The Multi-valued attribute __cannot__ be applied to an\n+exiting Solr schema. If the Solr schema has already been created, it may be necessary to drop and recreate the Solr core.\n+\n+| *Field*               | *Description*                                                                                                    | *Example Value* |\n+|-----------------------|------------------------------------------------------------------------------------------------------------------|-----------------|\n+| Stored in Solr        | Save value to Solr                                                                                               | Yes             |\n+| Indexed in Solr       | Field is searchable                                                                                              | Yes             |\n+| Multiple Values       | Field has multiple values                                                                                        | No              |\n+| Multi-value Delimiter | Character used to delimit values in the CSV source file. Typically this is a comma, semi-colon, or vertical bar. | ,               |\n+| Monetary Field        | Is a monetary field, useful for identifying if this value needs special formatting in the template.              | No              |\n \n-#### Facets ####\n+#### 3.2.3 Facets ####\n \n These choices apply only if the field is also a filter or facet value.\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Facet field | Field is facet. Search will automatically generate the facet query |  | |  |\n-| Custom facet snippet | Select a sort order for the facet items |  |\n-| Display in reversed order | Display facets items in reversed order. Useful for date-based facets |  |\n-| Facet order on page | An integer that is used to order facets when there is more than one facet on a page. |  |\n+| *Field*                   | *Description*                                                                        | *Example Value* |\n+|---------------------------|--------------------------------------------------------------------------------------|-----------------|\n+| Facet field               | Field is facet. Search will automatically generate the facet query for this field    | Yes             |\n+| Sort order                | Select a sort order for the facet items. Select from one of the 3 choices            | By Value A-Z    |\n+| Custom facet snippet      | Rarely used, but it is possible to provide a custom snippet for a specific facet.    |                 |\n+| Display in reversed order | Display facets items in reversed order. Useful for date-based facets                 | No              |\n+| Facet order on page       | An integer that is used to order facets when there is more than one facet on a page. | 2               |\n \n-#### Advanced ####\n+#### 3.2.4 Advanced ####\n \n-Advance properties\n+Advanced properties, including the default value for the field.\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Alternate record type |  |  |\n-| Default search item |  |  |\n-| Default value when empty | Default value to use if the CSV field is empty. Format for this string is <python field type>|<value> | str|- |\n+| *Field*                  | *Description*                                                                                                               | *Example Value* |\n+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------|\n+| Alternate record type    | Mostly used for Nothing to Report records                                                                                   | NTR             |\n+| Default search item      | Flag to indicate if the field is included on the search item page by default. Has no effect when custom templates are used. |                 |\n+| Default value when empty | Default value to use if the CSV field is empty. Format for this string is <python field type>\\|<value>                      | str\\|-          |\n \n-#### Search Default ####\n+#### 3.2.5 Search Default ####\n \n-Rarely used legacy properties\n+Rarely used legacy properties, mostly used with Proactive Disclosures that include Nothing To Report records.\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Is default year field |  |  |\n-| Is default month field |  |  |\n+| *Field*                | *Description*                                                                                                                                                                            | *Example Value* |\n+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|\n+| Is default year field  | Used with date fields, indicates that the year from this date can be assumed to be the year associated with the record. Useful for creating year facets for Nothing-To-Report records    | False           |\n+| Is default month field | Used with date fields, indicates that the month from this date can be assumed to be the month associated with the record. Useful for creating month facets for Nothing-To-Report records | False           |\n \n \n ### 3.3. Add New Code or Choice values to Fields ###\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Unique Code ID | Unique code value as it appears in the raw data | tbs-sct |\n-| Field ID | Select the specific field that uses this code value |  |\n-| English Code Value/Label | Default English label |  |\n-| French Code Value/Label | Default French label |  |\n+Codes are associated with individual Fields, and are used to represent choice lists. In most cases, only the first 4 attributes need to be specified.\n+\n+| *Field*                  | *Description*                                                                                              | *Example Value*                             |\n+|--------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------|\n+| Unique Code ID           | Unique code value as it appears in the raw data. This is the raw choice value that appears in the CSV file | tbs-sct                                     |\n+| Field ID                 | Select the specific field that this code value is associated with                                          | owner_org                                   |\n+| English Code Value/Label | Default readable English label or text for this choice value                                               | Treasury Board Secretariat                  |\n+| French Code Value/Label  | Default readable French label or text for this choice value                                                | Secrétariat du Conseil du Trésor du Canada  |\n \n #### 3.3.1 Advanced Code settings ####\n \n-Rarely used\n+Rarely used Code attributes, mostly used special fields when loading data in the Contracts search.\n \n-| *Field* | *Description* | *Example Value* |\n-| --------| ------------- | --------------- |\n-| Default Lookup Codes |  |  |\n-| Conditional Lookup Codes |  |  |\n-| Date field to evalue |  |  |\n-| Lookup Date |  |  |\n-| Lookup Test |  |  |\n-| Choice lookup code flag |  |  |\n-| Optional Code value 01 - 05 |  |  |\n-| Optional English Label 01 - 05 |  |  |\n-| Optional French Label 01 - 05 |  |  |\n+| *Field*                        | *Description*                                                                    |\n+|--------------------------------|----------------------------------------------------------------------------------|\n+| Default Lookup Codes           | This code expands to other values                                                |\n+| Conditional Lookup Codes       | The code expands to different values depending on certain conditions like a date |\n+| Date field to evaluate         | Used with conditional lookup codes                                               |\n+| Lookup Date                    | Date to evaluate                                                                 |\n+| Lookup Test                    | Choice of logical tests, like less than                                          |\n+| Choice lookup code flag        | Flag to indicate if lookup logic should be applied to this field                 |\n+| Optional Code value 01 - 05    | Extra values available for programming.                                          |\n+| Optional English Label 01 - 05 | Extra values available for programming.                                          |\n+| Optional French Label 01 - 05  | Extra values available for programming.                                          |\n \n ## 4. Set up Solr Core schema using the model\n \n-To take advantage of the language features of Solr, the search application requires\n-that the search core use a schema. OCS uses Solr's dynamic schema functionality to\n-create a custom schema based on the search definition. Once you have finalized the search definition,\n-run <a href=\"https://github.com/open-data/oc_search/blob/master/search/management/commands/create_solr_core.py\"> `create_solr_core`</a> command line utility.\n+To take advantage of the language features of Solr, the Open Canada Search (OCS) application requires\n+the search core to have a defined schema. OCS uses Solr's dynamic schema functionality to create a custom schema based on the\n+search definition created in Step 3. Once you have finalized the search definition, and created the associated blank Solr core as described in Step 2,\n+use the provided Django custom management command\n+<a href=\"https://github.com/open-data/oc_search/blob/master/search/management/commands/create_solr_core.py\"> `create_solr_core`</a> to dynamically apply the schema.\n+\n+Example:\n+```Shell\n+python .\\manage.py create_solr_core --search hospitalityq\n+```\n+\n \n ## 5. Create a code plug-in\n \n In the <a href=\"https://github.com/open-data/oc_search/tree/master/search/plugins\">plugins directory</a> copy the `default.py` file\n-and rename it to `<search ID>.py`. Note the the file name must exactly match the Search ID. In the plugin file there are a number of\n+and rename it to `<search ID>.py`. Note that the file name must exactly match the Search ID. In the plugin file there are a number of\n functions that can extended.\n \n ## 6. Load Organizational Codes ##\n \n _If you have a Government of Canada department field_ based on the organization's bilingual acronym, wse the `import_orgs_ckan_json` command\n-to import all of the the government departments into codes. As there over 100 departments and they occasionally change\n+to import all of the the government departments into codes. There are over 100 departments and they occasionally change, so manually entering\n+these codes is not practical.\n+\n+This input for this command is the JSON object returned by the CKAN API `organization_list`. For example, using the `ckanapi` utiliy:\n+\n+```Shell\n+ ckanapi action organization_list all_fields=True -r https://open.canada.ca/data > orgs.json\n+ python .\\manage.py import_orgs_ckan_json --search hospitalityq --field owner_org --org_file .\\orgs.json\n+````\n \n ## 7. Load Search Data ##\n \n-Load CSV data into the search core using the <a href=\"#import_data_csv\">import_data_csv</a> command.\n+Load CSV data into the search core using the <a href=\"#import_data_csv\">import_data_csv</a> command. For example:\n+\n+```Shell\n+python .\\manage.py import_data_csv --search travela --csv .\\travela.csv\n+```\n+\n+Custom data transformation logic for the specific CSV file can implemented in the code plugin from Step 5 by extending the\n+`filter_csv_record` and `load_csv_record` functions.\n \n-## 8. Create custom templates\n+## 8. Create custom templates ##\n \n In the `oc_search/search/templates/snippets/custom` folder, create a new folder the exact same name as your new Search ID.\n For example. 'contracts', or 'travelq'. In this folder you will create custom snippets using the Django template language.\n Use an existing search for examples of custom snippets for search items, or detailed records.\n \n-## 9. Create any extra commands\n+## 9. Create any extra commands ##\n \n If you require additional logic, for example for data transformation of the CSV files, sometime is will make sense to\n implement this in custom Django management commands that can be run from the command line. This Django commands go into\n the folder `oc_search/search/management/commands/` and the files must be names `<search ID>_<command name>.py`\n \n-## Advanced Topics\n+\n+## 10. Create a custom .po file for gettext ##\n+\n+Documentation on how to add multi-lingual translations for the custom search are forthcoming.\n+\n+\n+## Advanced Topics ##\n \n Documentation for these topics will be forthcoming.\n "
+                },
+                {
+                    "sha": "ef833b54870d5277fd988a75a98978c495724afe",
+                    "filename": "docs/images/db-model.png",
+                    "status": "modified",
+                    "additions": 0,
+                    "deletions": 0,
+                    "changes": 0,
+                    "blob_url": "https://github.com/open-data/oc_search/blob/9685a3c7a2e72af0913e4bdd464f43160f2227e7/docs%2Fimages%2Fdb-model.png",
+                    "raw_url": "https://github.com/open-data/oc_search/raw/9685a3c7a2e72af0913e4bdd464f43160f2227e7/docs%2Fimages%2Fdb-model.png",
+                    "contents_url": "https://api.github.com/repos/open-data/oc_search/contents/docs%2Fimages%2Fdb-model.png?ref=9685a3c7a2e72af0913e4bdd464f43160f2227e7"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}

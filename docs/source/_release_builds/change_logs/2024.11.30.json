@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated Service Inventory fields `volume_meeting_target` and `total_volume` from `int` to `bigint`\n",
+                    "hash": "4849981d7510afcfeb64041dd7dac1cf6942d275"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
