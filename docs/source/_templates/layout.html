@@ -113,8 +113,12 @@
                         </ul>
                       {% endfor %}
                     {% endif %}
-                    <a class="btn btn-primary btn-sm" target="_blank" href="{{ info.uri }}/compare/{{ info.prev }}...{{ info.head }}">View it on GitHub</a>
-                    <span class="release-hash-label">[{{ info.prev|truncate(12)|replace('...', '') }}...{{ info.head|truncate(12)|replace('...', '') }}]</span>
+                    {% set _prevHash = info.prev %}
+                    {% if not info.prev %}
+                      {% set _prevHash = 'HEAD' %}
+                    {% endif %}
+                    <a class="btn btn-primary btn-sm" target="_blank" href="{{ info.uri }}/compare/{{ _prevHash }}...{{ info.head }}">View it on GitHub</a>
+                    <span class="release-hash-label">[{{ _prevHash|truncate(12)|replace('...', '') }}...{{ info.head|truncate(12)|replace('...', '') }}]</span>
                   </div>
                 </div>
               {% endfor %}

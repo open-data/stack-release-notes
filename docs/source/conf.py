@@ -331,6 +331,9 @@ def parsed_release_hashses():
                             if repo not in prev_project_stack:
                                 parsed_release_hashses[release][project_name][repo] = {
                                     'message': 'Repository added',
+                                    'uri': info['uri'],
+                                    'prev': None,
+                                    'head': info['hash'],
                                 }
                             # the commit hash between the releases is different,
                             # so this is a code release.
@@ -373,10 +376,16 @@ def parsed_release_hashses():
                         github_compare_dicts[project_name] = {}
 
                     for repo, info in project_stack.items():
-                        endpoint = info['uri'].replace('https://github.com', 'https://api.github.com/repos')
-                        endpoint += '/compare/%s...%s' % (info['prev'], info['head'])
-                        response = requests.get(endpoint)
-                        github_compare_dicts[project_name][repo] = json.loads(response.content)
+                        endpoint = None
+                        if info.get('prev'):
+                            endpoint = info['uri'].replace('https://github.com', 'https://api.github.com/repos')
+                            endpoint += '/compare/%s...%s' % (info['prev'], info['head'])
+                        elif info.get('head'):
+                            endpoint = info['uri'].replace('https://github.com', 'https://api.github.com/repos')
+                            endpoint += '/compare/HEAD...%s' % info['head']
+                        if endpoint:
+                            response = requests.get(endpoint)
+                            github_compare_dicts[project_name][repo] = json.loads(response.content)
 
                 # save object to compare file.
                 os.makedirs(os.path.dirname(github_filename), exist_ok=True)
