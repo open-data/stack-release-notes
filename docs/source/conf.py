@@ -36,25 +36,26 @@ class literal(Markup):
 
 STACK = {
     'ckan': {
-        'https://github.com/open-data/ckan.git'                     : 'canada-py3',
+        'https://github.com/open-data/ckan.git'                     : 'canada-v2.10',
         'https://github.com/ckan/ckanapi.git'                       : 'master',
-        'https://github.com/open-data/ckanext-canada.git'           : 'master',
-        'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-py3',
-        'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-py3',
-        'https://github.com/open-data/ckanext-dcat.git'             : 'canada-py3',
+        'https://github.com/open-data/ckanext-canada.git'           : 'canada-v2.10',
+        'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-v2.10',
+        'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-py3',  # MARK: discontinued
+        'https://github.com/open-data/ckanext-dcat.git'             : 'canada-v2.10',
         'https://github.com/ckan/ckanext-dsaudit.git'               : 'master',
         'https://github.com/ckan/ckanext-excelforms.git'            : 'main',
         'https://github.com/ckan/ckanext-fluent.git'                : 'master',
         'https://github.com/open-data/ckanext-gcnotify.git'         : 'master',
         'https://github.com/open-data/ckanext-openapiview.git'      : 'main',
         'https://github.com/open-data/ckanext-power-bi.git'         : 'main',
-        'https://github.com/open-data/ckanext-recombinant.git'      : 'master',
+        'https://github.com/open-data/ckanext-recombinant.git'      : 'canada-v2.10',
         'https://github.com/ckan/ckanext-scheming.git'              : 'master',
-        'https://github.com/open-data/ckanext-security.git'         : 'canada-py3',
-        'https://github.com/open-data/ckanext-validation.git'       : 'canada-py3',
-        'https://github.com/open-data/ckanext-xloader.git'          : 'canada-py3',
+        'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.10',
+        'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.10',
+        'https://github.com/open-data/ckanext-xloader.git'          : 'canada-v2.10',
         'https://github.com/ckan/ckantoolkit.git'                   : 'master',
-        'https://github.com/open-data/goodtables.git'               : 'canada-py3',
+        'https://github.com/open-data/goodtables.git'               : 'canada-py3',  # MARK: discontinued
+        'https://github.com/open-data/frictionless-py.git'          : 'canada-v2.10',
     },
     'django': {
         'https://github.com/open-data/oc_search.git'                : 'master',
@@ -99,8 +100,14 @@ REMOVAL_TYPES = [
 ]
 REMOVAL_LABEL = 'Removals'
 
-LABEL_MAP = [FEATURE_LABEL, FIX_LABEL, REMOVAL_LABEL, CHANGES_LABEL, MIGRATION_LABEL]
+RELEASE_TYPES = [
+    'release',
+]
+RELEASE_LABEL = 'Releases'
+
+LABEL_MAP = [RELEASE_LABEL, FEATURE_LABEL, FIX_LABEL, REMOVAL_LABEL, CHANGES_LABEL, MIGRATION_LABEL]
 LABEL_ICONS = {
+    RELEASE_LABEL: 'fa-tag',
     FEATURE_LABEL: 'fa-code-fork',
     FIX_LABEL: 'fa-wrench',
     REMOVAL_LABEL: 'fa-trash',
@@ -429,6 +436,8 @@ def parsed_release_hashses():
                                 change_type = MIGRATION_LABEL
                             elif change_type in REMOVAL_TYPES:
                                 change_type = REMOVAL_LABEL
+                            elif change_type in RELEASE_TYPES:
+                                change_type = RELEASE_LABEL
 
                             if change_type not in changelog_dicts[project_name][repo]:
                                 changelog_dicts[project_name][repo][change_type] = []
