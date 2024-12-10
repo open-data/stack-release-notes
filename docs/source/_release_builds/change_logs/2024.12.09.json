@@ -1,0 +1,212 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Change the log level in `default_authenticate` from `debug` to `info` for the canada fork only. Related to https://github.com/open-data/ckanext-security/pull/8\n",
+                    "hash": "d8bc438d116312ac91684fd6d60ae714c244dbd1"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added UI for search index rebuilding. Added background jobs for search index rebuilding.\n",
+                    "hash": "ca4db8ddc336fb12e1c839db447049c8bf020556"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Enabled saving of activities on private datasets.\n\nAdded `permission_labels` column to `Activity` table.\n\nAdded filtering of dataset activities based on user permission labels.",
+                    "hash": "64c0f337560ed1527f7bd3015eaa2b19883bc230"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added pages to confirm User delete and Dataset Collaborator delete.\nFixed cancellation of Group Member delete.\n",
+                    "hash": "8cc8d2799b0c69a2b99a3e30df3a6ecbcd85c2f6"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "datastore_create: Add a delete_fields flag that must be set to True to delete\nany existing fields not passed in the fields list\n",
+                    "hash": "a2b4f2b8804aef3eb2a0e4590ef790299795aaf5"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Activity plugin now tracks new, changed, and deleted resource views.\n",
+                    "hash": "cfd27299f012e7ad288776525b04f294b667979c"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "`datastore_records_delete` action now calls the `datastore_delete` action\nvia the toolkit for better frameworking.\n",
+                    "hash": "946afa2069ffbfb464dfaed14fb22ff066dce5fe"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Resource view list items now have an additional `view-item` class.\n",
+                    "hash": "31f54b9be1d1e8d1718c663f971457b19cad3d71"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add `--max-idle-time` to the `ckan jobs worker` command.\n",
+                    "hash": "013f0a198da4c7d0ff1e1dbdff7c489c39ab4450"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fix 500 error caused from passing null to a field using the \n`ckanext.datastore.logic.schema.json_validator` in its schema",
+                    "hash": "d78b8e4e6f736c2579cfc1f33faa5e702accb60a"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed context in `set_datastore_active_flag` to\nsolve possible solr errors during `index_package`",
+                    "hash": "8542c8d0c00ab81793bc1be030b7f8503bf3a000"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Aligned `member_create` with `group_member_save` to prevent possible member duplication.\n",
+                    "hash": "23e12414616b030421a07f69ce5813dbea801d62"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed issues with the `ckan views create` CLI sub-command.\n",
+                    "hash": "04b3bc57c62c4524c2c7110da2e65b4aba870324"
+                }
+            ],
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Code changes to handle the additions from [open-data/ckan:185](https://github.com/open-data/ckan/pull/185)\n",
+                    "hash": "817c3a6f8f0277dbd6fa5c1fb3629fc54209b88e"
+                }
+            ],
+            "Releases": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-cloudstorage": {
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-dcat": {
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-power-bi": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Catch request errors when retrieving an embed token.\n",
+                    "hash": "aa4224d54f02af47530d673c45bc2a5ffbbba0b8"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Releases": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added the capability to enforce strong passwords at login.\n",
+                    "hash": "1016abde3add75220946e3a804958d01d5387ecf"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Log failed and successful login authentications\n",
+                    "hash": "c648e22c76ac8980b8a2897e6834183b42e69075"
+                }
+            ],
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        },
+        "frictionless-py": {
+            "Releases": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Released CKAN 2.10 compatible code.\n",
+                    "hash": "97aedbead1834ae66aeccb4069648ba90658172b"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
