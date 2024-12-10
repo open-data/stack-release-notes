@@ -32,6 +32,58 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2024.12.09">
+          
+            
+              <div class="github-api-container" id="github-2024.12.09-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-cloudstorage">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-dcat">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-power-bi">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-security">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-validation">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-ckanext-xloader">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2024.12.09-frictionless-py">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2024.12.09-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2024.11.30">
           
             
@@ -685,6 +737,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2024.12.09" class="release-nav-item"><a href="#2024.12.09">v.2024.12.09</a></li>
+          
             <li data-release="2024.11.30" class="release-nav-item"><a href="#2024.11.30">v.2024.11.30</a></li>
           
             <li data-release="2024.11.28" class="release-nav-item"><a href="#2024.11.28">v.2024.11.28</a></li>
@@ -762,6 +816,499 @@
     <div id="release-container">
       
         
+          <div class="release-wrapper" id="2024.12.09">
+            <h2>
+              v.2024.12.09
+              <a class="headerlink" href="#2024.12.09"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2024.12.09-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added UI for search index rebuilding. Added background jobs for search index rebuilding.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Enabled saving of activities on private datasets.</p>
+<p>Added <code>permission_labels</code> column to <code>Activity</code> table.</p>
+<p>Added filtering of dataset activities based on user permission labels.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added pages to confirm User delete and Dataset Collaborator delete.
+Fixed cancellation of Group Member delete.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>datastore_create: Add a delete_fields flag that must be set to True to delete
+any existing fields not passed in the fields list</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Activity plugin now tracks new, changed, and deleted resource views.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p><code>datastore_records_delete</code> action now calls the <code>datastore_delete</code> action
+via the toolkit for better frameworking.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Resource view list items now have an additional <code>view-item</code> class.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Add <code>--max-idle-time</code> to the <code>ckan jobs worker</code> command.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fix 500 error caused from passing null to a field using the 
+<code>ckanext.datastore.logic.schema.json_validator</code> in its schema</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Fixed context in <code>set_datastore_active_flag</code> to
+solve possible solr errors during <code>index_package</code></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Aligned <code>member_create</code> with <code>group_member_save</code> to prevent possible member duplication.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Fixed issues with the <code>ckan views create</code> CLI sub-command.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Change the log level in <code>default_authenticate</code> from <code>debug</code> to <code>info</code> for the canada fork only. Related to https://github.com/open-data/ckanext-security/pull/8</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/d8d0e9647c9a34757106a0151c26d8b5442bcee3...1055e3c70d9a17a6cca31295c9bb5df332a2a0f8">View it on GitHub</a>
+                    <span class="release-hash-label">[d8d0e9647...1055e3c70]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2024.12.09-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Code changes to handle the additions from <a href="https://github.com/open-data/ckan/pull/185">open-data/ckan:185</a></p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/f5e312fc3f4343285db630a580f02863c1630952...aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f">View it on GitHub</a>
+                    <span class="release-hash-label">[f5e312fc3...aa54fe2e3]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-cloudstorage">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-cloudstorage
+                      <a class="headerlink" href="#2024.12.09-ckanext-cloudstorage"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-cloudstorage/compare/3799984c733559064b32a2eedd27308c6d16bf0e...f525f0286cf014329e9754944ae5f6045f21a5bf">View it on GitHub</a>
+                    <span class="release-hash-label">[3799984c7...f525f0286]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-dcat">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-dcat
+                      <a class="headerlink" href="#2024.12.09-ckanext-dcat"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-dcat/compare/c71562611ed584459149f6a62413c83fd5729824...65be4ae51aa566d65e0db2fd41ee608bac9233c9">View it on GitHub</a>
+                    <span class="release-hash-label">[c71562611...65be4ae51]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-power-bi">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-power-bi
+                      <a class="headerlink" href="#2024.12.09-ckanext-power-bi"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Catch request errors when retrieving an embed token.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-power-bi/compare/4b6b81f5262c4b7b8c469ed67f392b52611dd95f...1154558cd7f40e8d945e7217bf32d2d37ff6dd71">View it on GitHub</a>
+                    <span class="release-hash-label">[4b6b81f52...1154558cd]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2024.12.09-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/37bcb33ddd2d9d04f30085467a9fb79bf9dfb441...7074987aa4a207a565b55bde94bc0819ff3acbd8">View it on GitHub</a>
+                    <span class="release-hash-label">[37bcb33dd...7074987aa]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-security">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-security
+                      <a class="headerlink" href="#2024.12.09-ckanext-security"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added the capability to enforce strong passwords at login.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Log failed and successful login authentications</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/2acf49226665515cbe01a2f5a889cb0b38ef1d6f...ffdf2e33aecc508eec6f353983da0311efa9fb39">View it on GitHub</a>
+                    <span class="release-hash-label">[2acf49226...ffdf2e33a]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-validation">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-validation
+                      <a class="headerlink" href="#2024.12.09-ckanext-validation"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-validation/compare/c944c9b9b08cd4dd4925b52aca66351afab2d6ac...852f9bdb0876ad9a37777586e55786eec87240e9">View it on GitHub</a>
+                    <span class="release-hash-label">[c944c9b9b...852f9bdb0]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-ckanext-xloader">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-xloader
+                      <a class="headerlink" href="#2024.12.09-ckanext-xloader"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/a3ea5b26614b3056e5dc3555f029970424f97957...26e9bdbb15de3c9e90ff053ebaeb7c542709795a">View it on GitHub</a>
+                    <span class="release-hash-label">[a3ea5b266...26e9bdbb1]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2024.12.09-frictionless-py">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      frictionless-py
+                      <a class="headerlink" href="#2024.12.09-frictionless-py"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-tag change-canada-type-icon"></i>&nbsp;&nbsp;Releases</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Released CKAN 2.10 compatible code.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                      
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/frictionless-py/compare/HEAD...81be82a29da9a409f0ea8b4cec7f1baa3c85174c">View it on GitHub</a>
+                    <span class="release-hash-label">[HEAD...81be82a29]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2024.12.09-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2024.12.09-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/9685a3c7a2e72af0913e4bdd464f43160f2227e7...f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c">View it on GitHub</a>
+                    <span class="release-hash-label">[9685a3c7a...f8073edf0]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
+        
           <div class="release-wrapper" id="2024.11.30">
             <h2>
               v.2024.11.30
@@ -798,6 +1345,8 @@
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/f71b5d79d16f2548057a7a4796b2319e2a833a74...f5e312fc3f4343285db630a580f02863c1630952">View it on GitHub</a>
                     <span class="release-hash-label">[f71b5d79d...f5e312fc3]</span>
                   </div>
@@ -820,6 +1369,8 @@
                     </h3>
                   </div>
                   <div class="panel-body">
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/0a028fcbaab23881a5d189743cd9bba7c608e5f9...9685a3c7a2e72af0913e4bdd464f43160f2227e7">View it on GitHub</a>
                     <span class="release-hash-label">[0a028fcba...9685a3c7a]</span>
@@ -865,6 +1416,8 @@
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/19f053cc7336e6c92f00a7b9fb779d5b133b7f67...f71b5d79d16f2548057a7a4796b2319e2a833a74">View it on GitHub</a>
                     <span class="release-hash-label">[19f053cc7...f71b5d79d]</span>
                   </div>
@@ -894,6 +1447,8 @@
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-validation/compare/e94671fdd0c69f21a9e07ad8c476b78144b254be...c944c9b9b08cd4dd4925b52aca66351afab2d6ac">View it on GitHub</a>
                     <span class="release-hash-label">[e94671fdd...c944c9b9b]</span>
@@ -925,6 +1480,8 @@
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/b78d01f19fa199fde05706678e3501aaf877b24d...a3ea5b26614b3056e5dc3555f029970424f97957">View it on GitHub</a>
                     <span class="release-hash-label">[b78d01f19...a3ea5b266]</span>
                   </div>
@@ -947,6 +1504,8 @@
                     </h3>
                   </div>
                   <div class="panel-body">
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/ae33b186e9f995488ef3cd60992a430b3cb93eed...0a028fcbaab23881a5d189743cd9bba7c608e5f9">View it on GitHub</a>
                     <span class="release-hash-label">[ae33b186e...0a028fcba]</span>
@@ -998,6 +1557,8 @@
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/2ca47a6083a2f09baa9358e506d70f9e71ce3ba9...19f053cc7336e6c92f00a7b9fb779d5b133b7f67">View it on GitHub</a>
                     <span class="release-hash-label">[2ca47a608...19f053cc7]</span>
                   </div>
@@ -1026,6 +1587,8 @@
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/2b5ae29e85f8bf2a281576d28533c01b3f103e65...37bcb33ddd2d9d04f30085467a9fb79bf9dfb441">View it on GitHub</a>
                     <span class="release-hash-label">[2b5ae29e8...37bcb33dd]</span>
                   </div>
@@ -1048,6 +1611,8 @@
                     </h3>
                   </div>
                   <div class="panel-body">
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/13c7eb4d3f5ba7b3bd690b5db8ab47551c13024e...ae33b186e9f995488ef3cd60992a430b3cb93eed">View it on GitHub</a>
                     <span class="release-hash-label">[13c7eb4d3...ae33b186e]</span>
@@ -1087,6 +1652,8 @@
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/gcweb_bootstrap/compare/0e4d58d69912fea7b6b2fd465f32f53a7676a90e...afa537aa7064c79b3589c3aac84b47bd63541fd3">View it on GitHub</a>
                     <span class="release-hash-label">[0e4d58d69...afa537aa7]</span>
@@ -1147,6 +1714,8 @@ Add missing translations for validation:
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/f3167636ce7e219bcbd61933f453d7ffaca0b6b7...2ca47a6083a2f09baa9358e506d70f9e71ce3ba9">View it on GitHub</a>
                     <span class="release-hash-label">[f3167636c...2ca47a608]</span>
                   </div>
@@ -1191,6 +1760,8 @@ Add missing translations for validation:
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d...f3167636ce7e219bcbd61933f453d7ffaca0b6b7">View it on GitHub</a>
                     <span class="release-hash-label">[1fdbfac47...f3167636c]</span>
                   </div>
@@ -1220,6 +1791,8 @@ Add missing translations for validation:
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-cloudstorage/compare/1cf3674a6a0675cda5e6c448e9c8990d640ea3c2...3799984c733559064b32a2eedd27308c6d16bf0e">View it on GitHub</a>
                     <span class="release-hash-label">[1cf3674a6...3799984c7]</span>
@@ -1265,6 +1838,8 @@ Add missing translations for validation:
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/6e940c9c3ee4db4156537679c0236fe37632735b...1fdbfac47ed0cb98a9066c01c6e1bedc21c8370d">View it on GitHub</a>
                     <span class="release-hash-label">[6e940c9c3...1fdbfac47]</span>
                   </div>
@@ -1287,6 +1862,8 @@ Add missing translations for validation:
                     </h3>
                   </div>
                   <div class="panel-body">
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/525370deb791fa0e1580da0253dab2aeff18279a...13c7eb4d3f5ba7b3bd690b5db8ab47551c13024e">View it on GitHub</a>
                     <span class="release-hash-label">[525370deb...13c7eb4d3]</span>
@@ -1376,6 +1953,8 @@ The above searches are now rebuilt using the Django search.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/7986755ea35777ce37c09dbf75e7f883747acdad...6e940c9c3ee4db4156537679c0236fe37632735b">View it on GitHub</a>
                     <span class="release-hash-label">[7986755ea...6e940c9c3]</span>
                   </div>
@@ -1406,6 +1985,8 @@ The above searches are now rebuilt using the Django search.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-cloudstorage/compare/a264d6b7525ca3e36cd0c69427087b7bf4c1923e...1cf3674a6a0675cda5e6c448e9c8990d640ea3c2">View it on GitHub</a>
                     <span class="release-hash-label">[a264d6b75...1cf3674a6]</span>
                   </div>
@@ -1422,6 +2003,8 @@ The above searches are now rebuilt using the Django search.</p>
                   <div class="panel-body">
                     
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-scheming/compare/27035f4d5b3722c2bc64d39b6c2b1d76c9883636...5ce30cf2856aee97fa7b49de46847f8119dad355">View it on GitHub</a>
                     <span class="release-hash-label">[27035f4d5...5ce30cf28]</span>
@@ -1477,6 +2060,8 @@ For example, "Treasury Board Secretariat" or "TBS". Quotes are not required.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/0cb1b617869e2916cd3fe649e851d0810120d2bf...525370deb791fa0e1580da0253dab2aeff18279a">View it on GitHub</a>
                     <span class="release-hash-label">[0cb1b6178...525370deb]</span>
                   </div>
@@ -1514,6 +2099,8 @@ For example, "Treasury Board Secretariat" or "TBS". Quotes are not required.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/opengov/compare/96456839d06678aaec74ce56e4942744baf30ce3...9e44e51b62992c6ff984418c5a13de70b61ef8b5">View it on GitHub</a>
                     <span class="release-hash-label">[96456839d...9e44e51b6]</span>
@@ -1556,6 +2143,8 @@ This behaviour is new in PHP8.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/799cfb02bf4d45d71e405d3f1802ee1c83d2f235...c6e6f8c3e467b77f3ea53c0764a75b5d9babbae5">View it on GitHub</a>
                     <span class="release-hash-label">[799cfb02b...c6e6f8c3e]</span>
                   </div>
@@ -1583,6 +2172,8 @@ This behaviour is new in PHP8.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/gcweb_bootstrap/compare/534a9cbabf194d7ad2280c854038cc7fb1e3e775...0e4d58d69912fea7b6b2fd465f32f53a7676a90e">View it on GitHub</a>
                     <span class="release-hash-label">[534a9cbab...0e4d58d69]</span>
@@ -1637,6 +2228,8 @@ This behaviour is new in PHP8.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/c2b1c08885f75f9ec6259b0549492a2522973722...d8d0e9647c9a34757106a0151c26d8b5442bcee3">View it on GitHub</a>
                     <span class="release-hash-label">[c2b1c0888...d8d0e9647]</span>
@@ -1699,6 +2292,8 @@ This behaviour is new in PHP8.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/9a60d2fb44ba35ff88756f0a4bcc83042dcf9dd9...7986755ea35777ce37c09dbf75e7f883747acdad">View it on GitHub</a>
                     <span class="release-hash-label">[9a60d2fb4...7986755ea]</span>
                   </div>
@@ -1715,6 +2310,8 @@ This behaviour is new in PHP8.</p>
                   <div class="panel-body">
                     
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-excelforms/compare/e8d7e3fe973b221756dbbee024ec9ef507e67c6a...296785eaba81ea3a159b4ed9eaff9f00fb5e6a15">View it on GitHub</a>
                     <span class="release-hash-label">[e8d7e3fe9...296785eab]</span>
@@ -1755,6 +2352,8 @@ This behaviour is new in PHP8.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/f5226596a26d066bf2ea21bd29778bea1c739421...2b5ae29e85f8bf2a281576d28533c01b3f103e65">View it on GitHub</a>
                     <span class="release-hash-label">[f5226596a...2b5ae29e8]</span>
                   </div>
@@ -1791,6 +2390,8 @@ The Open Data search is excluded and will continue to have a custom breadcrumb t
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/d38300eca38bf3e9ca43b77aef134aebdd62cba0...0cb1b617869e2916cd3fe649e851d0810120d2bf">View it on GitHub</a>
                     <span class="release-hash-label">[d38300eca...0cb1b6178]</span>
@@ -1849,6 +2450,8 @@ remove broken nbsp-replacement code instead of fixing
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/918f970d3fad7ab533adc38b6830ff748a8d5325...9a60d2fb44ba35ff88756f0a4bcc83042dcf9dd9">View it on GitHub</a>
                     <span class="release-hash-label">[918f970d3...9a60d2fb4]</span>
                   </div>
@@ -1876,6 +2479,8 @@ remove broken nbsp-replacement code instead of fixing
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/87f8683eb13dfc8f1a19084ce2031e3888f83bfd...f5226596a26d066bf2ea21bd29778bea1c739421">View it on GitHub</a>
                     <span class="release-hash-label">[87f8683eb...f5226596a]</span>
@@ -1913,6 +2518,8 @@ These modifications support changes to the data in order to incorporate multi-ye
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/0f711b271c23cebb93c8f5176e17a08473559eda...d38300eca38bf3e9ca43b77aef134aebdd62cba0">View it on GitHub</a>
                     <span class="release-hash-label">[0f711b271...d38300eca]</span>
@@ -1986,6 +2593,8 @@ These modifications support changes to the data in order to incorporate multi-ye
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/939d61e656a75baf9740d69d42cae9c29c3412f1...c2b1c08885f75f9ec6259b0549492a2522973722">View it on GitHub</a>
                     <span class="release-hash-label">[939d61e65...c2b1c0888]</span>
                   </div>
@@ -2051,6 +2660,8 @@ Add filters for service inventory tables for populating the following fields:</p
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/0c40c2b6973c4b0f828592fd22df1696f1b73ed4...918f970d3fad7ab533adc38b6830ff748a8d5325">View it on GitHub</a>
                     <span class="release-hash-label">[0c40c2b69...918f970d3]</span>
@@ -2144,6 +2755,8 @@ Add filters for service inventory tables for populating the following fields:</p
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/eb030994b34fb36f9e92ebade6c9fabd590a01d2...87f8683eb13dfc8f1a19084ce2031e3888f83bfd">View it on GitHub</a>
                     <span class="release-hash-label">[eb030994b...87f8683eb]</span>
                   </div>
@@ -2166,6 +2779,8 @@ Add filters for service inventory tables for populating the following fields:</p
                     </h3>
                   </div>
                   <div class="panel-body">
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/f5b2cf8fc084ad180ff6e7c3e12eb738dc701600...0f711b271c23cebb93c8f5176e17a08473559eda">View it on GitHub</a>
                     <span class="release-hash-label">[f5b2cf8fc...0f711b271]</span>
@@ -2213,6 +2828,8 @@ Add filters for service inventory tables for populating the following fields:</p
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/0018caa88c75aa6d96b58c0614f7aac0b4142888...939d61e656a75baf9740d69d42cae9c29c3412f1">View it on GitHub</a>
                     <span class="release-hash-label">[0018caa88...939d61e65]</span>
                   </div>
@@ -2240,6 +2857,8 @@ Add filters for service inventory tables for populating the following fields:</p
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/1023f83222fd432ac9d2291442e24773564617a7...0c40c2b6973c4b0f828592fd22df1696f1b73ed4">View it on GitHub</a>
                     <span class="release-hash-label">[1023f8322...0c40c2b69]</span>
@@ -2310,6 +2929,8 @@ https://design.canada.ca/common-design-patterns/breadcrumb-trail.html</li>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/b5840e5e75a5eb16e12cdd5bc6e24dba1bafb681...1023f83222fd432ac9d2291442e24773564617a7">View it on GitHub</a>
                     <span class="release-hash-label">[b5840e5e7...1023f8322]</span>
                   </div>
@@ -2345,6 +2966,8 @@ https://design.canada.ca/common-design-patterns/breadcrumb-trail.html</li>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/1ff0732ba6218656d89f275a249d18e9b2cbcc09...f5b2cf8fc084ad180ff6e7c3e12eb738dc701600">View it on GitHub</a>
                     <span class="release-hash-label">[1ff0732ba...f5b2cf8fc]</span>
@@ -2407,6 +3030,8 @@ https://design.canada.ca/common-design-patterns/breadcrumb-trail.html</li>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/0b399f270a848103de917263405a228ed0fe78e5...b5840e5e75a5eb16e12cdd5bc6e24dba1bafb681">View it on GitHub</a>
                     <span class="release-hash-label">[0b399f270...b5840e5e7]</span>
                   </div>
@@ -2450,6 +3075,8 @@ https://design.canada.ca/common-design-patterns/breadcrumb-trail.html</li>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/44b433d1632b2519301de009ce761d3c3b0ad843...0b399f270a848103de917263405a228ed0fe78e5">View it on GitHub</a>
                     <span class="release-hash-label">[44b433d16...0b399f270]</span>
@@ -2501,6 +3128,8 @@ case-insensitive matching. Intended for key fields like Reference Numbers or oth
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/797471e833b4a003e3225f24a80d3d112b3075f7...1ff0732ba6218656d89f275a249d18e9b2cbcc09">View it on GitHub</a>
                     <span class="release-hash-label">[797471e83...1ff0732ba]</span>
                   </div>
@@ -2544,6 +3173,8 @@ case-insensitive matching. Intended for key fields like Reference Numbers or oth
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/0317430b5d84e249b1ba3b5688be64cef71c7c40...44b433d1632b2519301de009ce761d3c3b0ad843">View it on GitHub</a>
                     <span class="release-hash-label">[0317430b5...44b433d16]</span>
@@ -2603,6 +3234,8 @@ case-insensitive matching. Intended for key fields like Reference Numbers or oth
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/71f707fe00e401843adbb61dea805bd2f4460c21...0317430b5d84e249b1ba3b5688be64cef71c7c40">View it on GitHub</a>
                     <span class="release-hash-label">[71f707fe0...0317430b5]</span>
                   </div>
@@ -2640,6 +3273,8 @@ Result is fewer indexing errors reported during loading of contracts data.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/8b206626af168d28e6858161226f579ae2f87e6c...797471e833b4a003e3225f24a80d3d112b3075f7">View it on GitHub</a>
                     <span class="release-hash-label">[8b206626a...797471e83]</span>
                   </div>
@@ -2675,6 +3310,8 @@ Result is fewer indexing errors reported during loading of contracts data.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/8d53248abf93cfbaf18a3622b21d8390277b2661...799cfb02bf4d45d71e405d3f1802ee1c83d2f235">View it on GitHub</a>
                     <span class="release-hash-label">[8d53248ab...799cfb02b]</span>
@@ -2737,6 +3374,8 @@ Result is fewer indexing errors reported during loading of contracts data.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/63f6de7116886a9336fbcfa6871ceddf94845202...71f707fe00e401843adbb61dea805bd2f4460c21">View it on GitHub</a>
                     <span class="release-hash-label">[63f6de711...71f707fe0]</span>
                   </div>
@@ -2781,6 +3420,8 @@ Result is fewer indexing errors reported during loading of contracts data.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/d7d97a72963c0e11dc1bb70a37a35ab3dbb962bd...eb030994b34fb36f9e92ebade6c9fabd590a01d2">View it on GitHub</a>
                     <span class="release-hash-label">[d7d97a729...eb030994b]</span>
@@ -2925,6 +3566,8 @@ The change applies to:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/fe1a5719bf56c1a8b1becf529cbb2fd99cf32f1f...63f6de7116886a9336fbcfa6871ceddf94845202">View it on GitHub</a>
                     <span class="release-hash-label">[fe1a5719b...63f6de711]</span>
                   </div>
@@ -2953,6 +3596,8 @@ The change applies to:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-gcnotify/compare/40df11d62398a3c22cc93ea99c7f1efe39a8ceb8...15ebfcc01225fb281519d19ffcaca9c5c14965d5">View it on GitHub</a>
                     <span class="release-hash-label">[40df11d62...15ebfcc01]</span>
                   </div>
@@ -2980,6 +3625,8 @@ The change applies to:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/629402f0766ae4948a8d1c0349dfdc9bf8802b64...d7d97a72963c0e11dc1bb70a37a35ab3dbb962bd">View it on GitHub</a>
                     <span class="release-hash-label">[629402f07...d7d97a729]</span>
@@ -3011,6 +3658,8 @@ The change applies to:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/0c826045e784b7d0dbdd1c5cd84f33b582441f4f...2acf49226665515cbe01a2f5a889cb0b38ef1d6f">View it on GitHub</a>
                     <span class="release-hash-label">[0c826045e...2acf49226]</span>
                   </div>
@@ -3040,6 +3689,8 @@ The change applies to:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/c880ec38c8a0e246143fe265756f789c956d8490...b78d01f19fa199fde05706678e3501aaf877b24d">View it on GitHub</a>
                     <span class="release-hash-label">[c880ec38c...b78d01f19]</span>
@@ -3097,6 +3748,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/9c196509405fbbf0451e53596e152a757c013d92...8b206626af168d28e6858161226f579ae2f87e6c">View it on GitHub</a>
                     <span class="release-hash-label">[9c1965094...8b206626a]</span>
@@ -3159,6 +3812,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/ccf27b753ce1c4c8ec07a7ff563dad487664a8c4...0018caa88c75aa6d96b58c0614f7aac0b4142888">View it on GitHub</a>
                     <span class="release-hash-label">[ccf27b753...0018caa88]</span>
@@ -3234,6 +3889,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/b699020469571b04e75275b735ea710a77e6022e...fe1a5719bf56c1a8b1becf529cbb2fd99cf32f1f">View it on GitHub</a>
                     <span class="release-hash-label">[b69902046...fe1a5719b]</span>
                   </div>
@@ -3263,6 +3920,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/6652d05f44f65de37e493ef70ff6b9ef174f5c31...0c826045e784b7d0dbdd1c5cd84f33b582441f4f">View it on GitHub</a>
                     <span class="release-hash-label">[6652d05f4...0c826045e]</span>
@@ -3294,6 +3953,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-validation/compare/bc5c2f7a744fec500b27c77d4db57e6a9771cbd3...e94671fdd0c69f21a9e07ad8c476b78144b254be">View it on GitHub</a>
                     <span class="release-hash-label">[bc5c2f7a7...e94671fdd]</span>
                   </div>
@@ -3323,6 +3984,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/177d93aea6876903d8ebc4237fe91da68da9d525...c880ec38c8a0e246143fe265756f789c956d8490">View it on GitHub</a>
                     <span class="release-hash-label">[177d93aea...c880ec38c]</span>
@@ -3370,6 +4033,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/44417ec1c803cabe3f2286185400650f77fa9838...ccf27b753ce1c4c8ec07a7ff563dad487664a8c4">View it on GitHub</a>
                     <span class="release-hash-label">[44417ec1c...ccf27b753]</span>
                   </div>
@@ -3386,6 +4051,8 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanapi/compare/80fd93132452442c1278b67d8c1499c73ae9c83b...e27e8c5b5b9e97b20094ec7f9f0e18992a81c3b6">View it on GitHub</a>
                     <span class="release-hash-label">[80fd93132...e27e8c5b5]</span>
@@ -3414,6 +4081,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/c32951deec435917f92357d70bb77860dd050d51...b699020469571b04e75275b735ea710a77e6022e">View it on GitHub</a>
                     <span class="release-hash-label">[c32951dee...b69902046]</span>
@@ -3456,6 +4125,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/eabdd87b17e7522be2f475c171b9adc95bad99fc...9c196509405fbbf0451e53596e152a757c013d92">View it on GitHub</a>
                     <span class="release-hash-label">[eabdd87b1...9c1965094]</span>
@@ -3512,6 +4183,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/24ef4387df3a42c263a02198e5ef28ef2dcb4bfc...c32951deec435917f92357d70bb77860dd050d51">View it on GitHub</a>
                     <span class="release-hash-label">[24ef4387d...c32951dee]</span>
                   </div>
@@ -3528,6 +4201,8 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-fluent/compare/c4e6dd88478945d4b1c8ec29cf3ded3602a6db38...1c29c017b9dd2a7a86051eb7c0416135bf078292">View it on GitHub</a>
                     <span class="release-hash-label">[c4e6dd884...1c29c017b]</span>
@@ -3557,6 +4232,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/f0904c95384dbebf45b5778c74239bcdc05e5b94...629402f0766ae4948a8d1c0349dfdc9bf8802b64">View it on GitHub</a>
                     <span class="release-hash-label">[f0904c953...629402f07]</span>
                   </div>
@@ -3573,6 +4250,8 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-scheming/compare/83a66ca19d962c0ddd3c12fb4a5abffb0ea9c4de...27035f4d5b3722c2bc64d39b6c2b1d76c9883636">View it on GitHub</a>
                     <span class="release-hash-label">[83a66ca19...27035f4d5]</span>
@@ -3620,6 +4299,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/95d119bcaadb50d4da41d0220d6c19f649602eae...44417ec1c803cabe3f2286185400650f77fa9838">View it on GitHub</a>
                     <span class="release-hash-label">[95d119bca...44417ec1c]</span>
                   </div>
@@ -3653,6 +4334,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/1b9297f302d6d082174fc6e635806faf73774f25...24ef4387df3a42c263a02198e5ef28ef2dcb4bfc">View it on GitHub</a>
                     <span class="release-hash-label">[1b9297f30...24ef4387d]</span>
@@ -3705,6 +4388,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/14a9635d80d69d7e7bd81519623e59a38f18d14e...6652d05f44f65de37e493ef70ff6b9ef174f5c31">View it on GitHub</a>
                     <span class="release-hash-label">[14a9635d8...6652d05f4]</span>
                   </div>
@@ -3751,6 +4436,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/2f535dd1c4ce3dde089720a197447bd984272699...95d119bcaadb50d4da41d0220d6c19f649602eae">View it on GitHub</a>
                     <span class="release-hash-label">[2f535dd1c...95d119bca]</span>
                   </div>
@@ -3778,6 +4465,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/e077094b7e262b744768f9ea69da29edf6bcdd27...1b9297f302d6d082174fc6e635806faf73774f25">View it on GitHub</a>
                     <span class="release-hash-label">[e077094b7...1b9297f30]</span>
@@ -3824,6 +4513,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/37337fa1c272eaf256e4ba7299f98f83eed56c8f...f0904c95384dbebf45b5778c74239bcdc05e5b94">View it on GitHub</a>
                     <span class="release-hash-label">[37337fa1c...f0904c953]</span>
                   </div>
@@ -3840,6 +4531,8 @@ PD types will be added at a later date.</p>
                   <div class="panel-body">
                     
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-scheming/compare/9a33dcd330211468ea0bed85391277e2e596f388...83a66ca19d962c0ddd3c12fb4a5abffb0ea9c4de">View it on GitHub</a>
                     <span class="release-hash-label">[9a33dcd33...83a66ca19]</span>
@@ -3871,6 +4564,8 @@ PD types will be added at a later date.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-validation/compare/b9e85320360e9b0589ae272e1c5d3f0ad709606e...bc5c2f7a744fec500b27c77d4db57e6a9771cbd3">View it on GitHub</a>
                     <span class="release-hash-label">[b9e853203...bc5c2f7a7]</span>
                   </div>
@@ -3900,6 +4595,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/e714cc0f266ea90eb247432c89a817eaeaf53a77...177d93aea6876903d8ebc4237fe91da68da9d525">View it on GitHub</a>
                     <span class="release-hash-label">[e714cc0f2...177d93aea]</span>
@@ -3936,6 +4633,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/bf802cc4fe805fa0cd9e76cb7879d44839d41b64...eabdd87b17e7522be2f475c171b9adc95bad99fc">View it on GitHub</a>
                     <span class="release-hash-label">[bf802cc4f...eabdd87b1]</span>
@@ -3997,6 +4696,8 @@ PD types will be added at a later date.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/b6c97720dc21cbab6de48953ea09d1e5dce5f316...e077094b7e262b744768f9ea69da29edf6bcdd27">View it on GitHub</a>
                     <span class="release-hash-label">[b6c97720d...e077094b7]</span>
@@ -4077,6 +4778,8 @@ explaining how to use Boolean search terms including:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/99f94d03683f5ccea1cc0947c09b5343163623c0...bf802cc4fe805fa0cd9e76cb7879d44839d41b64">View it on GitHub</a>
                     <span class="release-hash-label">[99f94d036...bf802cc4f]</span>
                   </div>
@@ -4113,6 +4816,8 @@ explaining how to use Boolean search terms including:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/opengov/compare/71c02225ee716d568f6e55648e9cd27a11576fb4...96456839d06678aaec74ce56e4942744baf30ce3">View it on GitHub</a>
                     <span class="release-hash-label">[71c02225e...96456839d]</span>
                   </div>
@@ -4140,6 +4845,8 @@ explaining how to use Boolean search terms including:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/937d69d51a33bd7e11835766b0199810773718ac...8d53248abf93cfbaf18a3622b21d8390277b2661">View it on GitHub</a>
                     <span class="release-hash-label">[937d69d51...8d53248ab]</span>
@@ -4179,6 +4886,8 @@ explaining how to use Boolean search terms including:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/gcweb_bootstrap/compare/9af9b868bc8567953fda093d45cce1ceb77bfb5b...534a9cbabf194d7ad2280c854038cc7fb1e3e775">View it on GitHub</a>
                     <span class="release-hash-label">[9af9b868b...534a9cbab]</span>
@@ -4226,6 +4935,8 @@ explaining how to use Boolean search terms including:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/acc1a29866e7fa73ea781cc2263ae674eb7e762e...2f535dd1c4ce3dde089720a197447bd984272699">View it on GitHub</a>
                     <span class="release-hash-label">[acc1a2986...2f535dd1c]</span>
                   </div>
@@ -4253,6 +4964,8 @@ explaining how to use Boolean search terms including:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/6d9e428b6447d856829cc1b7b936d56a04111e17...b6c97720dc21cbab6de48953ea09d1e5dce5f316">View it on GitHub</a>
                     <span class="release-hash-label">[6d9e428b6...b6c97720d]</span>
@@ -4284,6 +4997,8 @@ explaining how to use Boolean search terms including:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-dcat/compare/c9f2f5fca0a063b4b51afc32e98e579b03f6a3b1...c71562611ed584459149f6a62413c83fd5729824">View it on GitHub</a>
                     <span class="release-hash-label">[c9f2f5fca...c71562611]</span>
                   </div>
@@ -4311,6 +5026,8 @@ explaining how to use Boolean search terms including:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/2720826011b4cc9aa450730b74450ed8fe25713b...37337fa1c272eaf256e4ba7299f98f83eed56c8f">View it on GitHub</a>
                     <span class="release-hash-label">[272082601...37337fa1c]</span>
@@ -4342,6 +5059,8 @@ explaining how to use Boolean search terms including:</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-security/compare/72139bea36f1a8afd6edee6b636fccbaaca4d758...14a9635d80d69d7e7bd81519623e59a38f18d14e">View it on GitHub</a>
                     <span class="release-hash-label">[72139bea3...14a9635d8]</span>
                   </div>
@@ -4371,6 +5090,8 @@ explaining how to use Boolean search terms including:</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-validation/compare/b3fd804a16b389bd8aabe675561dc415a0f4e82e...b9e85320360e9b0589ae272e1c5d3f0ad709606e">View it on GitHub</a>
                     <span class="release-hash-label">[b3fd804a1...b9e853203]</span>
@@ -4423,6 +5144,8 @@ removed title capitalization styling on dataset titles.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/9e4b752589380ba836192dc80fad5e3b3bc3989c...99f94d03683f5ccea1cc0947c09b5343163623c0">View it on GitHub</a>
                     <span class="release-hash-label">[9e4b75258...99f94d036]</span>
                   </div>
@@ -4459,6 +5182,8 @@ removed title capitalization styling on dataset titles.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/opengov/compare/3837aae6dd10a1de3f51021ccfddd499b200101e...71c02225ee716d568f6e55648e9cd27a11576fb4">View it on GitHub</a>
                     <span class="release-hash-label">[3837aae6d...71c02225e]</span>
                   </div>
@@ -4486,6 +5211,8 @@ removed title capitalization styling on dataset titles.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/dd9b7c70e8090ab29fae3d69d7b8cc7013b18557...937d69d51a33bd7e11835766b0199810773718ac">View it on GitHub</a>
                     <span class="release-hash-label">[dd9b7c70e...937d69d51]</span>
@@ -4533,6 +5260,8 @@ removed title capitalization styling on dataset titles.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/ee6e7b5cfdcd953b03d053610a5bfa96e0a9aabc...acc1a29866e7fa73ea781cc2263ae674eb7e762e">View it on GitHub</a>
                     <span class="release-hash-label">[ee6e7b5cf...acc1a2986]</span>
                   </div>
@@ -4560,6 +5289,8 @@ removed title capitalization styling on dataset titles.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/3508fcec8868cc47f5296b872bd439a04bf406a1...6d9e428b6447d856829cc1b7b936d56a04111e17">View it on GitHub</a>
                     <span class="release-hash-label">[3508fcec8...6d9e428b6]</span>
@@ -4613,6 +5344,8 @@ removed title capitalization styling on dataset titles.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/a0e5ccfa5bae56d08f128237a327183bccec3105...9e4b752589380ba836192dc80fad5e3b3bc3989c">View it on GitHub</a>
                     <span class="release-hash-label">[a0e5ccfa5...9e4b75258]</span>
@@ -4668,6 +5401,8 @@ removed title capitalization styling on dataset titles.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/b96adaba0a967fa1641c9f5ab5981e5b7ff8f90e...ee6e7b5cfdcd953b03d053610a5bfa96e0a9aabc">View it on GitHub</a>
                     <span class="release-hash-label">[b96adaba0...ee6e7b5cf]</span>
                   </div>
@@ -4696,6 +5431,8 @@ removed title capitalization styling on dataset titles.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/590a632153b9ba6c187081c4880800ee2c9e2aaf...3508fcec8868cc47f5296b872bd439a04bf406a1">View it on GitHub</a>
                     <span class="release-hash-label">[590a63215...3508fcec8]</span>
                   </div>
@@ -4723,6 +5460,8 @@ removed title capitalization styling on dataset titles.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/8034803c6ac45eba1345e6390e5cc038d751d142...2720826011b4cc9aa450730b74450ed8fe25713b">View it on GitHub</a>
                     <span class="release-hash-label">[8034803c6...272082601]</span>
@@ -4784,6 +5523,8 @@ CKAN will continue to receive the expected basic list.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/a3dfa82bd1bdbac0b27dc2560a065aacb5c4d126...a0e5ccfa5bae56d08f128237a327183bccec3105">View it on GitHub</a>
                     <span class="release-hash-label">[a3dfa82bd...a0e5ccfa5]</span>
                   </div>
@@ -4812,6 +5553,8 @@ CKAN will continue to receive the expected basic list.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/SolrClient/compare/a70d3274ba6e90657cb77c05131db436f33b256b...822df1308916392f9fbf5b3d4cd7f509468ae7e8">View it on GitHub</a>
                     <span class="release-hash-label">[a70d3274b...822df1308]</span>
                   </div>
@@ -4839,6 +5582,8 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_searches/compare/aa4fe319412f869ba19c54a6bb92d79d78c3712b...2f56adda14d1092922da69bc0989c80a866c9e99">View it on GitHub</a>
                     <span class="release-hash-label">[aa4fe3194...2f56adda1]</span>
@@ -4898,6 +5643,8 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/07391c039e483390b57e0569bfe7785dfcdc9638...b96adaba0a967fa1641c9f5ab5981e5b7ff8f90e">View it on GitHub</a>
                     <span class="release-hash-label">[07391c039...b96adaba0]</span>
@@ -4996,6 +5743,8 @@ CKAN will continue to receive the expected basic list.</p>
                         </ul>
                       
                     
+                    
+                    
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/a07d6ce4e221ca7720baa87bf8a6ceaa9ea8e94f...590a632153b9ba6c187081c4880800ee2c9e2aaf">View it on GitHub</a>
                     <span class="release-hash-label">[a07d6ce4e...590a63215]</span>
                   </div>
@@ -5025,6 +5774,8 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-dcat/compare/569c5bc3c03fad292506269d3a01bec67a5f5fdd...c9f2f5fca0a063b4b51afc32e98e579b03f6a3b1">View it on GitHub</a>
                     <span class="release-hash-label">[569c5bc3c...c9f2f5fca]</span>
@@ -5063,6 +5814,8 @@ CKAN will continue to receive the expected basic list.</p>
                           
                         </ul>
                       
+                    
+                    
                     
                     <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/58b8c2fd37be58b8ef76b24cb9a48eebb6e7e6f1...e714cc0f266ea90eb247432c89a817eaeaf53a77">View it on GitHub</a>
                     <span class="release-hash-label">[58b8c2fd3...e714cc0f2]</span>
