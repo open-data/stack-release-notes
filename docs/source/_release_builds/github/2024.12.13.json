@@ -1,0 +1,1395 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "url": "https://api.github.com/repos/open-data/ckanext-canada/compare/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f...b672b3a74cb70715bfe22019f085264d84ead05d",
+            "html_url": "https://github.com/open-data/ckanext-canada/compare/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f...b672b3a74cb70715bfe22019f085264d84ead05d",
+            "permalink_url": "https://github.com/open-data/ckanext-canada/compare/open-data:aa54fe2...open-data:b672b3a",
+            "diff_url": "https://github.com/open-data/ckanext-canada/compare/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f...b672b3a74cb70715bfe22019f085264d84ead05d.diff",
+            "patch_url": "https://github.com/open-data/ckanext-canada/compare/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f...b672b3a74cb70715bfe22019f085264d84ead05d.patch",
+            "base_commit": {
+                "sha": "aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                "node_id": "C_kwDOAGzkrtoAKGFhNTRmZTJlM2VkNGZiYjZlZjViZTIzNDc0YTZlNTQ5NDEzMGJjN2Y",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:20:43Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:20:43Z"
+                    },
+                    "message": "feat(misc): changelog;\n\n- Added changelog.",
+                    "tree": {
+                        "sha": "94416c03632e9c15be07a17cdaa4d60d702535eb",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/94416c03632e9c15be07a17cdaa4d60d702535eb"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "786c6908b607befbaf29fce8e8f5af2ec9bfd547",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/786c6908b607befbaf29fce8e8f5af2ec9bfd547",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/786c6908b607befbaf29fce8e8f5af2ec9bfd547"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                "node_id": "C_kwDOAGzkrtoAKGFhNTRmZTJlM2VkNGZiYjZlZjViZTIzNDc0YTZlNTQ5NDEzMGJjN2Y",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:20:43Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:20:43Z"
+                    },
+                    "message": "feat(misc): changelog;\n\n- Added changelog.",
+                    "tree": {
+                        "sha": "94416c03632e9c15be07a17cdaa4d60d702535eb",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/94416c03632e9c15be07a17cdaa4d60d702535eb"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                "html_url": "https://github.com/open-data/ckanext-canada/commit/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "786c6908b607befbaf29fce8e8f5af2ec9bfd547",
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/786c6908b607befbaf29fce8e8f5af2ec9bfd547",
+                        "html_url": "https://github.com/open-data/ckanext-canada/commit/786c6908b607befbaf29fce8e8f5af2ec9bfd547"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 10,
+            "behind_by": 0,
+            "total_commits": 10,
+            "commits": [
+                {
+                    "sha": "29d82a23a8cac764e1bace9821e311b94650c88a",
+                    "node_id": "C_kwDOAGzkrtoAKDI5ZDgyYTIzYThjYWM3NjRlMWJhY2U5ODIxZTMxMWI5NDY1MGM4OGE",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-03T19:39:18Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-03T19:39:18Z"
+                        },
+                        "message": "feat(pd): grants;\n\n- Updated ref number description.\n- Fixed excel formulae.\n- Updated `Aboriginal` -> `Indigenous`",
+                        "tree": {
+                            "sha": "301ca006f8895592cdbf0a635ce082ce472604a7",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/301ca006f8895592cdbf0a635ce082ce472604a7"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/29d82a23a8cac764e1bace9821e311b94650c88a",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/29d82a23a8cac764e1bace9821e311b94650c88a",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/29d82a23a8cac764e1bace9821e311b94650c88a",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/29d82a23a8cac764e1bace9821e311b94650c88a/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "84188dee895391e6ff81fb79a4d5211a0147c094",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/84188dee895391e6ff81fb79a4d5211a0147c094",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/84188dee895391e6ff81fb79a4d5211a0147c094"
+                        }
+                    ]
+                },
+                {
+                    "sha": "4154db4a1b5496405064344ae6f8c174780450fb",
+                    "node_id": "C_kwDOAGzkrtoAKDQxNTRkYjRhMWI1NDk2NDA1MDY0MzQ0YWU2ZjhjMTc0NzgwNDUwZmI",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                            "date": "2024-12-06T16:40:28Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2024-12-06T16:40:28Z"
+                        },
+                        "message": "Create 1542.changes",
+                        "tree": {
+                            "sha": "236d53012129ddae1b7038f795aab34e99f7b8b5",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/236d53012129ddae1b7038f795aab34e99f7b8b5"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/4154db4a1b5496405064344ae6f8c174780450fb",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnUyj8CRC1aQ7uu5UhlAAAbIgQAJcYQ8QZNfIp5jBTMt/FI1G+\nDQcD6jl2CiIj/yTGkTRXeMtGTLnTzb40htcP85Qz34nUfoGNZG1SNDQMgFGztsXS\npx59TZHqI1YZIOCJbCHeZLqhWEOWX2CEw297EynYkR7xsd9vw6XdkMnfB5xeIkuS\nJPffchT9gBGBzwXnKRVRAHispneBStTQNHI5bdhJ2/Ca0yB++EBC3PVEBdvYqv+I\nc8H7019olGhL8+BKbNpERY469mCW+Y+Mid8uY1tNzcXd22EvQkvXo5ewbc2XdsvO\nTmztKMqItycE5q0dfOeP/jtrupEbZ31q8oZAM8ELZEMMX5/GnnAsP27HMTMdWwdc\nM9n4pRGWOttq9TvNlBMaw8VjXxNdbmnq5iy3IRPL8QnXWScL9pfkXH42HEzwSLt8\n7ph4nIZjlMtIDjacNpugX+AOEp5hNTtUng7FnjxjtheKPk6mHGCaU46yS8l8UQ39\nsVC7ZYMCtsD4fpDRaDjP2u2V8GiUheKPOXPQb0s399W4swDX9bh/fUdzWaSsjKIE\niM2G1E3tmQq6zdpphd4NQH2KbwVGINRmumB2DV/mKeexsJuaDjtbSaRuowqpxUmy\nNZNOP/aGzrvSquk2PQB1yHMBJNbP0MNQ8qfrt0cxnoJ9pE5GCD/tg79aOeVRANnc\n3xq/zj40Ef3nT/7U7/1n\n=v+GQ\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree 236d53012129ddae1b7038f795aab34e99f7b8b5\nparent 29d82a23a8cac764e1bace9821e311b94650c88a\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1733503228 -0500\ncommitter GitHub <noreply@github.com> 1733503228 -0500\n\nCreate 1542.changes",
+                            "verified_at": "2024-12-06T16:40:30Z"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/4154db4a1b5496405064344ae6f8c174780450fb",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/4154db4a1b5496405064344ae6f8c174780450fb",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/4154db4a1b5496405064344ae6f8c174780450fb/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "29d82a23a8cac764e1bace9821e311b94650c88a",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/29d82a23a8cac764e1bace9821e311b94650c88a",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/29d82a23a8cac764e1bace9821e311b94650c88a"
+                        }
+                    ]
+                },
+                {
+                    "sha": "71fb626d4e92dbcd4bad96c662acc7336021ff73",
+                    "node_id": "C_kwDOAGzkrtoAKDcxZmI2MjZkNGU5MmRiY2Q0YmFkOTZjNjYyYWNjNzMzNjAyMWZmNzM",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                            "date": "2024-12-06T16:41:03Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2024-12-06T16:41:03Z"
+                        },
+                        "message": "Create 1542.bugfix",
+                        "tree": {
+                            "sha": "54c8a9548b160ee74ba5cad766cf1238e7a0e813",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/54c8a9548b160ee74ba5cad766cf1238e7a0e813"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/71fb626d4e92dbcd4bad96c662acc7336021ff73",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnUykgCRC1aQ7uu5UhlAAAsxUQAFJXrCSW43e03WjfkBlYRltc\nhA6HxHYv0n3lMyHtCu7vdK9jqIyNcK9HGy73Us2aPpP40DKAooCZ9dmXovaPXmLz\ngi6m10Rqyyvx3nj7PRtYFEG36tEaOe9GEA8m+i7HG/ZESm5tIjFzLCrRtPLsYFY1\nJd/UoaUO2WiS+CxHMGXjNAKIeolhWZW0q2zbthyqWi2xX40Xem/mu2O6kumhohFA\n/Hy9iq65zuJ/zbUMuUPX+3jEQ+mal0Ef7xRNxuhasmOU0XVlLDzisSBoUQoulXy7\nMKY8mAKvKKcnBQm2163zXyvuZBGlCF2/admAm2lU465RIJwu8TUqNpm7nX34pAjU\n2TNmjSFmJ8MixM1Zi+gF2a4qlTYfItPm1SoBGaM8UZPYMerH8ZtzPaS5J6rpgVuv\nDKnJ/ddZNpVVulGQ0s0qGGKSkNNSSzIDyLJo5nRm/Kmhz/hx0m9oTa13fix3YTwa\nHww81GMGZgccl26GpS5+oK+WRNwMIRTs6nVXaIaukZheCEF8TxJ1ZufDieMqsMvA\nrlt4/PDVJZIGb7Lqj5zBGMSIr3IEChW+86W6aAaOoFsLlAZZt72atPh82xMIuszu\nPFI6sKEVu5dmRYW25X1Uw9Fy5hLFE3eLfNgZ59WDvG5VjbBWb4b2E0awODc8GcLo\nWpWdL/QmeMlWqWmkAaGc\n=/msf\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree 54c8a9548b160ee74ba5cad766cf1238e7a0e813\nparent 4154db4a1b5496405064344ae6f8c174780450fb\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1733503263 -0500\ncommitter GitHub <noreply@github.com> 1733503263 -0500\n\nCreate 1542.bugfix",
+                            "verified_at": "2024-12-06T16:41:06Z"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/71fb626d4e92dbcd4bad96c662acc7336021ff73",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/71fb626d4e92dbcd4bad96c662acc7336021ff73",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/71fb626d4e92dbcd4bad96c662acc7336021ff73/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "4154db4a1b5496405064344ae6f8c174780450fb",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/4154db4a1b5496405064344ae6f8c174780450fb",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/4154db4a1b5496405064344ae6f8c174780450fb"
+                        }
+                    ]
+                },
+                {
+                    "sha": "bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                    "node_id": "C_kwDOAGzkrtoAKGJiOTQ0N2UxYzBjNjE0MTRlMGIzZmRhNTMxN2M5Njg2OWQ5MjMwNGY",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                            "date": "2024-12-13T17:06:40Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2024-12-13T17:06:40Z"
+                        },
+                        "message": "Merge pull request #1542 from open-data/feature/grants-changes\n\nGrants Changes",
+                        "tree": {
+                            "sha": "d64be472273821ad0f7e7c1ff95c4d934f0c396a",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/d64be472273821ad0f7e7c1ff95c4d934f0c396a"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnXGmgCRC1aQ7uu5UhlAAAAMgQAFYrsHWWl8yZR1+vvpsesZFo\nSSS3CgHh/gJ71rUWBwkqUlHTVXposcDNRapS342rVjgvcV6WftAnqS+YGYG5zLaY\n6rRRsgMk/X3blK5CnvCMIrv1arVT4QJa60sJv6dIFxFxaFI4FtPX5+qUYeRC5gBy\nenc9wauqYoFn1id7lMKfRkrgeFHQm4uxo9qxsoPY56r3lMBuiIFb/Q7ru+Fk04fv\n2jtSstROtds4Qhk4jMwr/yyw7535q5nUEtwndNUGf1QLQlzfXeZjXegIvhQSP70X\nJZFjC5hCBsnLfSC0JxCmHWqFOeMexxjbJAIT6D5+5/XHihXDsvZ+et3iEgAirZPg\n82zALZrRGh0jafowKY+bZJ7bBlSU+DCK3tpZYGrhlsapyoDep9+H1WKsQTkKN+/X\nkr1igrKczS4bcRw+n7TmsmCjN8kIhdUXfBZNnfxEH/6yXiThes2ejp35hTEygRdf\nbQAI3h4RJkCpWPMipH0+xhQ7xhGDL4serngkzabx20gFEEElYHODlDFHB2qDBbNq\nJ1Y32aV1NQB+EIUaX3npYF0nMPkKs6qCFxHovamMTfh6tQ1jca5OSUNM7jH0WNy+\nxRC+Cz7MAF+eOZOqocBuKPa1T+GGscxnzcW2w7TW50SiRtlLVtbRe/cLnIcM0CKc\nQoyhiMErPuymouAS7pC0\n=bPxi\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree d64be472273821ad0f7e7c1ff95c4d934f0c396a\nparent e4b7b3342c13db33f41e66db2f01f7afda411754\nparent 71fb626d4e92dbcd4bad96c662acc7336021ff73\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1734109600 -0500\ncommitter GitHub <noreply@github.com> 1734109600 -0500\n\nMerge pull request #1542 from open-data/feature/grants-changes\n\nGrants Changes",
+                            "verified_at": "2024-12-13T17:06:42Z"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/bb9447e1c0c61414e0b3fda5317c96869d92304f/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "e4b7b3342c13db33f41e66db2f01f7afda411754",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/e4b7b3342c13db33f41e66db2f01f7afda411754",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/e4b7b3342c13db33f41e66db2f01f7afda411754"
+                        },
+                        {
+                            "sha": "71fb626d4e92dbcd4bad96c662acc7336021ff73",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/71fb626d4e92dbcd4bad96c662acc7336021ff73",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/71fb626d4e92dbcd4bad96c662acc7336021ff73"
+                        }
+                    ]
+                },
+                {
+                    "sha": "1070a066f70a737773fc4b1a91d19acb2604a714",
+                    "node_id": "C_kwDOAGzkrtoAKDEwNzBhMDY2ZjcwYTczNzc3M2ZjNGIxYTkxZDE5YWNiMjYwNGE3MTQ",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-13T17:51:59Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-13T17:51:59Z"
+                        },
+                        "message": "Merge branch 'master' into canada-v2.10",
+                        "tree": {
+                            "sha": "09bae992e248637890d941ab5723e4aeaf440d55",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/09bae992e248637890d941ab5723e4aeaf440d55"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/1070a066f70a737773fc4b1a91d19acb2604a714",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1070a066f70a737773fc4b1a91d19acb2604a714",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/1070a066f70a737773fc4b1a91d19acb2604a714",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1070a066f70a737773fc4b1a91d19acb2604a714/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/aa54fe2e3ed4fbb6ef5be23474a6e5494130bc7f"
+                        },
+                        {
+                            "sha": "bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/bb9447e1c0c61414e0b3fda5317c96869d92304f"
+                        }
+                    ]
+                },
+                {
+                    "sha": "09331ffab73153991bbf87217ac7457cb5d08a12",
+                    "node_id": "C_kwDOAGzkrtoAKDA5MzMxZmZhYjczMTUzOTkxYmJmODcyMTdhYzc0NTdjYjVkMDhhMTI",
+                    "commit": {
+                        "author": {
+                            "name": "RabiaSajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-12-13T18:06:48Z"
+                        },
+                        "committer": {
+                            "name": "RabiaSajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-12-13T18:06:48Z"
+                        },
+                        "message": "rebuild wrongdoing with oc_search",
+                        "tree": {
+                            "sha": "6ce4bd0cd942625c9d29b306e3f4a199b48e5d75",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/6ce4bd0cd942625c9d29b306e3f4a199b48e5d75"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/09331ffab73153991bbf87217ac7457cb5d08a12",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/09331ffab73153991bbf87217ac7457cb5d08a12",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/09331ffab73153991bbf87217ac7457cb5d08a12",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/09331ffab73153991bbf87217ac7457cb5d08a12/comments",
+                    "author": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/bb9447e1c0c61414e0b3fda5317c96869d92304f"
+                        }
+                    ]
+                },
+                {
+                    "sha": "e81818ef6a728dcab484e8a3c40bf813cc0b58ce",
+                    "node_id": "C_kwDOAGzkrtoAKGU4MTgxOGVmNmE3MjhkY2FiNDg0ZThhM2M0MGJmODEzY2MwYjU4Y2U",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-13T18:13:06Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-13T18:13:06Z"
+                        },
+                        "message": "fix(typo): briefingt example typo;\n\n- Fixed a French typo.",
+                        "tree": {
+                            "sha": "eacaad3fc458bad775b65e4b31815aa36701f370",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/eacaad3fc458bad775b65e4b31815aa36701f370"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/e81818ef6a728dcab484e8a3c40bf813cc0b58ce",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/e81818ef6a728dcab484e8a3c40bf813cc0b58ce",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/e81818ef6a728dcab484e8a3c40bf813cc0b58ce",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/e81818ef6a728dcab484e8a3c40bf813cc0b58ce/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "1070a066f70a737773fc4b1a91d19acb2604a714",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/1070a066f70a737773fc4b1a91d19acb2604a714",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/1070a066f70a737773fc4b1a91d19acb2604a714"
+                        }
+                    ]
+                },
+                {
+                    "sha": "0461dde0d6900caf721ffacdf0d5132e53f6a9a4",
+                    "node_id": "C_kwDOAGzkrtoAKDA0NjFkZGUwZDY5MDBjYWY3MjFmZmFjZGYwZDUxMzJlNTNmNmE5YTQ",
+                    "commit": {
+                        "author": {
+                            "name": "RabiaSajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-12-13T18:16:13Z"
+                        },
+                        "committer": {
+                            "name": "RabiaSajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-12-13T18:16:13Z"
+                        },
+                        "message": "add changelog for PR# 1545",
+                        "tree": {
+                            "sha": "d3f94207681931ed07dcdf78adf0d3fe64a9709a",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/d3f94207681931ed07dcdf78adf0d3fe64a9709a"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/0461dde0d6900caf721ffacdf0d5132e53f6a9a4",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0461dde0d6900caf721ffacdf0d5132e53f6a9a4",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/0461dde0d6900caf721ffacdf0d5132e53f6a9a4",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0461dde0d6900caf721ffacdf0d5132e53f6a9a4/comments",
+                    "author": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "09331ffab73153991bbf87217ac7457cb5d08a12",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/09331ffab73153991bbf87217ac7457cb5d08a12",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/09331ffab73153991bbf87217ac7457cb5d08a12"
+                        }
+                    ]
+                },
+                {
+                    "sha": "9088e1b40f0d3163f76d93a1e51ada188f97616a",
+                    "node_id": "C_kwDOAGzkrtoAKDkwODhlMWI0MGYwZDMxNjNmNzZkOTNhMWU1MWFkYTE4OGY5NzYxNmE",
+                    "commit": {
+                        "author": {
+                            "name": "Rabia Sajjad",
+                            "email": "rabiasajjad.dev@gmail.com",
+                            "date": "2024-12-13T18:49:46Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2024-12-13T18:49:46Z"
+                        },
+                        "message": "Merge pull request #1545 from open-data/make-wrongdoing\n\nrebuild wrongdoing with oc_search",
+                        "tree": {
+                            "sha": "d3f94207681931ed07dcdf78adf0d3fe64a9709a",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/d3f94207681931ed07dcdf78adf0d3fe64a9709a"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/9088e1b40f0d3163f76d93a1e51ada188f97616a",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnXIHKCRC1aQ7uu5UhlAAAMUMQAJKiiIgZd+NF64ONrJEZZeDN\nIBTKB+u2Ro94RCj+zDd1CAVYnWUcbax9jTLksuPDtqr8VUsebnhwpur7WowIVH3s\nApe8Blfp8V+G+gn9GRot1Rcz8+CMT7hy34CLe1QhoSqmCzRIUOvbnb3Tcn+yAzWN\nZEPVCZ/UpRNQ1uS9b/q8caerJwltRNfbBM+7j3LLsDnJwWEUsz4Q/WLOlQ5ahshw\ntz/2YTNzbiCkWHDwA0D1b4TRY7qfkDQn+n/xs6jVd0Vhp0heqnW/RRvnf2L/wbjR\n3+/kL+oyiPg8LiEeyxQ/eXsmwPkKhLq+OeeszaToY+nUagGk6LP68iL7kFlEYDVm\nwuxNZLRtligDl0GE5gIqjL4/NTbPImjvQgD9WudGjgGcNRk82WBLJA5yGU2h6j0z\n0Ld210eciOyJWCqLSh1ZoS5x4itPolsVjolHhroXSZlwG5eSeT9MfSRXQrGUXNMN\nmzjq2Fu0yn74Kx/cYjGf0HYi3VtGTTsDUef3g/9oIawTy4VgXvyLJHxESYV/J3Tb\nIcetgUz4h44UKzy5V2OQBsGTm+doNcOhVPUt4I6nw7Sj+ugQ555TdY1m+6AssnVf\npOwZ9O1UWU1MwRXAY0ISiw8zyChk515rtEWGRYkRQ5iCiukI9Tl2yk3V/vpKRqxy\n9TpX0jdn245zmEqW9Ppj\n=krTb\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree d3f94207681931ed07dcdf78adf0d3fe64a9709a\nparent bb9447e1c0c61414e0b3fda5317c96869d92304f\nparent 0461dde0d6900caf721ffacdf0d5132e53f6a9a4\nauthor Rabia Sajjad <rabiasajjad.dev@gmail.com> 1734115786 -0500\ncommitter GitHub <noreply@github.com> 1734115786 -0500\n\nMerge pull request #1545 from open-data/make-wrongdoing\n\nrebuild wrongdoing with oc_search",
+                            "verified_at": "2024-12-13T18:49:48Z"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/9088e1b40f0d3163f76d93a1e51ada188f97616a",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/9088e1b40f0d3163f76d93a1e51ada188f97616a",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/9088e1b40f0d3163f76d93a1e51ada188f97616a/comments",
+                    "author": {
+                        "login": "RabiaSajjad",
+                        "id": 25936398,
+                        "node_id": "MDQ6VXNlcjI1OTM2Mzk4",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/25936398?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/RabiaSajjad",
+                        "html_url": "https://github.com/RabiaSajjad",
+                        "followers_url": "https://api.github.com/users/RabiaSajjad/followers",
+                        "following_url": "https://api.github.com/users/RabiaSajjad/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/RabiaSajjad/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/RabiaSajjad/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/RabiaSajjad/subscriptions",
+                        "organizations_url": "https://api.github.com/users/RabiaSajjad/orgs",
+                        "repos_url": "https://api.github.com/users/RabiaSajjad/repos",
+                        "events_url": "https://api.github.com/users/RabiaSajjad/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/RabiaSajjad/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/bb9447e1c0c61414e0b3fda5317c96869d92304f",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/bb9447e1c0c61414e0b3fda5317c96869d92304f"
+                        },
+                        {
+                            "sha": "0461dde0d6900caf721ffacdf0d5132e53f6a9a4",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/0461dde0d6900caf721ffacdf0d5132e53f6a9a4",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/0461dde0d6900caf721ffacdf0d5132e53f6a9a4"
+                        }
+                    ]
+                },
+                {
+                    "sha": "b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "node_id": "C_kwDOAGzkrtoAKGI2NzJiM2E3NGNiNzA3MTViZmUyMjAxOWYwODUyNjRkODRlYWQwNWQ",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-13T18:55:54Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2024-12-13T18:55:54Z"
+                        },
+                        "message": "Merge branch 'master' into canada-v2.10",
+                        "tree": {
+                            "sha": "5cd66c871ae7024429cc20c8f33251b3f257cae4",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/git/trees/5cd66c871ae7024429cc20c8f33251b3f257cae4"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-canada/git/commits/b672b3a74cb70715bfe22019f085264d84ead05d",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "html_url": "https://github.com/open-data/ckanext-canada/commit/b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-canada/commits/b672b3a74cb70715bfe22019f085264d84ead05d/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "e81818ef6a728dcab484e8a3c40bf813cc0b58ce",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/e81818ef6a728dcab484e8a3c40bf813cc0b58ce",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/e81818ef6a728dcab484e8a3c40bf813cc0b58ce"
+                        },
+                        {
+                            "sha": "9088e1b40f0d3163f76d93a1e51ada188f97616a",
+                            "url": "https://api.github.com/repos/open-data/ckanext-canada/commits/9088e1b40f0d3163f76d93a1e51ada188f97616a",
+                            "html_url": "https://github.com/open-data/ckanext-canada/commit/9088e1b40f0d3163f76d93a1e51ada188f97616a"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "b929b59b36ed61ecaa1124568e57b436514257ea",
+                    "filename": "bin/pd/Makefile",
+                    "status": "modified",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/bin%2Fpd%2FMakefile",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/bin%2Fpd%2FMakefile",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/bin%2Fpd%2FMakefile?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -645,6 +645,7 @@ upload-wrongdoing: $(workdir)/filtered/wrongdoing.csv\n .PHONY: rebuild-wrongdoing\n rebuild-wrongdoing: $(workdir)/filtered/wrongdoing.csv\n \t@$(echo_date) Rebuilding Acts of Founded Wrongdoing...\n+\t@$(oc_search) import_data_csv --csv \"$(workdir)/filtered/wrongdoing.csv\" --search wrongdoing\n \t$(ckan_command) -c $(portal_ini) pd rebuild wrongdoing --lenient \\\n \t-f \"$(workdir)/filtered/wrongdoing.csv\"\n "
+                },
+                {
+                    "sha": "41f393487652e73a1c9fc15bfc6a3602e3b1e9ca",
+                    "filename": "changes/0012.hotfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F0012.hotfix",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F0012.hotfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F0012.hotfix?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -0,0 +1 @@\n+Fixed a typo in the `originating_sector_fr` field example for Briefing Note Titles and Numbers."
+                },
+                {
+                    "sha": "68c75be1169f15d0304e246c0d0376cb81ce9348",
+                    "filename": "changes/1542.bugfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F1542.bugfix",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F1542.bugfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F1542.bugfix?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -0,0 +1 @@\n+Fixed Excel formulae for Grants & Contributions."
+                },
+                {
+                    "sha": "e47c735b645a8feadfb51eeb8c4a631e5503690a",
+                    "filename": "changes/1542.changes",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F1542.changes",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F1542.changes",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F1542.changes?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -0,0 +1 @@\n+Updated various field descriptions and obligations for Grants & Contributions."
+                },
+                {
+                    "sha": "861878e6b237aa2e8672a156b06e291cb694c4d2",
+                    "filename": "changes/1545.changes",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F1545.changes",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/changes%2F1545.changes",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/changes%2F1545.changes?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -0,0 +1 @@\n+Wrongdoing Search has been implemented on OC Search. For now, the Proactive Disclosure Makefile is being modified to rebuild both the Drupal and Django searches during the nightly rebuild."
+                },
+                {
+                    "sha": "d01f179efcf28d3ae22fa7ddb05d50b4b04eab3c",
+                    "filename": "ckanext/canada/tables/briefingt.yaml",
+                    "status": "modified",
+                    "additions": 1,
+                    "deletions": 1,
+                    "changes": 2,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/ckanext%2Fcanada%2Ftables%2Fbriefingt.yaml",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/ckanext%2Fcanada%2Ftables%2Fbriefingt.yaml",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Ftables%2Fbriefingt.yaml?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -291,7 +291,7 @@ resources:\n       title_en: Partner views\n       title_fr: Opinions des partenaires\n       originating_sector_en: Finance; Treasurer\n-      originating_sector_fr: Finance; Trésoirer\n+      originating_sector_fr: Finance; Trésorier\n       addressee: M\n       date_received: \"2018-04-01\"\n       action_required: D"
+                },
+                {
+                    "sha": "a86795c0728dbdce644d50982a98c156742b8c26",
+                    "filename": "ckanext/canada/tables/grants.yaml",
+                    "status": "modified",
+                    "additions": 12,
+                    "deletions": 10,
+                    "changes": 22,
+                    "blob_url": "https://github.com/open-data/ckanext-canada/blob/b672b3a74cb70715bfe22019f085264d84ead05d/ckanext%2Fcanada%2Ftables%2Fgrants.yaml",
+                    "raw_url": "https://github.com/open-data/ckanext-canada/raw/b672b3a74cb70715bfe22019f085264d84ead05d/ckanext%2Fcanada%2Ftables%2Fgrants.yaml",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-canada/contents/ckanext%2Fcanada%2Ftables%2Fgrants.yaml?ref=b672b3a74cb70715bfe22019f085264d84ead05d",
+                    "patch": "@@ -30,7 +30,7 @@ resources:\n         The Reference number is populated by departments. It is a unique reference number given to each entry. Having a unique identifier for each item will allow departments to locate a specific item in the registry should they need to modify or delete.\n \n         Controlled format; This field is populated in the following format DDD-YYYY-YYYY-QX-XXXXX\n-         1. DDD represents the department number – See annex A for list of department numbers\n+         1. DDD represents the department number – Use the same three-digit number as the ‘Departmental Identifier’, which is the department number per the Chart of Accounts list of departments. Ensure you are reviewing the most current year: https://www.tpsgc-pwgsc.gc.ca/recgen/pceaf-gwcoa/2425/txt/rg-3-num-eng.html\n          2. YYYY-YYYY represents the fiscal year\n          3. QX represents the fiscal quarter\n          4. XXXXX represents the unique number assigned by the department for each entry.\n@@ -40,7 +40,7 @@ resources:\n         Ce champ est rempli par l’utilisateur. L’identificateur de projet ministériel permet aux ministères d’identifier rapidement les rapports produits dans leur propre système. Les ministères devraient utiliser un chiffre qui est logique pour le ministère. Ces renseignements seront publiés dans le cadre du rapport.\n \n         Format contrôlé; Ce champ est rempli au format suivant: DDD-YYYY-YYYY-QX-XXXXX\n-         1.\tDDD représente le numéro de département - Voir l’annexe A pour la liste des numéros de département.\n+         1.\tDDD représente le numéro du ministère - Utilisez le même numéro à trois chiffres que l’«Identificateur ministériel», qui est le numéro de ministère selon la liste du plan comptable des ministères. Assurez-vous de consulter l’année la plus récente : https://www.tpsgc-pwgsc.gc.ca/recgen/pceaf-gwcoa/2425/txt/rg-3-num-fra.html\n          2.\tAAAA-AAAA représente l'année fiscale\n          3.\tQX représente le trimestre fiscal\n          4.\tXXXXX représente le numéro unique attribué par le département pour chaque entrée.\n@@ -79,7 +79,7 @@ resources:\n       fr: Obligatoire si le numéro de modification est défini\n     format_type: Date (Please format the data as YYYY-MM-DD)\n     datastore_type: date\n-    excel_cell_required_formula: 'and({column}{row}=\"\",{column_before}{row}<>0)'\n+    excel_required_formula: AND(NOT(ISBLANK({amendment_number})),{amendment_number}<>0)\n     form_snippet: scheming/form_snippets/date.html\n \n   # 3.4 Agreement Type (Formerly “Type”- 3.16)\n@@ -128,7 +128,7 @@ resources:\n         en: Academia\n         fr: établissement universitaire et institution publique\n       A:\n-        en: Aboriginal recipients\n+        en: Indigenous recipients\n         fr: bénéficiaire autochtone\n       G:\n         en: Government\n@@ -253,12 +253,14 @@ resources:\n       en: Recipient Province or Territory\n       fr: Province ou territoire du bénéficiaire\n     description:\n-      en: The \"Recipient province or territory\" is a mandatory field that identifies where, within Canada, the recipient resides.\n-      fr: Le champ « province ou territoire du bénéficiaire » est un champ obligatoire qui indique le lieu de résidence du bénéficiaire au Canada.\n-    obligation: Optional\n+      en: The \"Recipient province or territory\" is a mandatory field if the Recipient Country is Canada and identifies where, within Canada, the recipient resides.\n+      fr: Le champ « province ou territoire du bénéficiaire » est un champ obligatoire si le pays destinataire est le Canada et indique le lieu de résidence du bénéficiaire au Canada.\n+    obligation:\n+      en: Mandatory if Recipient Country is Canada\n+      fr: Obligatoire si le pays destinataire est le Canada\n     format_type: Controlled List\n     datastore_type: text\n-    excel_cell_required_formula: 'and({column}{row}=\"\",{column_before}{row}=\"CA\")'\n+    excel_required_formula: AND(NOT(ISBLANK({recipient_country})),{recipient_country}=\"CA\")\n     choices:\n       \"ON\":\n         en: Ontario\n@@ -520,7 +522,7 @@ resources:\n     obligation: Optional (Mandatory when funding provided in foreign currency)\n     format_type: Controlled List\n     datastore_type: text\n-    excel_cell_required_formula: 'and({column}{row}=\"\",{column_after}{row}<>\"\")'\n+    excel_required_formula: NOT(ISBLANK({foreign_currency_value}))\n     choices_file: choices/currency.json\n \n   # 3.26 Foreign Currency Value (New field)\n@@ -533,7 +535,7 @@ resources:\n       fr: La valeur en monnaie étrangère est le montant convenu aux termes de l'entente de subvention ou de contribution avec le bénéficiaire. Ce champ doit être rempli en inscrivant la valeur dans la monnaie étrangère. Ce champ est obligatoire si l'entente est en devise étrangère.\n     obligation: Mandatory if foreign currency type is selected\n     datastore_type: money\n-    excel_cell_required_formula: 'and({column}{row}=\"\",{column_before}{row}<>\"\")'\n+    excel_required_formula: NOT(ISBLANK({foreign_currency_type}))\n \n   # 3.27 Agreement Start Date (Formerly 3.14 \"date\")\n   - datastore_id: agreement_start_date"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "url": "https://api.github.com/repos/open-data/oc_search/compare/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c...728d18447017161dbd02f19dc105db30e18df648",
+            "html_url": "https://github.com/open-data/oc_search/compare/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c...728d18447017161dbd02f19dc105db30e18df648",
+            "permalink_url": "https://github.com/open-data/oc_search/compare/open-data:f8073ed...open-data:728d184",
+            "diff_url": "https://github.com/open-data/oc_search/compare/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c...728d18447017161dbd02f19dc105db30e18df648.diff",
+            "patch_url": "https://github.com/open-data/oc_search/compare/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c...728d18447017161dbd02f19dc105db30e18df648.patch",
+            "base_commit": {
+                "sha": "f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                "node_id": "C_kwDOD-wqodoAKGY4MDczZWRmMDgwYjFjYmNmYThlZjhmM2NiMWZmZmZiOGNmY2VhM2M",
+                "commit": {
+                    "author": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-12-03T20:37:37Z"
+                    },
+                    "committer": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-12-03T20:37:37Z"
+                    },
+                    "message": "OPEN-3686: First Draft of Custom Search dev guide",
+                    "tree": {
+                        "sha": "cbf425d6a354317b749f607afa5f00787d70e8d9",
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/trees/cbf425d6a354317b749f607afa5f00787d70e8d9"
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/git/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/oc_search/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                "html_url": "https://github.com/open-data/oc_search/commit/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c/comments",
+                "author": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "26bdb16a333eb8c54acf986567f9ef23007e9573",
+                        "url": "https://api.github.com/repos/open-data/oc_search/commits/26bdb16a333eb8c54acf986567f9ef23007e9573",
+                        "html_url": "https://github.com/open-data/oc_search/commit/26bdb16a333eb8c54acf986567f9ef23007e9573"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                "node_id": "C_kwDOD-wqodoAKGY4MDczZWRmMDgwYjFjYmNmYThlZjhmM2NiMWZmZmZiOGNmY2VhM2M",
+                "commit": {
+                    "author": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-12-03T20:37:37Z"
+                    },
+                    "committer": {
+                        "name": "thriuin",
+                        "email": "ross.thompson@tbs-sct.gc.ca",
+                        "date": "2024-12-03T20:37:37Z"
+                    },
+                    "message": "OPEN-3686: First Draft of Custom Search dev guide",
+                    "tree": {
+                        "sha": "cbf425d6a354317b749f607afa5f00787d70e8d9",
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/trees/cbf425d6a354317b749f607afa5f00787d70e8d9"
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/git/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/oc_search/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                "html_url": "https://github.com/open-data/oc_search/commit/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c/comments",
+                "author": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "thriuin",
+                    "id": 1249972,
+                    "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/thriuin",
+                    "html_url": "https://github.com/thriuin",
+                    "followers_url": "https://api.github.com/users/thriuin/followers",
+                    "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                    "repos_url": "https://api.github.com/users/thriuin/repos",
+                    "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "26bdb16a333eb8c54acf986567f9ef23007e9573",
+                        "url": "https://api.github.com/repos/open-data/oc_search/commits/26bdb16a333eb8c54acf986567f9ef23007e9573",
+                        "html_url": "https://github.com/open-data/oc_search/commit/26bdb16a333eb8c54acf986567f9ef23007e9573"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 1,
+            "behind_by": 0,
+            "total_commits": 1,
+            "commits": [
+                {
+                    "sha": "728d18447017161dbd02f19dc105db30e18df648",
+                    "node_id": "C_kwDOD-wqodoAKDcyOGQxODQ0NzAxNzE2MWRiZDAyZjE5ZGMxMDVkYjMwZTE4ZGY2NDg",
+                    "commit": {
+                        "author": {
+                            "name": "thriuin",
+                            "email": "ross.thompson@tbs-sct.gc.ca",
+                            "date": "2024-12-11T18:59:54Z"
+                        },
+                        "committer": {
+                            "name": "thriuin",
+                            "email": "ross.thompson@tbs-sct.gc.ca",
+                            "date": "2024-12-11T18:59:54Z"
+                        },
+                        "message": "OPEN-3757: Enabling the link to the Search Help page on all searches",
+                        "tree": {
+                            "sha": "97ce312e97471b1fadc929e2c8c0ea1a5c216c63",
+                            "url": "https://api.github.com/repos/open-data/oc_search/git/trees/97ce312e97471b1fadc929e2c8c0ea1a5c216c63"
+                        },
+                        "url": "https://api.github.com/repos/open-data/oc_search/git/commits/728d18447017161dbd02f19dc105db30e18df648",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/oc_search/commits/728d18447017161dbd02f19dc105db30e18df648",
+                    "html_url": "https://github.com/open-data/oc_search/commit/728d18447017161dbd02f19dc105db30e18df648",
+                    "comments_url": "https://api.github.com/repos/open-data/oc_search/commits/728d18447017161dbd02f19dc105db30e18df648/comments",
+                    "author": {
+                        "login": "thriuin",
+                        "id": 1249972,
+                        "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/thriuin",
+                        "html_url": "https://github.com/thriuin",
+                        "followers_url": "https://api.github.com/users/thriuin/followers",
+                        "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                        "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                        "repos_url": "https://api.github.com/users/thriuin/repos",
+                        "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "thriuin",
+                        "id": 1249972,
+                        "node_id": "MDQ6VXNlcjEyNDk5NzI=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1249972?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/thriuin",
+                        "html_url": "https://github.com/thriuin",
+                        "followers_url": "https://api.github.com/users/thriuin/followers",
+                        "following_url": "https://api.github.com/users/thriuin/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/thriuin/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/thriuin/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/thriuin/subscriptions",
+                        "organizations_url": "https://api.github.com/users/thriuin/orgs",
+                        "repos_url": "https://api.github.com/users/thriuin/repos",
+                        "events_url": "https://api.github.com/users/thriuin/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/thriuin/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                            "url": "https://api.github.com/repos/open-data/oc_search/commits/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c",
+                            "html_url": "https://github.com/open-data/oc_search/commit/f8073edf080b1cbcfa8ef8f3cb1ffffb8cfcea3c"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "adec2f51d8f0b5ce494552c9c7140b03c2889f05",
+                    "filename": "changes/open-3757.feature",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/oc_search/blob/728d18447017161dbd02f19dc105db30e18df648/changes%2Fopen-3757.feature",
+                    "raw_url": "https://github.com/open-data/oc_search/raw/728d18447017161dbd02f19dc105db30e18df648/changes%2Fopen-3757.feature",
+                    "contents_url": "https://api.github.com/repos/open-data/oc_search/contents/changes%2Fopen-3757.feature?ref=728d18447017161dbd02f19dc105db30e18df648",
+                    "patch": "@@ -0,0 +1 @@\n+Enable the Search Help page for ALL searches, not just Open Data."
+                },
+                {
+                    "sha": "dc24a2a643a384a197bb99d95c0eb36b3f136bcf",
+                    "filename": "search/templates/search.html",
+                    "status": "modified",
+                    "additions": 1,
+                    "deletions": 3,
+                    "changes": 4,
+                    "blob_url": "https://github.com/open-data/oc_search/blob/728d18447017161dbd02f19dc105db30e18df648/search%2Ftemplates%2Fsearch.html",
+                    "raw_url": "https://github.com/open-data/oc_search/raw/728d18447017161dbd02f19dc105db30e18df648/search%2Ftemplates%2Fsearch.html",
+                    "contents_url": "https://api.github.com/repos/open-data/oc_search/contents/search%2Ftemplates%2Fsearch.html?ref=728d18447017161dbd02f19dc105db30e18df648",
+                    "patch": "@@ -38,11 +38,9 @@\n           {% endif %}\n           {% if json_download_allowed %}<a href=\"{{ json_format_url }}\" class=\"btn btn-link\" target=\"_blank\" rel=\"unsafe-url\">\n           <span class=\"glyphicon glyphicon-list text-info\"></span>  {% translate 'Link to JSON format' %} </a>{% endif %}\n-          {# July 24, 2024: TEMPORARY Measure - only show search tips link on the Open Data Search page #}\n-          {% if search_type == 'data' %}\n           <a href=\"{{ help_page }}\" class=\"btn btn-link\">\n             <span class=\"glyphicon glyphicon-question-sign\"></span> {% translate 'Search Tips' %}</a>\n-          {% endif %}\n+\n       </div>\n     </div>\n     {% endblock main-centre-search-box %}"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}

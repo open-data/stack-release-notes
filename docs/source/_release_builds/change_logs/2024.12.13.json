@@ -1,0 +1,47 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed a typo in the `originating_sector_fr` field example for Briefing Note Titles and Numbers.\n",
+                    "hash": "41f393487652e73a1c9fc15bfc6a3602e3b1e9ca"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed Excel formulae for Grants & Contributions.\n",
+                    "hash": "68c75be1169f15d0304e246c0d0376cb81ce9348"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated various field descriptions and obligations for Grants & Contributions.\n",
+                    "hash": "e47c735b645a8feadfb51eeb8c4a631e5503690a"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Wrongdoing Search has been implemented on OC Search. For now, the Proactive Disclosure Makefile is being modified to rebuild both the Drupal and Django searches during the nightly rebuild.\n",
+                    "hash": "861878e6b237aa2e8672a156b06e291cb694c4d2"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Enable the Search Help page for ALL searches, not just Open Data.\n",
+                    "hash": "adec2f51d8f0b5ce494552c9c7140b03c2889f05"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
