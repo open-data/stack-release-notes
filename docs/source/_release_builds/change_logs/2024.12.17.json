@@ -1,0 +1,63 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added Dataset & Resource repeating Relationship field groups.\n",
+                    "hash": "cac3c34dca5b8e224770884612d6f40993b93060"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Allow remote DataStore sources. Allow domains with `ckanext.canada.datastore_source_domain_allow_list`\n",
+                    "hash": "2cc4909e6a57d2f18c24d623f7f5ecb6568bd77b"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removed Excel Template version 2 capabilities. Use version 3.\n",
+                    "hash": "fd6e0bbe321a1a252a7c9030b196c79f055b3746"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Allow remote DataStore sources. Allow domains with `ckanext.canada.datastore_source_domain_allow_list`\n",
+                    "hash": "2cc4909e6a57d2f18c24d623f7f5ecb6568bd77b"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Allow remote DataStore sources. Allow domains with `ckanext.canada.datastore_source_domain_allow_list`\n",
+                    "hash": "2cc4909e6a57d2f18c24d623f7f5ecb6568bd77b"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a new global template snippet to allow custom 'teasers' above the search bar.\n\nPlease note, it is necessary to to perform a Django DB migration for this feature\n\nAlso adding JSON formatting to the Search Import/Export files to make it easier to track changes\n",
+                    "hash": "7a46d1ccced80a398f3c0a1fe2e0bd0b71df7889"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
