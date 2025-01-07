@@ -1,0 +1,66 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list for December, 2024.",
+                    "hash": "6dee1fca356cd4db20e1c992a5eae85ca9ab7728"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list for January, 2025.",
+                    "hash": "d95f0d58f45cf938d551a545d0e910dfe3eeadef"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove rebuilding wrongdoing for the Drupal search.\n",
+                    "hash": "04ba96cbc643c63b500bfff828c4f634bc1846f6"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the i18n directory not being found.\n",
+                    "hash": "74359b407908c3e052711743d28c1d4e758d3ea8"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Modified the custom Search export to use standard formating for the JSON output.\nThis makes it much easier for developers to compare changes between releases of new versions of a custom search.\n\nAlso added the standard Open Government GitHub PR workflow to the project.\n",
+                    "hash": "dcd8bd8d8b807e10440e7856422056733ae6d37e"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removing the javascript polyfill.min.js from the RAMP viewer due to integrity concerns\n",
+                    "hash": "c0f2a37c603a298d5dd062cbe3813d353faf112f"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "og": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display clickable links in the comment field on the ATI Details view.\n",
+                    "hash": "b15043ddf87e7d0be1a75c48f40c7f855b7169bc"
+                }
+            ]
+        }
+    }
+}
