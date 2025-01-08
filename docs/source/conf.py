@@ -38,7 +38,7 @@ STACK = {
     'ckan': {
         'https://github.com/open-data/ckan.git'                     : 'canada-v2.10',
         'https://github.com/ckan/ckanapi.git'                       : 'master',
-        'https://github.com/open-data/ckanext-canada.git'           : 'canada-v2.10',
+        'https://github.com/open-data/ckanext-canada.git'           : 'master',
         'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-v2.10',
         'https://github.com/open-data/ckanext-csrf-filter.git'      : 'canada-py3',  # MARK: discontinued
         'https://github.com/open-data/ckanext-dcat.git'             : 'canada-v2.10',
@@ -48,7 +48,7 @@ STACK = {
         'https://github.com/open-data/ckanext-gcnotify.git'         : 'master',
         'https://github.com/open-data/ckanext-openapiview.git'      : 'main',
         'https://github.com/open-data/ckanext-power-bi.git'         : 'main',
-        'https://github.com/open-data/ckanext-recombinant.git'      : 'canada-v2.10',
+        'https://github.com/open-data/ckanext-recombinant.git'      : 'master',
         'https://github.com/ckan/ckanext-scheming.git'              : 'master',
         'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.10',
         'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.10',
