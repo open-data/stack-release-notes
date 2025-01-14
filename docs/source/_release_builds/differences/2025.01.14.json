@@ -1,0 +1,27 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "1599b7a59ae931dffe3876abb4127866a82be11d",
+            "head": "76045e5bf77943d2c0327f0455d287471207b2f0"
+        },
+        "ckanext-excelforms": {
+            "uri": "https://github.com/ckan/ckanext-excelforms",
+            "prev": "296785eaba81ea3a159b4ed9eaff9f00fb5e6a15",
+            "head": "42aef2e76a256f484314e9f09ce9596d1d275627"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "dc3dc2c637556926cf7209f76fd652c213cc89e1",
+            "head": "947384a147851ca528ddbdf8736614ad86269353"
+        }
+    },
+    "django": {},
+    "drupal": {
+        "og": {
+            "uri": "https://github.com/open-data/og",
+            "prev": "5d6651dac74418a9b1a3b1ac6d498e94827bda52",
+            "head": "2fe0995e986d0a8eeadf1275ba21d756e568e4c3"
+        }
+    }
+}

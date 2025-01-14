@@ -1,0 +1,37 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "- Maintain only one ministers list for both Question Period Notes and Use of Administrative Aircraft.\r\n- Update ministers list to include Governor General choice\r\n- Remove aircraft ministers list\r\n- Update Aircraft PD template to use ministers list and add last updated date\r\n- Update QPNotes PD template to filter GG from the choices list and add last updated date\r\n",
+                    "hash": "d42fa630bbc65e4c7ab193da18db7a50de8b020b"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Filter any options from the recombinant choice field by using choices_filter in the yaml.",
+                    "hash": "0290909b3a23e3afdc42df8f3d9f08a113796e90"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "og": {
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove deprecated PD searches. The only active search is Access to Information summaries.\n",
+                    "hash": "8845d081c8eed0e58e12f23caff8dae81a61b7f0"
+                }
+            ]
+        }
+    }
+}
