@@ -1,0 +1,11 @@
+{
+    "ckan": {
+        "ckanext-security": {
+            "uri": "https://github.com/open-data/ckanext-security",
+            "prev": "406d2c0d708a5034eb3acf829190ef408a26501c",
+            "head": "b0f0874980075e6a8ec3f356ca0df922f1734f56"
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
