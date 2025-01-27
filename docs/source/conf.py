@@ -53,7 +53,7 @@ STACK = {
         'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.10',
         'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.10',
         'https://github.com/open-data/ckanext-xloader.git'          : 'canada-v2.10',
-        'https://github.com/ckan/ckantoolkit.git'                   : 'master',
+        'https://github.com/ckan/ckantoolkit.git'                   : 'release-0.0.7',  # MARK: discontinued
         'https://github.com/open-data/goodtables.git'               : 'canada-py3',  # MARK: discontinued
         'https://github.com/open-data/frictionless-py.git'          : 'canada-v2.10',
     },
