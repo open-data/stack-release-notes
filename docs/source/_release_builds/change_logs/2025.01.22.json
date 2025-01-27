@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckanext-security": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the User Update schema not requiring `name` but we always need `name` for the password validator. User `name` cannot be modified still.\n",
+                    "hash": "5a379a3f9dde846c62a95c4f32d8f08605a12dc3"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

@@ -1,0 +1,291 @@
+{
+    "ckan": {
+        "ckanext-security": {
+            "url": "https://api.github.com/repos/open-data/ckanext-security/compare/406d2c0d708a5034eb3acf829190ef408a26501c...b0f0874980075e6a8ec3f356ca0df922f1734f56",
+            "html_url": "https://github.com/open-data/ckanext-security/compare/406d2c0d708a5034eb3acf829190ef408a26501c...b0f0874980075e6a8ec3f356ca0df922f1734f56",
+            "permalink_url": "https://github.com/open-data/ckanext-security/compare/open-data:406d2c0...open-data:b0f0874",
+            "diff_url": "https://github.com/open-data/ckanext-security/compare/406d2c0d708a5034eb3acf829190ef408a26501c...b0f0874980075e6a8ec3f356ca0df922f1734f56.diff",
+            "patch_url": "https://github.com/open-data/ckanext-security/compare/406d2c0d708a5034eb3acf829190ef408a26501c...b0f0874980075e6a8ec3f356ca0df922f1734f56.patch",
+            "base_commit": {
+                "sha": "406d2c0d708a5034eb3acf829190ef408a26501c",
+                "node_id": "C_kwDOBvR2MNoAKDQwNmQyYzBkNzA4YTUwMzRlYjNhY2Y4MjkxOTBlZjQwOGEyNjUwMWM",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-01-21T16:52:22Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-01-21T16:52:22Z"
+                    },
+                    "message": "fix(schema): force strong passwords;\n\n- No old name validator.",
+                    "tree": {
+                        "sha": "d3244d18799d78d09c6a0d498178e67525281cc6",
+                        "url": "https://api.github.com/repos/open-data/ckanext-security/git/trees/d3244d18799d78d09c6a0d498178e67525281cc6"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-security/git/commits/406d2c0d708a5034eb3acf829190ef408a26501c",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-security/commits/406d2c0d708a5034eb3acf829190ef408a26501c",
+                "html_url": "https://github.com/open-data/ckanext-security/commit/406d2c0d708a5034eb3acf829190ef408a26501c",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-security/commits/406d2c0d708a5034eb3acf829190ef408a26501c/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "0c97f27236291a0025d68bdccbff7becfe86c516",
+                        "url": "https://api.github.com/repos/open-data/ckanext-security/commits/0c97f27236291a0025d68bdccbff7becfe86c516",
+                        "html_url": "https://github.com/open-data/ckanext-security/commit/0c97f27236291a0025d68bdccbff7becfe86c516"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "406d2c0d708a5034eb3acf829190ef408a26501c",
+                "node_id": "C_kwDOBvR2MNoAKDQwNmQyYzBkNzA4YTUwMzRlYjNhY2Y4MjkxOTBlZjQwOGEyNjUwMWM",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-01-21T16:52:22Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-01-21T16:52:22Z"
+                    },
+                    "message": "fix(schema): force strong passwords;\n\n- No old name validator.",
+                    "tree": {
+                        "sha": "d3244d18799d78d09c6a0d498178e67525281cc6",
+                        "url": "https://api.github.com/repos/open-data/ckanext-security/git/trees/d3244d18799d78d09c6a0d498178e67525281cc6"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-security/git/commits/406d2c0d708a5034eb3acf829190ef408a26501c",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckanext-security/commits/406d2c0d708a5034eb3acf829190ef408a26501c",
+                "html_url": "https://github.com/open-data/ckanext-security/commit/406d2c0d708a5034eb3acf829190ef408a26501c",
+                "comments_url": "https://api.github.com/repos/open-data/ckanext-security/commits/406d2c0d708a5034eb3acf829190ef408a26501c/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "0c97f27236291a0025d68bdccbff7becfe86c516",
+                        "url": "https://api.github.com/repos/open-data/ckanext-security/commits/0c97f27236291a0025d68bdccbff7becfe86c516",
+                        "html_url": "https://github.com/open-data/ckanext-security/commit/0c97f27236291a0025d68bdccbff7becfe86c516"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 1,
+            "behind_by": 0,
+            "total_commits": 1,
+            "commits": [
+                {
+                    "sha": "b0f0874980075e6a8ec3f356ca0df922f1734f56",
+                    "node_id": "C_kwDOBvR2MNoAKGIwZjA4NzQ5ODAwNzVlNmE4ZWMzZjM1NmNhMGRmOTIyZjE3MzRmNTY",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-01-22T15:31:51Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-01-22T15:31:51Z"
+                        },
+                        "message": "fix(logic): username validator;\n\n- Force name.",
+                        "tree": {
+                            "sha": "221539aee63685eb5c05e9fe1af97e728c8efccc",
+                            "url": "https://api.github.com/repos/open-data/ckanext-security/git/trees/221539aee63685eb5c05e9fe1af97e728c8efccc"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckanext-security/git/commits/b0f0874980075e6a8ec3f356ca0df922f1734f56",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckanext-security/commits/b0f0874980075e6a8ec3f356ca0df922f1734f56",
+                    "html_url": "https://github.com/open-data/ckanext-security/commit/b0f0874980075e6a8ec3f356ca0df922f1734f56",
+                    "comments_url": "https://api.github.com/repos/open-data/ckanext-security/commits/b0f0874980075e6a8ec3f356ca0df922f1734f56/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "406d2c0d708a5034eb3acf829190ef408a26501c",
+                            "url": "https://api.github.com/repos/open-data/ckanext-security/commits/406d2c0d708a5034eb3acf829190ef408a26501c",
+                            "html_url": "https://github.com/open-data/ckanext-security/commit/406d2c0d708a5034eb3acf829190ef408a26501c"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "5a379a3f9dde846c62a95c4f32d8f08605a12dc3",
+                    "filename": "changes/0003.canada.hotfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckanext-security/blob/b0f0874980075e6a8ec3f356ca0df922f1734f56/changes%2F0003.canada.hotfix",
+                    "raw_url": "https://github.com/open-data/ckanext-security/raw/b0f0874980075e6a8ec3f356ca0df922f1734f56/changes%2F0003.canada.hotfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-security/contents/changes%2F0003.canada.hotfix?ref=b0f0874980075e6a8ec3f356ca0df922f1734f56",
+                    "patch": "@@ -0,0 +1 @@\n+Fixed an issue with the User Update schema not requiring `name` but we always need `name` for the password validator. User `name` cannot be modified still."
+                },
+                {
+                    "sha": "ffb903ff927633d0525146264c54d39d40c2b73f",
+                    "filename": "ckanext/security/validators.py",
+                    "status": "modified",
+                    "additions": 14,
+                    "deletions": 4,
+                    "changes": 18,
+                    "blob_url": "https://github.com/open-data/ckanext-security/blob/b0f0874980075e6a8ec3f356ca0df922f1734f56/ckanext%2Fsecurity%2Fvalidators.py",
+                    "raw_url": "https://github.com/open-data/ckanext-security/raw/b0f0874980075e6a8ec3f356ca0df922f1734f56/ckanext%2Fsecurity%2Fvalidators.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckanext-security/contents/ckanext%2Fsecurity%2Fvalidators.py?ref=b0f0874980075e6a8ec3f356ca0df922f1734f56",
+                    "patch": "@@ -2,10 +2,11 @@\n import six\n import string\n \n-from ckan import authz\n+# (canada fork only): fix fatal errors\n+# TODO: upstream contrib!!\n+from ckan import authz, model\n from ckan.common import _\n from ckan.lib.navl.dictization_functions import Missing, Invalid\n-# (canada fork only): more configs\n from ckan.plugins.toolkit import config, asbool\n \n MIN_LEN_ERROR = 'Your password must be {} characters or longer.'\n@@ -57,9 +58,18 @@ def user_password_validator(key, data, errors, context):\n \n def old_username_validator(key, data, errors, context):\n     # Completely prevents changing of user names\n-    # (canada fork only): pop name, fix fatal errors\n+    # (canada fork only): fix fatal errors\n     # TODO: upstream contrib!!\n-    data.pop(key, None)\n+    # this validator is only used in user_update schema.\n+    # the user_update action does get_or_bust for id,\n+    # so there will always be an id at this point.\n+    # the action would also have checked for the user\n+    # in the database, so we can assume that is exists\n+    # at this point.\n+    uuid = data.get(key[:-1] + ('id',))\n+    user_obj = model.User.get(uuid)\n+    data[key] = user_obj.name\n+    return\n \n \n def ensure_str(value):"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
