@@ -22,6 +22,8 @@ MARKDOWN_ATTRIBUTES.setdefault('img', []).extend(['src', 'alt', 'title'])
 # find all tags but ignore < in the strings so that we can use it correctly in markdown
 RE_MD_HTML_TAGS = re.compile('<[^><]*>')
 
+RE_GIT_TAG = re.compile('^TAG:')
+
 class literal(Markup):
     """
     Represents an HTML literal.
@@ -53,7 +55,7 @@ STACK = {
         'https://github.com/open-data/ckanext-security.git'         : 'canada-v2.10',
         'https://github.com/open-data/ckanext-validation.git'       : 'canada-v2.10',
         'https://github.com/open-data/ckanext-xloader.git'          : 'canada-v2.10',
-        'https://github.com/ckan/ckantoolkit.git'                   : 'release-0.0.7',  # MARK: discontinued
+        'https://github.com/ckan/ckantoolkit.git'                   : 'TAG:release-0.0.7',  # MARK: discontinued
         'https://github.com/open-data/goodtables.git'               : 'canada-py3',  # MARK: discontinued
         'https://github.com/open-data/frictionless-py.git'          : 'canada-v2.10',
     },
@@ -181,8 +183,13 @@ def get_release_tags(order='v:refname', latest=False):
 
 
 def get_latest_commit_hash(remote, branch):
+    ref_type = 'heads'
+    if re.match(RE_GIT_TAG, branch):
+        branch = re.sub(RE_GIT_TAG, '', branch)
+        ref_type = 'tags'
+
     latest_hash = subprocess.check_output(
-        ['git', 'ls-remote', remote, 'refs/heads/%s' % branch], stderr=subprocess.STDOUT).decode('utf8')
+        ['git', 'ls-remote', remote, 'refs/%s/%s' % (ref_type, branch)], stderr=subprocess.STDOUT).decode('utf8')
 
     latest_hash = re.split(r'\t+', latest_hash)[0]
 
