@@ -1,0 +1,119 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed a bug with `organization_packages_background_reindex` raising an exception during `_group_or_org_update`\n",
+                    "hash": "49e4da3350d1183f96a667d0ae4e32db9bcd3616"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the app global `is_registry` for new Jinja versions.\n",
+                    "hash": "1f9325ea4e0374f58cef1dab995a8f362d119789"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Refactor code to meet CKAN and Python coding standards.\n",
+                    "hash": "d09cc072d86c433e165383d3cffca74d639cabd7"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Use `ckan.plugins.toolkit` instead of `ckantoolkit`\n",
+                    "hash": "00d6b668083daabe472103fe395061cc28d973b0"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removed old, unused scripts from `bin` and `migration`\n",
+                    "hash": "6501272e2cdb30c0204633f145a6b177feccf7ba"
+                }
+            ]
+        },
+        "ckanext-dcat": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Use `ckan.plugins.toolkit` instead of `ckantoolkit`\n",
+                    "hash": "00d6b668083daabe472103fe395061cc28d973b0"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Refactor code to meet CKAN and Python coding standards.\n",
+                    "hash": "d09cc072d86c433e165383d3cffca74d639cabd7"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Use `ckan.plugins.toolkit` instead of `ckantoolkit`\n",
+                    "hash": "00d6b668083daabe472103fe395061cc28d973b0"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Use `ckan.plugins.toolkit` instead of `ckantoolkit`\n",
+                    "hash": "00d6b668083daabe472103fe395061cc28d973b0"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "opengov": {
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove configuration files for deprecated 'Suggest a dataset' feature.\n",
+                    "hash": "1d115cd2c9d4ffef5244b5909dfe17b564f53b41"
+                }
+            ]
+        },
+        "og": {
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove deprecated code for the 'Suggested Datasets' feature.\n",
+                    "hash": "110a2eee54770e8acc982140fe0c4c49d73a88f0"
+                }
+            ]
+        },
+        "gcweb_bootstrap": {
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove deprecated code for the 'Suggested Datasets' feature.\n",
+                    "hash": "110a2eee54770e8acc982140fe0c4c49d73a88f0"
+                }
+            ]
+        }
+    }
+}
