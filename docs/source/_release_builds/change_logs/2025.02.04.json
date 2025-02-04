@@ -1,0 +1,45 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more resource formats:\n\n- `BUFR`\n- `CAP`\n- `WATERML1`\n- `WATERML2`\n",
+                    "hash": "d72aacb809c420811fb34055699aa91d8d39713c"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Portal Update command will send correct exit codes when the worker pool fails.\n",
+                    "hash": "2a5384c7ee7be6aed01c0207410cc9b0f7ece75d"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the `load_csv` command in which it would raise exceptions when passing non-existing fields to the DataStore.\n",
+                    "hash": "10b737d81c2877a4ae74e7e822ecffdfb4895ebf"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "og": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add a 200 response when GCNotify sends a health check request to callback endpoint.\n",
+                    "hash": "2af42c260dedf34ada3b9a443784aeb1984b8dd7"
+                }
+            ]
+        }
+    }
+}
