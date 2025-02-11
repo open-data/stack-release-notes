@@ -1,0 +1,151 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "DataStore upsert error dicts now pass the original pSQL error message and code stored in `upsert_info`\n",
+                    "hash": "4ab350fe02896854765c9a5953229be17cdbca07"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Now handles nested resource validation errors. Creating, updating, and deleting a resource can catch and handle validation errors from other resources in the dataset.\n",
+                    "hash": "9567d69a4edb987a239b6001fad1297be621f88e"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a `filename` option to the DataStore Dump endpoint.\n",
+                    "hash": "aa29eb66494e5411559f19bfe9903e6d10ff35b0"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Merge PD records of the following sub-organizations under PCO:\n- Deputy Prime Minister & Minister of Finance (dpm-vpm)\n- Intergovernmental Affairs (iga-aig)\n- Minister of Intergovernmental Affairs, Infrastructure & Communities (miga-maig)\n- Office of the Leader of the Government in the House of Commons (ghl-lgc)\n- Office of the Minister of Democratic Institutions (mdi-mid)\n- Quebec Lieutenant (ql-lq)\n- Special Representative for the Prairies (srp-rsp)\n",
+                    "hash": "3e81f7660786e75a72daf7c961602e7cb1859592"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Aligned the Delete and Create PD view functions with new Recombinant code for improved constraint error messages.\n",
+                    "hash": "6688adf69066fe10a7dd4728fd2c6405fa07286f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display errors on the Confirm Resource Delete page. Added new translations for nested resource validation errors. Adds a ckanext-scheming template for the nested resource validation errors to display field labels from the Schema. Adds `get_dataset_title_translated` and `get_resource_name_translated` template helpers to display the Dataset and Resource names in the nested resource validation error messages.\n",
+                    "hash": "e174e4e49d1aeba37d095318f415639b0ce78fd8"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for the `filter_service_std.py` script.\n",
+                    "hash": "6738c4ec5ce439426658103ed394738749542ade"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display resource format labels in the Additional Information section on Resource pages.\n",
+                    "hash": "4d7304e93192cdaeace0664b8e8dda1c0c7616f0"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a select all checkbox to the PD DataTables.\n",
+                    "hash": "77c0426d7ca1c83672fcdc653ebfbc0b25196b47"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added the capability to set a search query to the PD DataTables with the URI parameter `dt_query`\n",
+                    "hash": "2fb093947cfeaf4239a6b2673ee2edee23f42e5e"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed the logic for `target_met` calculated field for Service Standard.\n",
+                    "hash": "008f4b8dfe82a3750517d2761c9044489073ea0b"
+                }
+            ]
+        },
+        "ckanext-power-bi": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Changed the PowerBI wrapping aspect ratio container to a `fixed` position.\n",
+                    "hash": "f9e173e06fcb1e799cfc4adea3cb79ae01a13c6c"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Delete records view function not redirecting to the Preview page.\n",
+                    "hash": "9080e0df31d7d0a7eac1820ddda58924120b5819"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improved the constraint error messages by including the referenced/referencing key values and resource. Add `{refKeys}`, `{refValues}`, and/or `{refTable}` in a defined constraint error message for dynamic string replacements. The `{refTable}` with be a URL link to the CKAN resource.\n",
+                    "hash": "8399c825b44bf48bd88b04037b7ba4c17679d94c"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Now handles `KeyError` and `fields` errors when downloading and uploading Excel records, prompting the user to refresh the resource.\n",
+                    "hash": "1c4dfc62cb013eed286dd49e1edb37e11005ed65"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added the DataStore Dump button for sysadmins to the Recombinant edit template.\n",
+                    "hash": "05192d5df42c380e2596ed79dffddeb2f8b9f83f"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Now gracefully handles browser page refreshes on `POST` views.\n",
+                    "hash": "133c7bfc8dab6621c931c6b3eaf91142a3c7b983"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "`recombinant_update` with `force` and `delete_fields` will now DROP old columns from the DataStore for fields that do not exist in the Schema.\n",
+                    "hash": "08e308fa898a2a16813e914d55a3d18d74b94464"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update script that loadsthe search query logs. It was failing when attempting to load invalid queries",
+                    "hash": "b6b1516d1454e1ec4a0d075592f70418469831e0"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
