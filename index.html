@@ -32,6 +32,40 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.02.11">
+          
+            
+              <div class="github-api-container" id="github-2025.02.11-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.02.11-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.02.11-ckanext-power-bi">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.02.11-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2025.02.11-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2025.02.11-og">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.02.04">
           
             
@@ -967,6 +1001,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.02.11" class="release-nav-item"><a href="#2025.02.11">v.2025.02.11</a></li>
+          
             <li data-release="2025.02.04" class="release-nav-item"><a href="#2025.02.04">v.2025.02.04</a></li>
           
             <li data-release="2025.01.29" class="release-nav-item"><a href="#2025.01.29">v.2025.01.29</a></li>
@@ -1061,6 +1097,327 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.02.11">
+            <h2>
+              v.2025.02.11
+              <a class="headerlink" href="#2025.02.11"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.11-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2025.02.11-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Now handles nested resource validation errors. Creating, updating, and deleting a resource can catch and handle validation errors from other resources in the dataset.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added a <code>filename</code> option to the DataStore Dump endpoint.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>DataStore upsert error dicts now pass the original pSQL error message and code stored in <code>upsert_info</code></p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/c7e89f588584638ff6981ea082ec22d3cfecdc32...f1b0196326f20f00a1fbd2b64c4ae6e21e170e03">View it on GitHub</a>
+                    <span class="release-hash-label">[c7e89f588...f1b019632]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.11-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.02.11-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added a select all checkbox to the PD DataTables.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added the capability to set a search query to the PD DataTables with the URI parameter <code>dt_query</code></p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed the logic for <code>target_met</code> calculated field for Service Standard.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Merge PD records of the following sub-organizations under PCO:
+- Deputy Prime Minister &amp; Minister of Finance (dpm-vpm)
+- Intergovernmental Affairs (iga-aig)
+- Minister of Intergovernmental Affairs, Infrastructure &amp; Communities (miga-maig)
+- Office of the Leader of the Government in the House of Commons (ghl-lgc)
+- Office of the Minister of Democratic Institutions (mdi-mid)
+- Quebec Lieutenant (ql-lq)
+- Special Representative for the Prairies (srp-rsp)</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Aligned the Delete and Create PD view functions with new Recombinant code for improved constraint error messages.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Display errors on the Confirm Resource Delete page. Added new translations for nested resource validation errors. Adds a ckanext-scheming template for the nested resource validation errors to display field labels from the Schema. Adds <code>get_dataset_title_translated</code> and <code>get_resource_name_translated</code> template helpers to display the Dataset and Resource names in the nested resource validation error messages.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added test coverage for the <code>filter_service_std.py</code> script.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Display resource format labels in the Additional Information section on Resource pages.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/4c60b9b35e17ea941202bd4e7ca85e7cac4f03f3...587f4fa2c86d1cb48a75c0f22c2bd1bf91b25ee4">View it on GitHub</a>
+                    <span class="release-hash-label">[4c60b9b35...587f4fa2c]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.11-ckanext-power-bi">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-power-bi
+                      <a class="headerlink" href="#2025.02.11-ckanext-power-bi"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Changed the PowerBI wrapping aspect ratio container to a <code>fixed</code> position.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-power-bi/compare/67871cb5c88b0e953925666b1cb70b14c4dd0643...27ff71c84e7ca952a5a01c47b4f7715a5690f727">View it on GitHub</a>
+                    <span class="release-hash-label">[67871cb5c...27ff71c84]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.11-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2025.02.11-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Improved the constraint error messages by including the referenced/referencing key values and resource. Add <code>{refKeys}</code>, <code>{refValues}</code>, and/or <code>{refTable}</code> in a defined constraint error message for dynamic string replacements. The <code>{refTable}</code> with be a URL link to the CKAN resource.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Now handles <code>KeyError</code> and <code>fields</code> errors when downloading and uploading Excel records, prompting the user to refresh the resource.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added the DataStore Dump button for sysadmins to the Recombinant edit template.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed an issue with the Delete records view function not redirecting to the Preview page.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Now gracefully handles browser page refreshes on <code>POST</code> views.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p><code>recombinant_update</code> with <code>force</code> and <code>delete_fields</code> will now DROP old columns from the DataStore for fields that do not exist in the Schema.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/b00bcfed0a849e66c6519eae75d4092166fa94f5...e1bd729c556fb87e0f522c7e594535c34f9f0b3a">View it on GitHub</a>
+                    <span class="release-hash-label">[b00bcfed0...e1bd729c5]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2025.02.11-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2025.02.11-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Update script that loadsthe search query logs. It was failing when attempting to load invalid queries</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/a8a9845aaa775a388eef1f1863643e27a7f01e47...b19cc4970dff8e7bae25e2973f7a1e8d5121c9c8">View it on GitHub</a>
+                    <span class="release-hash-label">[a8a9845aa...b19cc4970]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2025.02.11-og">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      og
+                      <a class="headerlink" href="#2025.02.11-og"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/fa989c99b2ca5c4dfea9a8d6b4b32a69e43ef978...a2e8dc44180a49abbc05ac80a38ccca3bca82151">View it on GitHub</a>
+                    <span class="release-hash-label">[fa989c99b...a2e8dc441]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.02.04">
             <h2>
