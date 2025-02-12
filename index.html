@@ -1147,7 +1147,7 @@
                         <ul class="changes-list">
                           
                             <li>
-                              <p>DataStore upsert error dicts now pass the original pSQL error message and code stored in <code>upsert_info</code></p>
+                              <p>Foreign constraint pSQL errors are now fully parsed with improved error messages, along with extra constraint info passed in <code>constraint_info</code></p>
                               
                                 <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
                               
@@ -1159,8 +1159,8 @@
                     
                     
                     
-                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/c7e89f588584638ff6981ea082ec22d3cfecdc32...f1b0196326f20f00a1fbd2b64c4ae6e21e170e03">View it on GitHub</a>
-                    <span class="release-hash-label">[c7e89f588...f1b019632]</span>
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/c7e89f588584638ff6981ea082ec22d3cfecdc32...c946fb840727df2ab8027ef6c798c1890bc7b89b">View it on GitHub</a>
+                    <span class="release-hash-label">[c7e89f588...c946fb840]</span>
                   </div>
                 </div>
               
@@ -1207,14 +1207,16 @@
                         <ul class="changes-list">
                           
                             <li>
-                              <p>Merge PD records of the following sub-organizations under PCO:
-- Deputy Prime Minister &amp; Minister of Finance (dpm-vpm)
-- Intergovernmental Affairs (iga-aig)
-- Minister of Intergovernmental Affairs, Infrastructure &amp; Communities (miga-maig)
-- Office of the Leader of the Government in the House of Commons (ghl-lgc)
-- Office of the Minister of Democratic Institutions (mdi-mid)
-- Quebec Lieutenant (ql-lq)
-- Special Representative for the Prairies (srp-rsp)</p>
+                              <p>Merge PD records of the following sub-organizations under PCO:</p>
+<ul>
+<li>Deputy Prime Minister &amp; Minister of Finance (dpm-vpm)</li>
+<li>Intergovernmental Affairs (iga-aig)</li>
+<li>Minister of Intergovernmental Affairs, Infrastructure &amp; Communities (miga-maig)</li>
+<li>Office of the Leader of the Government in the House of Commons (ghl-lgc)</li>
+<li>Office of the Minister of Democratic Institutions (mdi-mid)</li>
+<li>Quebec Lieutenant (ql-lq)</li>
+<li>Special Representative for the Prairies (srp-rsp)</li>
+</ul>
                               
                               
                             </li>
@@ -1226,7 +1228,7 @@
                             </li>
                           
                             <li>
-                              <p>Display errors on the Confirm Resource Delete page. Added new translations for nested resource validation errors. Adds a ckanext-scheming template for the nested resource validation errors to display field labels from the Schema. Adds <code>get_dataset_title_translated</code> and <code>get_resource_name_translated</code> template helpers to display the Dataset and Resource names in the nested resource validation error messages.</p>
+                              <p>Display errors on the Confirm Resource Delete page. Added new translations for nested resource validation errors. Adds a ckanext-scheming template for the nested resource validation errors to display field labels from the Schema.</p>
                               
                               
                             </li>
@@ -1248,8 +1250,8 @@
                     
                     
                     
-                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/4c60b9b35e17ea941202bd4e7ca85e7cac4f03f3...587f4fa2c86d1cb48a75c0f22c2bd1bf91b25ee4">View it on GitHub</a>
-                    <span class="release-hash-label">[4c60b9b35...587f4fa2c]</span>
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/4c60b9b35e17ea941202bd4e7ca85e7cac4f03f3...24972adb2489db9a02673b6976c8d56d89cafed0">View it on GitHub</a>
+                    <span class="release-hash-label">[4c60b9b35...24972adb2]</span>
                   </div>
                 </div>
               
@@ -1298,13 +1300,19 @@
                         <ul class="changes-list">
                           
                             <li>
-                              <p>Improved the constraint error messages by including the referenced/referencing key values and resource. Add <code>{refKeys}</code>, <code>{refValues}</code>, and/or <code>{refTable}</code> in a defined constraint error message for dynamic string replacements. The <code>{refTable}</code> with be a URL link to the CKAN resource.</p>
+                              <p>When exporting/editing records in Excel, any referencing/referenced records will be included in the respective Excel sheets, barring that the referential table belongs to the same dataset.</p>
                               
                               
                             </li>
                           
                             <li>
-                              <p>Now handles <code>KeyError</code> and <code>fields</code> errors when downloading and uploading Excel records, prompting the user to refresh the resource.</p>
+                              <p>Improved the constraint error messages by including the referenced/referencing key values and resource. Add <code>{refKeys}</code>, <code>{refValues}</code>, and/or <code>{refTable}</code> in a defined constraint error message for dynamic string replacements.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Now handles specific <code>KeyError</code> exceptions and <code>fields</code> errors as <code>RecombinantFieldError</code> exception when downloading and uploading Excel records, showing the user a new error message. Sysadmins will be prompted to refresh the resource.</p>
                               
                               
                             </li>
@@ -1348,8 +1356,8 @@
                     
                     
                     
-                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/b00bcfed0a849e66c6519eae75d4092166fa94f5...e1bd729c556fb87e0f522c7e594535c34f9f0b3a">View it on GitHub</a>
-                    <span class="release-hash-label">[b00bcfed0...e1bd729c5]</span>
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/b00bcfed0a849e66c6519eae75d4092166fa94f5...a660293b95a0a5685e46cf0b7bc32a914df17c66">View it on GitHub</a>
+                    <span class="release-hash-label">[b00bcfed0...a660293b9]</span>
                   </div>
                 </div>
               
