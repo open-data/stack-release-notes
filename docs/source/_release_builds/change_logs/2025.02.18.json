@@ -1,0 +1,72 @@
+{
+    "ckan": {
+        "ckan": {
+            "Releases": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Updated CKAN 2.10 from `2.10.4` to `2.10.7`\n",
+                    "hash": "46d0541796bac80309c04b9e2086d732ee5ae044"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Invalidate cached pages and load fresh ones if cookies change\n",
+                    "hash": "b9e0bd74aeeff9904e7c6f858ae3af056991cc4a"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fix `check_access` order for resource create view\n",
+                    "hash": "75b9daea495590c572f3bbb7b5544509d79f32a1"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fix auth check for datastore data dictionary view\n",
+                    "hash": "876616004f99dc101be797c3393809974647949a"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update release process docs\n",
+                    "hash": "8e49e2199ce9909e4fd403b9b68c26185cb1b134"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Foreign keys will now display HTML links to the referential data in PD DataTables.\n",
+                    "hash": "214d1aafec72c7b386606c4cfaaa24ffa47bb980"
+                }
+            ]
+        },
+        "ckanext-power-bi": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue where the radio buttons in the form would not appear with some version of Bootstrap.\n",
+                    "hash": "d2444d3f731ac973f691bac5408c6ff2a060061d"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The view no longer renders inside of an iFrame.\n",
+                    "hash": "be49d4f429612bc45f4c1e8ebb604887b9d2bd64"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
