@@ -32,6 +32,34 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.02.25">
+          
+            
+              <div class="github-api-container" id="github-2025.02.25-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.02.25-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.02.25-ckanext-power-bi">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.02.25-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2025.02.25-og">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.02.18">
           
             
@@ -1019,6 +1047,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.02.25" class="release-nav-item"><a href="#2025.02.25">v.2025.02.25</a></li>
+          
             <li data-release="2025.02.18" class="release-nav-item"><a href="#2025.02.18">v.2025.02.18</a></li>
           
             <li data-release="2025.02.11" class="release-nav-item"><a href="#2025.02.11">v.2025.02.11</a></li>
@@ -1117,6 +1147,221 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.02.25">
+            <h2>
+              v.2025.02.25
+              <a class="headerlink" href="#2025.02.25"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.25-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2025.02.25-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p><code>datastore_create</code> will no longer attempt to create the Full Text Index if the record count is above <code>ckanext.canada.max_ds_fts_rows</code> (default: <code>100,000</code>). This allows for proper editing of the Data Dicitonary for larger DataStore Resources.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/bdf5d4f63f8832ff33289c87d74784dd0565e1db...22e468703f7411b430e856f73986007980bcd0f3">View it on GitHub</a>
+                    <span class="release-hash-label">[bdf5d4f63...22e468703]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.25-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.02.25-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Adds another Recombinant alert area, use <code>template_warning</code> in the Schema.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-trash change-canada-type-icon"></i>&nbsp;&nbsp;Removals</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Move PCO sub-org migration scripts to https://github.com/open-data/data-ops/tree/main/pco/migrate</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Set the correct <code>template_updated</code> for all PD types.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Set configuration for public_activity_stream_detail to False.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/23dcfe8362c3c8b82c72adcc9002c1d418475937...4e42125d9d2bab5795a3968af7d4ab6a9be638e4">View it on GitHub</a>
+                    <span class="release-hash-label">[23dcfe836...4e42125d9]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.25-ckanext-power-bi">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-power-bi
+                      <a class="headerlink" href="#2025.02.25-ckanext-power-bi"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added the Bookmark field to specify a default <code>bookmark</code> value for a Power BI report.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added mapping for supported language locales for Power BI.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-power-bi/compare/bfe23b4ac7736e371688ec27f4e688b553d92685...1eb77c596403f86b4388e7e60ec8acb357975014">View it on GitHub</a>
+                    <span class="release-hash-label">[bfe23b4ac...1eb77c596]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.02.25-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2025.02.25-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Translated the semicolon in <code>Last Updated</code> display.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/a660293b95a0a5685e46cf0b7bc32a914df17c66...21a7a80c1c7954120cb3a85676cc144b54e4a610">View it on GitHub</a>
+                    <span class="release-hash-label">[a660293b9...21a7a80c1]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2025.02.25-og">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      og
+                      <a class="headerlink" href="#2025.02.25-og"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Move GCNotify callback processing to cron task to improve response time for callbacks.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/a2e8dc44180a49abbc05ac80a38ccca3bca82151...9c54523b69cb31c81bffa7f211c8c7a2cd7fc1a3">View it on GitHub</a>
+                    <span class="release-hash-label">[a2e8dc441...9c54523b6]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.02.18">
             <h2>
