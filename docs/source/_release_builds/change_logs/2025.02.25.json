@@ -1,0 +1,87 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "`datastore_create` will no longer attempt to create the Full Text Index if the record count is above `ckanext.canada.max_ds_fts_rows` (default: `100,000`). This allows for proper editing of the Data Dicitonary for larger DataStore Resources.\n",
+                    "hash": "6d94e8b8fa894502dbb98a2f1c7524115e167195"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Set the correct `template_updated` for all PD types.\n",
+                    "hash": "879ac5be526d65a6db223227e6871986159b2ef9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Set configuration for public_activity_stream_detail to False. ",
+                    "hash": "4f6c453734c60e5b03db4a6b10d83678a35d028f"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Adds another Recombinant alert area, use `template_warning` in the Schema.\n",
+                    "hash": "bc81dc9c02ba969f4c004a8d8f1cd1fe137feefc"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Move PCO sub-org migration scripts to https://github.com/open-data/data-ops/tree/main/pco/migrate\n",
+                    "hash": "f41614908c0d51abc43b60aadeecc4b04f30ed22"
+                }
+            ]
+        },
+        "ckanext-power-bi": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added mapping for supported language locales for Power BI.\n",
+                    "hash": "06f7b7ea66d2ef0679ac00484ff6ecbfe53329f8"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added the Bookmark field to specify a default `bookmark` value for a Power BI report.\n",
+                    "hash": "0f5afe6f3ac7ad403dd6bb13bf7424792a721187"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Translated the semicolon in `Last Updated` display.\n",
+                    "hash": "6a819364a303f352e5c1c84d31bd76c94dd7e071"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "og": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Move GCNotify callback processing to cron task to improve response time for callbacks.\n",
+                    "hash": "dd9d9e349a1f14fe8905c56e4561e7fa89d2bf62"
+                }
+            ]
+        }
+    }
+}
