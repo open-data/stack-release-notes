@@ -1,0 +1,33 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "4e42125d9d2bab5795a3968af7d4ab6a9be638e4",
+            "head": "5fe3a8aa2e79f291192d3baa0c1e8e3734a6afce"
+        },
+        "ckanext-power-bi": {
+            "uri": "https://github.com/open-data/ckanext-power-bi",
+            "prev": "1eb77c596403f86b4388e7e60ec8acb357975014",
+            "head": "2ef2f7b27502fa311ac4064e42cf31aae4ac2440"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "b19cc4970dff8e7bae25e2973f7a1e8d5121c9c8",
+            "head": "e2ecc471c67b26c3cb041b64e70770424f8e5e08"
+        }
+    },
+    "drupal": {
+        "og": {
+            "uri": "https://github.com/open-data/og",
+            "prev": "9c54523b69cb31c81bffa7f211c8c7a2cd7fc1a3",
+            "head": "01fbef7891b94d527c93c16f93412897d1b1d74f"
+        },
+        "gcweb_bootstrap": {
+            "uri": "https://github.com/open-data/gcweb_bootstrap",
+            "prev": "595c588c6726bafec2254a7efbb6f6711e759909",
+            "head": "a30084f7b760cc4af62a7e7ac6eeef402c8395c8"
+        }
+    }
+}

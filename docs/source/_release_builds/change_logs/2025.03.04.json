@@ -1,0 +1,49 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "TravelQ schema has additional `destination` fields added, along with validation for expected format.\n",
+                    "hash": "374d3102bd850afe5601c459b16fe26318d544b1"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "HospitalityQ schema has additional `vendor` fields added, along with validation for expected format.\n",
+                    "hash": "2ca315342ffb9488d1d70abd548f32ef889774bf"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove the unused --quiet option for Search csv import from the PD Makefile",
+                    "hash": "957a4c74526c802d2eddc446199fbf6cc8915dd3"
+                }
+            ]
+        },
+        "ckanext-power-bi": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The plugin now supports public Power BI embeds.\n",
+                    "hash": "1ac8529ca37f741a4d45875983f3be321d1bd3e6"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "chanes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Reduce the amount of default messages from the import_data_csv command. Removed the --debug option and markded\nthe --quiet option as redundant.",
+                    "hash": "4cc13b0338be41c8bdd0eb5985f414a8382a217c"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
