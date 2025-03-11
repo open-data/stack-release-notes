@@ -1,0 +1,27 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated country names to latest ISO dataset.\n",
+                    "hash": "31de0adf415334b3d9c535fc4b01aab7c05b1ec8"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add new command `compare_orgs_ckan_json` for manaaging the CKAN organization field that is present in most custom searches\n\n```\nusage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD --search SEARCH\n                                        [--action {compare,purge_unmatched,add_new}] [--dry_run] [--version]\n                                        [-v {0,1,2,3}] [--settings SETTINGS] [--pythonpath PYTHONPATH] [--traceback]\n                                        [--no-color] [--force-color] [--skip-checks]\n\nCompare existing Organization information from the JSON output of the CKAN organization_list command\n\noptions:\n  -h, --help            show this help message and exit\n  --org_file ORG_FILE   Organization List file\n  --field FIELD         field name\n  --search SEARCH       search name\n  --action {compare,purge_unmatched,add_new}\n                        Options are 'compare': show differences between JSON and Codes, 'purge_unmatched': delete\n                        codes not found in JSON, 'add_new': create missing codes from JSON\n  --dry_run             Do a dry run withouth deleting from or adding to the database\n```",
+                    "hash": "9b6e6758cbbf5a421147f6afd1fcaeffd080c099"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
