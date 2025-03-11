@@ -32,6 +32,22 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.03.11">
+          
+            
+              <div class="github-api-container" id="github-2025.03.11-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2025.03.11-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.03.04">
           
             
@@ -1077,6 +1093,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.03.11" class="release-nav-item"><a href="#2025.03.11">v.2025.03.11</a></li>
+          
             <li data-release="2025.03.04" class="release-nav-item"><a href="#2025.03.04">v.2025.03.04</a></li>
           
             <li data-release="2025.02.25" class="release-nav-item"><a href="#2025.02.25">v.2025.02.25</a></li>
@@ -1179,6 +1197,106 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.03.11">
+            <h2>
+              v.2025.03.11
+              <a class="headerlink" href="#2025.03.11"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.03.11-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.03.11-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Updated country names to latest ISO dataset.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/5fe3a8aa2e79f291192d3baa0c1e8e3734a6afce...6dc3539474dc11594ea7f953101396869769fdba">View it on GitHub</a>
+                    <span class="release-hash-label">[5fe3a8aa2...6dc353947]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2025.03.11-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2025.03.11-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Add new command <code>compare_orgs_ckan_json</code> for manaaging the CKAN organization field that is present in most custom searches</p>
+<p>```
+usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD --search SEARCH
+                                        [--action {compare,purge_unmatched,add_new}] [--dry_run] [--version]
+                                        [-v {0,1,2,3}] [--settings SETTINGS] [--pythonpath PYTHONPATH] [--traceback]
+                                        [--no-color] [--force-color] [--skip-checks]</p>
+<p>Compare existing Organization information from the JSON output of the CKAN organization_list command</p>
+<p>options:</p>
+<p>-h, --help            show this help message and exit</p>
+<p>--org_file ORG_FILE   Organization List file</p>
+<p>--field FIELD         field name</p>
+<p>--search SEARCH       search name</p>
+<p>--action {compare,purge_unmatched,add_new}
+                        Options are 'compare': show differences between JSON and Codes, 'purge_unmatched': delete
+                        codes not found in JSON, 'add_new': create missing codes from JSON</p>
+<p>--dry_run             Do a dry run withouth deleting from or adding to the database
+```</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/e2ecc471c67b26c3cb041b64e70770424f8e5e08...c6e5620dcf126272c91c6d94a712e94c56258ae7">View it on GitHub</a>
+                    <span class="release-hash-label">[e2ecc471c...c6e5620dc]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.03.04">
             <h2>
