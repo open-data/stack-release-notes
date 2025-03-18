@@ -1,0 +1,40 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Fixed text array sorting in `datastore_search`",
+                    "hash": "a6ef6f7f5dd12d2b686a56762f31e999bf594c50"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "datastore_search: fix for sort on array column types\n",
+                    "hash": "71d6eb56c2057e93e927c237c3a754f18ef721fd"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Resource list sidebar now only shows 8 resources with a \"Show more\" button to display all the resources.\n",
+                    "hash": "ecc3bdbc55c497a80a6d631bb671939904626369"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added missing French translations.",
+                    "hash": "2568dcc2bc7d4ee2a0f01e372d0e7ea30f8121d1"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
