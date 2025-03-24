@@ -1,0 +1,34 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the README with up to date information.",
+                    "hash": "0dd7403212a4dee092287759110a080a5d2d107c"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated CKAN and Drupal ATI Search Solr configs and schemas to Solr 9 and CKAN 2.10 compatible versions.\n",
+                    "hash": "6c1a8439cc052f585e1e77841b6ab8b6a223cfa6"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the README with up to date information.",
+                    "hash": "0dd7403212a4dee092287759110a080a5d2d107c"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

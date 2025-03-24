@@ -1,0 +1,104 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "hash": "59012805ae2491b7999497835c10167d8edc689a"
+        },
+        "ckanapi": {
+            "uri": "https://github.com/ckan/ckanapi",
+            "hash": "e27e8c5b5b9e97b20094ec7f9f0e18992a81c3b6"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "hash": "9c59b371503bc19bf1b0b62a1fa6cabc50d43761"
+        },
+        "ckanext-cloudstorage": {
+            "uri": "https://github.com/open-data/ckanext-cloudstorage",
+            "hash": "f525f0286cf014329e9754944ae5f6045f21a5bf"
+        },
+        "ckanext-csrf-filter": {
+            "uri": "https://github.com/open-data/ckanext-csrf-filter",
+            "hash": "44b576834358e5169b8f0536e46ea3eda5a88384"
+        },
+        "ckanext-dcat": {
+            "uri": "https://github.com/open-data/ckanext-dcat",
+            "hash": "e91851c80c243f1acb5abc234d87e5b529394243"
+        },
+        "ckanext-dsaudit": {
+            "uri": "https://github.com/ckan/ckanext-dsaudit",
+            "hash": "e617ccc127303ba4ec34d24c65f51d05a0e32b4d"
+        },
+        "ckanext-excelforms": {
+            "uri": "https://github.com/ckan/ckanext-excelforms",
+            "hash": "42aef2e76a256f484314e9f09ce9596d1d275627"
+        },
+        "ckanext-fluent": {
+            "uri": "https://github.com/ckan/ckanext-fluent",
+            "hash": "4e9340a934050e937bed49e6009d0971d880410a"
+        },
+        "ckanext-gcnotify": {
+            "uri": "https://github.com/open-data/ckanext-gcnotify",
+            "hash": "60ac362fa3985d192a4ca7a4823e192534b5b822"
+        },
+        "ckanext-openapiview": {
+            "uri": "https://github.com/open-data/ckanext-openapiview",
+            "hash": "5e527915c299bde0cff79b7211e465b710525dcc"
+        },
+        "ckanext-power-bi": {
+            "uri": "https://github.com/open-data/ckanext-power-bi",
+            "hash": "2ef2f7b27502fa311ac4064e42cf31aae4ac2440"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "hash": "44ca5439b2e9174b98da3aafa45dff8956c19e34"
+        },
+        "ckanext-scheming": {
+            "uri": "https://github.com/ckan/ckanext-scheming",
+            "hash": "49527ec191254a2f457b44daf870ca08e9c1a1ea"
+        },
+        "ckanext-security": {
+            "uri": "https://github.com/open-data/ckanext-security",
+            "hash": "b0f0874980075e6a8ec3f356ca0df922f1734f56"
+        },
+        "ckanext-validation": {
+            "uri": "https://github.com/open-data/ckanext-validation",
+            "hash": "bccc5d6b1bd029a792961975bf9f8cc64b2be955"
+        },
+        "ckanext-xloader": {
+            "uri": "https://github.com/open-data/ckanext-xloader",
+            "hash": "01db872887200de6dfcee07dee92726a4dc12d9c"
+        },
+        "ckantoolkit": {
+            "uri": "https://github.com/ckan/ckantoolkit",
+            "hash": "d8683818d71e352e7a388e59ab8dcea236fdd976"
+        },
+        "goodtables": {
+            "uri": "https://github.com/open-data/goodtables",
+            "hash": "8e2a9aca3df1e6aac6fa865a7a47aa50f2b218f8"
+        },
+        "frictionless-py": {
+            "uri": "https://github.com/open-data/frictionless-py",
+            "hash": "81be82a29da9a409f0ea8b4cec7f1baa3c85174c"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "hash": "c6e5620dcf126272c91c6d94a712e94c56258ae7"
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "uri": "https://github.com/open-data/opengov",
+            "hash": "62897d7c5f6d35fbf858632c273e0df199eff68a"
+        },
+        "og": {
+            "uri": "https://github.com/open-data/og",
+            "hash": "01fbef7891b94d527c93c16f93412897d1b1d74f"
+        },
+        "gcweb_bootstrap": {
+            "uri": "https://github.com/open-data/gcweb_bootstrap",
+            "hash": "a30084f7b760cc4af62a7e7ac6eeef402c8395c8"
+        }
+    }
+}
