@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "You can now use non-string values in `datastore_search` and `datastore_delete` filters for text datatype fields.",
+                    "hash": "3cd5db2914be191594cc451eb241e9ae4e32f0b6"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

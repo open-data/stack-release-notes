@@ -1,0 +1,494 @@
+{
+    "ckan": {
+        "ckan": {
+            "url": "https://api.github.com/repos/open-data/ckan/compare/59012805ae2491b7999497835c10167d8edc689a...7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+            "html_url": "https://github.com/open-data/ckan/compare/59012805ae2491b7999497835c10167d8edc689a...7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+            "permalink_url": "https://github.com/open-data/ckan/compare/open-data:5901280...open-data:7a23a02",
+            "diff_url": "https://github.com/open-data/ckan/compare/59012805ae2491b7999497835c10167d8edc689a...7a23a0241a7a8af09117e1117946f42a5d0b6a36.diff",
+            "patch_url": "https://github.com/open-data/ckan/compare/59012805ae2491b7999497835c10167d8edc689a...7a23a0241a7a8af09117e1117946f42a5d0b6a36.patch",
+            "base_commit": {
+                "sha": "59012805ae2491b7999497835c10167d8edc689a",
+                "node_id": "C_kwDOAHlEatoAKDU5MDEyODA1YWUyNDkxYjc5OTk0OTc4MzVjMTAxNjdkOGVkYzY4OWE",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                        "date": "2025-03-17T14:58:46Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2025-03-17T14:58:46Z"
+                    },
+                    "message": "Merge pull request #194 from open-data/datastore-sort-text-array\n\nfix for OPEN-3943 datastore sort on text array",
+                    "tree": {
+                        "sha": "f740467e1f1088360fba3277d36e44338ac37e83",
+                        "url": "https://api.github.com/repos/open-data/ckan/git/trees/f740467e1f1088360fba3277d36e44338ac37e83"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/git/commits/59012805ae2491b7999497835c10167d8edc689a",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJn2DimCRC1aQ7uu5UhlAAA5HQQAK3eX8QTNPlMDq+rPPDvsHH6\niI2Om0pHbKC1akC844bbMdIxcKzo+YNIlj9oUBX1VXaVVLaDSgN4D9Etef9abl2v\nHIQsFzYCJHOLhPv+IM0s3nAWoCUPsvdUcJH+AlrVkLFHxoS6Mey4t5i/qS8eegSD\nN/bCzvMtjo4DfAfxSlYXOYuFYB2JEzdH0H6ZLcqgaH3glIi8T07Blyzv9cq3QetR\nOWBGZFeTFRmPJds7Hq7Z0fOiSGDP+JS90j4CwdGjUBjsBTEl1NEJ55bybipb7Lov\nXtZVxC0F+/YWqJockCZb85bqO5mY94glGmo3SF3DVnYr2EyxbxZEe1qvZtqaeRsK\neAoohBopTnp+pBHpFR0JnOJvgLlFAVtQbwbGV5cb4PBu/jT9DBdbbZ5xKCG6IoK8\nKfi51OWLIPRdcnc8hT/0EoNZsTqqerlK/SoJR+fWsA+iSs6F9FmSzKh4v2s+6VwE\novRKy57kVry9n5fTUboYedew467QBAZB93WEjqdL3jgNnqP/lECERqHVUnuzoOO7\nxHC6idXCg2rtpqWaEp87o+U2t5+ZPxJSssfyA6erHK4LUwNxalwDJ4vWJR7K8+VV\nXJZFeWv63WTemoeeAkr8T54uDpzKK8ydlEoDN9YuScGy3VjjuGgiwinuvsYzMNc0\neht/BbmpoAt+lH27WTTG\n=CRD/\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree f740467e1f1088360fba3277d36e44338ac37e83\nparent 22e468703f7411b430e856f73986007980bcd0f3\nparent 38f4262b555ab323deeb027db4e59f15d1e1ab74\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1742223526 -0400\ncommitter GitHub <noreply@github.com> 1742223526 -0400\n\nMerge pull request #194 from open-data/datastore-sort-text-array\n\nfix for OPEN-3943 datastore sort on text array ",
+                        "verified_at": "2025-03-17T15:03:49Z"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckan/commits/59012805ae2491b7999497835c10167d8edc689a",
+                "html_url": "https://github.com/open-data/ckan/commit/59012805ae2491b7999497835c10167d8edc689a",
+                "comments_url": "https://api.github.com/repos/open-data/ckan/commits/59012805ae2491b7999497835c10167d8edc689a/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "22e468703f7411b430e856f73986007980bcd0f3",
+                        "url": "https://api.github.com/repos/open-data/ckan/commits/22e468703f7411b430e856f73986007980bcd0f3",
+                        "html_url": "https://github.com/open-data/ckan/commit/22e468703f7411b430e856f73986007980bcd0f3"
+                    },
+                    {
+                        "sha": "38f4262b555ab323deeb027db4e59f15d1e1ab74",
+                        "url": "https://api.github.com/repos/open-data/ckan/commits/38f4262b555ab323deeb027db4e59f15d1e1ab74",
+                        "html_url": "https://github.com/open-data/ckan/commit/38f4262b555ab323deeb027db4e59f15d1e1ab74"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "59012805ae2491b7999497835c10167d8edc689a",
+                "node_id": "C_kwDOAHlEatoAKDU5MDEyODA1YWUyNDkxYjc5OTk0OTc4MzVjMTAxNjdkOGVkYzY4OWE",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                        "date": "2025-03-17T14:58:46Z"
+                    },
+                    "committer": {
+                        "name": "GitHub",
+                        "email": "noreply@github.com",
+                        "date": "2025-03-17T14:58:46Z"
+                    },
+                    "message": "Merge pull request #194 from open-data/datastore-sort-text-array\n\nfix for OPEN-3943 datastore sort on text array",
+                    "tree": {
+                        "sha": "f740467e1f1088360fba3277d36e44338ac37e83",
+                        "url": "https://api.github.com/repos/open-data/ckan/git/trees/f740467e1f1088360fba3277d36e44338ac37e83"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/git/commits/59012805ae2491b7999497835c10167d8edc689a",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": true,
+                        "reason": "valid",
+                        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJn2DimCRC1aQ7uu5UhlAAA5HQQAK3eX8QTNPlMDq+rPPDvsHH6\niI2Om0pHbKC1akC844bbMdIxcKzo+YNIlj9oUBX1VXaVVLaDSgN4D9Etef9abl2v\nHIQsFzYCJHOLhPv+IM0s3nAWoCUPsvdUcJH+AlrVkLFHxoS6Mey4t5i/qS8eegSD\nN/bCzvMtjo4DfAfxSlYXOYuFYB2JEzdH0H6ZLcqgaH3glIi8T07Blyzv9cq3QetR\nOWBGZFeTFRmPJds7Hq7Z0fOiSGDP+JS90j4CwdGjUBjsBTEl1NEJ55bybipb7Lov\nXtZVxC0F+/YWqJockCZb85bqO5mY94glGmo3SF3DVnYr2EyxbxZEe1qvZtqaeRsK\neAoohBopTnp+pBHpFR0JnOJvgLlFAVtQbwbGV5cb4PBu/jT9DBdbbZ5xKCG6IoK8\nKfi51OWLIPRdcnc8hT/0EoNZsTqqerlK/SoJR+fWsA+iSs6F9FmSzKh4v2s+6VwE\novRKy57kVry9n5fTUboYedew467QBAZB93WEjqdL3jgNnqP/lECERqHVUnuzoOO7\nxHC6idXCg2rtpqWaEp87o+U2t5+ZPxJSssfyA6erHK4LUwNxalwDJ4vWJR7K8+VV\nXJZFeWv63WTemoeeAkr8T54uDpzKK8ydlEoDN9YuScGy3VjjuGgiwinuvsYzMNc0\neht/BbmpoAt+lH27WTTG\n=CRD/\n-----END PGP SIGNATURE-----\n",
+                        "payload": "tree f740467e1f1088360fba3277d36e44338ac37e83\nparent 22e468703f7411b430e856f73986007980bcd0f3\nparent 38f4262b555ab323deeb027db4e59f15d1e1ab74\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1742223526 -0400\ncommitter GitHub <noreply@github.com> 1742223526 -0400\n\nMerge pull request #194 from open-data/datastore-sort-text-array\n\nfix for OPEN-3943 datastore sort on text array ",
+                        "verified_at": "2025-03-17T15:03:49Z"
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckan/commits/59012805ae2491b7999497835c10167d8edc689a",
+                "html_url": "https://github.com/open-data/ckan/commit/59012805ae2491b7999497835c10167d8edc689a",
+                "comments_url": "https://api.github.com/repos/open-data/ckan/commits/59012805ae2491b7999497835c10167d8edc689a/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "web-flow",
+                    "id": 19864447,
+                    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/web-flow",
+                    "html_url": "https://github.com/web-flow",
+                    "followers_url": "https://api.github.com/users/web-flow/followers",
+                    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                    "repos_url": "https://api.github.com/users/web-flow/repos",
+                    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "22e468703f7411b430e856f73986007980bcd0f3",
+                        "url": "https://api.github.com/repos/open-data/ckan/commits/22e468703f7411b430e856f73986007980bcd0f3",
+                        "html_url": "https://github.com/open-data/ckan/commit/22e468703f7411b430e856f73986007980bcd0f3"
+                    },
+                    {
+                        "sha": "38f4262b555ab323deeb027db4e59f15d1e1ab74",
+                        "url": "https://api.github.com/repos/open-data/ckan/commits/38f4262b555ab323deeb027db4e59f15d1e1ab74",
+                        "html_url": "https://github.com/open-data/ckan/commit/38f4262b555ab323deeb027db4e59f15d1e1ab74"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 3,
+            "behind_by": 0,
+            "total_commits": 3,
+            "commits": [
+                {
+                    "sha": "050f3e2a604743b4f9dab4507bd3d2664d5d5897",
+                    "node_id": "C_kwDOAHlEatoAKDA1MGYzZTJhNjA0NzQzYjRmOWRhYjQ1MDdiZDNkMjY2NGQ1ZDU4OTc",
+                    "commit": {
+                        "author": {
+                            "name": "Ian Ward",
+                            "email": "ian@excess.org",
+                            "date": "2025-03-21T17:49:05Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-03-24T17:05:58Z"
+                        },
+                        "message": "Merge pull request #8729 from JVickery-TBS/fix/datastore-delete-uncaught-exceptions\n\nCast to String for DataStore Text Fields in Where Clauses\n# Conflicts:\n#\tckanext/datastore/tests/test_search.py\n### RESOLVED.",
+                        "tree": {
+                            "sha": "b60b8837ff57427729572ebcc877e2143a4327f5",
+                            "url": "https://api.github.com/repos/open-data/ckan/git/trees/b60b8837ff57427729572ebcc877e2143a4327f5"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckan/git/commits/050f3e2a604743b4f9dab4507bd3d2664d5d5897",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/commits/050f3e2a604743b4f9dab4507bd3d2664d5d5897",
+                    "html_url": "https://github.com/open-data/ckan/commit/050f3e2a604743b4f9dab4507bd3d2664d5d5897",
+                    "comments_url": "https://api.github.com/repos/open-data/ckan/commits/050f3e2a604743b4f9dab4507bd3d2664d5d5897/comments",
+                    "author": {
+                        "login": "wardi",
+                        "id": 153258,
+                        "node_id": "MDQ6VXNlcjE1MzI1OA==",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/153258?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/wardi",
+                        "html_url": "https://github.com/wardi",
+                        "followers_url": "https://api.github.com/users/wardi/followers",
+                        "following_url": "https://api.github.com/users/wardi/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/wardi/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/wardi/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/wardi/subscriptions",
+                        "organizations_url": "https://api.github.com/users/wardi/orgs",
+                        "repos_url": "https://api.github.com/users/wardi/repos",
+                        "events_url": "https://api.github.com/users/wardi/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/wardi/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "59012805ae2491b7999497835c10167d8edc689a",
+                            "url": "https://api.github.com/repos/open-data/ckan/commits/59012805ae2491b7999497835c10167d8edc689a",
+                            "html_url": "https://github.com/open-data/ckan/commit/59012805ae2491b7999497835c10167d8edc689a"
+                        }
+                    ]
+                },
+                {
+                    "sha": "4cc9be89ac58531b89fbf45a5dbae65d9b688f5a",
+                    "node_id": "C_kwDOAHlEatoAKDRjYzliZTg5YWM1ODUzMWI4OWZiZjQ1YTVkYmFlNjVkOWI2ODhmNWE",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-03-24T17:08:32Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-03-24T17:08:32Z"
+                        },
+                        "message": "feat(misc): changelog;\n\n- Updated change log PR number.",
+                        "tree": {
+                            "sha": "a166a89286b6f9f2de8aeb527222f7e73316cb46",
+                            "url": "https://api.github.com/repos/open-data/ckan/git/trees/a166a89286b6f9f2de8aeb527222f7e73316cb46"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckan/git/commits/4cc9be89ac58531b89fbf45a5dbae65d9b688f5a",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/commits/4cc9be89ac58531b89fbf45a5dbae65d9b688f5a",
+                    "html_url": "https://github.com/open-data/ckan/commit/4cc9be89ac58531b89fbf45a5dbae65d9b688f5a",
+                    "comments_url": "https://api.github.com/repos/open-data/ckan/commits/4cc9be89ac58531b89fbf45a5dbae65d9b688f5a/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "050f3e2a604743b4f9dab4507bd3d2664d5d5897",
+                            "url": "https://api.github.com/repos/open-data/ckan/commits/050f3e2a604743b4f9dab4507bd3d2664d5d5897",
+                            "html_url": "https://github.com/open-data/ckan/commit/050f3e2a604743b4f9dab4507bd3d2664d5d5897"
+                        }
+                    ]
+                },
+                {
+                    "sha": "7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "node_id": "C_kwDOAHlEatoAKDdhMjNhMDI0MWE3YThhZjA5MTE3ZTExMTc5NDZmNDJhNWQwYjZhMzY",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "97247789+JVickery-TBS@users.noreply.github.com",
+                            "date": "2025-03-24T17:08:43Z"
+                        },
+                        "committer": {
+                            "name": "GitHub",
+                            "email": "noreply@github.com",
+                            "date": "2025-03-24T17:08:43Z"
+                        },
+                        "message": "Merge pull request #195 from open-data/fix/ds-text-int-filter\n\nBackport DataStore Text/Int Filter Fix",
+                        "tree": {
+                            "sha": "a166a89286b6f9f2de8aeb527222f7e73316cb46",
+                            "url": "https://api.github.com/repos/open-data/ckan/git/trees/a166a89286b6f9f2de8aeb527222f7e73316cb46"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckan/git/commits/7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": true,
+                            "reason": "valid",
+                            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJn4ZGbCRC1aQ7uu5UhlAAA4m0QAIRX2C12Yhp3ePZBqDlpxNWD\nwLJgKSu3wTg70A2rCFcD4GjQ5M4LbzzT6bsnJ8vmJ1sAoZlNrmI+L/Qh/KfCNg6l\nL4urQeKV111/+Xxlq9o8pHSTj0TW4Cdy2JGBjoNaV7obR84E00QGJrfnfNS4hLnU\nu0IyBKRfNovU07g40bsUc7XcZZ6KlJfJwq8YkVaEKi7oocfKHZuqKUjclVOYcjzJ\nwBpemaxTXfanzyFpG9OWfnZAjHs0HAL/yeLScfseT5e5rdN5opKHq+Hqm6yasoVI\nLklHQRlMKb1BiaNPb1yYwn1PtKojxoveqovFXpl/HEKGy3neP7dX9oOLWXOxlFm8\nG3IgAGybhs3YzOO3CvXn2H1KFEGg/ygcDbagXhIvKrmh0c23YD/0dSnoi0mwQJTy\nvoJWramOtdfVrhwKHqbvsoR5HmhE5ARhE+M6HOOG+/WY9YJhr22xFxaP8yBQ8f1Y\nrBN3ENbdDRZvcTy/lgkK0joU7DgooxNy0tFVIQvnT33EIdWjWjZROAPAnlO6UBxf\nUq4iuo6+lLv1Smtc0epfzANpu+/96acj8YEywhBZx/xG3OhMkRxtFPBtIolr1o/9\nZyb4DkptwtGSOJSMYkehADdDdYZ2LBBeBSIpSfebjcfwIUtLgPv9l+MLFxsbJwr3\nh7r+W0qOXsqA97mNQqqC\n=ej3+\n-----END PGP SIGNATURE-----\n",
+                            "payload": "tree a166a89286b6f9f2de8aeb527222f7e73316cb46\nparent 59012805ae2491b7999497835c10167d8edc689a\nparent 4cc9be89ac58531b89fbf45a5dbae65d9b688f5a\nauthor Jesse Vickery <97247789+JVickery-TBS@users.noreply.github.com> 1742836123 -0400\ncommitter GitHub <noreply@github.com> 1742836123 -0400\n\nMerge pull request #195 from open-data/fix/ds-text-int-filter\n\nBackport DataStore Text/Int Filter Fix",
+                            "verified_at": "2025-03-24T17:13:45Z"
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/commits/7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "html_url": "https://github.com/open-data/ckan/commit/7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "comments_url": "https://api.github.com/repos/open-data/ckan/commits/7a23a0241a7a8af09117e1117946f42a5d0b6a36/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "web-flow",
+                        "id": 19864447,
+                        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/web-flow",
+                        "html_url": "https://github.com/web-flow",
+                        "followers_url": "https://api.github.com/users/web-flow/followers",
+                        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+                        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+                        "repos_url": "https://api.github.com/users/web-flow/repos",
+                        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "59012805ae2491b7999497835c10167d8edc689a",
+                            "url": "https://api.github.com/repos/open-data/ckan/commits/59012805ae2491b7999497835c10167d8edc689a",
+                            "html_url": "https://github.com/open-data/ckan/commit/59012805ae2491b7999497835c10167d8edc689a"
+                        },
+                        {
+                            "sha": "4cc9be89ac58531b89fbf45a5dbae65d9b688f5a",
+                            "url": "https://api.github.com/repos/open-data/ckan/commits/4cc9be89ac58531b89fbf45a5dbae65d9b688f5a",
+                            "html_url": "https://github.com/open-data/ckan/commit/4cc9be89ac58531b89fbf45a5dbae65d9b688f5a"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "3cd5db2914be191594cc451eb241e9ae4e32f0b6",
+                    "filename": "changes/195.backport.bugfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckan/blob/7a23a0241a7a8af09117e1117946f42a5d0b6a36/changes%2F195.backport.bugfix",
+                    "raw_url": "https://github.com/open-data/ckan/raw/7a23a0241a7a8af09117e1117946f42a5d0b6a36/changes%2F195.backport.bugfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckan/contents/changes%2F195.backport.bugfix?ref=7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "patch": "@@ -0,0 +1 @@\n+You can now use non-string values in `datastore_search` and `datastore_delete` filters for text datatype fields.\n\\ No newline at end of file"
+                },
+                {
+                    "sha": "4226b54283def08f661b7f3fa434299059df8456",
+                    "filename": "ckanext/datastore/backend/postgres.py",
+                    "status": "modified",
+                    "additions": 14,
+                    "deletions": 1,
+                    "changes": 15,
+                    "blob_url": "https://github.com/open-data/ckan/blob/7a23a0241a7a8af09117e1117946f42a5d0b6a36/ckanext%2Fdatastore%2Fbackend%2Fpostgres.py",
+                    "raw_url": "https://github.com/open-data/ckan/raw/7a23a0241a7a8af09117e1117946f42a5d0b6a36/ckanext%2Fdatastore%2Fbackend%2Fpostgres.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckan/contents/ckanext%2Fdatastore%2Fbackend%2Fpostgres.py?ref=7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "patch": "@@ -595,8 +595,18 @@ def _where_clauses(\n                 sa.column(field),\n                 ','.join(f\":{p}\" for p in placeholders)\n             ))\n+            if fields_types[field] == 'text':\n+                # pSQL can do int_field = \"10\"\n+                # but cannot do text_field = 10\n+                # this fixes parity there.\n+                value = (str(v) for v in value)\n             clause = (clause_str, dict(zip(placeholders, value)))\n         else:\n+            if fields_types[field] == 'text':\n+                # pSQL can do int_field = \"10\"\n+                # but cannot do text_field = 10\n+                # this fixes parity there.\n+                value = str(value)\n             placeholder = f\"value_{next(idx_gen)}\"\n             clause: tuple[Any, ...] = (\n                 f'{sa.column(field)} = :{placeholder}',\n@@ -1942,7 +1952,10 @@ def delete_data(context: Context, data_dict: dict[str, Any]):\n         where_clause\n     )\n \n-    _execute_single_statement(context, sql_string, where_values)\n+    try:\n+        _execute_single_statement(context, sql_string, where_values)\n+    except ProgrammingError as pe:\n+        raise ValidationError({'filters': [_programming_error_summary(pe)]})\n \n \n def _create_triggers(connection: Any, resource_id: str,"
+                },
+                {
+                    "sha": "5daa1438e9bdf5303d3d032154d52976ba4c51bf",
+                    "filename": "ckanext/datastore/tests/test_delete.py",
+                    "status": "modified",
+                    "additions": 35,
+                    "deletions": 0,
+                    "changes": 35,
+                    "blob_url": "https://github.com/open-data/ckan/blob/7a23a0241a7a8af09117e1117946f42a5d0b6a36/ckanext%2Fdatastore%2Ftests%2Ftest_delete.py",
+                    "raw_url": "https://github.com/open-data/ckan/raw/7a23a0241a7a8af09117e1117946f42a5d0b6a36/ckanext%2Fdatastore%2Ftests%2Ftest_delete.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckan/contents/ckanext%2Fdatastore%2Ftests%2Ftest_delete.py?ref=7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "patch": "@@ -205,6 +205,41 @@ def test_delete_records_required_filters(self):\n         err = ve.value.error_dict\n         assert err == expected\n \n+    @pytest.mark.ckan_config(\"ckan.plugins\", \"datastore\")\n+    @pytest.mark.usefixtures(\"clean_datastore\", \"with_plugins\")\n+    def test_delete_records_text_int_filter(self):\n+        resource = factories.Resource()\n+        data = {\n+            \"resource_id\": resource[\"id\"],\n+            \"force\": True,\n+            \"fields\": [\n+                {\"id\": \"text_field\", \"type\": \"text\"},\n+            ],\n+            \"records\": [\n+                {\"text_field\": 25},\n+                {\"text_field\": 37},\n+            ],\n+        }\n+        helpers.call_action(\"datastore_create\", **data)\n+\n+        # can delete by int\n+        data = {\"resource_id\": resource[\"id\"], \"force\": True,\n+                \"filters\": {\"text_field\": 25}}\n+        helpers.call_action(\"datastore_records_delete\", **data)\n+        result = helpers.call_action(\"datastore_search\",\n+                                     resource_id=resource[\"id\"],\n+                                     include_total=True)\n+        assert result[\"total\"] == 1\n+\n+        # can delete by text\n+        data = {\"resource_id\": resource[\"id\"], \"force\": True,\n+                \"filters\": {\"text_field\": \"37\"}}\n+        helpers.call_action(\"datastore_records_delete\", **data)\n+        result = helpers.call_action(\"datastore_search\",\n+                                     resource_id=resource[\"id\"],\n+                                     include_total=True)\n+        assert result[\"total\"] == 0\n+\n \n @pytest.mark.usefixtures(\"with_request_context\")\n class TestDatastoreDeleteLegacy(object):"
+                },
+                {
+                    "sha": "bebcc5cf0ccc283812021d50de1b9e07db63ba5a",
+                    "filename": "ckanext/datastore/tests/test_search.py",
+                    "status": "modified",
+                    "additions": 56,
+                    "deletions": 19,
+                    "changes": 75,
+                    "blob_url": "https://github.com/open-data/ckan/blob/7a23a0241a7a8af09117e1117946f42a5d0b6a36/ckanext%2Fdatastore%2Ftests%2Ftest_search.py",
+                    "raw_url": "https://github.com/open-data/ckan/raw/7a23a0241a7a8af09117e1117946f42a5d0b6a36/ckanext%2Fdatastore%2Ftests%2Ftest_search.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckan/contents/ckanext%2Fdatastore%2Ftests%2Ftest_search.py?ref=7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+                    "patch": "@@ -453,6 +453,62 @@ def test_search_filter_with_percent_in_column_name(self):\n         result = helpers.call_action(\"datastore_search\", **search_data)\n         assert result[\"total\"] == 1\n \n+    @pytest.mark.ckan_config(\"ckan.plugins\", \"datastore\")\n+    @pytest.mark.usefixtures(\"clean_datastore\", \"with_plugins\")\n+    def test_search_sort_nulls_first_last(self):\n+        resource = factories.Resource()\n+        data = {\n+            \"resource_id\": resource[\"id\"],\n+            \"force\": True,\n+            \"records\": [{\"a\": 1, \"b\": \"Y\"}, {\"b\": \"Z\"}],\n+        }\n+        helpers.call_action(\"datastore_create\", **data)\n+\n+        search_data = {\n+            \"resource_id\": data[\"resource_id\"],\n+            \"sort\": [u\"a desc nulls last\"],\n+        }\n+        result = helpers.call_action(\"datastore_search\", **search_data)\n+        assert result[\"records\"][0]['b'] == 'Y'\n+\n+        search_data = {\n+            \"resource_id\": data[\"resource_id\"],\n+            \"sort\": [u\"a desc nulls first\"],\n+        }\n+        result = helpers.call_action(\"datastore_search\", **search_data)\n+        assert result[\"records\"][0]['b'] == 'Z'\n+\n+    @pytest.mark.ckan_config(\"ckan.plugins\", \"datastore\")\n+    @pytest.mark.usefixtures(\"clean_datastore\", \"with_plugins\")\n+    def test_search_records_text_int_filter(self):\n+        resource = factories.Resource()\n+        data = {\n+            \"resource_id\": resource[\"id\"],\n+            \"force\": True,\n+            \"fields\": [\n+                {\"id\": \"text_field\", \"type\": \"text\"},\n+            ],\n+            \"records\": [\n+                {\"text_field\": 25},\n+                {\"text_field\": 37},\n+            ],\n+        }\n+        helpers.call_action(\"datastore_create\", **data)\n+\n+        # can search by int\n+        data = {\"resource_id\": resource[\"id\"],\n+                \"include_total\": True,\n+                \"filters\": {\"text_field\": 25}}\n+        result = helpers.call_action(\"datastore_search\", **data)\n+        assert len(result[\"records\"]) == 1\n+\n+        # can search by text\n+        data = {\"resource_id\": resource[\"id\"],\n+                \"include_total\": True,\n+                \"filters\": {\"text_field\": \"37\"}}\n+        result = helpers.call_action(\"datastore_search\", **data)\n+        assert len(result[\"records\"]) == 1\n+\n \n @pytest.mark.usefixtures(\"with_request_context\")\n class TestDatastoreSearchLegacyTests(object):\n@@ -770,25 +826,6 @@ def test_search_filters_get(self, app):\n         assert result[\"total\"] == 1\n         assert result[\"records\"] == [self.expected_records[0]]\n \n-    @pytest.mark.ckan_config(\"ckan.plugins\", \"datastore\")\n-    @pytest.mark.usefixtures(\"clean_datastore\", \"with_plugins\")\n-    def test_search_invalid_filter(self, app):\n-        data = {\n-            \"resource_id\": self.data[\"resource_id\"],\n-            # invalid because author is not a numeric field\n-            \"filters\": {u\"author\": 42},\n-        }\n-\n-        auth = {\"Authorization\": self.sysadmin_token}\n-        res = app.post(\n-            \"/api/action/datastore_search\",\n-            json=data,\n-            extra_environ=auth,\n-            status=409,\n-        )\n-        res_dict = json.loads(res.data)\n-        assert res_dict[\"success\"] is False\n-\n     @pytest.mark.ckan_config(\"ckan.plugins\", \"datastore\")\n     @pytest.mark.usefixtures(\"clean_datastore\", \"with_plugins\")\n     def test_search_sort(self, app):"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

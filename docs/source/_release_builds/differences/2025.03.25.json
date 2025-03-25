@@ -1,0 +1,11 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "59012805ae2491b7999497835c10167d8edc689a",
+            "head": "7a23a0241a7a8af09117e1117946f42a5d0b6a36"
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
