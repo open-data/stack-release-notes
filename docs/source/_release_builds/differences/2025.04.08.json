@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "7a23a0241a7a8af09117e1117946f42a5d0b6a36",
+            "head": "5765ccf45f2f16b7998d8183b7ac729840a19f82"
+        },
+        "ckanext-scheming": {
+            "uri": "https://github.com/ckan/ckanext-scheming",
+            "prev": "49527ec191254a2f457b44daf870ca08e9c1a1ea",
+            "head": "da2daad24b825dbe521325dee7e45d02ac6ec371"
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

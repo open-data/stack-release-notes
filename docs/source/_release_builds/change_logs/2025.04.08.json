@@ -1,0 +1,22 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with using `filters` in `datastore_search` with CSV/TSV records format.",
+                    "hash": "ab54732d996c41ff94169350250ee40205ae298b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "backport fix for updating data dictionary with % column names\n",
+                    "hash": "21095499b7db2ec54e146facbea64aa98994ab67"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
