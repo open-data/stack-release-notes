@@ -1,0 +1,110 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list for March 14, 2025.\n",
+                    "hash": "6aca9b9d1b68d2bc34795df41fc1a0e70ef834d9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Moved the validation for TravelQ `destination_` and `disclosure_group` fields to be on or after April 1st 2025.",
+                    "hash": "45ea4378cee43a7d84b527da4683f2192e895961"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Moved the validation for HospitalityQ `disclosure_group` and `_attendee` fields to be on or after April 1st 2025.",
+                    "hash": "3af67ce335960278435d3126d2aa4a7bf338f1dd"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The `place_of_publication` and `geographic_region` fields now render as Select2 fields.",
+                    "hash": "7f861d5f4f73bfabbea9ed218be7d539abd65d26"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the page title, stage/phase labels, and stage/phase buttons on the Dataset form pages.",
+                    "hash": "26a1f75f306ed0123f2cba404b415f1d9127602c"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added 2025-2026 fiscal quarters to the valid choices for Proactive Disclosure schemas.",
+                    "hash": "22b3e45efa9ac76d6e3043dab147371a265099de"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improved the display of Resource Validation and XLoader badges to be more clear. Errors/failures will now display in semantic alert areas with a button link to go to the respective report. Successful and Processing badges will display as normal. The Frictionless report items will now be expanded by default, showing the user how to correct the problems in their data.",
+                    "hash": "3ca27489dd76ef684a2b6052da1fd3ced5133389"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the User Activity template. Sysadmins can now easily navigate to a User's activity page.",
+                    "hash": "c352ac1b6af2168047934e275de06186e6c7a8d4"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Search app will no longer accept invalid fields in the URL request. If an invalid field is found, the search app will \nreturn a 400 code and display an error message.",
+                    "hash": "1f213e8af6c7be4765600790a1e052878e12b1bc"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The pagination links at the bottom of the Search page can contain the wrong sort order when the application\nautomatically switches the sort type because the user has entered search text for the first time in the \nsession. A different, non-JavaScript approach resolves this issue.",
+                    "hash": "0ba7f985ea63551b2e8fb34a6190d7f07cc5c63a"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Do a basic reset of the search when the user explicitly starts a new search.",
+                    "hash": "7c440389ef6eb0d27c7dd12ca287891659769525"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Specify `en` and `fr` language domains in the robots disallow lists.",
+                    "hash": "8e731fd74995f3f574c34990ea344da1970f3a22"
+                }
+            ]
+        },
+        "gcweb_bootstrap": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Render a `noindex` robots meta tag for search routes.",
+                    "hash": "0615bd95a5af32aaf57da4964f68dd8ad18ab361"
+                }
+            ]
+        }
+    }
+}
