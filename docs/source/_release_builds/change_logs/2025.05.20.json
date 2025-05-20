@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Now properly handles string filtering for DataStore text array (`_text`) fields.",
+                    "hash": "752dc938e9abf1d50b97bb13f9ee8d6cc28b9d5f"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list after elections on May 13, 2025.",
+                    "hash": "379c6c47d92714cf4b6d23cd10edc8c2b838ac80"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
