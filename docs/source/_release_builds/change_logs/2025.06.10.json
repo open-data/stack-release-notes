@@ -1,0 +1,48 @@
+{
+    "ckan": {
+        "ckan": {
+            "Releases": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Patched CKAN Core from `2.10.7` to `2.10.8`",
+                    "hash": "1acdea117d68ae6932bca04d8d3349da148bbf74"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Increased `pytest` dependency versions.",
+                    "hash": "81cbcdd89cdde82763461ee3e8cda02d9cb83c07"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Support email address is now configurable.",
+                    "hash": "8b82faa681c4b30ab8c84d740868dbf54a2b78c2"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Increased `pytest` dependency versions.",
+                    "hash": "81cbcdd89cdde82763461ee3e8cda02d9cb83c07"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Use the new `support_email_address` helper from the Canada plugin.",
+                    "hash": "1f2dd9cd1b599ef3678886ac81d60529a0d68d16"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
