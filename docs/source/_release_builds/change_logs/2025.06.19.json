@@ -1,0 +1,51 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "- Saving a draft dataset is now called \"Publish\" and an \"Unpublish\" button is available\nto move an active dataset back to the draft state.\n- Consistent display of draft state across dataset pages.\n- Error handling is now done on publish, so validators that only apply certain rules to fields for published datasets (e.g. required-only-when-published) will be properly displayed instead of causing a server error.\n- templates/package/new_package_form.html content has been merged into its parent template templates/package/snippets/package_form.html and is now marked as deprecated.\n",
+                    "hash": "8f84caaedaa1050f84ba6eae0f3b384b439ee208"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "- Saving a draft dataset is now called \"Publish\" and an \"Unpublish\" button is available\nto move an active dataset back to the draft state.\n- Consistent display of draft state across dataset pages.\n- Error handling is now done on publish, so validators that only apply certain rules to fields for published datasets (e.g. required-only-when-published) will be properly displayed instead of causing a server error.\n- templates/package/new_package_form.html content has been merged into its parent template templates/package/snippets/package_form.html and is now marked as deprecated.\n",
+                    "hash": "8f84caaedaa1050f84ba6eae0f3b384b439ee208"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Hide the new \"Unpublish\" button in dataset forms.",
+                    "hash": "0c2f08963b7ecdae22fef7cb0bd819a93e4da76e"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Now properly checks package permissions for the XLoader and Validation UI pieces, fixes Organization Members not being able to view Datasets and Resources.",
+                    "hash": "0acb977496df28cc0e8694f7fa57b1e4d1b159a9"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "opengov": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Upgrade the following:\n- drupal/core to 10.3.13\n- drupal/google_tag to 2.0.8\n- drupal/menu_breadcrumb to 2.0.0\n- drupal/bootstrap to 3.35.0\n\nAdd modules for improved security on forms:\n- drupal/recaptcha_v3\n- advanced_email_validation\n",
+                    "hash": "33954b12871fd228dcdc91fa8ba50a2e193514b8"
+                }
+            ]
+        }
+    }
+}
