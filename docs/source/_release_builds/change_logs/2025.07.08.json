@@ -1,0 +1,39 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add yearly quarters for 2025-2026 to the Departmental Audit Committee proactive publication\n",
+                    "hash": "04c5e2b4362bfe6defb7395dc36f4ee2e23cc066"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Change the format of \"name\" field in the Travel and Hospitality Quarterly templates.\n",
+                    "hash": "868f20a4ca219e73d780c1309f40b7aa5c3aea3b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Switch HelpDesk email address from open-ouvert@tbs-sct.gc.ca to PortalSupport-Soutienportail@tbs-sct.gc.ca.\n",
+                    "hash": "799d75e3a13d87029e5d7668b941f040847087cd"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "For Search Results exports, use the readable label  for the field instead of the database code field name for the exported file header.",
+                    "hash": "4dbf4edca05ad708caa5cb64c06cae167d1fd0d0"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
