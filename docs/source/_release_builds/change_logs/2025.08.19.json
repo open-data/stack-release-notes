@@ -1,0 +1,79 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "backport resource view permission check fix from ckan#5910\n",
+                    "hash": "68877ae895c24727381f35f0d1eaf00cb8d15a4e"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `rel=\"noopener norefferer\"` to all `_blank` target anchors.",
+                    "hash": "9b9b80b76f9f13a6b1ef7268db3af9cbd641b4f9"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated \"Examplar\" to \"Example\" for French translation",
+                    "hash": "f43487d46d08624edef81355a1f26a70d5832e4b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list after change of role by House of Commons website for Hon. Jill McKnight from Minister of Veterans Affairs to \n- Minister of Veterans Affairs\n- Associate Minister of National Defence.\nUpdate download_ministers script to ignore invalid positions such as \".\"\n",
+                    "hash": "2ea0dcb085dbbed10f1293ada06f23414e60ba89"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fix missing translation updates for support email change.",
+                    "hash": "98267bc7b2da48f66c3e959cec7e8d337c7d6656"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `rel=\"noopener norefferer\"` to all `_blank` target anchors.",
+                    "hash": "9b9b80b76f9f13a6b1ef7268db3af9cbd641b4f9"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `rel=\"noopener norefferer\"` to all `_blank` target anchors.",
+                    "hash": "9b9b80b76f9f13a6b1ef7268db3af9cbd641b4f9"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add contextual alert for changes to search download results",
+                    "hash": "ef3127ef5ab0ee7e426c140340cc1ed1d3fbf1b8"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add changes for new search download results functionality\n",
+                    "hash": "18c63e2c8a86cc574389e9046cf3cf327801caa7"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}

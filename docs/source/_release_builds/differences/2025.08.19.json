@@ -1,0 +1,38 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "1885cbd879ebcdeaa579388a545395cf08f05665",
+            "head": "5eebc542e19e50d077a672375a1f43c2ddd558da"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "43415ecac79079098bb5f6cb7af59be3baa89d8c",
+            "head": "c20a7a66ff14de01360ecc1eb46248ec1a738521"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "d582eeea63a8c9d1390e0ae0c59251ab67abb6cb",
+            "head": "2933e74918fddfcde395a55767fb1637dea56797"
+        },
+        "ckanext-scheming": {
+            "uri": "https://github.com/ckan/ckanext-scheming",
+            "prev": "4a4bf3366389902bc53ab654ec5caf1e6dd67a22",
+            "head": "85eea6733414708ca2b824e9e307d990cd4cd8e2"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "8be08fac5bd6ab1e7115b3009999cafe7323379a",
+            "head": "f3193661d53e6e6c42af8482f63ee59c1631f25a"
+        }
+    },
+    "drupal": {
+        "gcweb_bootstrap": {
+            "uri": "https://github.com/open-data/gcweb_bootstrap",
+            "prev": "14f0970fc28f4c385bdc85c147114707c19b0dbb",
+            "head": "3aa769746a71c77e649c243df581b6962b07e17d"
+        }
+    }
+}
