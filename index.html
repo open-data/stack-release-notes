@@ -32,6 +32,28 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.08.26">
+          
+            
+              <div class="github-api-container" id="github-2025.08.26-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.08.26-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.08.26-ckanext-power-bi">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.08.26-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.08.19">
           
             
@@ -1311,6 +1333,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.08.26" class="release-nav-item"><a href="#2025.08.26">v.2025.08.26</a></li>
+          
             <li data-release="2025.08.19" class="release-nav-item"><a href="#2025.08.19">v.2025.08.19</a></li>
           
             <li data-release="2025.07.08" class="release-nav-item"><a href="#2025.07.08">v.2025.07.08</a></li>
@@ -1435,6 +1459,242 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.08.26">
+            <h2>
+              v.2025.08.26
+              <a class="headerlink" href="#2025.08.26"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.08.26-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2025.08.26-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Adds script/style nonce capabilities to Jinja2 webassets.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Moved inline styles and JS attributes to classes and event listeners respectfully.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Now sets the Cache-Control header to <code>no-cache, private</code> for logged in users.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Loads image assets instead of <code>data:image</code> URIs for stricter Content-Security-Policy support.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/5eebc542e19e50d077a672375a1f43c2ddd558da...ea71e2ecd406b9a5c315865b1009a46fdfb39409">View it on GitHub</a>
+                    <span class="release-hash-label">[5eebc542e...ea71e2ecd]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.08.26-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.08.26-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added functionality to define the <code>Content-Security-Policy</code> header in the Flask App instead of NGINX, allowing for script and style dynamic nonce generation. Configurable with <code>ckanext.canada.content_security_policy</code></p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>filter recovery email sent to logs</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-trash change-canada-type-icon"></i>&nbsp;&nbsp;Removals</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Removed old WET Maps files from codebase.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Loads image assets instead of <code>data:image</code> URIs for stricter Content-Security-Policy support. Saved SVG data as images.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Moved inline styles and JS attributes to classes and event listeners respectfully.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Customized <code>robots.txt</code> for CKAN instances.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Modified French translation in the new user form for the password field. It was missing the length limit.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/c20a7a66ff14de01360ecc1eb46248ec1a738521...dbf64a5b5e8419a33185da6c26ed2d8c6452678e">View it on GitHub</a>
+                    <span class="release-hash-label">[c20a7a66f...dbf64a5b5]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.08.26-ckanext-power-bi">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-power-bi
+                      <a class="headerlink" href="#2025.08.26-ckanext-power-bi"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Use the new <code>get_inline_script_nonce</code> helper.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-power-bi/compare/c2c45a69c9a8ca9ed4d082998abe9d99b400a6ee...fc483d9935675816fc747c08573748f9f628dd14">View it on GitHub</a>
+                    <span class="release-hash-label">[c2c45a69c...fc483d993]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.08.26-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2025.08.26-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Moved inline style attributes into classes and a stylesheet.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Inline JS HTML callbacks have been moved to event bindings in a javascript file.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Display format_type for recombinant table fields in the Reference tab and Data Dictionary.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Use the  tags on the Reference tab only for recombinant tables.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/2933e74918fddfcde395a55767fb1637dea56797...95cfdd16ccc071e07c98cd8a29844d3dd2f107c7">View it on GitHub</a>
+                    <span class="release-hash-label">[2933e7491...95cfdd16c]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.08.19">
             <h2>
