@@ -1,0 +1,56 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Now lowercases usernames in the backend of login and password reset.",
+                    "hash": "0329754b218a4353746766066dc037cd0ee19d73"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added functionality for `no-cache, no-store` cache control with `nocache_store` blueprint decorator.",
+                    "hash": "0d5577bce2990a22957d0774bde93535b6d71f26"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Extend the Adobe Analytics cookie setting to sanitize `javascript:void(0);` href attributes.",
+                    "hash": "b064145880d6531c97c209d3d94caa0c4ea8cc5c"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with Adobe analytics scripts not loading with CSP directives.",
+                    "hash": "cba48005b68f5004f04c7576d6c522f72357518b"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Use the new `nocache_store` blueprint decorator for login and reset pages.",
+                    "hash": "53e0b4f2b3e16392d2398d40e689ffef344f650c"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Now lowercases usernames in the backend of login.",
+                    "hash": "088fa9bd090f16b1028a94f6c22722eebb4406a4"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
