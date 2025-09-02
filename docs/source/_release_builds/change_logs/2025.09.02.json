@@ -1,0 +1,35 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add new template for AI Strategy Tracker proactive publication. Data to be collected only by TBS over a period of 2 fiscal years.\n",
+                    "hash": "5f2bf542f96a0c6633266fccd027ee986785d395"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the DCAT links not rendering.",
+                    "hash": "36bfa906b7d0d662d77504c2fc019b2464e378f9"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Search Results export prepends a BOM to the csv files it generates, but the BOM is no longer the first bytes thanks to recent changes to quote column headers names. This is a fix to ensure the BOM comes first.\n",
+                    "hash": "5a9f1ecf1742950248e15f9a370f81b2e294dd9d"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
