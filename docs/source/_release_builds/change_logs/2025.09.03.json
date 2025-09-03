@@ -1,0 +1,64 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Only output a BOM for CSV and TSV files in Datatables' filter download.",
+                    "hash": "fd9548df2a69ac545df0babcce306c149c6066d5"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "service program id list: update from csv\n",
+                    "hash": "ebac7e728b618609e9d0638d3f51aa90307294d5"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Service Inventory updates for 2025 FY.",
+                    "hash": "e202cc59db85118aa3dd4afb4cbedb8024fca7db"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Service Inventory updates to the data dictionary (2025).",
+                    "hash": "01446124b57353b9e72e8de86d45510ab551e9d9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Ensure the format_type attribute of Recombinant table fields is properly translated and displayed in the following areas for Proactive Disclosures (PD):\n- Reference tab on individual PD pages\n- Data dictionary for each PD\n- Resource page of combined PDs\n\nThis addresses currently missing translations and improves consistency across PD-related interfaces.",
+                    "hash": "626fc6abb1510cdc4ec3139691e554d7f9b37fb3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `mrc` file format as a valid Resource format.",
+                    "hash": "68d6169e663252bd18f13d8887e673558aeb0e28"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Resource format validator will now fallback to `other` if the guessed mimetype is not in the list of Scheming choices.",
+                    "hash": "8a51384e318e1680cf9239ed243cfd2f1e4ceb1e"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Admin Publish Workflow page not rendering paging links properly.",
+                    "hash": "c8b9c7ef21914c6145ad6e666d19a2ba44af4473"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
