@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with Google Analytics not loading and sending tracking data.",
+                    "hash": "27cdedcc9817fbb52f3d18a791ff952548d7a900"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
