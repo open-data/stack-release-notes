@@ -32,6 +32,32 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.09.16">
+          
+            
+              <div class="github-api-container" id="github-2025.09.16-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.09.16-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.09.16-ckanext-fluent">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.09.16-ckanext-gcnotify">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.09.16-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.09.03.hotfix">
           
             
@@ -1391,6 +1417,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.09.16" class="release-nav-item"><a href="#2025.09.16">v.2025.09.16</a></li>
+          
             <li data-release="2025.09.03.hotfix" class="release-nav-item"><a href="#2025.09.03.hotfix">v.2025.09.03.hotfix</a></li>
           
             <li data-release="2025.09.03" class="release-nav-item"><a href="#2025.09.03">v.2025.09.03</a></li>
@@ -1525,6 +1553,261 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.09.16">
+            <h2>
+              v.2025.09.16
+              <a class="headerlink" href="#2025.09.16"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.09.16-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2025.09.16-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>autocomplete=off</code> for password fields to secure fields for older browser architecture</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Front end resource upload no longer manipulates the upload field's fake path.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The JS i18n API endpoint is no longer cache-able.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/0df71b8eb8c3c8d859a3689ea5bead1007159b4e...51c7584616467f0910c592c7e94cabfb96b1eda9">View it on GitHub</a>
+                    <span class="release-hash-label">[0df71b8eb...51c758461]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.09.16-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.09.16-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Obfuscates email addresses rendered in HTML with entity code points. Helps prevent non-advanced Bots from crawling email addresses in HTML content.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>API Token Names have more rigorous validation to help protect the application and database.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Display link for AI Strategy Implementation Tracker on homepage and main menu for users belonging to the TBS organization.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Update activity codes for AI Strategy yaml to fix the underlying data model.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added <code>autocomplete=off</code> for password fields to secure fields for older browser architecture</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>If there is no login session, <code>/links</code> will now redirect to the login page.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Front end guess mimetypes no longer manipulates the upload field's fake path.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>NotAuthorized HTTP responses now have a status code of 404 instead of 403 for logged out users.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added alert copy for Organization deleted states.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Pin python3-cryptography to 45.0.7 in response to RHSA-2025:14553.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/cc6265096a0076de16ddba179169b5d7bde1a9c9...fca6beb2de8912b1e698b649291a42873ce94d8a">View it on GitHub</a>
+                    <span class="release-hash-label">[cc6265096...fca6beb2d]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.09.16-ckanext-fluent">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-fluent
+                      <a class="headerlink" href="#2025.09.16-ckanext-fluent"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-fluent/compare/adf1dfa322e7565a8e392764173eaec109faf771...5204863bbc17a9be22540087f9c04be767bf41d3">View it on GitHub</a>
+                    <span class="release-hash-label">[adf1dfa32...5204863bb]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.09.16-ckanext-gcnotify">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-gcnotify
+                      <a class="headerlink" href="#2025.09.16-ckanext-gcnotify"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Update author_email from open-ouvert@tbs-sct.gc.ca to opendevelopment-developpementouvert@tbs-sct.gc.ca.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-gcnotify/compare/60ac362fa3985d192a4ca7a4823e192534b5b822...566983d6167103a605ab30c622df5ca52875872d">View it on GitHub</a>
+                    <span class="release-hash-label">[60ac362fa...566983d61]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.09.16-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2025.09.16-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Obfuscates email addresses rendered in HTML with entity code points. Helps prevent non-advanced Bots from crawling email addresses in HTML content.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Never browser/client cache the Recombinant templates and Data Dictionary byte streams.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Replaced hardcoded HelpDesk email address with configurable setting to improve flexibility and maintainability.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Raise <code>NotFound</code> exceptions for in-active Organizations.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/95cfdd16ccc071e07c98cd8a29844d3dd2f107c7...39beeb258f7bcad2c5a341b1aed19325dd8b0bff">View it on GitHub</a>
+                    <span class="release-hash-label">[95cfdd16c...39beeb258]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.09.03.hotfix">
             <h2>
