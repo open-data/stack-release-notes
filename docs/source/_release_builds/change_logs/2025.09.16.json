@@ -1,0 +1,134 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `autocomplete=off` for password fields to secure fields for older browser architecture",
+                    "hash": "2ead56023612966bfe7e1c1da6a56ce3c4f5d1f4"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Front end resource upload no longer manipulates the upload field's fake path.",
+                    "hash": "700d31b7d1d6af1f83b55d1ea85e39a026e021a9"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "The JS i18n API endpoint is no longer cache-able.",
+                    "hash": "aee3b444107fc2381435b001c6a5266218a197e2"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display link for AI Strategy Implementation Tracker on homepage and main menu for users belonging to the TBS organization.",
+                    "hash": "b03dba533e46d6f4c1f6e75612c54c53dda535cc"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update activity codes for AI Strategy yaml to fix the underlying data model.",
+                    "hash": "b90eb87cb59182c70816ae83d83bab1436de3a3b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `autocomplete=off` for password fields to secure fields for older browser architecture",
+                    "hash": "2ead56023612966bfe7e1c1da6a56ce3c4f5d1f4"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "If there is no login session, `/links` will now redirect to the login page.",
+                    "hash": "86363edae5a254ada0c659a3b107fbfbd98fffd6"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Front end guess mimetypes no longer manipulates the upload field's fake path.",
+                    "hash": "553db95129370fbb1638e3b46f8ea48dbd528616"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "NotAuthorized HTTP responses now have a status code of 404 instead of 403 for logged out users.",
+                    "hash": "9d5937300e0cced064871cbe31f9b40a9ee07065"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added alert copy for Organization deleted states.",
+                    "hash": "2bd2f52a7f6df870280c5810691e1dfc46eff0f3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Pin python3-cryptography to 45.0.7 in response to RHSA-2025:14553.",
+                    "hash": "e3a10aebe1eb6a3c8bf540805c2cf079995f6e1b"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Obfuscates email addresses rendered in HTML with entity code points. Helps prevent non-advanced Bots from crawling email addresses in HTML content.",
+                    "hash": "8c23fa0f04efce24d521d5e602d0f99ed8adb384"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "API Token Names have more rigorous validation to help protect the application and database.",
+                    "hash": "50c6d969e1b69f04504f6ff571da68d38f0ab365"
+                }
+            ]
+        },
+        "ckanext-gcnotify": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update author_email from open-ouvert@tbs-sct.gc.ca to opendevelopment-developpementouvert@tbs-sct.gc.ca.",
+                    "hash": "1b2a8b57f5e2a603ac12663f502b8fedeaccd412"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Never browser/client cache the Recombinant templates and Data Dictionary byte streams.",
+                    "hash": "32de7118ed0b4888129d1c5d9c759bd679f4fb20"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Replaced hardcoded HelpDesk email address with configurable setting to improve flexibility and maintainability.",
+                    "hash": "7e0ea4bca36b97a235bac6c0ee1e0e1342cee435"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Raise `NotFound` exceptions for in-active Organizations.",
+                    "hash": "c028f1739aa690659f1d987e955da83184911812"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Obfuscates email addresses rendered in HTML with entity code points. Helps prevent non-advanced Bots from crawling email addresses in HTML content.",
+                    "hash": "8c23fa0f04efce24d521d5e602d0f99ed8adb384"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
