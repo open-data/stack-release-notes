@@ -1,0 +1,57 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a new JS module for downloading files via a JS Promise with better UI for large DataStore files.",
+                    "hash": "07d5b2a3887f4e2378db00060ec42c4c560af272"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added support for ckanext-citeproc\n",
+                    "hash": "449eb08a6b6c53981543fca31e5472b68297e582"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Use the new `promise-download` CKAN JS module for DataStore Dump links for better UX with larger DataStore tables.",
+                    "hash": "e2f48273660b6c3e719498020b1a38c04bc3c5d5"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added SHA384 hash integrities to 3rd party scripts and stylesheets.",
+                    "hash": "d2d7ed28e84cb212e34c7e4e4912aeaee06aff2f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "AI Strategy YAML updates:\n- Increased character limit for description and progress fields from 1000 to 1500 characters.\n- Improved labels for activity choices based on input from the policy team.\n- Fixed ordering of primary keys to resolve the delete bug.\n",
+                    "hash": "6806d4532a9debb761c84bcd15a6a22361e4a1e2"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "New command import_code_yaml for updated Code fields from a CKAN recombinant YAML file.",
+                    "hash": "d922486bf91d8b737625f964d14615cbec99c539"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
