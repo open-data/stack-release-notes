@@ -1,0 +1,78 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Resource Views no longer render fully qualified URIs. They now render relative URIs to allow for safe `X-Frame-Options=sameorigin`",
+                    "hash": "9a8a70f078335277af64406482217ad352b6bf9e"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Resource URLs are now only stored as relative paths in SOLR. The request hostname is prepended during `package_show`",
+                    "hash": "ac9f1e18e1a12a5c0ea310ed1109bf2373e75a5b"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Now checks the subdomain for `registry` to see if the user is in the \"Registry\" instead of checking if `canada_internal` plugin is loaded.",
+                    "hash": "6ed95a84359323463e97504ded16a94ec9ce8d42"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Modified Url to add language in order for the dropdown to be bilingual",
+                    "hash": "2b638c5f46307b43f234ee4e19b45e2be4207ab3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Heavily improved the automated pytests and GitHub workflows.",
+                    "hash": "7ede2fe8e02508fc29973878f0eaf9b61b8acfd4"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Small changes to the AI Strategy yaml (OPEN-4278).",
+                    "hash": "306c8192aadf672f247e7e5f89bec556a3cb6993"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Recombinant combine command assuming `extras`",
+                    "hash": "5034536323f3c1b31c728c80b4a8631a110dfdf5"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a CLI subcommand to help with balancing Excel formulae.",
+                    "hash": "e54f6bc000175bf351c013ded7a668028d889732"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Heavily improved the automated pytests and GitHub workflows.",
+                    "hash": "7ede2fe8e02508fc29973878f0eaf9b61b8acfd4"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
