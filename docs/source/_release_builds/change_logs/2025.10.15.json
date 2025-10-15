@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Upscale to configured URL scheme for relative `res_url` values from SOLR. This fixes a critical issue to some quirky network middleware behaviours.",
+                    "hash": "48bd7ba08ed9f5692606477d1f0ddd8661579ea7"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

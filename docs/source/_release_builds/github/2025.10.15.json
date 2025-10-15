@@ -1,0 +1,740 @@
+{
+    "ckan": {
+        "ckan": {
+            "url": "https://api.github.com/repos/open-data/ckan/compare/5a8576149eeac4d907af5741103ce146b961a6ad...a292aad31a1575646994d7e90b8579cb659ea6e9",
+            "html_url": "https://github.com/open-data/ckan/compare/5a8576149eeac4d907af5741103ce146b961a6ad...a292aad31a1575646994d7e90b8579cb659ea6e9",
+            "permalink_url": "https://github.com/open-data/ckan/compare/open-data:5a85761...open-data:a292aad",
+            "diff_url": "https://github.com/open-data/ckan/compare/5a8576149eeac4d907af5741103ce146b961a6ad...a292aad31a1575646994d7e90b8579cb659ea6e9.diff",
+            "patch_url": "https://github.com/open-data/ckan/compare/5a8576149eeac4d907af5741103ce146b961a6ad...a292aad31a1575646994d7e90b8579cb659ea6e9.patch",
+            "base_commit": {
+                "sha": "5a8576149eeac4d907af5741103ce146b961a6ad",
+                "node_id": "C_kwDOAHlEatoAKDVhODU3NjE0OWVlYWM0ZDkwN2FmNTc0MTEwM2NlMTQ2Yjk2MWE2YWQ",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-10-10T13:56:37Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-10-10T13:56:37Z"
+                    },
+                    "message": "feat(misc): changelog;\n\n- Added change log file.",
+                    "tree": {
+                        "sha": "167faf0701e2a05f65ef065f4f730bf16303342a",
+                        "url": "https://api.github.com/repos/open-data/ckan/git/trees/167faf0701e2a05f65ef065f4f730bf16303342a"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/git/commits/5a8576149eeac4d907af5741103ce146b961a6ad",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckan/commits/5a8576149eeac4d907af5741103ce146b961a6ad",
+                "html_url": "https://github.com/open-data/ckan/commit/5a8576149eeac4d907af5741103ce146b961a6ad",
+                "comments_url": "https://api.github.com/repos/open-data/ckan/commits/5a8576149eeac4d907af5741103ce146b961a6ad/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "b9ea4753101cc9993e1b6f7655dbab7c0d4e0d6f",
+                        "url": "https://api.github.com/repos/open-data/ckan/commits/b9ea4753101cc9993e1b6f7655dbab7c0d4e0d6f",
+                        "html_url": "https://github.com/open-data/ckan/commit/b9ea4753101cc9993e1b6f7655dbab7c0d4e0d6f"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "5a8576149eeac4d907af5741103ce146b961a6ad",
+                "node_id": "C_kwDOAHlEatoAKDVhODU3NjE0OWVlYWM0ZDkwN2FmNTc0MTEwM2NlMTQ2Yjk2MWE2YWQ",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-10-10T13:56:37Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2025-10-10T13:56:37Z"
+                    },
+                    "message": "feat(misc): changelog;\n\n- Added change log file.",
+                    "tree": {
+                        "sha": "167faf0701e2a05f65ef065f4f730bf16303342a",
+                        "url": "https://api.github.com/repos/open-data/ckan/git/trees/167faf0701e2a05f65ef065f4f730bf16303342a"
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/git/commits/5a8576149eeac4d907af5741103ce146b961a6ad",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/ckan/commits/5a8576149eeac4d907af5741103ce146b961a6ad",
+                "html_url": "https://github.com/open-data/ckan/commit/5a8576149eeac4d907af5741103ce146b961a6ad",
+                "comments_url": "https://api.github.com/repos/open-data/ckan/commits/5a8576149eeac4d907af5741103ce146b961a6ad/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "b9ea4753101cc9993e1b6f7655dbab7c0d4e0d6f",
+                        "url": "https://api.github.com/repos/open-data/ckan/commits/b9ea4753101cc9993e1b6f7655dbab7c0d4e0d6f",
+                        "html_url": "https://github.com/open-data/ckan/commit/b9ea4753101cc9993e1b6f7655dbab7c0d4e0d6f"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 1,
+            "behind_by": 0,
+            "total_commits": 1,
+            "commits": [
+                {
+                    "sha": "a292aad31a1575646994d7e90b8579cb659ea6e9",
+                    "node_id": "C_kwDOAHlEatoAKGEyOTJhYWQzMWExNTc1NjQ2OTk0ZDdlOTBiODU3OWNiNjU5ZWE2ZTk",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-15T14:26:35Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-15T14:26:35Z"
+                        },
+                        "message": "fix(logic): shceme;\n\n- Upscale scheme to configure site_url for quirky network middlewares.",
+                        "tree": {
+                            "sha": "73173460f1e77bd0ae53356a02166fc84cbccf84",
+                            "url": "https://api.github.com/repos/open-data/ckan/git/trees/73173460f1e77bd0ae53356a02166fc84cbccf84"
+                        },
+                        "url": "https://api.github.com/repos/open-data/ckan/git/commits/a292aad31a1575646994d7e90b8579cb659ea6e9",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/ckan/commits/a292aad31a1575646994d7e90b8579cb659ea6e9",
+                    "html_url": "https://github.com/open-data/ckan/commit/a292aad31a1575646994d7e90b8579cb659ea6e9",
+                    "comments_url": "https://api.github.com/repos/open-data/ckan/commits/a292aad31a1575646994d7e90b8579cb659ea6e9/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "5a8576149eeac4d907af5741103ce146b961a6ad",
+                            "url": "https://api.github.com/repos/open-data/ckan/commits/5a8576149eeac4d907af5741103ce146b961a6ad",
+                            "html_url": "https://github.com/open-data/ckan/commit/5a8576149eeac4d907af5741103ce146b961a6ad"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "48bd7ba08ed9f5692606477d1f0ddd8661579ea7",
+                    "filename": "changes/0010.canada.hotfix",
+                    "status": "added",
+                    "additions": 1,
+                    "deletions": 0,
+                    "changes": 1,
+                    "blob_url": "https://github.com/open-data/ckan/blob/a292aad31a1575646994d7e90b8579cb659ea6e9/changes%2F0010.canada.hotfix",
+                    "raw_url": "https://github.com/open-data/ckan/raw/a292aad31a1575646994d7e90b8579cb659ea6e9/changes%2F0010.canada.hotfix",
+                    "contents_url": "https://api.github.com/repos/open-data/ckan/contents/changes%2F0010.canada.hotfix?ref=a292aad31a1575646994d7e90b8579cb659ea6e9",
+                    "patch": "@@ -0,0 +1 @@\n+Upscale to configured URL scheme for relative `res_url` values from SOLR. This fixes a critical issue to some quirky network middleware behaviours.\n\\ No newline at end of file"
+                },
+                {
+                    "sha": "2ab4f9dee1da57f5da88de74c1b3bd2e44a938c0",
+                    "filename": "ckan/logic/action/get.py",
+                    "status": "modified",
+                    "additions": 10,
+                    "deletions": 0,
+                    "changes": 10,
+                    "blob_url": "https://github.com/open-data/ckan/blob/a292aad31a1575646994d7e90b8579cb659ea6e9/ckan%2Flogic%2Faction%2Fget.py",
+                    "raw_url": "https://github.com/open-data/ckan/raw/a292aad31a1575646994d7e90b8579cb659ea6e9/ckan%2Flogic%2Faction%2Fget.py",
+                    "contents_url": "https://api.github.com/repos/open-data/ckan/contents/ckan%2Flogic%2Faction%2Fget.py?ref=a292aad31a1575646994d7e90b8579cb659ea6e9",
+                    "patch": "@@ -16,6 +16,7 @@\n \n # (canada fork only): non-qualified res_url for lang domain support\n from flask import request\n+from urllib.parse import urlparse, urlunparse\n \n \n import ckan\n@@ -1102,6 +1103,15 @@ def package_show(context: Context, data_dict: DataDict) -> ActionResult.PackageS\n             current_domain = request.host_url.rstrip('/')\n         except RuntimeError:\n             current_domain = config['ckan.site_url'].rstrip('/')\n+        # upscale to configured scheme if different...\n+        # NOTE: this is very important for firewall and middleware stuff...\n+        configured_domain = config['ckan.site_url']\n+        configured_parts = urlparse(configured_domain)\n+        requesting_parts = urlparse(current_domain)\n+        if configured_parts.scheme != requesting_parts.scheme:\n+            requesting_parts = requesting_parts._replace(\n+                scheme=configured_parts.scheme)\n+            current_domain = urlunparse(requesting_parts)\n         for res_dict in package_dict['resources']:\n             if(\n               res_dict.get('url_type') == 'upload' and"
+                }
+            ]
+        },
+        "frictionless-py": {
+            "url": "https://api.github.com/repos/open-data/frictionless-py/compare/81be82a29da9a409f0ea8b4cec7f1baa3c85174c...68017aba795f4390dd97834421e48e93e1f5fb88",
+            "html_url": "https://github.com/open-data/frictionless-py/compare/81be82a29da9a409f0ea8b4cec7f1baa3c85174c...68017aba795f4390dd97834421e48e93e1f5fb88",
+            "permalink_url": "https://github.com/open-data/frictionless-py/compare/open-data:81be82a...open-data:68017ab",
+            "diff_url": "https://github.com/open-data/frictionless-py/compare/81be82a29da9a409f0ea8b4cec7f1baa3c85174c...68017aba795f4390dd97834421e48e93e1f5fb88.diff",
+            "patch_url": "https://github.com/open-data/frictionless-py/compare/81be82a29da9a409f0ea8b4cec7f1baa3c85174c...68017aba795f4390dd97834421e48e93e1f5fb88.patch",
+            "base_commit": {
+                "sha": "81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                "node_id": "C_kwDOMOBtXdoAKDgxYmU4MmEyOWRhOWE0MDlmMGVhOGI0Y2VjN2YxYmFhM2M4NTE3NGM",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:28:53Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:28:53Z"
+                    },
+                    "message": "feat(misc): changelog;\n\n- Added changelog.",
+                    "tree": {
+                        "sha": "e49c2e79b5b5e01e7d8a691c3224297484f31dc6",
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/git/trees/e49c2e79b5b5e01e7d8a691c3224297484f31dc6"
+                    },
+                    "url": "https://api.github.com/repos/open-data/frictionless-py/git/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/frictionless-py/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                "html_url": "https://github.com/open-data/frictionless-py/commit/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                "comments_url": "https://api.github.com/repos/open-data/frictionless-py/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "8b18b5a1bd59079956f63a576d5bf716b0c4f640",
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/commits/8b18b5a1bd59079956f63a576d5bf716b0c4f640",
+                        "html_url": "https://github.com/open-data/frictionless-py/commit/8b18b5a1bd59079956f63a576d5bf716b0c4f640"
+                    }
+                ]
+            },
+            "merge_base_commit": {
+                "sha": "81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                "node_id": "C_kwDOMOBtXdoAKDgxYmU4MmEyOWRhOWE0MDlmMGVhOGI0Y2VjN2YxYmFhM2M4NTE3NGM",
+                "commit": {
+                    "author": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:28:53Z"
+                    },
+                    "committer": {
+                        "name": "Jesse Vickery",
+                        "email": "jesse.vickery@tbs-sct.gc.ca",
+                        "date": "2024-12-10T16:28:53Z"
+                    },
+                    "message": "feat(misc): changelog;\n\n- Added changelog.",
+                    "tree": {
+                        "sha": "e49c2e79b5b5e01e7d8a691c3224297484f31dc6",
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/git/trees/e49c2e79b5b5e01e7d8a691c3224297484f31dc6"
+                    },
+                    "url": "https://api.github.com/repos/open-data/frictionless-py/git/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                    "comment_count": 0,
+                    "verification": {
+                        "verified": false,
+                        "reason": "unsigned",
+                        "signature": null,
+                        "payload": null,
+                        "verified_at": null
+                    }
+                },
+                "url": "https://api.github.com/repos/open-data/frictionless-py/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                "html_url": "https://github.com/open-data/frictionless-py/commit/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                "comments_url": "https://api.github.com/repos/open-data/frictionless-py/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c/comments",
+                "author": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "committer": {
+                    "login": "JVickery-TBS",
+                    "id": 97247789,
+                    "node_id": "U_kgDOBcviLQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/JVickery-TBS",
+                    "html_url": "https://github.com/JVickery-TBS",
+                    "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                    "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                    "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                    "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                    "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parents": [
+                    {
+                        "sha": "8b18b5a1bd59079956f63a576d5bf716b0c4f640",
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/commits/8b18b5a1bd59079956f63a576d5bf716b0c4f640",
+                        "html_url": "https://github.com/open-data/frictionless-py/commit/8b18b5a1bd59079956f63a576d5bf716b0c4f640"
+                    }
+                ]
+            },
+            "status": "ahead",
+            "ahead_by": 3,
+            "behind_by": 0,
+            "total_commits": 3,
+            "commits": [
+                {
+                    "sha": "c6edb58f449e004580559cd2900078b16120e7fc",
+                    "node_id": "C_kwDOMOBtXdoAKGM2ZWRiNThmNDQ5ZTAwNDU4MDU1OWNkMjkwMDA3OGIxNjEyMGU3ZmM",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-14T18:27:52Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-14T18:27:52Z"
+                        },
+                        "message": "fix(dev): license;\n\n- Fix proper toml syntax.",
+                        "tree": {
+                            "sha": "5d142213b1a22a7fff007153792e3c4bd3bb952d",
+                            "url": "https://api.github.com/repos/open-data/frictionless-py/git/trees/5d142213b1a22a7fff007153792e3c4bd3bb952d"
+                        },
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/git/commits/c6edb58f449e004580559cd2900078b16120e7fc",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/frictionless-py/commits/c6edb58f449e004580559cd2900078b16120e7fc",
+                    "html_url": "https://github.com/open-data/frictionless-py/commit/c6edb58f449e004580559cd2900078b16120e7fc",
+                    "comments_url": "https://api.github.com/repos/open-data/frictionless-py/commits/c6edb58f449e004580559cd2900078b16120e7fc/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                            "url": "https://api.github.com/repos/open-data/frictionless-py/commits/81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+                            "html_url": "https://github.com/open-data/frictionless-py/commit/81be82a29da9a409f0ea8b4cec7f1baa3c85174c"
+                        }
+                    ]
+                },
+                {
+                    "sha": "73dac3045d46aaa8189dda6993bd236b52436cff",
+                    "node_id": "C_kwDOMOBtXdoAKDczZGFjMzA0NWQ0NmFhYTgxODlkZGE2OTkzYmQyMzZiNTI0MzZjZmY",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-14T18:31:18Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-14T18:31:18Z"
+                        },
+                        "message": "fix(dev): license;\n\n- Fix proper toml syntax.",
+                        "tree": {
+                            "sha": "39762038eec7b42d16d42037147a1475c9e8318b",
+                            "url": "https://api.github.com/repos/open-data/frictionless-py/git/trees/39762038eec7b42d16d42037147a1475c9e8318b"
+                        },
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/git/commits/73dac3045d46aaa8189dda6993bd236b52436cff",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/frictionless-py/commits/73dac3045d46aaa8189dda6993bd236b52436cff",
+                    "html_url": "https://github.com/open-data/frictionless-py/commit/73dac3045d46aaa8189dda6993bd236b52436cff",
+                    "comments_url": "https://api.github.com/repos/open-data/frictionless-py/commits/73dac3045d46aaa8189dda6993bd236b52436cff/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "c6edb58f449e004580559cd2900078b16120e7fc",
+                            "url": "https://api.github.com/repos/open-data/frictionless-py/commits/c6edb58f449e004580559cd2900078b16120e7fc",
+                            "html_url": "https://github.com/open-data/frictionless-py/commit/c6edb58f449e004580559cd2900078b16120e7fc"
+                        }
+                    ]
+                },
+                {
+                    "sha": "68017aba795f4390dd97834421e48e93e1f5fb88",
+                    "node_id": "C_kwDOMOBtXdoAKDY4MDE3YWJhNzk1ZjQzOTBkZDk3ODM0NDIxZTQ4ZTkzZTFmNWZiODg",
+                    "commit": {
+                        "author": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-14T18:44:49Z"
+                        },
+                        "committer": {
+                            "name": "Jesse Vickery",
+                            "email": "jesse.vickery@tbs-sct.gc.ca",
+                            "date": "2025-10-14T18:44:49Z"
+                        },
+                        "message": "fix(dev): license;\n\n- Fix proper toml syntax.",
+                        "tree": {
+                            "sha": "3cff222cc78d624b48b06bd4c303fd06021f8cac",
+                            "url": "https://api.github.com/repos/open-data/frictionless-py/git/trees/3cff222cc78d624b48b06bd4c303fd06021f8cac"
+                        },
+                        "url": "https://api.github.com/repos/open-data/frictionless-py/git/commits/68017aba795f4390dd97834421e48e93e1f5fb88",
+                        "comment_count": 0,
+                        "verification": {
+                            "verified": false,
+                            "reason": "unsigned",
+                            "signature": null,
+                            "payload": null,
+                            "verified_at": null
+                        }
+                    },
+                    "url": "https://api.github.com/repos/open-data/frictionless-py/commits/68017aba795f4390dd97834421e48e93e1f5fb88",
+                    "html_url": "https://github.com/open-data/frictionless-py/commit/68017aba795f4390dd97834421e48e93e1f5fb88",
+                    "comments_url": "https://api.github.com/repos/open-data/frictionless-py/commits/68017aba795f4390dd97834421e48e93e1f5fb88/comments",
+                    "author": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "committer": {
+                        "login": "JVickery-TBS",
+                        "id": 97247789,
+                        "node_id": "U_kgDOBcviLQ",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/97247789?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/JVickery-TBS",
+                        "html_url": "https://github.com/JVickery-TBS",
+                        "followers_url": "https://api.github.com/users/JVickery-TBS/followers",
+                        "following_url": "https://api.github.com/users/JVickery-TBS/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/JVickery-TBS/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/JVickery-TBS/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/JVickery-TBS/subscriptions",
+                        "organizations_url": "https://api.github.com/users/JVickery-TBS/orgs",
+                        "repos_url": "https://api.github.com/users/JVickery-TBS/repos",
+                        "events_url": "https://api.github.com/users/JVickery-TBS/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/JVickery-TBS/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "parents": [
+                        {
+                            "sha": "73dac3045d46aaa8189dda6993bd236b52436cff",
+                            "url": "https://api.github.com/repos/open-data/frictionless-py/commits/73dac3045d46aaa8189dda6993bd236b52436cff",
+                            "html_url": "https://github.com/open-data/frictionless-py/commit/73dac3045d46aaa8189dda6993bd236b52436cff"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "sha": "4cd1be8f2f8465c511ab9f46fe68d9faf03c6f60",
+                    "filename": "pyproject.toml",
+                    "status": "modified",
+                    "additions": 1,
+                    "deletions": 1,
+                    "changes": 2,
+                    "blob_url": "https://github.com/open-data/frictionless-py/blob/68017aba795f4390dd97834421e48e93e1f5fb88/pyproject.toml",
+                    "raw_url": "https://github.com/open-data/frictionless-py/raw/68017aba795f4390dd97834421e48e93e1f5fb88/pyproject.toml",
+                    "contents_url": "https://api.github.com/repos/open-data/frictionless-py/contents/pyproject.toml?ref=68017aba795f4390dd97834421e48e93e1f5fb88",
+                    "patch": "@@ -2,7 +2,7 @@\n name = \"frictionless\"\n dynamic = [\"version\"]\n description = \"Data management framework for Python that provides functionality to describe, extract, validate, and transform tabular data\"\n-license = \"MIT\"\n+license = {file = \"LICENSE.md\"}\n readme = \"README.md\"\n requires-python = \">=3.8\"\n urls.homepage = \"https://github.com/frictionlessdata/frictionless-py\""
+                },
+                {
+                    "sha": "1663e7fb4c9f74b7ab18c3e188e41440f956202c",
+                    "filename": "setup.py",
+                    "status": "modified",
+                    "additions": 5,
+                    "deletions": 4,
+                    "changes": 9,
+                    "blob_url": "https://github.com/open-data/frictionless-py/blob/68017aba795f4390dd97834421e48e93e1f5fb88/setup.py",
+                    "raw_url": "https://github.com/open-data/frictionless-py/raw/68017aba795f4390dd97834421e48e93e1f5fb88/setup.py",
+                    "contents_url": "https://api.github.com/repos/open-data/frictionless-py/contents/setup.py?ref=68017aba795f4390dd97834421e48e93e1f5fb88",
+                    "patch": "@@ -90,10 +90,11 @@\n     # To provide executable scripts, use entry points in preference to the\n     # \"scripts\" keyword. Entry points provide cross-platform support and allow\n     # pip to create the appropriate form of executable for the target platform.\n-    entry_points='''\n-        [console_scripts]\n-        frictionless = frictionless.__main__\n-    ''',\n+    entry_points={\n+        'console_scripts': [\n+            'frictionless = frictionless.__main__'\n+        ]\n+    },\n \n     # If you are changing from the default layout of your extension, you may\n     # have to change the message extractors, you can read more about babel"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

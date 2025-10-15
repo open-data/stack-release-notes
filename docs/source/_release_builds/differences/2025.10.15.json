@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "5a8576149eeac4d907af5741103ce146b961a6ad",
+            "head": "a292aad31a1575646994d7e90b8579cb659ea6e9"
+        },
+        "frictionless-py": {
+            "uri": "https://github.com/open-data/frictionless-py",
+            "prev": "81be82a29da9a409f0ea8b4cec7f1baa3c85174c",
+            "head": "68017aba795f4390dd97834421e48e93e1f5fb88"
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
