@@ -32,6 +32,48 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.12.01">
+          
+            
+              <div class="github-api-container" id="github-2025.12.01-ckanapi">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.01-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.01-ckanext-dsaudit">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.01-ckanext-scheming">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2025.12.01-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2025.12.01-opengov">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.01-og">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.01-gcweb_bootstrap">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.10.15">
           
             
@@ -1469,6 +1511,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.12.01" class="release-nav-item"><a href="#2025.12.01">v.2025.12.01</a></li>
+          
             <li data-release="2025.10.15" class="release-nav-item"><a href="#2025.10.15">v.2025.10.15</a></li>
           
             <li data-release="2025.10.14" class="release-nav-item"><a href="#2025.10.14">v.2025.10.14</a></li>
@@ -1611,6 +1655,254 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.12.01">
+            <h2>
+              v.2025.12.01
+              <a class="headerlink" href="#2025.12.01"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.01-ckanapi">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanapi
+                      <a class="headerlink" href="#2025.12.01-ckanapi"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanapi/compare/e27e8c5b5b9e97b20094ec7f9f0e18992a81c3b6...bf25d640c6e93e907d9c9cf5fc0a4861d34a5e61">View it on GitHub</a>
+                    <span class="release-hash-label">[e27e8c5b5...bf25d640c]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.01-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.12.01-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-trash change-canada-type-icon"></i>&nbsp;&nbsp;Removals</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Remove warning alert from the Contracts PD.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Updated the Grants &amp; Contributions schema:</p>
+<ul>
+<li><code>recipient_type</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>recipient_business_number</code> must be a 9 digit natural number if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>prog_name_en</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>prog_name_fr</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>prog_purpose_en</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>prog_purpose_fr</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>agreement_title_en</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>agreement_title_fr</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>agreement_start_date</code> cannot be in the future if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>agreement_end_date</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>agreement_end_date</code> cannot be before <code>agreement_start_date</code> if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>agreement_value</code> must be larger than 0 if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>expected_results_en</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>expected_results_fr</code> is required if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>recipient_postal_code</code> must be in a valid Canadian postal code format of "A1A 1A1" if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+<li><code>federal_riding_number</code> must be a 5 digit natural number if <code>agreement_start_date</code> is on or after <code>2025-12-01</code></li>
+</ul>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Add the following fields to the <code>Edit Member</code> page under download CSV option:
+- Date created
+- Last active date</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/581c8812b2d7ebb78f9407febda418528d6a2251...779fb61cdfeaa44f2e489b6dc332350f622b7711">View it on GitHub</a>
+                    <span class="release-hash-label">[581c8812b...779fb61cd]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.01-ckanext-dsaudit">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-dsaudit
+                      <a class="headerlink" href="#2025.12.01-ckanext-dsaudit"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-dsaudit/compare/6920fb4c05f2c79e5d38f8a481ef09b91201f60f...c3988427821c43e5dac5078c6adc42f7f16d3fa4">View it on GitHub</a>
+                    <span class="release-hash-label">[6920fb4c0...c39884278]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.01-ckanext-scheming">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-scheming
+                      <a class="headerlink" href="#2025.12.01-ckanext-scheming"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanext-scheming/compare/85eea6733414708ca2b824e9e307d990cd4cd8e2...f2de80a26d5a7b4e5eb994869633e9c9941d770c">View it on GitHub</a>
+                    <span class="release-hash-label">[85eea6733...f2de80a26]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2025.12.01-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2025.12.01-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Upgraded the Django framework to version 5. Manual database upgrade for the 
+django_celery_results extenstion required for move to version 2.6.0. Plase note
+that CDTS must be reamin at version 5.0.1 for now.
+Note that for Django-celery-results version 2.6.0, a database change is required.</p>
+<p>python .\manage.py migrate django_celery_results --fake zero
+  python .\manage.py migrate django_celery_results 0001</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Switch the SolrClient class to the Pypi library SolrClient2 library from the local project</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/d7a7538a116f8c1ab724bd85480a54333fa43e35...52231430128a01fc3495d8fc201c8557892bb160">View it on GitHub</a>
+                    <span class="release-hash-label">[d7a7538a1...522314301]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2025.12.01-opengov">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      opengov
+                      <a class="headerlink" href="#2025.12.01-opengov"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/opengov/compare/c85dfd996b493d3d472696dc634d8a781b87c818...34f9af46eed6c25bf13eba56050ad1e86ca50974">View it on GitHub</a>
+                    <span class="release-hash-label">[c85dfd996...34f9af46e]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2025.12.01-og">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      og
+                      <a class="headerlink" href="#2025.12.01-og"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/195cd24c8835570254ab0a0a048c71e34d8595ad...ee820570c6cda3eace11b59b2dca615c48b8746e">View it on GitHub</a>
+                    <span class="release-hash-label">[195cd24c8...ee820570c]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2025.12.01-gcweb_bootstrap">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      gcweb_bootstrap
+                      <a class="headerlink" href="#2025.12.01-gcweb_bootstrap"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/gcweb_bootstrap/compare/3aa769746a71c77e649c243df581b6962b07e17d...104a027c27a4ab8e16fb42e11eb79341ed436a7b">View it on GitHub</a>
+                    <span class="release-hash-label">[3aa769746...104a027c2]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.10.15">
             <h2>
