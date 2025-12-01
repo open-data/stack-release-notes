@@ -1,0 +1,47 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the Grants & Contributions schema:\n\n- `recipient_type` is required if `agreement_start_date` is on or after `2025-12-01`\n- `recipient_business_number` must be a 9 digit natural number if `agreement_start_date` is on or after `2025-12-01`\n- `prog_name_en` is required if `agreement_start_date` is on or after `2025-12-01`\n- `prog_name_fr` is required if `agreement_start_date` is on or after `2025-12-01`\n- `prog_purpose_en` is required if `agreement_start_date` is on or after `2025-12-01`\n- `prog_purpose_fr` is required if `agreement_start_date` is on or after `2025-12-01`\n- `agreement_title_en` is required if `agreement_start_date` is on or after `2025-12-01`\n- `agreement_title_fr` is required if `agreement_start_date` is on or after `2025-12-01`\n- `agreement_start_date` cannot be in the future if `agreement_start_date` is on or after `2025-12-01`\n- `agreement_end_date` is required if `agreement_start_date` is on or after `2025-12-01`\n- `agreement_end_date` cannot be before `agreement_start_date` if `agreement_start_date` is on or after `2025-12-01`\n- `agreement_value` must be larger than 0 if `agreement_start_date` is on or after `2025-12-01`\n- `expected_results_en` is required if `agreement_start_date` is on or after `2025-12-01`\n- `expected_results_fr` is required if `agreement_start_date` is on or after `2025-12-01`\n- `recipient_postal_code` must be in a valid Canadian postal code format of \"A1A 1A1\" if `agreement_start_date` is on or after `2025-12-01`\n- `federal_riding_number` must be a 5 digit natural number if `agreement_start_date` is on or after `2025-12-01`\n",
+                    "hash": "d81315242a6d6ae92e883fb5f9f3da146cb3cb70"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add the following fields to the `Edit Member` page under download CSV option:\n- Date created\n- Last active date\n ",
+                    "hash": "c7eecd8b9ecc3538f8e92ad2ec7617d3e87d94aa"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove warning alert from the Contracts PD.",
+                    "hash": "50c7ea19375be169394d7c7d4388ba81212ef114"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Upgraded the Django framework to version 5. Manual database upgrade for the \ndjango_celery_results extenstion required for move to version 2.6.0. Plase note\nthat CDTS must be reamin at version 5.0.1 for now.\nNote that for Django-celery-results version 2.6.0, a database change is required.\n\n  python .\\manage.py migrate django_celery_results --fake zero\n  python .\\manage.py migrate django_celery_results 0001\n",
+                    "hash": "227027d137c27b21f8e37c2d872841550ecffbc0"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Switch the SolrClient class to the Pypi library SolrClient2 library from the local project",
+                    "hash": "42777c822749aa3b71162b4fecb121840f73b259"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
