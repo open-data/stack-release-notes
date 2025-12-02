@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Unexpected errors during PD Excel doc file uploads now log the exception. Now skips over unexpected \"cache\" worksheets in the Excel doc when processing uploaded files.",
+                    "hash": "fb9f06b10e41d5d56455c75199a2c85d12fcc5d4"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
