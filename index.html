@@ -32,6 +32,28 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2025.12.18">
+          
+            
+              <div class="github-api-container" id="github-2025.12.18-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.18-ckanapi">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.18-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2025.12.18-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2025.12.02">
           
             
@@ -1521,6 +1543,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2025.12.18" class="release-nav-item"><a href="#2025.12.18">v.2025.12.18</a></li>
+          
             <li data-release="2025.12.02" class="release-nav-item"><a href="#2025.12.02">v.2025.12.02</a></li>
           
             <li data-release="2025.12.01" class="release-nav-item"><a href="#2025.12.01">v.2025.12.01</a></li>
@@ -1667,6 +1691,171 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2025.12.18">
+            <h2>
+              v.2025.12.18
+              <a class="headerlink" href="#2025.12.18"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.18-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2025.12.18-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added French translation for <code>Searching...</code> in the Select2 JS autocomplete module.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/a292aad31a1575646994d7e90b8579cb659ea6e9...86783cae189a5f1048ecb55c9247913a11845ac4">View it on GitHub</a>
+                    <span class="release-hash-label">[a292aad31...86783cae1]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.18-ckanapi">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanapi
+                      <a class="headerlink" href="#2025.12.18-ckanapi"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/ckan/ckanapi/compare/bf25d640c6e93e907d9c9cf5fc0a4861d34a5e61...fdf805061191b6c28ea7d8f295abbdb89183aa90">View it on GitHub</a>
+                    <span class="release-hash-label">[bf25d640c...fdf805061]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.18-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2025.12.18-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Upgraded DataTables JS contributed library and extensions to latest (as of 2025.03.27) for Recombinant previews. Added various UX improving features:</p>
+<ul>
+<li>Bootstrap 5 theme for the DataTables;</li>
+<li>Responsive View;</li>
+<li>Improved i18n;</li>
+<li>Fullscreen;</li>
+<li>Editing in DataTables;</li>
+<li>General improved functional JS code.</li>
+</ul>
+<p>Must use the option <code>ckanext.canada.enable_pd_datatable_editor</code></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added capability to add and override strings in the CKAN i18n API.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>New CLI command <code>export-pd-reporting-info</code> exports data publisher info for Proactive Disclosures into a CSV.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>--dataset-id</code> (<code>-D</code>) and <code>--ignore-hashes</code> (<code>-i</code>) options to the <code>portal_update</code> command. This is an interim fix to some DataStore tables not syncing to the Portal during the Post to Portal process.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Update ministers list for December, 2025.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/779fb61cdfeaa44f2e489b6dc332350f622b7711...7b802f67688cec5e1bac00314b2bade6e75d966d">View it on GitHub</a>
+                    <span class="release-hash-label">[779fb61cd...7b802f676]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2025.12.18-ckanext-recombinant">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-recombinant
+                      <a class="headerlink" href="#2025.12.18-ckanext-recombinant"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Further improved error handling and message outputs when processing uploaded Excel files.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/cb9f93a24a98ba190818f9697317e05d451ae42c...3c9b2d53df4fab4bc611f364bc5c625aa5e1a8cc">View it on GitHub</a>
+                    <span class="release-hash-label">[cb9f93a24...3c9b2d53d]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2025.12.02">
             <h2>
