@@ -1,0 +1,62 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added French translation for `Searching...` in the Select2 JS autocomplete module.",
+                    "hash": "f0c7e3651ab9161c0bedec4ff23836f0762a8f26"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Upgraded DataTables JS contributed library and extensions to latest (as of 2025.03.27) for Recombinant previews. Added various UX improving features:\n\n- Bootstrap 5 theme for the DataTables;\n- Responsive View;\n- Improved i18n;\n- Fullscreen;\n- Editing in DataTables;\n- General improved functional JS code.\n\nMust use the option `ckanext.canada.enable_pd_datatable_editor`",
+                    "hash": "3c440b76022c0f339ca7ffd12c5676fa4a514ef3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added capability to add and override strings in the CKAN i18n API.",
+                    "hash": "2ac27fefb6b80639612f445e44b1b6f527026739"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "New CLI command `export-pd-reporting-info` exports data publisher info for Proactive Disclosures into a CSV.",
+                    "hash": "9862413fb7fc5e2fe361af333c79fbd12851b205"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `--dataset-id` (`-D`) and `--ignore-hashes` (`-i`) options to the `portal_update` command. This is an interim fix to some DataStore tables not syncing to the Portal during the Post to Portal process.",
+                    "hash": "e7037627065a58df9927c013dbb19f116c91b253"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update ministers list for December, 2025.\n",
+                    "hash": "12c8937817a1e3d15efce006adaf39581d41b4fd"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Further improved error handling and message outputs when processing uploaded Excel files.",
+                    "hash": "7a7746136d696c521129d2dea38f49b7a8c236af"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

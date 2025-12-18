@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "a292aad31a1575646994d7e90b8579cb659ea6e9",
+            "head": "86783cae189a5f1048ecb55c9247913a11845ac4"
+        },
+        "ckanapi": {
+            "uri": "https://github.com/ckan/ckanapi",
+            "prev": "bf25d640c6e93e907d9c9cf5fc0a4861d34a5e61",
+            "head": "fdf805061191b6c28ea7d8f295abbdb89183aa90"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "779fb61cdfeaa44f2e489b6dc332350f622b7711",
+            "head": "7b802f67688cec5e1bac00314b2bade6e75d966d"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "cb9f93a24a98ba190818f9697317e05d451ae42c",
+            "head": "3c9b2d53df4fab4bc611f364bc5c625aa5e1a8cc"
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
