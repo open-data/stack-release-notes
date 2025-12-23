@@ -1,0 +1,16 @@
+{
+    "ckan": {
+        "ckan": {
+            "Removals": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Removed the Resource View embed button and modal due to `X-Frame-Options: SAMEORIGIN` security requirement preventing embeds.",
+                    "hash": "8c4beb8475838a69df29208c3f255fa57440b8f2"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
