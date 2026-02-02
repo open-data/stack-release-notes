@@ -1,0 +1,84 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a `ckan.site_read_only` config option which disables actions causing side effects,\nsuch as `*_create`, `*_update`, and `*_delete`, for non-sysadmin users.\n\nThis setting does not prevent updates to the database from sysadmin users or updates\nthat skip the action API, such as collecting page view tracking data.",
+                    "hash": "1fad4a3b3a17f6c8b86b9f27f0c1cb4672361cc5"
+                },
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Backported [#8421](https://github.com/ckan/ckan/pull/8421) for faster metadata updates. Comes with the `metadata_modified` and `metadata_created` schemas, allowing for site package migrations with correct metadata for these fields.",
+                    "hash": "3cea48e4ca6c5d57cc54270f249b9b2c517eb2f1"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Faster dataset metadata updates by detecting changes and only updating resource\nmetadata when dataset fields defined by IDatasetForm.resource_validation_dependencies\nhave changed (default: none)\n\nNow activities are created and metadata_modified updated only if there is a real change.\n\nmetadata_modified may now be set by sysadmins which is useful for harvesting or mirroring.\n\nThe allow_partial_update context parameter has been removed, now normal API\nusers may call package_update without passing resources. In this case the existing\nresources will remain untouched instead of being deleted.\n\npackage_update and actions that call it now report whether there was a real change by\nadding the package id to a new changed_entities context value or changed_entities\nenvelope value for API calls.\n",
+                    "hash": "7b4be91bf14adbd4bdd7dd34b8fed3f39cf1fa2d"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the debug toolbar not showing all content.",
+                    "hash": "0b679cb3704d12eb7fb4e074af81a97642c215fc"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Only display the feedback form if there is a value for maintainer_email field.\nAlso, remove the maintainer_email field from Additional Information seaction.\n",
+                    "hash": "eb02bd1940d239449e1d57f50c505033e8b0aa2e"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Briefing Note Titles and Numbers' `additional_information_en` and `additional_information_fr` fields use `both_languages` validation for records with a `date_received` on or after `2026-02-01`\n",
+                    "hash": "6590439001000aa60ece03cfac95196861012506"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Adding 2 geospatial resouces formats to the Open Data schema for use by NRCan: COG (Cloud Optimized GeoTIFF) and GeoParquet)",
+                    "hash": "80e136663a2cd4c10dc6fdc9cef11457e89dc283"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for core CKAN metadata date fields:\n\n- `metadata_created` (Package)\n- `metadata_modified` (Package)\n- `created` (Resource)\n- `last_modified` (Resource)\n- `metadata_modified` (Resource)",
+                    "hash": "5712986b1ca18075aa1880f1139db0f7fcf96a60"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for core CKAN `ckan.site_read_only` mode.",
+                    "hash": "2923e5d4736ba4af4deedb78c35a27f413b8a6e8"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the extended `resource_view_show` and `resource_view_list` actions not being `side_effect_free`",
+                    "hash": "e5e9ed959a81cb794c6019807857c052eee20a32"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed the character encoding in the `nap5` schema and filter script to ensure `utf-8` strings.\n",
+                    "hash": "df6c5da19e0dfbb8169d0f0e179bd269f7b3723b"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
