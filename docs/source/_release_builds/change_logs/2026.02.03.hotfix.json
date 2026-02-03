@@ -1,0 +1,40 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a `available_package_types` action to catch various fatal errors in Activity streams.\n",
+                    "hash": "6e92a97c391489be82b7d9356fa3810c302c80aa"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Backported [e8ec7fb](https://github.com/ckan/ckan/commit/e8ec7fb06325f792a2159b2d9f92c1cb664a8fa2) to fix a major issue with Resource updating and patching in regards to the Resource ordering.\n",
+                    "hash": "2666d91f27f3edc21a9b648897c4420f2cf02e05"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the Success and Failure flash messages not rendering properly in the `resource-reorder` JS module.\n",
+                    "hash": "cca1174b4b5482e59b6f4711b0404d804de65f31"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with some templates and chained actions assuming their parent plugins were loaded.\n",
+                    "hash": "5d4eb0f6b6fe4710785face888754810dda7f686"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
