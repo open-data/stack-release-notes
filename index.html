@@ -32,6 +32,20 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2026.02.03.hotfix">
+          
+            
+              <div class="github-api-container" id="github-2026.02.03.hotfix-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2026.02.03.hotfix-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2026.02.02">
           
             
@@ -1599,6 +1613,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2026.02.03.hotfix" class="release-nav-item"><a href="#2026.02.03.hotfix">v.2026.02.03.hotfix</a></li>
+          
             <li data-release="2026.02.02" class="release-nav-item"><a href="#2026.02.02">v.2026.02.02</a></li>
           
             <li data-release="2026.01.15" class="release-nav-item"><a href="#2026.01.15">v.2026.01.15</a></li>
@@ -1753,6 +1769,105 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2026.02.03.hotfix">
+            <h2>
+              v.2026.02.03.hotfix
+              <a class="headerlink" href="#2026.02.03.hotfix"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.02.03.hotfix-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2026.02.03.hotfix-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added a <code>available_package_types</code> action to catch various fatal errors in Activity streams.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Backported <a href="https://github.com/ckan/ckan/commit/e8ec7fb06325f792a2159b2d9f92c1cb664a8fa2">e8ec7fb</a> to fix a major issue with Resource updating and patching in regards to the Resource ordering.</p>
+                              
+                              
+                                <span class="change-sub-note change-backport"><sup><em>Backport</em></sup></span>
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Fixed an issue with the Success and Failure flash messages not rendering properly in the <code>resource-reorder</code> JS module.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/b250af221e610097210a16040f04c6e6a794409b...acc01450d58a051e3b4a54c0bf74ba730deb29a1">View it on GitHub</a>
+                    <span class="release-hash-label">[b250af221...acc01450d]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.02.03.hotfix-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2026.02.03.hotfix-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Fixed an issue with some templates and chained actions assuming their parent plugins were loaded.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/5831a15febc4c65014f4f96460d7a2086d6dd265...b5f4f571b62e0d20b74762fbc89b5bea6b401ba4">View it on GitHub</a>
+                    <span class="release-hash-label">[5831a15fe...b5f4f571b]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2026.02.02">
             <h2>
