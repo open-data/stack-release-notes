@@ -1,0 +1,22 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Created alembic migration `16ed91c52021` to fix an issue with Resource positions not being based on 0 index. This was due to older CKAN versions not updating the Resource poistions after deleting a Resource from the dataset.\n",
+                    "hash": "fbada1ecfd27ab74b4952f6cfa37d52fa9e2f541"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Remove validation of future agreement_start_date in grants template.",
+                    "hash": "2578cf847371a78f9bfed99bf511488429ff5f7a"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
