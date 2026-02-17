@@ -1,0 +1,54 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a unique constraint `con_package_resource_unique_position` onto the Resource model to make resource positions unique per dataset. This is a deferrable constraint. Resource with a deleted state will now have `null` positions. Requires DB plugin migration.\n",
+                    "hash": "328aa00ec5d165fd88964cd5d5a86f43229cee1b"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": true,
+                    "change_log": "Backported (d3fff92)[https://github.com/ckan/ckan/commit/d3fff92ebefa1109dfe7cf9c0cad072eaba2bc0b] to fix a flaky issue with resource uploads when updating.\n",
+                    "hash": "a8ef7a99301f524c67fa54c378c8d66b4ebdae73"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added an Order By to the backref `resources_all` so that the Package ORM object accessing its `resources` property will have the resources in the proper ordering of `position`. This fixes a flaky issue when uploading resources during `package_update`\n",
+                    "hash": "9998e2e1ad9e6fdd57846d605a97f70a28b80bd6"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage and plugin migration (alembic version `015d2fdd075f`) for the new Resource unique constraint `con_package_resource_unique_position` from [PR#221](https://github.com/open-data/ckan/pull/221)\n",
+                    "hash": "e6a89917a2eaae9821f225bab6aeaff3e560bcdf"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for Resource uploads, namely the issue resolved in upstream [PR#222](https://github.com/open-data/ckan/pull/222)\n",
+                    "hash": "9673ee53da14094a637cec7b43215786798bd0ce"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "500 Internal Server errors will now output a Support ID into the logs and on the error page for logged in users on the Registry.\n",
+                    "hash": "69883f2314e543de93c4802a5a56b2405f6d0f96"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
