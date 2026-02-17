@@ -32,6 +32,26 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2026.02.17">
+          
+            
+              <div class="github-api-container" id="github-2026.02.17-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2026.02.17-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2026.02.17-og">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2026.02.10">
           
             
@@ -1645,6 +1665,8 @@
       <ul class="release-nav">
         
           
+            <li data-release="2026.02.17" class="release-nav-item"><a href="#2026.02.17">v.2026.02.17</a></li>
+          
             <li data-release="2026.02.10" class="release-nav-item"><a href="#2026.02.10">v.2026.02.10</a></li>
           
             <li data-release="2026.02.04" class="release-nav-item"><a href="#2026.02.04">v.2026.02.04</a></li>
@@ -1805,6 +1827,147 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          <div class="release-wrapper" id="2026.02.17">
+            <h2>
+              v.2026.02.17
+              <a class="headerlink" href="#2026.02.17"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.02.17-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2026.02.17-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Backported (d3fff92)[https://github.com/ckan/ckan/commit/d3fff92ebefa1109dfe7cf9c0cad072eaba2bc0b] to fix a flaky issue with resource uploads when updating.</p>
+                              
+                              
+                                <span class="change-sub-note change-backport"><sup><em>Backport</em></sup></span>
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added an Order By to the backref <code>resources_all</code> so that the Package ORM object accessing its <code>resources</code> property will have the resources in the proper ordering of <code>position</code>. This fixes a flaky issue when uploading resources during <code>package_update</code></p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added a unique constraint <code>con_package_resource_unique_position</code> onto the Resource model to make resource positions unique per dataset. This is a deferrable constraint. Resource with a deleted state will now have <code>null</code> positions. Requires DB plugin migration.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/acc01450d58a051e3b4a54c0bf74ba730deb29a1...f68e2498950ed3e708238fe2673708b8f9a395da">View it on GitHub</a>
+                    <span class="release-hash-label">[acc01450d...f68e24989]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.02.17-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2026.02.17-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>500 Internal Server errors will now output a Support ID into the logs and on the error page for logged in users on the Registry.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added test coverage and plugin migration (alembic version <code>015d2fdd075f</code>) for the new Resource unique constraint <code>con_package_resource_unique_position</code> from <a href="https://github.com/open-data/ckan/pull/221">PR#221</a></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added test coverage for Resource uploads, namely the issue resolved in upstream <a href="https://github.com/open-data/ckan/pull/222">PR#222</a></p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/0a2cc40da0f6d492184a6fe92c26ffe5f15aca9a...dcc294fad2d78f770a307ab6450ab4c0e9552cb3">View it on GitHub</a>
+                    <span class="release-hash-label">[0a2cc40da...dcc294fad]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-drupal" id="2026.02.17-og">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/drupal.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      og
+                      <a class="headerlink" href="#2026.02.17-og"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/og/compare/888c7771ca2083866871949d4cc6bfdc0dc11fd4...6b5abd0662bdd141080d91321624d89a494101c3">View it on GitHub</a>
+                    <span class="release-hash-label">[888c7771c...6b5abd066]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           <div class="release-wrapper" id="2026.02.10">
             <h2>
