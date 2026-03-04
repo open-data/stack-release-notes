@@ -1,0 +1,46 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "- Allow users to request a password reset using a case-insensitive email address.\n- Ensures password reset works even if the email is stored with mixed-case letters in the database.\n",
+                    "hash": "a9720c8fce23aa1ca0f9d878c4d0d8cae6ed47f5"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Test coverage added to allow users to recover their username using a case-insensitive email match.\nThis ensures users can retrieve their username even if their email is\nstored with mixed-case letters in the database.",
+                    "hash": "4eff67fa204a9ae72725b187ae3a963183f77477"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added missing gettext and French translation strings for the `contact_information` JSON field output.\n",
+                    "hash": "0ef3c6328d002844762943a760fb6ac4be7922cf"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update CDTS version to 5.0.5 which includes GCWEB 17.1.1 and WET-BOEW 4.0.89.\n",
+                    "hash": "12c5919f4938f4257fa02460a7a0e1efa40fc771"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add pagination for resources displayed on the dataset page.\nThis improves the page load time for very large datasets.\n",
+                    "hash": "b711f247ef0f6342f833e91c465957f53312461a"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

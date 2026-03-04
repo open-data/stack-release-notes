@@ -1,0 +1,27 @@
+{
+    "ckan": {
+        "ckan": {
+            "uri": "https://github.com/open-data/ckan",
+            "prev": "356ada3f9d00be7e6d7eb159a8ff012194e2551b",
+            "head": "07da8c53a05ab5494d98ac1f38a6775c6a8d855b"
+        },
+        "ckanapi": {
+            "uri": "https://github.com/ckan/ckanapi",
+            "prev": "96410276f1702b541cfb80f8e41385e3080c4826",
+            "head": "c18c623173241fd9fec861d4c82b650815a41c88"
+        },
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "fcf55abb0a8af3e2ff806dd7cea7ee2c125da32c",
+            "head": "f7bf259f7b1be1fb9773df8c78532f9967a4c0a3"
+        }
+    },
+    "django": {},
+    "drupal": {
+        "opengov": {
+            "uri": "https://github.com/open-data/opengov",
+            "prev": "34f9af46eed6c25bf13eba56050ad1e86ca50974",
+            "head": "50ad6f6c16ef27ae37a83005796baf5611f4db3e"
+        }
+    }
+}
