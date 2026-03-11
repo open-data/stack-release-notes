@@ -1,0 +1,23 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "f7bf259f7b1be1fb9773df8c78532f9967a4c0a3",
+            "head": "c0703d6d2d50763ea1b509d60c5b0328974c4cfc"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "52231430128a01fc3495d8fc201c8557892bb160",
+            "head": "b0f6635af96a565d0fd157cf919eaaf985a3d22a"
+        }
+    },
+    "drupal": {
+        "gcweb_bootstrap": {
+            "uri": "https://github.com/open-data/gcweb_bootstrap",
+            "prev": "104a027c27a4ab8e16fb42e11eb79341ed436a7b",
+            "head": "1e6b588e132964f84d8821ad0dd631c83098921b"
+        }
+    }
+}

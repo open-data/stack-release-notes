@@ -1,0 +1,54 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Releases": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Released the 6th National Action Plan schema under `nap6.yaml` definition.\n",
+                    "hash": "490a455ffae9d2b35a4a996b05f47c7cd2a18247"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add nap6 to Makefile.\n",
+                    "hash": "a9dc2840a09ecbee2b76c0abbe5a29f4f1e685c4"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for ATI Summaries (`ati` and `ati-nil`)\n",
+                    "hash": "fdd89bac3f752300be1be25d027770d4e9759569"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Briefing Note Titles and Numbers (`briefingt` and `briefingt-nil`)\n",
+                    "hash": "8d0a1ed8747a4a6eb1b7437679ca1693564e564b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Departmental Audit Committee (`dac`)\n",
+                    "hash": "9117542431d00a6d871e4f44e2cf690312d214cf"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Position Reclassification (`reclassification` and `reclassification-nil`)\n",
+                    "hash": "28e593b479d7bd0d2b04eff4fe831ae7a7e46e19"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Acts of Founded Wrongdoing (`wrongdoing`)\n",
+                    "hash": "9a2f45a2ad659482c7f118a092d0c89f80b25ea8"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
