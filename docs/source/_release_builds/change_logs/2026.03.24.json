@@ -1,0 +1,74 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "The error message for duplicate DataStore column names will now display which supplied column names are the duplicated ones.\n",
+                    "hash": "e2e95f54fbca75c603ce2082f4029d2c9bca6ca8"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added capability for the `dataset.read` view function to \"search\" a package's resources via the URI arg `resource_query`. It only searches by the resource names.\n",
+                    "hash": "da13230e758be878531b54853782fca0d2563cc3"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "additional tests for contracts pd type\n",
+                    "hash": "f0a82d7cd631ec2749de45383f5b4c6b49dcec41"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a search field on the Dataset page to search for Resources by their name. This improves the UI/UX alongside the resource paging feature.\n",
+                    "hash": "56c6e7d802272165a476e6806e778b84417d26dc"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for DataStore column name errors from upstream [PR#224](https://github.com/open-data/ckan/pull/224)\n",
+                    "hash": "4e21515592953c604f4af032ae236073bfbda93b"
+                }
+            ]
+        },
+        "ckanext-validation": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added the HTTP header `CKAN/<ckan-version>` to Frictionless requests when downloading data from file sources.\n",
+                    "hash": "dfc958168ba5b5f9e1cd103f3b3e6fb32d6eca4f"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Explicitly log Database (and other) Exceptions in the `delete_datastore_table` view function via the `datastore_delete` action. This fixes an issue with ambiguous stacktraces only logging `TypeError` for view function return instead of the parent Exception.\n",
+                    "hash": "7b00bd2a7cf933b287e6a5b93e7f646ddab06fed"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added the HTTP header `CKAN/<ckan-version>` to Python requests when downloading data from file sources.\n",
+                    "hash": "090ea1c87bc5e290eb9b93dc2e17848059f671cd"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
