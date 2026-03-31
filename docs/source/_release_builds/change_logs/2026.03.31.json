@@ -1,0 +1,36 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed permformance issues with the Service Invetory (`service`) filter script.\n",
+                    "hash": "c110daf417292087dee8c009e6ed704bbbbfe02c"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue where Flask Error Handlers were not passing the Exception onto other Handlers.\n",
+                    "hash": "6f28000c74cb07d630954bad83f58e37f19b19a8"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Travel Expenses (`travelq`)\n",
+                    "hash": "953b92e85c8f84dd4f7750e9b087f85090190266"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Hospitality Expenses (`hospitalityq`)\n",
+                    "hash": "45fad77bf8312df674141c167fb7d25e1c74037e"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
