@@ -34,7 +34,14 @@
       <ul class="release-nav">
         {% if release_tags %}
           {% for release in release_tags %}
-            <li data-release="{{ release }}" class="release-nav-item"><a href="#{{ release }}">{{ version_prefix }}{{ release }}</a></li>
+            {% set section_id = release if not show_pre_release else 'pre-' ~ release %}
+            <li data-release="{{ section_id }}" class="release-nav-item"><a href="#{{ section_id }}">
+              {% if loop.first and show_pre_release %}
+                pre_{{ version_prefix }}{{ release }}
+              {% else %}
+                {{ version_prefix }}{{ release }}
+              {% endif %}
+            </a></li>
           {% endfor %}
         {% endif %}
       </ul>
@@ -67,10 +74,15 @@
     <div id="release-container">
       {% if release_hashes %}
         {% for release, project in release_hashes.items() %}
-          <div class="release-wrapper" id="{{ release }}">
+          {% set section_id = release if not show_pre_release else 'pre-' ~ release %}
+          <div class="release-wrapper" id="{{ section_id }}">
             <h2>
-              {{ version_prefix }}{{ release }}
-              <a class="headerlink" href="#{{ release }}"><i class="fa-solid fa-link"></i></a>
+              {% if loop.first and show_pre_release %}
+                Pre-release:&nbsp;{{ version_prefix }}{{ release }}
+              {% else %}
+                {{ version_prefix }}{{ release }}
+              {% endif %}
+              <a class="headerlink" href="#{{ section_id }}"><i class="fa-solid fa-link"></i></a>
             </h2>
             {% for project_name, repos in project.items() %}
               {% set panel_class = 'panel-default' %}
@@ -84,12 +96,12 @@
               {# not using color for now, as it makes it very busy #}
               {% set panel_class = 'panel-info' %}
               {% for repo, info in repos.items() %}
-                <div class="panel {{ panel_class }} project-panel project-panel-{{ project_name }}" id="{{ release }}-{{ repo }}">
+                <div class="panel {{ panel_class }} project-panel project-panel-{{ project_name }}" id="{{ section_id }}-{{ repo }}">
                   <div class="project-panel-icon"><img draggable="false" src="_static/images/{{ project_name }}.png" alt="" /></div>
                   <div class="panel-heading panel-title">
                     <h3 class="release-repo-title">
                       {{ repo }}
-                      <a class="headerlink" href="#{{ release }}-{{ repo }}"><i class="fa-solid fa-link"></i></a>
+                      <a class="headerlink" href="#{{ section_id }}-{{ repo }}"><i class="fa-solid fa-link"></i></a>
                     </h3>
                   </div>
                   <div class="panel-body">

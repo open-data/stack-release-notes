@@ -161,7 +161,7 @@ html_favicon = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-b
 
 # -- Custom options -------------------------------------------------
 
-def get_release_tags(order='v:refname', latest=False):
+def get_release_tags(order='v:refname', latest=False, pre=False):
     if latest:
         # force order for latest
         order = '-v:refname'
@@ -170,6 +170,12 @@ def get_release_tags(order='v:refname', latest=False):
         ['git', 'tag', '-l', '--sort=%s' % order], stderr=subprocess.STDOUT).decode('utf8')
 
     git_tags = git_tags.split()
+
+    if pre:
+        pre_release_tags = [tag.split('/')[1] for tag in git_tags if tag.startswith('pre/')]
+        if not pre_release_tags:
+            return None
+        return pre_release_tags[0]
 
     release_tags = [tag.split('/')[1] for tag in git_tags if tag.startswith('release/')]
 
@@ -200,13 +206,16 @@ def get_latest_commit_hash(remote, branch):
     return latest_hash
 
 
-def get_release_hashes():
+def get_release_hashes(is_pre_release=False):
 
     release_hashes = {}
 
     release = get_release_tags(latest=True)
 
-    print("Gathering release information for %s" % release)
+    if is_pre_release:
+        print("Gathering release information for PRE-release %s" % release)
+    else:
+        print("Gathering release information for %s" % release)
 
     for project_name, project_stack in STACK.items():
 
@@ -229,21 +238,29 @@ def get_release_hashes():
 
 def create_release_json_file():
     release = get_release_tags(latest=True)
+    pre_release = get_release_tags(latest=True, pre=True)
+    is_pre_release = False
+    if pre_release:
+        is_pre_release = int(release.replace('.', '')) < int(pre_release.replace('.', ''))
 
     if not release:
         print("No release tags found, skipping...")
         return
 
-    filename = '_release_builds/releases/%s.json' % release
+    filename = '_release_builds/releases/%s.json' % release if not is_pre_release else \
+    '_release_builds/releases/pre_%s.json' % pre_release
 
     if os.path.isfile(filename):
+        if is_pre_release:
+            print("File already exists for PRE-release %s, skipping..." % release)
+            return
         print("File already exists for release %s, skipping..." % release)
         return
 
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     with open(filename, 'w', encoding='utf-8') as f:
-        data = get_release_hashes()
+        data = get_release_hashes(is_pre_release)
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 # create a new json file name with the release info.
@@ -252,10 +269,14 @@ def create_release_json_file():
 create_release_json_file()
 
 
-def parsed_release_hashses():
+def parsed_release_hashses(show_pre_release=False):
     parsed_release_hashses = {}
 
     release_tags = get_release_tags()
+    pre_release_tag = None
+    if show_pre_release:
+        pre_release_tag = get_release_tags(latest=True, pre=True)
+        release_tags.append(pre_release_tag)
 
     if not release_tags:
         print("No release tags found, skipping...")
@@ -267,12 +288,21 @@ def parsed_release_hashses():
 
     for release in release_tags:
 
-        print("Building from release tag: %s" % release)
+        if release == pre_release_tag:
+            print("Building from PRE-release tag: %s" % release)
+        else:
+            print("Building from release tag: %s" % release)
 
         diff_filename = '_release_builds/differences/%s.json' % release
         release_filename = '_release_builds/releases/%s.json' % release
+        if release == pre_release_tag:
+            diff_filename = '_release_builds/differences/pre_%s.json' % release
+            release_filename = '_release_builds/releases/pre_%s.json' % release
 
         if not os.path.isfile(release_filename):
+            if release == pre_release_tag:
+                print("File does not exist for PRE-release %s, skipping..." % release)
+                continue
             print("File does not exist for release %s, skipping..." % release)
             continue
 
@@ -282,7 +312,10 @@ def parsed_release_hashses():
         if os.path.isfile(diff_filename):
             # we already have a diff file, load from that.
 
-            print("Gathering from diff file for release %s" % release)
+            if release == pre_release_tag:
+                print("Gathering from diff file for PRE-release %s" % release)
+            else:
+                print("Gathering from diff file for release %s" % release)
 
             with open(diff_filename, 'r') as f:
                 parsed_release_hashses[release] = json.load(f)
@@ -292,7 +325,10 @@ def parsed_release_hashses():
         else:
             # generate the parsed objects and save to a diff file.
 
-            print("Generating diff file for release %s" % release)
+            if release == pre_release_tag:
+                print("Generating diff file for PRE-release %s" % release)
+            else:
+                print("Generating diff file for release %s" % release)
 
             if prev_release:
                 prev_release_filename = '_release_builds/releases/%s.json' % prev_release
@@ -362,12 +398,17 @@ def parsed_release_hashses():
         # fetch any added change log files, and sace to a file.
         if release in parsed_release_hashses:
             github_filename = '_release_builds/github/%s.json' % release
+            if release == pre_release_tag:
+                github_filename = '_release_builds/github/pre_%s.json' % release
             github_compare_dicts = {}
 
             if os.path.isfile(github_filename):
                 # we already have a github api compare file, load from that.
 
-                print("Gathering info from compare file for release %s" % release)
+                if release == pre_release_tag:
+                    print("Gathering info from compare file for PRE-release %s" % release)
+                else:
+                    print("Gathering info from compare file for release %s" % release)
 
                 with open(github_filename, 'r') as f:
                     github_compare_dicts = json.load(f)
@@ -375,7 +416,10 @@ def parsed_release_hashses():
             else:
                 # fetch from github API and save to compare file.
 
-                print("Fetching info from GitHub API for release %s" % release)
+                if release == pre_release_tag:
+                    print("Fetching info from GitHub API for PRE-release %s" % release)
+                else:
+                    print("Fetching info from GitHub API for release %s" % release)
 
                 for project_name, project_stack in parsed_release_hashses[release].items():
 
@@ -408,18 +452,26 @@ def parsed_release_hashses():
 
             # check file diffs for any new changelog files.
             changelog_filename = '_release_builds/change_logs/%s.json' % release
+            if release == pre_release_tag:
+                changelog_filename = '_release_builds/change_logs/pre_%s.json' % release
             changelog_dicts = {}
             if os.path.isfile(changelog_filename):
                 # we already parsed the changelogs, load from that.
 
-                print("Gathering change logs from local files for release %s" % release)
+                if release == pre_release_tag:
+                    print("Gathering change logs from local files for PRE-release %s" % release)
+                else:
+                    print("Gathering change logs from local files for release %s" % release)
 
                 with open(changelog_filename, 'r') as f:
                     changelog_dicts = json.load(f)
 
             else:
 
-                print("Fetching new change logs from GitHub for release %s" % release)
+                if release == pre_release_tag:
+                    print("Fetching new change logs from GitHub for PRE-release %s" % release)
+                else:
+                    print("Fetching new change logs from GitHub for release %s" % release)
 
                 for project_name, project_stack in github_compare_dicts.items():
 
@@ -490,8 +542,15 @@ def parsed_release_hashses():
 
 
 def get_filled_releases():
+    pre_release_tag = get_release_tags(order='-v:refname', latest=True, pre=True)
     release_tags = get_release_tags(order='-v:refname')
-    release_hashes = parsed_release_hashses()
+    show_pre_release = False
+    if pre_release_tag:
+        show_pre_release = int(release_tags[0].replace('.', '')) < int(pre_release_tag.replace('.', ''))
+    release_hashes = parsed_release_hashses(show_pre_release)
+
+    if show_pre_release:
+        release_tags.insert(0, pre_release_tag)
 
     filled_release_hashes = {}
 
@@ -506,7 +565,7 @@ def get_filled_releases():
         if not release_has_diffs:
             release_tags.remove(release)
 
-    return release_tags, filled_release_hashes
+    return release_tags, filled_release_hashes, show_pre_release
 
 
 def render_markdown(data):
@@ -539,10 +598,11 @@ def render_markdown(data):
     return literal(data)
 
 
-release_tags, release_hashes = get_filled_releases()
+release_tags, release_hashes, show_pre_release = get_filled_releases()
 html_context = {
     'release_tags': release_tags,
     'release_hashes': release_hashes,
+    'show_pre_release': show_pre_release,
     'type_icons': LABEL_ICONS,
     'version_prefix': FRONTEND_VERSION_PREFIX,
     'render_markdown': render_markdown,
