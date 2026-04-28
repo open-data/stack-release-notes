@@ -1,0 +1,94 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added sysadmin arguments to the `package_list` action:\n\n- `include_private`\n- `include_drafts`\n- `include_deleted`",
+                    "hash": "013e1eeb80684c57e37311b9773f983cd1b69d31"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "DataStore's `WHITELISTED_RESOURCES` is now configurable under `ckan.datastore.public_table_search`\n",
+                    "hash": "2555489e009049d1e89397d8cd1500dddd46aa18"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "`datastore_function_create` arguments now support `argdefault` to set a default value in the psql function.\n",
+                    "hash": "14a04c4ef4effaa8c5ef90da4cc5a660bfc0afbe"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Consultations (`consultations`)\n",
+                    "hash": "e2558ca2fda5aa64280c9a9b8ae1fdf3dac2fea8"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added more test coverage for Proactive Publication - Grants and Contributions (`grants`)\n",
+                    "hash": "758d637f26db68a5a26b32b819cec48ee4ae6473"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Small change to NAP6 commitment C04.5.",
+                    "hash": "576633c861c44b28f78ded5b9ea1fb4cb238eb96"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Temporary exception for ISC to enter agreement_value as a negative number until May 1, 2026.\n",
+                    "hash": "9ebb7419a65d494aa2b2f676679b3b7e80fc0b65"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added output functionality to the Data Dictionary, Excel References, and JSON Schemas to display Organizaion based choices.\n",
+                    "hash": "59c661b330e32cde18735c472cf2e0c1c5d7bee5"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improved the `format_trigger_error` to support multiple splitting of the private code point `\\uF8FF`. This allows for more dynamic data error messages, while still having the text go through the translation interfaces properly.\n",
+                    "hash": "1db97b029e7d1ab5f4fb4566d052f0445a27c781"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a new subcommand `create-ref-tables` which executes pSQL scripts defined in the `recombinant.reference_definitions` config option. This allows for creation of advanced DataStore tables outside of the CKAN framework. These tables are not editable by CKAN users.\n",
+                    "hash": "8f7412f65b6c8be06e23d99cf5528edc712baa85"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Recombinant schemas now support `choices_reference_table` definition for fields, which can reference an existing table in the DataStore database. Choices are filterable with `choices_filter_query` which accepts a basic pSQL WHERE clause.\n",
+                    "hash": "d8a0ff71fa126db11bc3fcdd6839dc588a0494ca"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Recombinant schemas now support `choices_fiscal_year` definition for fields. This is a YAML Mapping which can take `min_year (default: 2005)`, `max_year (default: current)`, and `month_start (default: 4/April)`\n",
+                    "hash": "11757ee45ec4119bd587b9bf7f0981cab07ca889"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
