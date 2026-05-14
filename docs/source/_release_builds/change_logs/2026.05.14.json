@@ -1,0 +1,24 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with `ckan.site_read_only` not respecting Boolean types in the config file.\n",
+                    "hash": "c59778172ae93a80e9dc10779449615a35a653bb"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Sysadmins can now insert encoded User API Tokens with the `api_token_create` action. Useful for migrations.\n",
+                    "hash": "bc0b056874ee7f4c5ff002e3eab460b320c57c52"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
