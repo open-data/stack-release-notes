@@ -1,0 +1,28 @@
+{
+    "ckan": {
+        "ckanext-scheming": {
+            "uri": "https://github.com/ckan/ckanext-scheming",
+            "prev": "994e7cf407302815167cd97ad8794fb5ee5c7349",
+            "head": "4cb8b5bfb5e2ba4013efbe68fcb4e089c66b9fc1"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "323a057d4123706d0b6ba34aaad4534cddbc80c7",
+            "head": "e618251926a54e6ea8b601f61e802240c45901a6"
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "uri": "https://github.com/open-data/opengov",
+            "prev": "50ad6f6c16ef27ae37a83005796baf5611f4db3e",
+            "head": "1ea8b38d4065bed4d1ed90ce99c875918c03e81d"
+        },
+        "og": {
+            "uri": "https://github.com/open-data/og",
+            "prev": "f92f1e5e819ba4210a7f4f833de11e26f4e787be",
+            "head": "9d2d95230ec1584fc996155336fc7ea535f4a564"
+        }
+    }
+}

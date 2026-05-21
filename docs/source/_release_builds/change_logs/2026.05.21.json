@@ -1,0 +1,26 @@
+{
+    "ckan": {},
+    "django": {},
+    "drupal": {
+        "opengov": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Security updates for:\n\n- Drupal/core (SA-CORE-2026-004)\n- Drupal/autologout (SA-CONTRIB-2026-030)\n",
+                    "hash": "25302106ca1ff00d6a279325fd4d287f29342543"
+                }
+            ]
+        },
+        "og": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Bump:\n\n- `drupal/core` to 11.2.12\n- `drupal/autologout` to 2.0.3\n\n",
+                    "hash": "2eca78973d4b30b3b3deabbf67bd62fddde1b170"
+                }
+            ]
+        }
+    }
+}
