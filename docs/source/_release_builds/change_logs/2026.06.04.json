@@ -1,0 +1,43 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the list and clear orphan commands not working with Private datasets.\n",
+                    "hash": "2fb3425bc592b880cfa9eb0a6850febb42ebdf9f"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updates for the NAP6 Tracker:\n\n- Enabled NAP6 in the Makefile.\n- Updated the lead department code from `pspc-spac` to `pwgsc-tpsgc` to match the code used in the Registry.\n",
+                    "hash": "fc2a856174f2c4ec3c9e8fcd6745dcc209ba7e61"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improve import_code_yaml to include extra fields.\n",
+                    "hash": "4cfd1bfaef7e109f57b2adb013cd801f6866b598"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added additional comments to the core search application code and in a few cases removed dead or commented code. No functoinal changes.",
+                    "hash": "7f689891ae843784aac7ac0ab6411290c410db4a"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
