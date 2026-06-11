@@ -17,9 +17,13 @@ OR (for same day)
 
 release/2024.05.07.a
 release/2024.05.07.b
+
+OR (for pre release)
+
+pre/2024.05.07
 ```
 
-A GitHub workflow will run on tagging and generate the differences between all the related projects, compile the Sphinx project, and publish it to GitHub Pages.
+A GitHub workflow will run on tagging and generate the differences between all the related projects, compile the Sphinx project, and publish it to GitHub Pages. Pre releases will only display in GitHub Pages if it is the latest tag, otherwise they do not get displayed. Thus you can generate pre release notes with `pre/2024.05.07` and share those notes; when you actually publish the code, you can tag with `release/2024.05.07` which will replace the pre release display with the real release notes.
 
 ### Tagging from GitHub
 
