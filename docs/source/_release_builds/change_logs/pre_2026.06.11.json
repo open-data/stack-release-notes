@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The `performance` calculated field for Service Inventory no longer rounds to 4 decimal points.\n",
+                    "hash": "27c56bb5978e78e550317b540d5b07ae01e3dab7"
+                }
+            ]
+        },
+        "ckanext-security": {
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Log level for the Resource mimetype validator has been changed from `INFO` to `DEBUG`\n",
+                    "hash": "3abd00ac854a2832b32c999a2446ed24b643540d"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
