@@ -1,0 +1,83 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `creatore_user_id` as a syadmin only field in the Dataset schema, allowing for sysadmins to set this field.\n",
+                    "hash": "72c944c96d718d75a39bf87c762f996f2e8bd8f5"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added template blocks to the Resource View template snippet for plugin extending capabilities, namely for iFrame Embedding.\n",
+                    "hash": "94268f72a01e7100e3741a300cd5016f1eacf508"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Resource View embed button/modal will now display which hostnames are allowed to embed our site contents. The embed button no longer displays on the Registry.\n",
+                    "hash": "2db72142c7d68fdcb86eb4fef2c5480e85220c30"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Citation button now only displays on the public Portal, not on the Registry.\n",
+                    "hash": "207e6125d50782555674717f7c61fa894d88191a"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The package type label/pill now displays on the single Dataset and Resource pages.\n",
+                    "hash": "4e0db828a63161bef88594c040303d8c31db0d7e"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The \"View on Portal\" button now display in the Action Toolbar.\n",
+                    "hash": "223d8b08be3ac4112e9a2e4bbce7a50c518db5a5"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Links to the User list index page will now default to a limit of 15. This is generally a sysadmin UI improvement.\n",
+                    "hash": "0cfbb6de44c62c4016408c2327e2a6572721ac85"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add link for `adminaircraft` for TBS and DND users on the Registry homepage and menu.\n",
+                    "hash": "0a10aab7f24e98e16bda82ad356700aef59188b1"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed a bug preventing the repeating sub fields from working. Issue stemmed from general improvements from upstream [01199b3](https://github.com/ckan/ckanext-scheming/commit/01199b36a31e0d2fc0b721db891a63c72e73db9d)\n",
+                    "hash": "254413565260ab7639ae36fa775ed93d4068a7b7"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {
+        "og": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update email sent to departments for user feedback.\n\n",
+                    "hash": "9061e7bb4548d6e9464848d9b26a94348a092600"
+                }
+            ]
+        }
+    }
+}
