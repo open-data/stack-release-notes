@@ -1,0 +1,32 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add the following links under `Open Information` to homepage and menu on the Registry:\n- Algorithmic Impact Assessment\n- Institutional Accessibility plans\n",
+                    "hash": "4d2afec09fe51adf5ea1c607c1fe15b569a78848"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added markdown format (`.md`/`.markdown`) to the Resource formats.\n",
+                    "hash": "90796e86d28d1ba817620bf0d89fcdd05688ba8c"
+                }
+            ]
+        },
+        "ckanext-dcat": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Handled more exceptions in page views.\n",
+                    "hash": "fa43b4cdbdfc767c538d6133c6dffb7027821691"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
