@@ -1,0 +1,22 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add Fiscal Year 2026-2027 to reporting period for:\n\n- Departmental Audit Committee `dac`\n- Contracts over $10,000 `contracts`\n",
+                    "hash": "0b97723b5aa1b74075a5b61aa09025f2dff175ed"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Display translated labels for `resource_type` in the resource list.\n",
+                    "hash": "8fadb1ee49e00b4bfed6f53b4ae624f0b0d2fd24"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
