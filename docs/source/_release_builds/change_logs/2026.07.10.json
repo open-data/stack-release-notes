@@ -1,0 +1,35 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update URL for Open Maps viewer on Portal dataset pages.\n",
+                    "hash": "150fc6f7fa7697d68039e2ba2600a481ef80585b"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Users can now opt-in to the new PD DataTable on the Registry. Adds a general `canada-user-opt-in-feature` JS module, along with User validation for the opt-in features.\n",
+                    "hash": "9cbd454e6cf7e46699b445ea12482c4ce208e091"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update URL for Open Maps viewer on the \"View on Map\" button.\nDeprecate open-maps from Search.\n",
+                    "hash": "d65d973c1aef052e255065da1897ec12baaee15a"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
