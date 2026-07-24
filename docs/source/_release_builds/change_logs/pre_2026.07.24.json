@@ -1,0 +1,88 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `tool.pytest.ini_options` to the project config file to simplify the PD filter tests.\n",
+                    "hash": "0292c8c3324d528fbbef96359e1786a50e175948"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removed `aistrategy` from the MAKE file.\n",
+                    "hash": "ec38a20660bb805f7fffde17fe03161fcad2d4a4"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `ckanext.canada.environment` config option, defaults to `production`. Currently controls 500 error messages and watermarks.\n",
+                    "hash": "9294e857f7f0e8a686ad6bd61cab3768943bd940"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with non-persistant custom User settings. Added test coverage for custom User settings.\n",
+                    "hash": "f36f14dc7fd6514eed104628606aa3f62a2b736d"
+                }
+            ]
+        },
+        "ckanext-dcat": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the `dcat_dataset_show` action method not being marked `side_effect_free` for GET requests.\n",
+                    "hash": "40c7bedbc718de1f3a9589cdfa2501e6ec4cec33"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue where the `create-ref-tables` command would try to execute empty queries.\n",
+                    "hash": "4ec4d165f575a93bdf2718c6dd56a0618631dac9"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Replace the following server-side session storage for navigation state with client-side cookies:\n\n- `request.session[\"prev_search\"]`  →  prev_search cookie\n- `request.session[\"prev_record\"]`  →  prev_record cookie\n\nAs identified during the investigation in OPEN-4585, writing these navigation values to `request.session` caused Django to create and persist sessions for anonymous users. Since crawlers and bots typically do not reuse session cookies, this resulted in unnecessary Redis session creation and write activity.\n\nMoving to client-side cookies eliminates unnecessary Redis session creation for navigation state. \nExpected outcome is reduced Redis write activity and CPU utilization.\n\nJira ticket: OPEN-4633\n",
+                    "hash": "4de2fc794e57d3b049806967532bbc0047e4e35e"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Security updates for:\r\n\r\n- Drupal/core (SA-CORE-2026-005 to SA-CORE-2026-012)\r\n\r\nContributed modules updates:\r\n\r\n- Redis\r\n- Webform\r\n- Drush (GuzzleHttp)\r\n",
+                    "hash": "b93807593663fbfb5a4726a7b48433aece3c0004"
+                }
+            ]
+        },
+        "og": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Security Updates:\n\n- `drupal/core`: Upgraded from (`11.2.12` ➔ `11.4.4`) to cover the following security advisories:\n\n\t* Cross-site scripting - SA-CORE-2026-012\n\t* Cross-site scripting - SA-CORE-2026-011\n\t* Information disclosure - SA-CORE-2026-010\n\t* Improper validation - SA-CORE-2026-009\n\t* Server-side request forgery - SA-CORE-2026-008\n\t* Cache poisoning and open redirect - SA-CORE-2026-007\n\t* Gadget chain - SA-CORE-2026-006\n\t* PHP object injection - SA-CORE-2026-005\n\nOther dependencies:\n\n- `drupal/redis`: Upgraded from `1.10.0` to `1.11.0`\n- `drupal/webform`: Upgraded from `6.3.0-beta5` to `6.3.0` (Stable)\n- `drush/drush`: Upgraded CLI tooling from `13.5.0` to `13.7.6`\n\n",
+                    "hash": "93132531892085d029d47b911ffebb165ee5f6bf"
+                }
+            ]
+        }
+    }
+}

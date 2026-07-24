@@ -1,0 +1,38 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "e1aed6622eda22c0b03e9a3ff0d7e783faa71c3a",
+            "head": "945275591d58735fdf95da36fcd35804547b2fef"
+        },
+        "ckanext-dcat": {
+            "uri": "https://github.com/open-data/ckanext-dcat",
+            "prev": "875bd97c11e5483fe0a09d1c50ab1335d2f39c35",
+            "head": "874e4a2f41baca716cb1582ed41af1e4b6ebba01"
+        },
+        "ckanext-recombinant": {
+            "uri": "https://github.com/open-data/ckanext-recombinant",
+            "prev": "c141cf3d2c8cf786784e06ea9467e8eaafcb1dad",
+            "head": "e4399bdb8c71707acc1181f4ad065155714a3404"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "uri": "https://github.com/open-data/oc_search",
+            "prev": "9a65394bbbd00ed88b1ed85cf46ba91dc6a8b5f7",
+            "head": "09f33bf84baf2483463de091bbc2a8bef7d386e1"
+        }
+    },
+    "drupal": {
+        "opengov": {
+            "uri": "https://github.com/open-data/opengov",
+            "prev": "1ea8b38d4065bed4d1ed90ce99c875918c03e81d",
+            "head": "93b1584853bb361d4fef41376914a6755ae4c882"
+        },
+        "og": {
+            "uri": "https://github.com/open-data/og",
+            "prev": "d58ccb1be726d1e9693b0d0c59a6c9243617a3ab",
+            "head": "c2250d115c16d019c788bff21d3c43c2afd688d7"
+        }
+    }
+}
