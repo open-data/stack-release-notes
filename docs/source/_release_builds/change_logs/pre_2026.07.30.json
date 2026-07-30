@@ -1,0 +1,42 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the `canada_copy_from_org_name` validator and the `prop` fields using the `fluent_text` validator. The `fluent_text` validator now returns `None` instead of an empty dictionary [eb5581a](https://github.com/ckan/ckanext-fluent/compare/bbb61594a49c836c7d211782a1d8edbe44d5daff...eb5581ac952cd1d0d3ceac78b43adb97e7068895)\n",
+                    "hash": "784a0d6dc02e1a43e87e2198a6f611e7c904e081"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with some modals being behind the footer.\n",
+                    "hash": "c081ca070be475e944ad6c8a05f9119f8e2f9263"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Improved some of the white space Jinja2 was rendering in panel headings.\n",
+                    "hash": "310e3ddaafc044d500683ed50634fff37a39b0d9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added missing French translations for PD interactive datatables.\n",
+                    "hash": "1aa84d86f0f3e06bf2117d4449e79faf546c0a58"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the error and validation messages for Grant's `agreement_value` field.\n",
+                    "hash": "0334e517baee204723e99bb80dfb970725cf4a4c"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}

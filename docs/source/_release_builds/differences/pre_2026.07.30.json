@@ -1,0 +1,11 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "uri": "https://github.com/open-data/ckanext-canada",
+            "prev": "5bc3534b8149f614b9916b65098d598504ceb293",
+            "head": "9b42dc773f82f7a71df12797bac3139fb527f471"
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
