@@ -1,0 +1,114 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with Resource ValidationErrors not displaying for resources that had been reordered and not indexed yet.\n",
+                    "hash": "63593a2d817f7db91c93c4fcd75869cea0d12f53"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed a major i18n issue in which the French translation string (`ckan/templates/package/snippets/package_form.html:35`) had malformed HTML tags, resulting in the Package Form not rendering fully in French.\n",
+                    "hash": "754a49fd633782970cffb30434c8283ee018587f"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Defined `shortname` for all of the Recombinant resources. These now display in the Recombinant tabs in the Registry for improved UI/UX.\n",
+                    "hash": "3c53b6fcb01ae748704b62030bfb8561180f34d7"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Resource `language` field now renders as a Select2 in the webform. You can no longer define `zxx` (\"No linguistic content; Not applicable\") language alongside other languages, this will raise a ValidationError.\n",
+                    "hash": "4db0df25a05743bb528903db60cdbc834ca63a49"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added test coverage for all of the Recombinant resource name and package type redirects/aliases.\n",
+                    "hash": "b701cd0153e6b9eacc0ae8677a6ad92ec329908f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Made Scheming Pages configurable for future code, defaulting to `False`\n",
+                    "hash": "a83650456315b4acca9415b3101ac4e0300fde52"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "When adding a link Resource to a CSV or TSV, a guidance alert will now display copy describing API enablement if the user uploads to our system instead.\n",
+                    "hash": "2d2974aeb7bdffd4969051ad2a8bb7c6459beeaa"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added styling for a new `alert-guidance` alert type.\n",
+                    "hash": "7d797a7f2b707170b313ea4231ea467a2f17ffe9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Resource `description` field has now been added to our Schemas and webforms. Form fields display in a new \"Semantic Metadata Fields for Resources\" accordion section in the Resource webform.\n",
+                    "hash": "ae549abe9bd81f262663cc6b1f5c343fd37021cf"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "There are now webpage redirects for Recombinant dataset types. E.g. `/dataset/ati` would redirect to the published Combined dataset page for \"ATI Summaries\"\n",
+                    "hash": "f750a9b77cd1e6787a34c365f6d8d05314e13c44"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue where a Recombinant dataset missing a Resource would cause a 500 error. Now allows for webform partial Recombinant create, where the missing resources will be made.\n",
+                    "hash": "4821a7d255f3831e236f1520924b8d32aa0f4ed6"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Resources will now always be returned in the order defined in the Schema during `recombinant_show`\n",
+                    "hash": "e1710da1487e67946929dbe9c8db08c35a9d01b4"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Recombinant tabs now display a `shortname` if it is defined for the Resource's Schema.\n",
+                    "hash": "80c13848f077032ece6aa09aed07928c582abe60"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "`package_show`, `resource_show`, `datastore_info`, and `datastore_search` now support aliases for Recombinant dataset types and resource names. E.g. `resource_show?id=ati` and `datastore_search?resource_id=ati` will query the `published_resource_id` for the Combined data of \"ATI Summaries\"\n",
+                    "hash": "d57f1150a1a5c6eaeae9fdfde3c8cc25efe9ba30"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "There are now webpage redirects for Recombinant resource names. E.g. `/resource/ati` would redirect to the published Combined resource page for \"ATI Summaries\"\n",
+                    "hash": "ae48f345a4fb244b9987eae7bb7de3f657781f2e"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
