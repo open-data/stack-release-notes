@@ -241,7 +241,7 @@ def create_release_json_file():
     pre_release = get_release_tags(latest=True, pre=True)
     is_pre_release = False
     if pre_release:
-        is_pre_release = int(release.replace('.', '')) < int(pre_release.replace('.', ''))
+        is_pre_release = int(release.replace('hotfix', '').replace('.', '')) < int(pre_release.replace('hotfix', '').replace('.', ''))
 
     if not release:
         print("No release tags found, skipping...")
@@ -546,7 +546,7 @@ def get_filled_releases():
     release_tags = get_release_tags(order='-v:refname')
     show_pre_release = False
     if pre_release_tag:
-        show_pre_release = int(release_tags[0].replace('.', '')) < int(pre_release_tag.replace('.', ''))
+        show_pre_release = int(release_tags[0].replace('hotfix', '').replace('.', '')) < int(pre_release_tag.replace('hotfix', '').replace('.', ''))
     release_hashes = parsed_release_hashses(show_pre_release)
 
     if show_pre_release:
