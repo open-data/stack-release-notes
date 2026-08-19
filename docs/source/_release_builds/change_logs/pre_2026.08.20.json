@@ -1,0 +1,122 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with an authentication call in the Package jinja2 templates.\n",
+                    "hash": "68138c354c7d7464b640bcd791766a96f68778ee"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added inline comments for `(canada fork only)`\n",
+                    "hash": "89407f5a0ca28898e470e9fefd395151b1327919"
+                },
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Prepends the requesting host and scheme to the `original_url` XLoader Resource field, supporting relative URIs for XLoader fields in the database.\n",
+                    "hash": "62ab2473788454daf58a192ba44dded06f632e32"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added a `create_atom_id` implement method to the `IFeed` implement class. This allows for plugins to customize the generation of Atom entry IDs.\n",
+                    "hash": "a2a1cfa2be9f660b3c8683d44a60f45ef577a437"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with an authentication call in the Package jinja2 templates.\n",
+                    "hash": "68138c354c7d7464b640bcd791766a96f68778ee"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `d-none` class to an inline Style for first paint.\n",
+                    "hash": "f7d471b7025f4f4ba3a24193fe61a677276986a7"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The Resource `resource_type` form field now renders as a select2.\n",
+                    "hash": "a18b4870af6fb20d38d3e0b62ef1e226d8411e1d"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The `activity` plugin logging is now suppressed during the `load-csv` subcommand.\n",
+                    "hash": "2385b7fa422fd3512875ceabda173f89c9c7f33b"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "When loading data via the `load-csv` subcommand, newline characters are now normalized to `\\n`\n",
+                    "hash": "c59c8d4f14d301fd07e52b1ad60a743ef5cb473c"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Now outputs choices suffixes into the Data Dictionaries. Defined via `choices_suffix_filter` which should be a dict of suffix value (key) and english and french labels (value)\n",
+                    "hash": "e5ee7f5314d69d80cccfd5e7e96f5c5499fd026b"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `--error-file` option to the `load-csv` subcommand. Accepts CSV or JSONL files.\n",
+                    "hash": "137a62c1ce24e2c06e27928cc62b714719c4174f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `--flag` option to the `load-csv` subcommand. This adds flags to the temporary session DataStore table `datastore_user` (now `datastore_app_context`), allowing for more customized logic and functionality when loading Recombinant data. The command will now always have the `recombinant_import` flag. Also now accepts the `--skip-validation` command line argument which sets the `skip_validation` flag to the DataStore Context table.\n",
+                    "hash": "e0c8a08365a00c363c8930a69b1be0b095fb493c"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a sysadmin UI to delete Recombinant datasets.\n",
+                    "hash": "34ccbafdbbf49f24287a42745fc5823938ac9edc"
+                }
+            ]
+        },
+        "ckanext-xloader": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added `--resource-id` option to the `xloader submit` command. Fixed various TypeErrors and missing metadata in the CLI methods.\n",
+                    "hash": "79fb52976261c1ab880e282add606c0e67f350c4"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Now only stores the relative URIs in the database for XLoader Resource fields `original_url` (only for Uploads). No longer stores the `ckan_url` value in the database.\n",
+                    "hash": "3d7e6e4533122c290f389054c7fc8709cfdc428c"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
