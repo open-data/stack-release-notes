@@ -2,12 +2,12 @@
     "ckan": {
         "ckan": {
             "uri": "https://github.com/open-data/ckan",
-            "prev": "65a69d1aa5f70f573ae5b00648d710ef81c22ab0",
+            "prev": "2403662b81c181844c5223cd11bb4aae4f911076",
             "head": "b285052dd29fad6a6e24d0578eaf0bb91f66cd2d"
         },
         "ckanext-canada": {
             "uri": "https://github.com/open-data/ckanext-canada",
-            "prev": "f10362462b39845777e3619e1f4f3623ed5960bf",
+            "prev": "60ddb46f989afcd5e33947dd655864d32f6114bc",
             "head": "1e125ca3814b00415364911af14bb6a73c0737af"
         },
         "ckanext-recombinant": {
