@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with an authentication call in the Package jinja2 templates.\n",
+                    "hash": "68138c354c7d7464b640bcd791766a96f68778ee"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed a major issue with an authentication call in the Package jinja2 templates.\n",
+                    "hash": "68138c354c7d7464b640bcd791766a96f68778ee"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
