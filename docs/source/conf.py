@@ -9,6 +9,8 @@ from markupsafe import Markup
 from markdown import markdown
 from bleach import clean as bleach_clean, ALLOWED_TAGS, ALLOWED_ATTRIBUTES
 
+FORCE_VERBOSE = False
+
 MARKDOWN_TAGS = set([
     'del', 'dd', 'dl', 'dt', 'h1', 'h2',
     'h3', 'img', 'kbd', 'p', 'pre', 's',
@@ -198,10 +200,9 @@ def get_latest_commit_hash(remote, branch):
         ['git', 'ls-remote', remote, 'refs/%s/%s' % (ref_type, branch)], stderr=subprocess.STDOUT).decode('utf8')
 
     latest_hash = re.split(r'\t+', latest_hash)[0]
-
-    print("Gathering info from %s" % remote)
-
     assert latest_hash
+
+    print("Gathering info from %s/commit/%s" % (remote.replace('.git', ''), latest_hash))
 
     return latest_hash
 
@@ -285,13 +286,22 @@ def parsed_release_hashses(show_pre_release=False):
     print("Building release notes...")
 
     prev_release = None
+    _index = 0
 
     for release in release_tags:
 
-        if release == pre_release_tag:
-            print("Building from PRE-release tag: %s" % release)
+        if FORCE_VERBOSE:
+            verbose = True
         else:
-            print("Building from release tag: %s" % release)
+            verbose = _index == len(release_tags) - 1
+        _index += 1
+
+        if release == pre_release_tag:
+            if verbose:
+                print("Building from PRE-release tag: %s" % release)
+        else:
+            if verbose:
+                print("Building from release tag: %s" % release)
 
         diff_filename = '_release_builds/differences/%s.json' % release
         release_filename = '_release_builds/releases/%s.json' % release
@@ -301,21 +311,26 @@ def parsed_release_hashses(show_pre_release=False):
 
         if not os.path.isfile(release_filename):
             if release == pre_release_tag:
-                print("File does not exist for PRE-release %s, skipping..." % release)
+                if verbose:
+                    print("File does not exist for PRE-release %s, skipping..." % release)
                 continue
-            print("File does not exist for release %s, skipping..." % release)
+            if verbose:
+                print("File does not exist for release %s, skipping..." % release)
             continue
 
         if prev_release:
-            print("Previous release is %s" % prev_release)
+            if verbose:
+                print("Previous release is %s" % prev_release)
 
         if os.path.isfile(diff_filename):
             # we already have a diff file, load from that.
 
             if release == pre_release_tag:
-                print("Gathering from diff file for PRE-release %s" % release)
+                if verbose:
+                    print("Gathering from diff file for PRE-release %s" % release)
             else:
-                print("Gathering from diff file for release %s" % release)
+                if verbose:
+                    print("Gathering from diff file for release %s" % release)
 
             with open(diff_filename, 'r') as f:
                 parsed_release_hashses[release] = json.load(f)
@@ -326,9 +341,11 @@ def parsed_release_hashses(show_pre_release=False):
             # generate the parsed objects and save to a diff file.
 
             if release == pre_release_tag:
-                print("Generating diff file for PRE-release %s" % release)
+                if verbose:
+                    print("Generating diff file for PRE-release %s" % release)
             else:
-                print("Generating diff file for release %s" % release)
+                if verbose:
+                    print("Generating diff file for release %s" % release)
 
             if prev_release:
                 prev_release_filename = '_release_builds/releases/%s.json' % prev_release
@@ -353,8 +370,11 @@ def parsed_release_hashses(show_pre_release=False):
 
                     for project_name, prev_project_stack in prev_release_dict.items():
 
+                        # FIXME: always use previous tag HEAD for the repo release hash...
+
                         if project_name not in release_dict:
-                            print("Project %s no longer exists in the stack. Skipping..." % project_name)
+                            if verbose:
+                                print("Project %s no longer exists in the stack. Skipping..." % project_name)
                             continue
 
                         if project_name not in parsed_release_hashses[release]:
@@ -406,9 +426,11 @@ def parsed_release_hashses(show_pre_release=False):
                 # we already have a github api compare file, load from that.
 
                 if release == pre_release_tag:
-                    print("Gathering info from compare file for PRE-release %s" % release)
+                    if verbose:
+                        print("Gathering info from compare file for PRE-release %s" % release)
                 else:
-                    print("Gathering info from compare file for release %s" % release)
+                    if verbose:
+                        print("Gathering info from compare file for release %s" % release)
 
                 with open(github_filename, 'r') as f:
                     github_compare_dicts = json.load(f)
@@ -417,9 +439,11 @@ def parsed_release_hashses(show_pre_release=False):
                 # fetch from github API and save to compare file.
 
                 if release == pre_release_tag:
-                    print("Fetching info from GitHub API for PRE-release %s" % release)
+                    if verbose:
+                        print("Fetching info from GitHub API for PRE-release %s" % release)
                 else:
-                    print("Fetching info from GitHub API for release %s" % release)
+                    if verbose:
+                        print("Fetching info from GitHub API for release %s" % release)
 
                 for project_name, project_stack in parsed_release_hashses[release].items():
 
@@ -459,9 +483,11 @@ def parsed_release_hashses(show_pre_release=False):
                 # we already parsed the changelogs, load from that.
 
                 if release == pre_release_tag:
-                    print("Gathering change logs from local files for PRE-release %s" % release)
+                    if verbose:
+                        print("Gathering change logs from local files for PRE-release %s" % release)
                 else:
-                    print("Gathering change logs from local files for release %s" % release)
+                    if verbose:
+                        print("Gathering change logs from local files for release %s" % release)
 
                 with open(changelog_filename, 'r') as f:
                     changelog_dicts = json.load(f)
@@ -469,9 +495,11 @@ def parsed_release_hashses(show_pre_release=False):
             else:
 
                 if release == pre_release_tag:
-                    print("Fetching new change logs from GitHub for PRE-release %s" % release)
+                    if verbose:
+                        print("Fetching new change logs from GitHub for PRE-release %s" % release)
                 else:
-                    print("Fetching new change logs from GitHub for release %s" % release)
+                    if verbose:
+                        print("Fetching new change logs from GitHub for release %s" % release)
 
                 for project_name, project_stack in github_compare_dicts.items():
 
