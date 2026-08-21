@@ -1,0 +1,26 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added the XLoader fields to our Resource Schemas.\n",
+                    "hash": "5a6ef959f7c1bd0f0788a95b5522bd31db85958d"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Suppressed more python loggers during some of the `ckan recombinant` CLI sub-commands. Added the flag argument `[-L|--no-log-suppression]` to bypass log suppressions.\n",
+                    "hash": "5b796555fca68ec0acd537077a49e75dfcb4a7f3"
+                }
+            ]
+        }
+    },
+    "django": {},
+    "drupal": {}
+}
