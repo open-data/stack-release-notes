@@ -35,11 +35,19 @@
         <div class="github-api-wrapper" id="github-2026.08.21">
           
             
+              <div class="github-api-container" id="github-2026.08.21-ckan">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
               <div class="github-api-container" id="github-2026.08.21-ckanext-canada">
                 <!-- TODO: output diffs from github API -->
               </div>
             
               <div class="github-api-container" id="github-2026.08.21-ckanext-recombinant">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+              <div class="github-api-container" id="github-2026.08.21-ckanext-xloader">
                 <!-- TODO: output diffs from github API -->
               </div>
             
@@ -2717,6 +2725,59 @@
               
               
               
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.08.21-ckan">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckan
+                      <a class="headerlink" href="#2026.08.21-ckan"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added a <code>create_atom_id</code> implement method to the <code>IFeed</code> implement class. This allows for plugins to customize the generation of Atom entry IDs.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added inline comments for <code>(canada fork only)</code></p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Prepends the requesting host and scheme to the <code>original_url</code> XLoader Resource field, supporting relative URIs for XLoader fields in the database.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckan/compare/2403662b81c181844c5223cd11bb4aae4f911076...b285052dd29fad6a6e24d0578eaf0bb91f66cd2d">View it on GitHub</a>
+                    <span class="release-hash-label">[2403662b8...b285052dd]</span>
+                  </div>
+                </div>
+              
                 <div class="panel panel-info project-panel project-panel-ckan" id="2026.08.21-ckanext-canada">
                   <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
                   <div class="panel-heading panel-title">
@@ -2728,8 +2789,25 @@
                   <div class="panel-body">
                     
                       
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>d-none</code> class to an inline Style for first paint.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
                         <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
+                          
+                            <li>
+                              <p>The Resource <code>resource_type</code> form field now renders as a select2.</p>
+                              
+                              
+                            </li>
                           
                             <li>
                               <p>Added the XLoader fields to our Resource Schemas.</p>
@@ -2742,8 +2820,8 @@
                     
                     
                     
-                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/1e125ca3814b00415364911af14bb6a73c0737af...fb4263fb23e93bef342e0ea3f867a43629172a9e">View it on GitHub</a>
-                    <span class="release-hash-label">[1e125ca38...fb4263fb2]</span>
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/60ddb46f989afcd5e33947dd655864d32f6114bc...fb4263fb23e93bef342e0ea3f867a43629172a9e">View it on GitHub</a>
+                    <span class="release-hash-label">[60ddb46f9...fb4263fb2]</span>
                   </div>
                 </div>
               
@@ -2758,6 +2836,29 @@
                   <div class="panel-body">
                     
                       
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>--error-file</code> option to the <code>load-csv</code> subcommand. Accepts CSV or JSONL files.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added <code>--flag</code> option to the <code>load-csv</code> subcommand. This adds flags to the temporary session DataStore table <code>datastore_user</code> (now <code>datastore_app_context</code>), allowing for more customized logic and functionality when loading Recombinant data. The command will now always have the <code>recombinant_import</code> flag. Also now accepts the <code>--skip-validation</code> command line argument which sets the <code>skip_validation</code> flag to the DataStore Context table.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added a sysadmin UI to delete Recombinant datasets.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
                         <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
                         <ul class="changes-list">
                           
@@ -2767,13 +2868,76 @@
                               
                             </li>
                           
+                            <li>
+                              <p>The <code>activity</code> plugin logging is now suppressed during the <code>load-csv</code> subcommand.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>When loading data via the <code>load-csv</code> subcommand, newline characters are now normalized to <code>\n</code></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Now outputs choices suffixes into the Data Dictionaries. Defined via <code>choices_suffix_filter</code> which should be a dict of suffix value (key) and english and french labels (value)</p>
+                              
+                              
+                            </li>
+                          
                         </ul>
                       
                     
                     
                     
-                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/4cf1a2b6feaccf74312534d54d1a1bb112bbd935...40b334b56bb2637e540b26043e981d5703e0b7f3">View it on GitHub</a>
-                    <span class="release-hash-label">[4cf1a2b6f...40b334b56]</span>
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-recombinant/compare/03959684a306ffb04e2253f8ca834462365d247a...40b334b56bb2637e540b26043e981d5703e0b7f3">View it on GitHub</a>
+                    <span class="release-hash-label">[03959684a...40b334b56]</span>
+                  </div>
+                </div>
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.08.21-ckanext-xloader">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-xloader
+                      <a class="headerlink" href="#2026.08.21-ckanext-xloader"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-wrench change-canada-type-icon"></i>&nbsp;&nbsp;Bugfixes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added <code>--resource-id</code> option to the <code>xloader submit</code> command. Fixed various TypeErrors and missing metadata in the CLI methods.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Now only stores the relative URIs in the database for XLoader Resource fields <code>original_url</code> (only for Uploads). No longer stores the <code>ckan_url</code> value in the database.</p>
+                              
+                                <span class="change-sub-note change-canada-only"><sup><em>Canada Fork Only</em></sup></span>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-xloader/compare/540c59d3f227fd1ffe1c33c41b71d401418f1714...256b889a0ba311763446dee7d97e537fa4268366">View it on GitHub</a>
+                    <span class="release-hash-label">[540c59d3f...256b889a0]</span>
                   </div>
                 </div>
               
