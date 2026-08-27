@@ -1,0 +1,64 @@
+{
+    "ckan": {
+        "ckan": {
+            "Features": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Added the capability for SOLR facet queries via the `facet.query` parameter.\n",
+                    "hash": "7e5c53edc6d6696b005b63a11567d2c8a45e3ff6"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added allowed markdown tags and attributes to the marked.js renderer and sanitization in the PD Datatables cell rendering.\n",
+                    "hash": "de533b731bc4b093991e6da2d2f1fdf85e3fae60"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a script accessible at `/static/js/alert_exit.js` which creates a confirmation modal for all links not going to the `canada.ca` and `gc.ca` domain spaces.\n",
+                    "hash": "b5cc53d0e2902291ca01a2c532960682c6cf7924"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Globally loads the `/data/static/js/alert_exit.js` script to alert users when they are leaving the canada.ca or gc.ca domain space.\n",
+                    "hash": "1e88214a8b339efa24078f96bbf03446530033d4"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Reverted [09f33bf8](https://github.com/open-data/oc_search/commit/09f33bf84baf2483463de091bbc2a8bef7d386e1), favouring signed cookies for the Django session engine.\n",
+                    "hash": "25c3cdeee3e140704de3bfb49dceb092da3939dc"
+                }
+            ]
+        }
+    },
+    "drupal": {
+        "gcweb_bootstrap": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Globally loads the `/data/static/js/alert_exit.js` script to alert users when they are leaving the canada.ca or gc.ca domain space.\n",
+                    "hash": "1e88214a8b339efa24078f96bbf03446530033d4"
+                }
+            ]
+        }
+    }
+}
