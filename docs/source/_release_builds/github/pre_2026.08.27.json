@@ -1,0 +1,24 @@
+{
+    "ckan": {
+        "ckan": {
+            "message": "API rate limit exceeded for 4.154.142.177. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+            "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+        },
+        "ckanext-canada": {
+            "message": "API rate limit exceeded for 4.154.142.177. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+            "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+        }
+    },
+    "django": {
+        "oc_search": {
+            "message": "API rate limit exceeded for 4.154.142.177. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+            "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+        }
+    },
+    "drupal": {
+        "gcweb_bootstrap": {
+            "message": "API rate limit exceeded for 4.154.142.177. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+            "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+        }
+    }
+}
