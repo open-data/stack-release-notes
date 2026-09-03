@@ -32,6 +32,22 @@
   
     <div id="git-diff-wrapper">
       
+        <div class="github-api-wrapper" id="github-2026.09.03">
+          
+            
+              <div class="github-api-container" id="github-2026.09.03-ckanext-canada">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+            
+              <div class="github-api-container" id="github-2026.09.03-oc_search">
+                <!-- TODO: output diffs from github API -->
+              </div>
+            
+          
+        </div>
+      
         <div class="github-api-wrapper" id="github-2026.08.27">
           
             
@@ -2096,6 +2112,13 @@
         
           
             
+            <li data-release="2026.09.03" class="release-nav-item"><a href="#2026.09.03">
+              
+                v.2026.09.03
+              
+            </a></li>
+          
+            
             <li data-release="2026.08.27" class="release-nav-item"><a href="#2026.08.27">
               
                 v.2026.08.27
@@ -2745,6 +2768,152 @@
   <div style="min-height: 100vh;">
     <div id="release-container">
       
+        
+          
+          <div class="release-wrapper" id="2026.09.03">
+            <h2>
+              
+                v.2026.09.03
+              
+              <a class="headerlink" href="#2026.09.03"><i class="fa-solid fa-link"></i></a>
+            </h2>
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-ckan" id="2026.09.03-ckanext-canada">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/ckan.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      ckanext-canada
+                      <a class="headerlink" href="#2026.09.03-ckanext-canada"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code-fork change-canada-type-icon"></i>&nbsp;&nbsp;Features</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Added a bin script to generate Service Inventory Service IDs, Service Names, Program IDs, and Program Names (along with valid Organizations) for reference data from <code>https://github.com/gcperformance/service-data</code>. The data is tracked in CSV files in <code>ckanext.canada.tables.references.data</code></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added a <code>service.sql</code> pSQL script for <code>recombinant.reference_definitions</code>. This creates the tables <code>ref_service_program_ids</code> and <code>ref_service_service_ids</code> along with some indices for them.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added a new subcommand <code>load-ref-data</code> which loads any generated reference data into their custom DataStore tables. This is done via a pSQL copy expert, copying the CSVs directly into the tables.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Created a new <code>fiscal_year_error</code> pSQL function for the DataStore. This can dynamically validate fiscal year strings without needing to maintain a static list of them.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added <code>choices_suffix_filter</code> capabilities to Recombinant Schemas. This allows for additional/universal suffix labels for select choice values.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Added dynamic pSQL boolean flags via the <code>datastore_app_context_flags</code> context parameter for the temp <code>datastore_app_context</code> table.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Updated the Service Inventory fields to use the new Recombinant features <code>choices_reference_table</code> and <code>choices_fiscal_year</code></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Updated the Service Inventory triggers to query the new reference tables <code>ref_service_program_ids</code> and <code>ref_service_service_ids</code></p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>The temporary session pSQL table <code>datastore_user</code> (now <code>datastore_app_context</code>) now has an <code>org_name</code> column which is the Organization name/abbreviation that the Resource belongs to.</p>
+                              
+                              
+                            </li>
+                          
+                            <li>
+                              <p>Refactored temporary session pSQL table <code>datastore_user</code> to <code>datastore_app_context</code></p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/ckanext-canada/compare/8aa3132515a8c368e3044ae623dc94f03a68319e...194d0c8ccda46a7fc25026654d4454e20a8c22fb">View it on GitHub</a>
+                    <span class="release-hash-label">[8aa313251...194d0c8cc]</span>
+                  </div>
+                </div>
+              
+            
+              
+              
+                
+              
+              
+              
+              
+                <div class="panel panel-info project-panel project-panel-django" id="2026.09.03-oc_search">
+                  <div class="project-panel-icon"><img draggable="false" src="_static/images/django.png" alt="" /></div>
+                  <div class="panel-heading panel-title">
+                    <h3 class="release-repo-title">
+                      oc_search
+                      <a class="headerlink" href="#2026.09.03-oc_search"><i class="fa-solid fa-link"></i></a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                      
+                        <h4 class="change-canada-type-title"><i class="fa fa-code change-canada-type-icon"></i>&nbsp;&nbsp;Changes</h4>
+                        <ul class="changes-list">
+                          
+                            <li>
+                              <p>Optimize query performance by disabling Solr search highlighting parameters where search_text is either empty or wildcard.</p>
+                              
+                              
+                            </li>
+                          
+                        </ul>
+                      
+                    
+                    
+                    
+                    <a class="btn btn-primary btn-sm" target="_blank" href="https://github.com/open-data/oc_search/compare/090c2e97c3b5af5fdd3138994ed26982573120b8...9817f8943a503bc73d72120c67e7cb0a2100405b">View it on GitHub</a>
+                    <span class="release-hash-label">[090c2e97c...9817f8943]</span>
+                  </div>
+                </div>
+              
+            
+          </div>
         
           
           <div class="release-wrapper" id="2026.08.27">
