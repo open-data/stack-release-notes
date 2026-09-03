@@ -1,0 +1,83 @@
+{
+    "ckan": {
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the Service Inventory fields to use the new Recombinant features `choices_reference_table` and `choices_fiscal_year`\n",
+                    "hash": "d8745498ad86dbeca50b6e2578dcd124876b0b1a"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Updated the Service Inventory triggers to query the new reference tables `ref_service_program_ids` and `ref_service_service_ids`\n",
+                    "hash": "22614f2fba734c194475b721df03dd3a62caa7e9"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "The temporary session pSQL table `datastore_user` (now `datastore_app_context`) now has an `org_name` column which is the Organization name/abbreviation that the Resource belongs to.\n",
+                    "hash": "0f012579d0e2ab8c3a95fb65fa2bca892fa08789"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Refactored temporary session pSQL table `datastore_user` to `datastore_app_context`\n",
+                    "hash": "9d129d4ea57baa6db49452ba04f6eefdd85d5fae"
+                }
+            ],
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a bin script to generate Service Inventory Service IDs, Service Names, Program IDs, and Program Names (along with valid Organizations) for reference data from `https://github.com/gcperformance/service-data`. The data is tracked in CSV files in `ckanext.canada.tables.references.data`\n",
+                    "hash": "09f02e1891b8c6c7760909f379418903ee78576a"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a `service.sql` pSQL script for `recombinant.reference_definitions`. This creates the tables `ref_service_program_ids` and `ref_service_service_ids` along with some indices for them.\n",
+                    "hash": "20ad607edc7b6720829c7e37faf1c33e4bedeab3"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added a new subcommand `load-ref-data` which loads any generated reference data into their custom DataStore tables. This is done via a pSQL copy expert, copying the CSVs directly into the tables.\n",
+                    "hash": "209f0c03fe28e3b84ca5b2828d5b8efbe9fba210"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Created a new `fiscal_year_error` pSQL function for the DataStore. This can dynamically validate fiscal year strings without needing to maintain a static list of them.\n",
+                    "hash": "3387b50c7fb408d4a7f7b370836b8b178a3416cc"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added `choices_suffix_filter` capabilities to Recombinant Schemas. This allows for additional/universal suffix labels for select choice values.\n",
+                    "hash": "cd35e98b273ae243128b9d7cda9134bab23c7b34"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added dynamic pSQL boolean flags via the `datastore_app_context_flags` context parameter for the temp `datastore_app_context` table.\n",
+                    "hash": "63dba639fe6d826ff2b55b4549bb4a3a8c929fd7"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Optimize query performance by disabling Solr search highlighting parameters where search_text is either empty or wildcard.\n",
+                    "hash": "d779f705280ff639d965df861d64ecfb7df7084a"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
