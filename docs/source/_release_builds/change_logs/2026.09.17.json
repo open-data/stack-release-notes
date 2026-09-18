@@ -1,0 +1,67 @@
+{
+    "ckan": {
+        "ckan": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Apply field label translations for the Data Dictionary.\n",
+                    "hash": "349dc95049dbbe19bb66c7f30e0938435ed68459"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Refactored config option `enable_pd_datatable_editor` to `enable_pd_datatable_enhanced`\n",
+                    "hash": "d3e8ea67e43757c174a408595872791ce90e2850"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Added config option `enable_pd_datatable_editor` to control whether or not to use the custom DataTable Editor for Recombinant Resources.\n",
+                    "hash": "48cfc6aafab2b0e494c5674bbefb7d1a99df5951"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Show translated field type in the data dictionary.\n",
+                    "hash": "c08f86c300b4c8b4878c872d2d551430e42a9a3a"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Features": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Add `robots.txt` file with rules to:\r\n\r\n- optimize crawler search efficiency and safeguard server resources\r\n- apply restrictions to block crawlers from deep paging and sorting (`/*?*page=` and `/*?*sort=`).\r\n",
+                    "hash": "479ee03b1a6217b50453111c118b9021f89045b9"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Change paging anchor links to buttons to prevent deep paging by crawlers.\r\n",
+                    "hash": "d510d0c669ab80c985c5f5410cad21a21e132c72"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fix typo in French translations for NIL reports.\r\n",
+                    "hash": "3ada7fb46bd2faf61e2cc3a9e6b8db558161e889"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
