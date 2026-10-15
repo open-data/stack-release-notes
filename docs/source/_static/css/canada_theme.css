@@ -413,3 +413,288 @@ a.headerlink:focus{
   }
 
 }
+
+#release-track{
+
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
+
+#release-track h2{
+
+  position: relative;
+  z-index: 1;
+
+}
+
+
+#release-track::before{
+
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% + 80px);
+  height: calc(100% + 60px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: -60px;
+  margin-right: -60px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  z-index: 0;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.525);
+  background-color: var(--can-grey-bg) !important;
+
+}
+
+#gitflow-wrapper{
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: calc(100% + 80px) !important;
+
+  max-width: calc(100% + 80px) !important;
+
+  margin-left: -60px;
+  margin-right: -60px;
+
+}
+
+#gitflow-container{
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+}
+
+#gitflow-container details{
+
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  font-family: Lato,sans-serif;
+  background-color: transparent !important;
+  margin-bottom: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.525);
+  border-radius: 8px;
+  overflow: visible;
+  transition-duration: 0;
+  text-indent: 0 !important;
+  list-style: none !important;
+
+}
+
+#gitflow-container summary{
+
+  position: relative !important;
+  display: block !important;
+
+  margin-left: -18px !important;
+  margin-right: -18px !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: calc(100% + 36px) !important;
+
+  max-width: calc(100% + 36px) !important;
+
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent !important;
+  border: 2px solid rgba(0, 0, 0, 0.525);
+  border-radius: 8px;
+  outline: none;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition-duration: 0s !important;
+  font-size: 24px !important;
+  text-indent: 0 !important;
+  list-style: none !important;
+
+}
+
+#gitflow-container details > *:not(summary){
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+}
+
+#gitflow-container summary h2{
+
+  font-size: 24px !important;
+  margin: 0 !important;
+  text-indent: 0 !important;
+
+}
+
+#gitflow-container details[open]{
+
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+}
+
+#gitflow-container details[open] summary{
+
+  border-color: transparent;
+  border-radius: 0;
+
+  margin-left: -18px !important;
+  margin-right: -18px !important;
+  width: calc(100% + 36px) !important;
+  max-width: calc(100% + 36px) !important;
+
+}
+
+#gitflow-container summary::-webkit-details-marker{
+
+  display: none;
+
+}
+
+
+#gitflow-container summary::marker{
+
+  content: "" !important;
+
+}
+
+#gitflow-container summary::after{
+
+  content: "+";
+  font-size: 32px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+
+}
+
+#gitflow-container details[open] summary::after{
+
+  content: "−";
+
+}
+
+#gitflow-container .content{
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #ffffff;
+
+}
+
+#gitflow-container details[open] .content{
+
+  margin-left: -18px !important;
+  margin-right: -18px !important;
+  width: calc(100% + 36px) !important;
+  max-width: calc(100% + 36px) !important;
+
+  padding: 20px !important;
+  margin-top: -4px !important;
+  border-top: 2px solid rgba(0, 0, 0, 0.525) !important;
+
+}
+
+#gitflow-container .content .mermaid{
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+  overflow-x: auto;
+
+}
+
+#gitflow-container #gitflow-diagram{
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+}
+
+#gitflow-container #gitflow-diagram svg{
+
+  position: relative !important;
+  display: block !important;
+
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+  height: auto !important;
+
+}
+
+.loader{
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%,#26374a) content-box;
+  -webkit-mask: repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg), radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation:l4 1s infinite steps(10);
+
+}
+
+@keyframes l4{
+  to{
+    transform: rotate(1turn)
+  }
+}

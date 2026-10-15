@@ -5,6 +5,7 @@ import os
 import subprocess
 import requests
 import copy
+from datetime import date, datetime, timedelta
 from markupsafe import Markup
 from markdown import markdown
 from bleach import clean as bleach_clean, ALLOWED_TAGS, ALLOWED_ATTRIBUTES
@@ -63,14 +64,56 @@ STACK = {
     },
     'django': {
         'https://github.com/open-data/oc_search.git'                : 'master',
-        # Not included for now.
-        # 'https://github.com/open-data/SolrClient.git'               : 'master',
-        # 'https://github.com/open-data/oc_searches.git'              : 'main',
+        'https://github.com/open-data/SolrClient.git'               : 'master',
+        'https://github.com/open-data/oc_searches.git'              : 'main',
     },
     'drupal': {
         'https://github.com/open-data/opengov.git'                  : 'master',
         'https://github.com/open-data/og.git'                       : 'master',
         'https://github.com/open-data/gcweb_bootstrap.git'          : 'master',
+    },
+}
+STACK_ORDER = {
+    'ckan': [],
+    'django': [],
+    'drupal': [],
+}
+for r, b in STACK['ckan'].items():
+    repo_name = r.split('/')[-1].replace('.git', '')
+    STACK_ORDER['ckan'].append(repo_name)
+
+RELEASE_TRACK = {
+    'ckan': {
+        'https://github.com/open-data/ckan.git'                     : 'canada-release',
+        'https://github.com/ckan/ckanapi.git'                       : 'master',
+        'https://github.com/open-data/ckanext-canada.git'           : 'release',
+        'https://github.com/open-data/ckanext-cloudstorage.git'     : 'canada-release',
+        # 'https://github.com/open-data/ckanext-csrf-filter.git'    : 'canada-py3',  # MARK: discontinued
+        'https://github.com/open-data/ckanext-dcat.git'             : 'canada-release',
+        'https://github.com/ckan/ckanext-dsaudit.git'               : 'master',
+        'https://github.com/ckan/ckanext-excelforms.git'            : 'main',
+        'https://github.com/ckan/ckanext-fluent.git'                : 'master',
+        'https://github.com/open-data/ckanext-gcnotify.git'         : 'release',
+        'https://github.com/open-data/ckanext-openapiview.git'      : 'release',
+        'https://github.com/open-data/ckanext-power-bi.git'         : 'release',
+        'https://github.com/open-data/ckanext-recombinant.git'      : 'release',
+        'https://github.com/ckan/ckanext-scheming.git'              : 'master',
+        'https://github.com/open-data/ckanext-security.git'         : 'canada-release',
+        'https://github.com/open-data/ckanext-validation.git'       : 'canada-release',
+        'https://github.com/open-data/ckanext-xloader.git'          : 'canada-release',
+        # 'https://github.com/ckan/ckantoolkit.git'                 : 'TAG:release-0.0.7',  # MARK: discontinued
+        # 'https://github.com/open-data/goodtables.git'             : 'canada-py3',  # MARK: discontinued
+        'https://github.com/open-data/frictionless-py.git'          : 'canada-release',
+    },
+    'django': {
+        'https://github.com/open-data/oc_search.git'                : 'release',
+        'https://github.com/open-data/SolrClient.git'               : 'release',
+        'https://github.com/open-data/oc_searches.git'              : 'release',
+    },
+    'drupal': {
+        'https://github.com/open-data/opengov.git'                  : 'release',
+        'https://github.com/open-data/og.git'                       : 'release',
+        'https://github.com/open-data/gcweb_bootstrap.git'          : 'release',
     },
 }
 
@@ -108,6 +151,20 @@ RELEASE_TYPES = [
     'release',
 ]
 RELEASE_LABEL = 'Releases'
+
+LABEL_DICT = {}
+for i in FIX_TYPES:
+    LABEL_DICT[i] = FIX_LABEL
+for i in FEATURE_TYPES:
+    LABEL_DICT[i] = FEATURE_LABEL
+for i in CHANGES_TYPES:
+    LABEL_DICT[i] = CHANGES_LABEL
+for i in MIGRATION_TYPES:
+    LABEL_DICT[i] = MIGRATION_LABEL
+for i in REMOVAL_TYPES:
+    LABEL_DICT[i] = REMOVAL_LABEL
+for i in RELEASE_TYPES:
+    LABEL_DICT[i] = RELEASE_LABEL
 
 LABEL_MAP = [RELEASE_LABEL, FEATURE_LABEL, FIX_LABEL, REMOVAL_LABEL, CHANGES_LABEL, MIGRATION_LABEL]
 LABEL_ICONS = {
@@ -155,6 +212,9 @@ html_css_files = [
     'https://use.fontawesome.com/releases/v5.15.4/css/all.css',
 ]
 html_js_files = [
+    'js/marked.js',  # https://cdnjs.cloudflare.com/ajax/libs/marked/18.1.1/lib/marked.umd.min.js
+    'js/mermaid.js',  # https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs
+    'js/purify.js',  # https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.6/purify.min.js
     'js/canada.js',
 ]
 html_show_sphinx = False
@@ -163,7 +223,7 @@ html_favicon = 'https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-b
 
 # -- Custom options -------------------------------------------------
 
-def get_release_tags(order='v:refname', latest=False, pre=False):
+def get_release_tags(order='v:refname', latest=False):
     if latest:
         # force order for latest
         order = '-v:refname'
@@ -172,12 +232,6 @@ def get_release_tags(order='v:refname', latest=False, pre=False):
         ['git', 'tag', '-l', '--sort=%s' % order], stderr=subprocess.STDOUT).decode('utf8')
 
     git_tags = git_tags.split()
-
-    if pre:
-        pre_release_tags = [tag.split('/')[1] for tag in git_tags if tag.startswith('pre/')]
-        if not pre_release_tags:
-            return None
-        return pre_release_tags[0]
 
     release_tags = [tag.split('/')[1] for tag in git_tags if tag.startswith('release/')]
 
@@ -207,16 +261,13 @@ def get_latest_commit_hash(remote, branch):
     return latest_hash
 
 
-def get_release_hashes(is_pre_release=False):
+def get_release_hashes():
 
     release_hashes = {}
 
     release = get_release_tags(latest=True)
 
-    if is_pre_release:
-        print("Gathering release information for PRE-release %s" % release)
-    else:
-        print("Gathering release information for %s" % release)
+    print("Gathering release information for %s" % release)
 
     for project_name, project_stack in STACK.items():
 
@@ -239,29 +290,21 @@ def get_release_hashes(is_pre_release=False):
 
 def create_release_json_file():
     release = get_release_tags(latest=True)
-    pre_release = get_release_tags(latest=True, pre=True)
-    is_pre_release = False
-    if pre_release:
-        is_pre_release = int(release.replace('hotfix', '').replace('.', '')) < int(pre_release.replace('hotfix', '').replace('.', ''))
 
     if not release:
         print("No release tags found, skipping...")
         return
 
-    filename = '_release_builds/releases/%s.json' % release if not is_pre_release else \
-    '_release_builds/releases/pre_%s.json' % pre_release
+    filename = '_release_builds/releases/%s.json' % release
 
     if os.path.isfile(filename):
-        if is_pre_release:
-            print("File already exists for PRE-release %s, skipping..." % release)
-            return
         print("File already exists for release %s, skipping..." % release)
         return
 
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     with open(filename, 'w', encoding='utf-8') as f:
-        data = get_release_hashes(is_pre_release)
+        data = get_release_hashes()
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 # create a new json file name with the release info.
@@ -270,14 +313,10 @@ def create_release_json_file():
 create_release_json_file()
 
 
-def parsed_release_hashses(show_pre_release=False):
+def parsed_release_hashses():
     parsed_release_hashses = {}
 
     release_tags = get_release_tags()
-    pre_release_tag = None
-    if show_pre_release:
-        pre_release_tag = get_release_tags(latest=True, pre=True)
-        release_tags.append(pre_release_tag)
 
     if not release_tags:
         print("No release tags found, skipping...")
@@ -296,24 +335,12 @@ def parsed_release_hashses(show_pre_release=False):
             verbose = _index == len(release_tags) - 1
         _index += 1
 
-        if release == pre_release_tag:
-            if verbose:
-                print("Building from PRE-release tag: %s" % release)
-        else:
-            if verbose:
-                print("Building from release tag: %s" % release)
+        print("Building from release tag: %s" % release)
 
         diff_filename = '_release_builds/differences/%s.json' % release
         release_filename = '_release_builds/releases/%s.json' % release
-        if release == pre_release_tag:
-            diff_filename = '_release_builds/differences/pre_%s.json' % release
-            release_filename = '_release_builds/releases/pre_%s.json' % release
 
         if not os.path.isfile(release_filename):
-            if release == pre_release_tag:
-                if verbose:
-                    print("File does not exist for PRE-release %s, skipping..." % release)
-                continue
             if verbose:
                 print("File does not exist for release %s, skipping..." % release)
             continue
@@ -324,13 +351,8 @@ def parsed_release_hashses(show_pre_release=False):
 
         if os.path.isfile(diff_filename):
             # we already have a diff file, load from that.
-
-            if release == pre_release_tag:
-                if verbose:
-                    print("Gathering from diff file for PRE-release %s" % release)
-            else:
-                if verbose:
-                    print("Gathering from diff file for release %s" % release)
+            if verbose:
+                print("Gathering from diff file for release %s" % release)
 
             with open(diff_filename, 'r') as f:
                 parsed_release_hashses[release] = json.load(f)
@@ -339,13 +361,8 @@ def parsed_release_hashses(show_pre_release=False):
 
         else:
             # generate the parsed objects and save to a diff file.
-
-            if release == pre_release_tag:
-                if verbose:
-                    print("Generating diff file for PRE-release %s" % release)
-            else:
-                if verbose:
-                    print("Generating diff file for release %s" % release)
+            if verbose:
+                print("Generating diff file for release %s" % release)
 
             if prev_release:
                 prev_release_filename = '_release_builds/releases/%s.json' % prev_release
@@ -418,32 +435,20 @@ def parsed_release_hashses(show_pre_release=False):
         # fetch any added change log files, and sace to a file.
         if release in parsed_release_hashses:
             github_filename = '_release_builds/github/%s.json' % release
-            if release == pre_release_tag:
-                github_filename = '_release_builds/github/pre_%s.json' % release
             github_compare_dicts = {}
 
             if os.path.isfile(github_filename):
                 # we already have a github api compare file, load from that.
-
-                if release == pre_release_tag:
-                    if verbose:
-                        print("Gathering info from compare file for PRE-release %s" % release)
-                else:
-                    if verbose:
-                        print("Gathering info from compare file for release %s" % release)
+                if verbose:
+                    print("Gathering info from compare file for release %s" % release)
 
                 with open(github_filename, 'r') as f:
                     github_compare_dicts = json.load(f)
 
             else:
                 # fetch from github API and save to compare file.
-
-                if release == pre_release_tag:
-                    if verbose:
-                        print("Fetching info from GitHub API for PRE-release %s" % release)
-                else:
-                    if verbose:
-                        print("Fetching info from GitHub API for release %s" % release)
+                if verbose:
+                    print("Fetching info from GitHub API for release %s" % release)
 
                 for project_name, project_stack in parsed_release_hashses[release].items():
 
@@ -476,30 +481,17 @@ def parsed_release_hashses(show_pre_release=False):
 
             # check file diffs for any new changelog files.
             changelog_filename = '_release_builds/change_logs/%s.json' % release
-            if release == pre_release_tag:
-                changelog_filename = '_release_builds/change_logs/pre_%s.json' % release
             changelog_dicts = {}
             if os.path.isfile(changelog_filename):
                 # we already parsed the changelogs, load from that.
-
-                if release == pre_release_tag:
-                    if verbose:
-                        print("Gathering change logs from local files for PRE-release %s" % release)
-                else:
-                    if verbose:
-                        print("Gathering change logs from local files for release %s" % release)
+                if verbose:
+                    print("Gathering change logs from local files for release %s" % release)
 
                 with open(changelog_filename, 'r') as f:
                     changelog_dicts = json.load(f)
-
             else:
-
-                if release == pre_release_tag:
-                    if verbose:
-                        print("Fetching new change logs from GitHub for PRE-release %s" % release)
-                else:
-                    if verbose:
-                        print("Fetching new change logs from GitHub for release %s" % release)
+                if verbose:
+                    print("Fetching new change logs from GitHub for release %s" % release)
 
                 for project_name, project_stack in github_compare_dicts.items():
 
@@ -570,30 +562,34 @@ def parsed_release_hashses(show_pre_release=False):
 
 
 def get_filled_releases():
-    pre_release_tag = get_release_tags(order='-v:refname', latest=True, pre=True)
     release_tags = get_release_tags(order='-v:refname')
-    show_pre_release = False
-    if pre_release_tag:
-        show_pre_release = int(release_tags[0].replace('hotfix', '').replace('.', '')) < int(pre_release_tag.replace('hotfix', '').replace('.', ''))
-    release_hashes = parsed_release_hashses(show_pre_release)
-
-    if show_pre_release:
-        release_tags.insert(0, pre_release_tag)
+    release_hashes = parsed_release_hashses()
 
     filled_release_hashes = {}
+    latest_releas_hashes = {}
 
     for release, project in release_hashes.items():
         release_has_diffs = False
         for project_name, repos in project.items():
             if repos:
+                if project_name not in latest_releas_hashes:
+                    latest_releas_hashes[project_name] = {}
                 release_has_diffs = True
                 if release not in filled_release_hashes:
                     filled_release_hashes[release] = {}
                 filled_release_hashes[release][project_name] = repos
+                for repo, info in repos.items():
+                    if repo in latest_releas_hashes[project_name]:
+                        continue
+                    latest_releas_hashes[project_name][repo] = {
+                        'head': info['head'],
+                        'api_endpoint': info['uri'].replace('https://github.com', 'https://api.github.com/repos'),
+                        'release_branch': RELEASE_TRACK[project_name][info['uri'] + '.git'],
+                    }
         if not release_has_diffs:
             release_tags.remove(release)
 
-    return release_tags, filled_release_hashes, show_pre_release
+    return release_tags, filled_release_hashes, latest_releas_hashes
 
 
 def render_markdown(data):
@@ -626,12 +622,30 @@ def render_markdown(data):
     return literal(data)
 
 
-release_tags, release_hashes, show_pre_release = get_filled_releases()
+release_tags, release_hashes, latest_releas_hashes = get_filled_releases()
+
+today_date = date.today()
+start_date = datetime.strptime('2026.10.15', '%Y.%m.%d').date()
+
+if start_date < today_date:
+    days_passed = (today_date - start_date).days
+    intervals = (days_passed + 13)
+    start_date += timedelta(days=intervals * 14)
+
+dates = [
+    (start_date + timedelta(weeks=2 * i)).strftime('%Y.%m.%d')
+    for i in range(10)
+]
+
 html_context = {
     'release_tags': release_tags,
     'release_hashes': release_hashes,
-    'show_pre_release': show_pre_release,
+    'latest_releas_hashes': latest_releas_hashes,
+    'release_track_dates': dates,
     'type_icons': LABEL_ICONS,
+    'stack_order': STACK_ORDER,
+    'label_ordering': LABEL_MAP,
+    'label_map': LABEL_DICT,
     'version_prefix': FRONTEND_VERSION_PREFIX,
     'render_markdown': render_markdown,
 }

@@ -9,6 +9,15 @@
 
 
 {%- block scripts %}
+  <script>
+    const RELEASE_TRACK_DATES = {{ release_track_dates }};
+    const LATEST_RELEASE_HASHES = {{ latest_releas_hashes }};
+    const ICONS_MAP = {{ type_icons }};
+    const STACK_ORDER = {{ stack_order }};
+    const LABEL_ORDER = {{ label_ordering }};
+    const LABEL_MAP = {{ label_map }};
+    const VERSION_PREFIX = '{{ version_prefix }}';
+  </script>
   {{ super() }}
 {%- endblock %}
 
@@ -34,13 +43,8 @@
       <ul class="release-nav">
         {% if release_tags %}
           {% for release in release_tags %}
-            {% set section_id = release if not show_pre_release else 'pre-' ~ release %}
-            <li data-release="{{ section_id }}" class="release-nav-item"><a href="#{{ section_id }}">
-              {% if loop.first and show_pre_release %}
-                pre_{{ version_prefix }}{{ release }}
-              {% else %}
-                {{ version_prefix }}{{ release }}
-              {% endif %}
+            <li data-release="{{ release }}" class="release-nav-item"><a href="#{{ release }}">
+              {{ version_prefix }}{{ release }}
             </a></li>
           {% endfor %}
         {% endif %}
@@ -70,19 +74,25 @@
 
 
 {%- block document %}
-  <div style="min-height: 100vh;">
+  <div style="min-height: 100vh; position: relative;">
+    <div id="gitflow-wrapper">
+      <div class="release-wrapper" id="gitflow-container">
+      <details name="gitflow">
+        <summary><h2>Open Government Canada GitFlow</h2></summary>
+        <div class="content">
+          <div id="gitflow-diagram"></div>
+        </div>
+      </details>
+    </div>
+    </div>
     <div id="release-container">
+      <div class="loader"></div>
       {% if release_hashes %}
         {% for release, project in release_hashes.items() %}
-          {% set section_id = release if not show_pre_release else 'pre-' ~ release %}
-          <div class="release-wrapper" id="{{ section_id }}">
+          <div class="release-wrapper" id="{{ release }}">
             <h2>
-              {% if loop.first and show_pre_release %}
-                Pre-release:&nbsp;{{ version_prefix }}{{ release }}
-              {% else %}
-                {{ version_prefix }}{{ release }}
-              {% endif %}
-              <a class="headerlink" href="#{{ section_id }}"><i class="fa-solid fa-link"></i></a>
+              {{ version_prefix }}{{ release }}
+              <a class="headerlink" href="#{{ release }}"><i class="fa-solid fa-link"></i></a>
             </h2>
             {% for project_name, repos in project.items() %}
               {% set panel_class = 'panel-default' %}
@@ -96,12 +106,12 @@
               {# not using color for now, as it makes it very busy #}
               {% set panel_class = 'panel-info' %}
               {% for repo, info in repos.items() %}
-                <div class="panel {{ panel_class }} project-panel project-panel-{{ project_name }}" id="{{ section_id }}-{{ repo }}">
+                <div class="panel {{ panel_class }} project-panel project-panel-{{ project_name }}" id="{{ release }}-{{ repo }}">
                   <div class="project-panel-icon"><img draggable="false" src="_static/images/{{ project_name }}.png" alt="" /></div>
                   <div class="panel-heading panel-title">
                     <h3 class="release-repo-title">
                       {{ repo }}
-                      <a class="headerlink" href="#{{ section_id }}-{{ repo }}"><i class="fa-solid fa-link"></i></a>
+                      <a class="headerlink" href="#{{ release }}-{{ repo }}"><i class="fa-solid fa-link"></i></a>
                     </h3>
                   </div>
                   <div class="panel-body">
