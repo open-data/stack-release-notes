@@ -222,7 +222,7 @@ window.addEventListener('load', function(){
             if( _data.responseJSON.sha ){  // we have a commit sha
               if( _data.responseJSON.sha == _current ){
                 COMPLETED_FETCHES += 1;
-                console.log('Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo ' + _repo);
+                console.debug('Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo ' + _repo);
                 return true;  // no release code changes
               }
               if( typeof PRE_RELEASE_SHA[_repo] == 'undefined' ){
@@ -263,13 +263,12 @@ window.addEventListener('load', function(){
         'complete': function(_data){
           if( _data.responseJSON ){  // we have response JSON
             if( _data.responseJSON.files ){  // we have new commit files
+              COMPLETED_FETCHES += 1;
               $(_data.responseJSON.files).each(function(_index, _file_obj){
                 if( ! _file_obj.filename.includes('changes/') ){
-                  COMPLETED_FETCHES += 1;
                   return true;  // not a change log file, continue
                 }
                 if( _file_obj.status != 'added' ){
-                  COMPLETED_FETCHES += 1;
                   return true;  // not a new change log file, continue
                 }
                 _parse_change_log_file(
@@ -312,16 +311,13 @@ window.addEventListener('load', function(){
                 'canada_only': _file_name.includes('.canada.'),
                 'backport': _file_name.includes('.backport.'),
               });
-              COMPLETED_FETCHES += 1;
               return true;
             }else{  // no commit files
               console.error(_error);
-              COMPLETED_FETCHES += 1;
               return false;
             }
           }else{  // fully flopped ajax request
             console.error(_error);
-            COMPLETED_FETCHES += 1;
             return false;
           }
         }
