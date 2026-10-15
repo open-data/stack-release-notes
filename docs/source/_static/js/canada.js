@@ -126,6 +126,7 @@ window.addEventListener('load', function(){
       $('.loader').remove();
       const msg = '<p style="position: relative; z-index: 1;"><i class="fas fa-info-circle"></i>&nbsp;<em>There are no changes queued for release yet.</em></p>';
       let build_html = ``;
+      console.debug(PRE_RELEASE_NOTES);
       if( Object.keys(PRE_RELEASE_NOTES).length == 0 ){
         build_html = msg;
       }
@@ -219,6 +220,7 @@ window.addEventListener('load', function(){
             if( _data.responseJSON.sha ){  // we have a commit sha
               if( _data.responseJSON.sha == _current ){
                 COMPLETED_FETCHES += 1;
+                console.log('Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo' + _repo);
                 return true;  // no release code changes
               }
               if( typeof PRE_RELEASE_SHA[_repo] == 'undefined' ){
@@ -356,6 +358,7 @@ window.addEventListener('load', function(){
             return;
           }
           if( COMPLETED_FETCHES >= TOTAL_REQ_FETCHES ){
+            console.info('Completed ' + COMPLETED_FETCHES + ' fetches, require: ' + TOTAL_REQ_FETCHES);
             clearInterval(interval);
             interval = false;
             _render_pre_release();
