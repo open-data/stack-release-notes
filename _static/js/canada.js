@@ -180,6 +180,9 @@ window.addEventListener('load', function(){
           const prev_small = prev.slice(0, 12);
           const head = PRE_RELEASE_SHA[_repo]['release_head'];
           const head_small = head.slice(0, 12);
+          if( repo_uri.includes('github.com/ckan/') ){
+            _notes_html = '<p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>';
+          }
           build_html += `
             <div class="panel panel-info project-panel project-panel-${_project}" id="release-track-${_repo}">
               <div class="project-panel-icon"><img draggable="false" src="_static/images/${_project}.png" alt="" /></div>
