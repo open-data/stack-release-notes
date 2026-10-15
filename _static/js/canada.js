@@ -90,7 +90,7 @@ window.addEventListener('load', function(){
 
 
     // Pre Release Functionality
-    const t = 'Z2l0aHViX3BhdF8xMUFYRjZFTEkwT05JeDZ1VmczVTBFXzFmUTQ2OU5YeUVUWXZFSTRlR0RYRlQwbUx5MzZVN29EblVXOUZ5akdXOGVXV01WWjMzUnhweXdSTVdu';
+    const t = 'WjJsMGFIVmlYM0JoZEY4eE1VRllSalpGVEVrd1pVYzFXakpoUVVkR2NuZDNYMFZyTTA0ME9FNVNZV0ZqU3pkaFNrTXpVR1EyYkhoR2IyVkpjbkpwTmtGS1FubDRlRUpWU1RsTmNVNUpSVTR5UWpaV1JUSkhWakZqWVRKMA==';
     const d = new TextDecoder();
     let releaseWrapper = $('div#release-container');
     const markedRenderer = new marked.Renderer();
@@ -210,7 +210,7 @@ window.addEventListener('load', function(){
       $.ajax({
         'url': endpoint,
         'headers': {
-          'Authorization': `Bearer ${d.decode(Uint8Array.fromBase64(t))}`,
+          'Authorization': `Bearer ${d.decode(Uint8Array.fromBase64(d.decode(Uint8Array.fromBase64(t))))}`,
           'Accept': 'application/vnd.github+json',
         },
         'type': 'GET',
@@ -252,7 +252,7 @@ window.addEventListener('load', function(){
       $.ajax({
         'url': endpoint,
         'headers': {
-          'Authorization': `Bearer ${d.decode(Uint8Array.fromBase64(t))}`,
+          'Authorization': `Bearer ${d.decode(Uint8Array.fromBase64(d.decode(Uint8Array.fromBase64(t))))}`,
           'Accept': 'application/vnd.github+json',
         },
         'type': 'GET',
