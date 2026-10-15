@@ -128,11 +128,13 @@ window.addEventListener('load', function(){
       let build_html = ``;
       console.debug(PRE_RELEASE_NOTES);
       if( Object.keys(PRE_RELEASE_NOTES).length == 0 ){
+        console.debug('Was unable to compile ANY change logs. None available?');
         build_html = msg;
       }
       $.each(PRE_RELEASE_NOTES, function(_project, _repos){
         if( Object.keys(_repos).length == 0 ){
           build_html = msg;
+          console.debug('Was unable to compile change logs for ' + _project + '. None available?');
           return false;  // no release notes, break
         }
         let sorted_repos = Object.fromEntries(
@@ -220,7 +222,7 @@ window.addEventListener('load', function(){
             if( _data.responseJSON.sha ){  // we have a commit sha
               if( _data.responseJSON.sha == _current ){
                 COMPLETED_FETCHES += 1;
-                console.log('Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo' + _repo);
+                console.log('Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo ' + _repo);
                 return true;  // no release code changes
               }
               if( typeof PRE_RELEASE_SHA[_repo] == 'undefined' ){
