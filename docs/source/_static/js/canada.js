@@ -126,7 +126,6 @@ window.addEventListener('load', function(){
       $('.loader').remove();
       const msg = '<p style="position: relative; z-index: 1;"><i class="fas fa-info-circle"></i>&nbsp;<em>There are no changes queued for release yet.</em></p>';
       let build_html = ``;
-      console.debug(PRE_RELEASE_NOTES);
       if( Object.keys(PRE_RELEASE_NOTES).length == 0 ){
         console.debug('Was unable to compile ANY change logs. None available?');
         build_html = msg;
@@ -222,7 +221,7 @@ window.addEventListener('load', function(){
             if( _data.responseJSON.sha ){  // we have a commit sha
               if( _data.responseJSON.sha == _current ){
                 COMPLETED_FETCHES += 1;
-                console.debug('Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo ' + _repo);
+                console.debug('[COMPLETED FETCH] Release(' + _release_branch + ') already at current HEAD ' + _current + ' for repo ' + _repo);
                 return true;  // no release code changes
               }
               if( typeof PRE_RELEASE_SHA[_repo] == 'undefined' ){
@@ -263,7 +262,7 @@ window.addEventListener('load', function(){
         'complete': function(_data){
           if( _data.responseJSON ){  // we have response JSON
             if( _data.responseJSON.files ){  // we have new commit files
-              COMPLETED_FETCHES += 1;
+              let log_file_count = 0;
               $(_data.responseJSON.files).each(function(_index, _file_obj){
                 if( ! _file_obj.filename.includes('changes/') ){
                   return true;  // not a change log file, continue
@@ -271,12 +270,20 @@ window.addEventListener('load', function(){
                 if( _file_obj.status != 'added' ){
                   return true;  // not a new change log file, continue
                 }
+                log_file_count += 1;
                 _parse_change_log_file(
                   _project, _repo, _file_obj.filename,
                   _file_obj.blob_url.replace('https://github.com', ' https://raw.githubusercontent.com').replace('/blob/', '/'),
                   _file_obj.sha);
                 return true;
               });
+              // set a timeout here to just makes sure that the files are fetched...
+              // each file takes up to 300ms
+              // give each file a 500ms grace period, multiply by num log files.
+              setTimeout(function(){
+                console.debug('[COMPLETED FETCH]: Gathered change log files for repo ' + _repo);
+                COMPLETED_FETCHES += 1;
+              }, 500 * log_file_count);
             }else{  // no commit files
               console.error(_error);
               COMPLETED_FETCHES += 1;
