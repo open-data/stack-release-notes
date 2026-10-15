@@ -7,11 +7,20 @@
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/css/theme.min.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/canada_theme.css?v=234a46b2" />
+      <link rel="stylesheet" type="text/css" href="_static/css/canada_theme.css?v=dc28d80b" />
       <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
 
   
     <link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_1/wet-boew/assets/favicon.ico"/>
+  <script>
+    const RELEASE_TRACK_DATES = ['2026.10.15', '2026.10.29', '2026.11.12', '2026.11.26', '2026.12.10', '2026.12.24', '2027.01.07', '2027.01.21', '2027.02.04', '2027.02.18'];
+    const LATEST_RELEASE_HASHES = {'ckan': {'ckanext-canada': {'head': 'bc3d746470a50d48150a1a1716fa07f55de3e7bb', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-canada', 'release_branch': 'release'}, 'ckanext-recombinant': {'head': '21f83a3a95c30ff41508a7db85e060a1eb77db00', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-recombinant', 'release_branch': 'release'}, 'ckan': {'head': 'd4d561a6e39a4a6d4e4f38f28454e891925a3109', 'api_endpoint': 'https://api.github.com/repos/open-data/ckan', 'release_branch': 'canada-release'}, 'ckanext-xloader': {'head': '256b889a0ba311763446dee7d97e537fa4268366', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-xloader', 'release_branch': 'canada-release'}, 'ckanext-dcat': {'head': '874e4a2f41baca716cb1582ed41af1e4b6ebba01', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-dcat', 'release_branch': 'canada-release'}, 'ckanext-fluent': {'head': 'eb5581ac952cd1d0d3ceac78b43adb97e7068895', 'api_endpoint': 'https://api.github.com/repos/ckan/ckanext-fluent', 'release_branch': 'master'}, 'ckanext-scheming': {'head': 'ea79dc58bf1b0019e4336c5d2c2925aa9d7f39ed', 'api_endpoint': 'https://api.github.com/repos/ckan/ckanext-scheming', 'release_branch': 'master'}, 'ckanext-security': {'head': 'cfcc4037b2dcba631f0e0502db69e0f7cf929577', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-security', 'release_branch': 'canada-release'}, 'ckanapi': {'head': '94b8c24a21a185c270a01bcbcfa72ff4e1b78b1c', 'api_endpoint': 'https://api.github.com/repos/ckan/ckanapi', 'release_branch': 'master'}, 'ckanext-validation': {'head': 'd85c8bb95e43852954eabd1f5d01169f0009ade1', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-validation', 'release_branch': 'canada-release'}, 'ckanext-power-bi': {'head': 'fedf0c4e4d4b641af40b447b65002c331461d699', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-power-bi', 'release_branch': 'release'}, 'ckanext-dsaudit': {'head': 'c3988427821c43e5dac5078c6adc42f7f16d3fa4', 'api_endpoint': 'https://api.github.com/repos/ckan/ckanext-dsaudit', 'release_branch': 'master'}, 'frictionless-py': {'head': '68017aba795f4390dd97834421e48e93e1f5fb88', 'api_endpoint': 'https://api.github.com/repos/open-data/frictionless-py', 'release_branch': 'canada-release'}, 'ckanext-gcnotify': {'head': '566983d6167103a605ab30c622df5ca52875872d', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-gcnotify', 'release_branch': 'release'}, 'ckanext-openapiview': {'head': '5e527915c299bde0cff79b7211e465b710525dcc', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-openapiview', 'release_branch': 'release'}, 'ckanext-excelforms': {'head': '42aef2e76a256f484314e9f09ce9596d1d275627', 'api_endpoint': 'https://api.github.com/repos/ckan/ckanext-excelforms', 'release_branch': 'main'}, 'ckanext-cloudstorage': {'head': 'f525f0286cf014329e9754944ae5f6045f21a5bf', 'api_endpoint': 'https://api.github.com/repos/open-data/ckanext-cloudstorage', 'release_branch': 'canada-release'}}, 'django': {'oc_search': {'head': '7e231c978e9a51fa1f8d7fcc5d96a4bdfdc4461b', 'api_endpoint': 'https://api.github.com/repos/open-data/oc_search', 'release_branch': 'release'}, 'SolrClient': {'head': '822df1308916392f9fbf5b3d4cd7f509468ae7e8', 'api_endpoint': 'https://api.github.com/repos/open-data/SolrClient', 'release_branch': 'release'}, 'oc_searches': {'head': '2f56adda14d1092922da69bc0989c80a866c9e99', 'api_endpoint': 'https://api.github.com/repos/open-data/oc_searches', 'release_branch': 'release'}}, 'drupal': {'opengov': {'head': '54e3da70219c8ebe7748ec34cac7afe0b7c52376', 'api_endpoint': 'https://api.github.com/repos/open-data/opengov', 'release_branch': 'release'}, 'gcweb_bootstrap': {'head': 'e762eadd9ca6e09e8fd38ec12973f79305681fc2', 'api_endpoint': 'https://api.github.com/repos/open-data/gcweb_bootstrap', 'release_branch': 'release'}, 'og': {'head': 'c2250d115c16d019c788bff21d3c43c2afd688d7', 'api_endpoint': 'https://api.github.com/repos/open-data/og', 'release_branch': 'release'}}};
+    const ICONS_MAP = {'Releases': 'fa-tag', 'Features': 'fa-code-fork', 'Bugfixes': 'fa-wrench', 'Removals': 'fa-trash', 'Changes': 'fa-code', 'Migrations': 'fa-database'};
+    const STACK_ORDER = {'ckan': ['ckan', 'ckanapi', 'ckanext-canada', 'ckanext-cloudstorage', 'ckanext-csrf-filter', 'ckanext-dcat', 'ckanext-dsaudit', 'ckanext-excelforms', 'ckanext-fluent', 'ckanext-gcnotify', 'ckanext-openapiview', 'ckanext-power-bi', 'ckanext-recombinant', 'ckanext-scheming', 'ckanext-security', 'ckanext-validation', 'ckanext-xloader', 'ckantoolkit', 'goodtables', 'frictionless-py'], 'django': [], 'drupal': []};
+    const LABEL_ORDER = ['Releases', 'Features', 'Bugfixes', 'Removals', 'Changes', 'Migrations'];
+    const LABEL_MAP = {'fix': 'Bugfixes', 'bugfix': 'Bugfixes', 'hotfix': 'Bugfixes', 'feature': 'Features', 'misc': 'Features', 'changes': 'Changes', 'migration': 'Migrations', 'removal': 'Removals', 'release': 'Releases'};
+    const VERSION_PREFIX = 'v.';
+  </script>
   
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -22,7 +31,10 @@
         <script src="_static/documentation_options.js?v=f2a433a1"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="_static/js/canada.js?v=9b0b9d13"></script>
+        <script src="_static/js/marked.js?v=9b4198b7"></script>
+        <script src="_static/js/mermaid.js?v=9d06e63e"></script>
+        <script src="_static/js/purify.js?v=7e9241fd"></script>
+        <script src="_static/js/canada.js?v=4e47299a"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -2149,655 +2161,376 @@
       <ul class="release-nav">
         
           
-            
             <li data-release="2026.10.01" class="release-nav-item"><a href="#2026.10.01">
-              
-                v.2026.10.01
-              
+              v.2026.10.01
             </a></li>
           
-            
             <li data-release="2026.09.17" class="release-nav-item"><a href="#2026.09.17">
-              
-                v.2026.09.17
-              
+              v.2026.09.17
             </a></li>
           
-            
             <li data-release="2026.09.03" class="release-nav-item"><a href="#2026.09.03">
-              
-                v.2026.09.03
-              
+              v.2026.09.03
             </a></li>
           
-            
             <li data-release="2026.08.27" class="release-nav-item"><a href="#2026.08.27">
-              
-                v.2026.08.27
-              
+              v.2026.08.27
             </a></li>
           
-            
             <li data-release="2026.08.21" class="release-nav-item"><a href="#2026.08.21">
-              
-                v.2026.08.21
-              
+              v.2026.08.21
             </a></li>
           
-            
             <li data-release="2026.08.10.hotfix" class="release-nav-item"><a href="#2026.08.10.hotfix">
-              
-                v.2026.08.10.hotfix
-              
+              v.2026.08.10.hotfix
             </a></li>
           
-            
             <li data-release="2026.08.07" class="release-nav-item"><a href="#2026.08.07">
-              
-                v.2026.08.07
-              
+              v.2026.08.07
             </a></li>
           
-            
             <li data-release="2026.07.30" class="release-nav-item"><a href="#2026.07.30">
-              
-                v.2026.07.30
-              
+              v.2026.07.30
             </a></li>
           
-            
             <li data-release="2026.07.24" class="release-nav-item"><a href="#2026.07.24">
-              
-                v.2026.07.24
-              
+              v.2026.07.24
             </a></li>
           
-            
             <li data-release="2026.07.10" class="release-nav-item"><a href="#2026.07.10">
-              
-                v.2026.07.10
-              
+              v.2026.07.10
             </a></li>
           
-            
             <li data-release="2026.07.02" class="release-nav-item"><a href="#2026.07.02">
-              
-                v.2026.07.02
-              
+              v.2026.07.02
             </a></li>
           
-            
             <li data-release="2026.06.25" class="release-nav-item"><a href="#2026.06.25">
-              
-                v.2026.06.25
-              
+              v.2026.06.25
             </a></li>
           
-            
             <li data-release="2026.06.18" class="release-nav-item"><a href="#2026.06.18">
-              
-                v.2026.06.18
-              
+              v.2026.06.18
             </a></li>
           
-            
             <li data-release="2026.06.11" class="release-nav-item"><a href="#2026.06.11">
-              
-                v.2026.06.11
-              
+              v.2026.06.11
             </a></li>
           
-            
             <li data-release="2026.06.04" class="release-nav-item"><a href="#2026.06.04">
-              
-                v.2026.06.04
-              
+              v.2026.06.04
             </a></li>
           
-            
             <li data-release="2026.05.21" class="release-nav-item"><a href="#2026.05.21">
-              
-                v.2026.05.21
-              
+              v.2026.05.21
             </a></li>
           
-            
             <li data-release="2026.05.14" class="release-nav-item"><a href="#2026.05.14">
-              
-                v.2026.05.14
-              
+              v.2026.05.14
             </a></li>
           
-            
             <li data-release="2026.04.28" class="release-nav-item"><a href="#2026.04.28">
-              
-                v.2026.04.28
-              
+              v.2026.04.28
             </a></li>
           
-            
             <li data-release="2026.03.31" class="release-nav-item"><a href="#2026.03.31">
-              
-                v.2026.03.31
-              
+              v.2026.03.31
             </a></li>
           
-            
             <li data-release="2026.03.24" class="release-nav-item"><a href="#2026.03.24">
-              
-                v.2026.03.24
-              
+              v.2026.03.24
             </a></li>
           
-            
             <li data-release="2026.03.11" class="release-nav-item"><a href="#2026.03.11">
-              
-                v.2026.03.11
-              
+              v.2026.03.11
             </a></li>
           
-            
             <li data-release="2026.03.04" class="release-nav-item"><a href="#2026.03.04">
-              
-                v.2026.03.04
-              
+              v.2026.03.04
             </a></li>
           
-            
             <li data-release="2026.02.18" class="release-nav-item"><a href="#2026.02.18">
-              
-                v.2026.02.18
-              
+              v.2026.02.18
             </a></li>
           
-            
             <li data-release="2026.02.10" class="release-nav-item"><a href="#2026.02.10">
-              
-                v.2026.02.10
-              
+              v.2026.02.10
             </a></li>
           
-            
             <li data-release="2026.02.04" class="release-nav-item"><a href="#2026.02.04">
-              
-                v.2026.02.04
-              
+              v.2026.02.04
             </a></li>
           
-            
             <li data-release="2026.02.03.hotfix" class="release-nav-item"><a href="#2026.02.03.hotfix">
-              
-                v.2026.02.03.hotfix
-              
+              v.2026.02.03.hotfix
             </a></li>
           
-            
             <li data-release="2026.02.02" class="release-nav-item"><a href="#2026.02.02">
-              
-                v.2026.02.02
-              
+              v.2026.02.02
             </a></li>
           
-            
             <li data-release="2026.01.15" class="release-nav-item"><a href="#2026.01.15">
-              
-                v.2026.01.15
-              
+              v.2026.01.15
             </a></li>
           
-            
             <li data-release="2025.12.23" class="release-nav-item"><a href="#2025.12.23">
-              
-                v.2025.12.23
-              
+              v.2025.12.23
             </a></li>
           
-            
             <li data-release="2025.12.18" class="release-nav-item"><a href="#2025.12.18">
-              
-                v.2025.12.18
-              
+              v.2025.12.18
             </a></li>
           
-            
             <li data-release="2025.12.02" class="release-nav-item"><a href="#2025.12.02">
-              
-                v.2025.12.02
-              
+              v.2025.12.02
             </a></li>
           
-            
             <li data-release="2025.12.01" class="release-nav-item"><a href="#2025.12.01">
-              
-                v.2025.12.01
-              
+              v.2025.12.01
             </a></li>
           
-            
             <li data-release="2025.10.15" class="release-nav-item"><a href="#2025.10.15">
-              
-                v.2025.10.15
-              
+              v.2025.10.15
             </a></li>
           
-            
             <li data-release="2025.10.14" class="release-nav-item"><a href="#2025.10.14">
-              
-                v.2025.10.14
-              
+              v.2025.10.14
             </a></li>
           
-            
             <li data-release="2025.09.24" class="release-nav-item"><a href="#2025.09.24">
-              
-                v.2025.09.24
-              
+              v.2025.09.24
             </a></li>
           
-            
             <li data-release="2025.09.16" class="release-nav-item"><a href="#2025.09.16">
-              
-                v.2025.09.16
-              
+              v.2025.09.16
             </a></li>
           
-            
             <li data-release="2025.09.03.hotfix" class="release-nav-item"><a href="#2025.09.03.hotfix">
-              
-                v.2025.09.03.hotfix
-              
+              v.2025.09.03.hotfix
             </a></li>
           
-            
             <li data-release="2025.09.03" class="release-nav-item"><a href="#2025.09.03">
-              
-                v.2025.09.03
-              
+              v.2025.09.03
             </a></li>
           
-            
             <li data-release="2025.09.02" class="release-nav-item"><a href="#2025.09.02">
-              
-                v.2025.09.02
-              
+              v.2025.09.02
             </a></li>
           
-            
             <li data-release="2025.08.27" class="release-nav-item"><a href="#2025.08.27">
-              
-                v.2025.08.27
-              
+              v.2025.08.27
             </a></li>
           
-            
             <li data-release="2025.08.26" class="release-nav-item"><a href="#2025.08.26">
-              
-                v.2025.08.26
-              
+              v.2025.08.26
             </a></li>
           
-            
             <li data-release="2025.08.19" class="release-nav-item"><a href="#2025.08.19">
-              
-                v.2025.08.19
-              
+              v.2025.08.19
             </a></li>
           
-            
             <li data-release="2025.07.08" class="release-nav-item"><a href="#2025.07.08">
-              
-                v.2025.07.08
-              
+              v.2025.07.08
             </a></li>
           
-            
             <li data-release="2025.06.19" class="release-nav-item"><a href="#2025.06.19">
-              
-                v.2025.06.19
-              
+              v.2025.06.19
             </a></li>
           
-            
             <li data-release="2025.06.10" class="release-nav-item"><a href="#2025.06.10">
-              
-                v.2025.06.10
-              
+              v.2025.06.10
             </a></li>
           
-            
             <li data-release="2025.05.20" class="release-nav-item"><a href="#2025.05.20">
-              
-                v.2025.05.20
-              
+              v.2025.05.20
             </a></li>
           
-            
             <li data-release="2025.05.12" class="release-nav-item"><a href="#2025.05.12">
-              
-                v.2025.05.12
-              
+              v.2025.05.12
             </a></li>
           
-            
             <li data-release="2025.04.08" class="release-nav-item"><a href="#2025.04.08">
-              
-                v.2025.04.08
-              
+              v.2025.04.08
             </a></li>
           
-            
             <li data-release="2025.03.25" class="release-nav-item"><a href="#2025.03.25">
-              
-                v.2025.03.25
-              
+              v.2025.03.25
             </a></li>
           
-            
             <li data-release="2025.03.24" class="release-nav-item"><a href="#2025.03.24">
-              
-                v.2025.03.24
-              
+              v.2025.03.24
             </a></li>
           
-            
             <li data-release="2025.03.18" class="release-nav-item"><a href="#2025.03.18">
-              
-                v.2025.03.18
-              
+              v.2025.03.18
             </a></li>
           
-            
             <li data-release="2025.03.11" class="release-nav-item"><a href="#2025.03.11">
-              
-                v.2025.03.11
-              
+              v.2025.03.11
             </a></li>
           
-            
             <li data-release="2025.03.04" class="release-nav-item"><a href="#2025.03.04">
-              
-                v.2025.03.04
-              
+              v.2025.03.04
             </a></li>
           
-            
             <li data-release="2025.02.25" class="release-nav-item"><a href="#2025.02.25">
-              
-                v.2025.02.25
-              
+              v.2025.02.25
             </a></li>
           
-            
             <li data-release="2025.02.18" class="release-nav-item"><a href="#2025.02.18">
-              
-                v.2025.02.18
-              
+              v.2025.02.18
             </a></li>
           
-            
             <li data-release="2025.02.11" class="release-nav-item"><a href="#2025.02.11">
-              
-                v.2025.02.11
-              
+              v.2025.02.11
             </a></li>
           
-            
             <li data-release="2025.02.04" class="release-nav-item"><a href="#2025.02.04">
-              
-                v.2025.02.04
-              
+              v.2025.02.04
             </a></li>
           
-            
             <li data-release="2025.01.29" class="release-nav-item"><a href="#2025.01.29">
-              
-                v.2025.01.29
-              
+              v.2025.01.29
             </a></li>
           
-            
             <li data-release="2025.01.22" class="release-nav-item"><a href="#2025.01.22">
-              
-                v.2025.01.22
-              
+              v.2025.01.22
             </a></li>
           
-            
             <li data-release="2025.01.21" class="release-nav-item"><a href="#2025.01.21">
-              
-                v.2025.01.21
-              
+              v.2025.01.21
             </a></li>
           
-            
             <li data-release="2025.01.14" class="release-nav-item"><a href="#2025.01.14">
-              
-                v.2025.01.14
-              
+              v.2025.01.14
             </a></li>
           
-            
             <li data-release="2025.01.07" class="release-nav-item"><a href="#2025.01.07">
-              
-                v.2025.01.07
-              
+              v.2025.01.07
             </a></li>
           
-            
             <li data-release="2024.12.17" class="release-nav-item"><a href="#2024.12.17">
-              
-                v.2024.12.17
-              
+              v.2024.12.17
             </a></li>
           
-            
             <li data-release="2024.12.13" class="release-nav-item"><a href="#2024.12.13">
-              
-                v.2024.12.13
-              
+              v.2024.12.13
             </a></li>
           
-            
             <li data-release="2024.12.09" class="release-nav-item"><a href="#2024.12.09">
-              
-                v.2024.12.09
-              
+              v.2024.12.09
             </a></li>
           
-            
             <li data-release="2024.11.30" class="release-nav-item"><a href="#2024.11.30">
-              
-                v.2024.11.30
-              
+              v.2024.11.30
             </a></li>
           
-            
             <li data-release="2024.11.28" class="release-nav-item"><a href="#2024.11.28">
-              
-                v.2024.11.28
-              
+              v.2024.11.28
             </a></li>
           
-            
             <li data-release="2024.11.26" class="release-nav-item"><a href="#2024.11.26">
-              
-                v.2024.11.26
-              
+              v.2024.11.26
             </a></li>
           
-            
             <li data-release="2024.11.22" class="release-nav-item"><a href="#2024.11.22">
-              
-                v.2024.11.22
-              
+              v.2024.11.22
             </a></li>
           
-            
             <li data-release="2024.11.20" class="release-nav-item"><a href="#2024.11.20">
-              
-                v.2024.11.20
-              
+              v.2024.11.20
             </a></li>
           
-            
             <li data-release="2024.11.14" class="release-nav-item"><a href="#2024.11.14">
-              
-                v.2024.11.14
-              
+              v.2024.11.14
             </a></li>
           
-            
             <li data-release="2024.11.12" class="release-nav-item"><a href="#2024.11.12">
-              
-                v.2024.11.12
-              
+              v.2024.11.12
             </a></li>
           
-            
             <li data-release="2024.10.15" class="release-nav-item"><a href="#2024.10.15">
-              
-                v.2024.10.15
-              
+              v.2024.10.15
             </a></li>
           
-            
             <li data-release="2024.10.01" class="release-nav-item"><a href="#2024.10.01">
-              
-                v.2024.10.01
-              
+              v.2024.10.01
             </a></li>
           
-            
             <li data-release="2024.09.26" class="release-nav-item"><a href="#2024.09.26">
-              
-                v.2024.09.26
-              
+              v.2024.09.26
             </a></li>
           
-            
             <li data-release="2024.09.23" class="release-nav-item"><a href="#2024.09.23">
-              
-                v.2024.09.23
-              
+              v.2024.09.23
             </a></li>
           
-            
             <li data-release="2024.09.13" class="release-nav-item"><a href="#2024.09.13">
-              
-                v.2024.09.13
-              
+              v.2024.09.13
             </a></li>
           
-            
             <li data-release="2024.08.23" class="release-nav-item"><a href="#2024.08.23">
-              
-                v.2024.08.23
-              
+              v.2024.08.23
             </a></li>
           
-            
             <li data-release="2024.08.16" class="release-nav-item"><a href="#2024.08.16">
-              
-                v.2024.08.16
-              
+              v.2024.08.16
             </a></li>
           
-            
             <li data-release="2024.08.15" class="release-nav-item"><a href="#2024.08.15">
-              
-                v.2024.08.15
-              
+              v.2024.08.15
             </a></li>
           
-            
             <li data-release="2024.08.14" class="release-nav-item"><a href="#2024.08.14">
-              
-                v.2024.08.14
-              
+              v.2024.08.14
             </a></li>
           
-            
             <li data-release="2024.08.08" class="release-nav-item"><a href="#2024.08.08">
-              
-                v.2024.08.08
-              
+              v.2024.08.08
             </a></li>
           
-            
             <li data-release="2024.08.07" class="release-nav-item"><a href="#2024.08.07">
-              
-                v.2024.08.07
-              
+              v.2024.08.07
             </a></li>
           
-            
             <li data-release="2024.07.16" class="release-nav-item"><a href="#2024.07.16">
-              
-                v.2024.07.16
-              
+              v.2024.07.16
             </a></li>
           
-            
             <li data-release="2024.07.09" class="release-nav-item"><a href="#2024.07.09">
-              
-                v.2024.07.09
-              
+              v.2024.07.09
             </a></li>
           
-            
             <li data-release="2024.07.02" class="release-nav-item"><a href="#2024.07.02">
-              
-                v.2024.07.02
-              
+              v.2024.07.02
             </a></li>
           
-            
             <li data-release="2024.06.25" class="release-nav-item"><a href="#2024.06.25">
-              
-                v.2024.06.25
-              
+              v.2024.06.25
             </a></li>
           
-            
             <li data-release="2024.06.18" class="release-nav-item"><a href="#2024.06.18">
-              
-                v.2024.06.18
-              
+              v.2024.06.18
             </a></li>
           
-            
             <li data-release="2024.06.11" class="release-nav-item"><a href="#2024.06.11">
-              
-                v.2024.06.11
-              
+              v.2024.06.11
             </a></li>
           
-            
             <li data-release="2024.06.04" class="release-nav-item"><a href="#2024.06.04">
-              
-                v.2024.06.04
-              
+              v.2024.06.04
             </a></li>
           
-            
             <li data-release="2024.05.28" class="release-nav-item"><a href="#2024.05.28">
-              
-                v.2024.05.28
-              
+              v.2024.05.28
             </a></li>
           
-            
             <li data-release="2024.05.21" class="release-nav-item"><a href="#2024.05.21">
-              
-                v.2024.05.21
-              
+              v.2024.05.21
             </a></li>
           
-            
             <li data-release="2024.05.13" class="release-nav-item"><a href="#2024.05.13">
-              
-                v.2024.05.13
-              
+              v.2024.05.13
             </a></li>
           
         
@@ -2817,16 +2550,24 @@
         <div class="rst-content">
           <h1 id="wb-cont">Open Government Canada Stack Releases</h1>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-  <div style="min-height: 100vh;">
+  <div style="min-height: 100vh; position: relative;">
+    <div id="gitflow-wrapper">
+      <div class="release-wrapper" id="gitflow-container">
+      <details name="gitflow">
+        <summary><h2>Open Government Canada GitFlow</h2></summary>
+        <div class="content">
+          <div id="gitflow-diagram"></div>
+        </div>
+      </details>
+    </div>
+    </div>
     <div id="release-container">
+      <div class="loader"></div>
       
         
-          
           <div class="release-wrapper" id="2026.10.01">
             <h2>
-              
-                v.2026.10.01
-              
+              v.2026.10.01
               <a class="headerlink" href="#2026.10.01"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -2920,12 +2661,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.09.17">
             <h2>
-              
-                v.2026.09.17
-              
+              v.2026.09.17
               <a class="headerlink" href="#2026.09.17"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -3094,12 +2832,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.09.03">
             <h2>
-              
-                v.2026.09.03
-              
+              v.2026.09.03
               <a class="headerlink" href="#2026.09.03"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -3240,12 +2975,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.08.27">
             <h2>
-              
-                v.2026.08.27
-              
+              v.2026.08.27
               <a class="headerlink" href="#2026.08.27"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -3449,12 +3181,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.08.21">
             <h2>
-              
-                v.2026.08.21
-              
+              v.2026.08.21
               <a class="headerlink" href="#2026.08.21"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -3684,12 +3413,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.08.10.hotfix">
             <h2>
-              
-                v.2026.08.10.hotfix
-              
+              v.2026.08.10.hotfix
               <a class="headerlink" href="#2026.08.10.hotfix"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -3765,12 +3491,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.08.07">
             <h2>
-              
-                v.2026.08.07
-              
+              v.2026.08.07
               <a class="headerlink" href="#2026.08.07"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -3965,12 +3688,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.07.30">
             <h2>
-              
-                v.2026.07.30
-              
+              v.2026.07.30
               <a class="headerlink" href="#2026.07.30"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4043,12 +3763,9 @@
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.07.24">
             <h2>
-              
-                v.2026.07.24
-              
+              v.2026.07.24
               <a class="headerlink" href="#2026.07.24"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4346,12 +4063,9 @@ Expected outcome is reduced Redis write activity and CPU utilization.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.07.10">
             <h2>
-              
-                v.2026.07.10
-              
+              v.2026.07.10
               <a class="headerlink" href="#2026.07.10"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4464,12 +4178,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.07.02">
             <h2>
-              
-                v.2026.07.02
-              
+              v.2026.07.02
               <a class="headerlink" href="#2026.07.02"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4559,12 +4270,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.06.25">
             <h2>
-              
-                v.2026.06.25
-              
+              v.2026.06.25
               <a class="headerlink" href="#2026.06.25"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4648,12 +4356,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.06.18">
             <h2>
-              
-                v.2026.06.18
-              
+              v.2026.06.18
               <a class="headerlink" href="#2026.06.18"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4821,12 +4526,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.06.11">
             <h2>
-              
-                v.2026.06.11
-              
+              v.2026.06.11
               <a class="headerlink" href="#2026.06.11"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -4902,12 +4604,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.06.04">
             <h2>
-              
-                v.2026.06.04
-              
+              v.2026.06.04
               <a class="headerlink" href="#2026.06.04"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -5050,12 +4749,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.05.21">
             <h2>
-              
-                v.2026.05.21
-              
+              v.2026.05.21
               <a class="headerlink" href="#2026.05.21"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -5189,12 +4885,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.05.14">
             <h2>
-              
-                v.2026.05.14
-              
+              v.2026.05.14
               <a class="headerlink" href="#2026.05.14"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -5346,12 +5039,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.04.28">
             <h2>
-              
-                v.2026.04.28
-              
+              v.2026.04.28
               <a class="headerlink" href="#2026.04.28"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -5597,12 +5287,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.03.31">
             <h2>
-              
-                v.2026.03.31
-              
+              v.2026.03.31
               <a class="headerlink" href="#2026.03.31"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -5719,12 +5406,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.03.24">
             <h2>
-              
-                v.2026.03.24
-              
+              v.2026.03.24
               <a class="headerlink" href="#2026.03.24"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -5946,12 +5630,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.03.11">
             <h2>
-              
-                v.2026.03.11
-              
+              v.2026.03.11
               <a class="headerlink" href="#2026.03.11"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6086,12 +5767,9 @@ Deprecate open-maps from Search.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.03.04">
             <h2>
-              
-                v.2026.03.04
-              
+              v.2026.03.04
               <a class="headerlink" href="#2026.03.04"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6240,12 +5918,9 @@ stored with mixed-case letters in the database.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.02.18">
             <h2>
-              
-                v.2026.02.18
-              
+              v.2026.02.18
               <a class="headerlink" href="#2026.02.18"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6384,12 +6059,9 @@ stored with mixed-case letters in the database.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.02.10">
             <h2>
-              
-                v.2026.02.10
-              
+              v.2026.02.10
               <a class="headerlink" href="#2026.02.10"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6501,12 +6173,9 @@ stored with mixed-case letters in the database.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.02.04">
             <h2>
-              
-                v.2026.02.04
-              
+              v.2026.02.04
               <a class="headerlink" href="#2026.02.04"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6556,12 +6225,9 @@ stored with mixed-case letters in the database.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.02.03.hotfix">
             <h2>
-              
-                v.2026.02.03.hotfix
-              
+              v.2026.02.03.hotfix
               <a class="headerlink" href="#2026.02.03.hotfix"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6658,12 +6324,9 @@ stored with mixed-case letters in the database.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.02.02">
             <h2>
-              
-                v.2026.02.02
-              
+              v.2026.02.02
               <a class="headerlink" href="#2026.02.02"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -6887,12 +6550,9 @@ Also, remove the maintainer_email field from Additional Information seaction.</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2026.01.15">
             <h2>
-              
-                v.2026.01.15
-              
+              v.2026.01.15
               <a class="headerlink" href="#2026.01.15"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7028,12 +6688,9 @@ Also, remove the maintainer_email field from Additional Information seaction.</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.12.23">
             <h2>
-              
-                v.2025.12.23
-              
+              v.2025.12.23
               <a class="headerlink" href="#2025.12.23"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7079,12 +6736,9 @@ Also, remove the maintainer_email field from Additional Information seaction.</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.12.18">
             <h2>
-              
-                v.2025.12.18
-              
+              v.2025.12.18
               <a class="headerlink" href="#2025.12.18"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7247,12 +6901,9 @@ Also, remove the maintainer_email field from Additional Information seaction.</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.12.02">
             <h2>
-              
-                v.2025.12.02
-              
+              v.2025.12.02
               <a class="headerlink" href="#2025.12.02"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7296,12 +6947,9 @@ Also, remove the maintainer_email field from Additional Information seaction.</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.12.01">
             <h2>
-              
-                v.2025.12.01
-              
+              v.2025.12.01
               <a class="headerlink" href="#2025.12.01"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7547,12 +7195,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.10.15">
             <h2>
-              
-                v.2025.10.15
-              
+              v.2025.10.15
               <a class="headerlink" href="#2025.10.15"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7615,12 +7260,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.10.14">
             <h2>
-              
-                v.2025.10.14
-              
+              v.2025.10.14
               <a class="headerlink" href="#2025.10.14"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7779,12 +7421,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.09.24">
             <h2>
-              
-                v.2025.09.24
-              
+              v.2025.09.24
               <a class="headerlink" href="#2025.09.24"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -7930,12 +7569,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.09.16">
             <h2>
-              
-                v.2025.09.16
-              
+              v.2025.09.16
               <a class="headerlink" href="#2025.09.16"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -8188,12 +7824,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.09.03.hotfix">
             <h2>
-              
-                v.2025.09.03.hotfix
-              
+              v.2025.09.03.hotfix
               <a class="headerlink" href="#2025.09.03.hotfix"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -8237,12 +7870,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.09.03">
             <h2>
-              
-                v.2025.09.03
-              
+              v.2025.09.03
               <a class="headerlink" href="#2025.09.03"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -8363,12 +7993,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.09.02">
             <h2>
-              
-                v.2025.09.02
-              
+              v.2025.09.02
               <a class="headerlink" href="#2025.09.02"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -8461,12 +8088,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.08.27">
             <h2>
-              
-                v.2025.08.27
-              
+              v.2025.08.27
               <a class="headerlink" href="#2025.08.27"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -8599,12 +8223,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.08.26">
             <h2>
-              
-                v.2025.08.26
-              
+              v.2025.08.26
               <a class="headerlink" href="#2025.08.26"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -8838,12 +8459,9 @@ Note that for Django-celery-results version 2.6.0, a database change is required
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.08.19">
             <h2>
-              
-                v.2025.08.19
-              
+              v.2025.08.19
               <a class="headerlink" href="#2025.08.19"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -9071,12 +8689,9 @@ Update download_ministers script to ignore invalid positions such as "."</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.07.08">
             <h2>
-              
-                v.2025.07.08
-              
+              v.2025.07.08
               <a class="headerlink" href="#2025.07.08"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -9229,12 +8844,9 @@ Update download_ministers script to ignore invalid positions such as "."</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.06.19">
             <h2>
-              
-                v.2025.06.19
-              
+              v.2025.06.19
               <a class="headerlink" href="#2025.06.19"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -9420,12 +9032,9 @@ to move an active dataset back to the draft state.</li>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.06.10">
             <h2>
-              
-                v.2025.06.10
-              
+              v.2025.06.10
               <a class="headerlink" href="#2025.06.10"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -9579,12 +9188,9 @@ to move an active dataset back to the draft state.</li>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.05.20">
             <h2>
-              
-                v.2025.05.20
-              
+              v.2025.05.20
               <a class="headerlink" href="#2025.05.20"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -9679,12 +9285,9 @@ to move an active dataset back to the draft state.</li>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.05.12">
             <h2>
-              
-                v.2025.05.12
-              
+              v.2025.05.12
               <a class="headerlink" href="#2025.05.12"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -9928,12 +9531,9 @@ session. A different, non-JavaScript approach resolves this issue.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.04.08">
             <h2>
-              
-                v.2025.04.08
-              
+              v.2025.04.08
               <a class="headerlink" href="#2025.04.08"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10006,12 +9606,9 @@ session. A different, non-JavaScript approach resolves this issue.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.03.25">
             <h2>
-              
-                v.2025.03.25
-              
+              v.2025.03.25
               <a class="headerlink" href="#2025.03.25"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10057,12 +9654,9 @@ session. A different, non-JavaScript approach resolves this issue.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.03.24">
             <h2>
-              
-                v.2025.03.24
-              
+              v.2025.03.24
               <a class="headerlink" href="#2025.03.24"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10147,12 +9741,9 @@ session. A different, non-JavaScript approach resolves this issue.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.03.18">
             <h2>
-              
-                v.2025.03.18
-              
+              v.2025.03.18
               <a class="headerlink" href="#2025.03.18"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10245,12 +9836,9 @@ session. A different, non-JavaScript approach resolves this issue.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.03.11">
             <h2>
-              
-                v.2025.03.11
-              
+              v.2025.03.11
               <a class="headerlink" href="#2025.03.11"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10348,12 +9936,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.03.04">
             <h2>
-              
-                v.2025.03.04
-              
+              v.2025.03.04
               <a class="headerlink" href="#2025.03.04"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10506,12 +10091,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.02.25">
             <h2>
-              
-                v.2025.02.25
-              
+              v.2025.02.25
               <a class="headerlink" href="#2025.02.25"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10724,12 +10306,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.02.18">
             <h2>
-              
-                v.2025.02.18
-              
+              v.2025.02.18
               <a class="headerlink" href="#2025.02.18"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -10880,12 +10459,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.02.11">
             <h2>
-              
-                v.2025.02.11
-              
+              v.2025.02.11
               <a class="headerlink" href="#2025.02.11"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -11212,12 +10788,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.02.04">
             <h2>
-              
-                v.2025.02.04
-              
+              v.2025.02.04
               <a class="headerlink" href="#2025.02.04"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -11346,12 +10919,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.01.29">
             <h2>
-              
-                v.2025.01.29
-              
+              v.2025.01.29
               <a class="headerlink" href="#2025.01.29"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -11742,12 +11312,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.01.22">
             <h2>
-              
-                v.2025.01.22
-              
+              v.2025.01.22
               <a class="headerlink" href="#2025.01.22"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -11793,12 +11360,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.01.21">
             <h2>
-              
-                v.2025.01.21
-              
+              v.2025.01.21
               <a class="headerlink" href="#2025.01.21"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -12166,12 +11730,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.01.14">
             <h2>
-              
-                v.2025.01.14
-              
+              v.2025.01.14
               <a class="headerlink" href="#2025.01.14"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -12308,12 +11869,9 @@ usage: manage.py compare_orgs_ckan_json [-h] --org_file ORG_FILE --field FIELD -
             
           </div>
         
-          
           <div class="release-wrapper" id="2025.01.07">
             <h2>
-              
-                v.2025.01.07
-              
+              v.2025.01.07
               <a class="headerlink" href="#2025.01.07"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -12502,12 +12060,9 @@ This makes it much easier for developers to compare changes between releases of 
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.12.17">
             <h2>
-              
-                v.2024.12.17
-              
+              v.2024.12.17
               <a class="headerlink" href="#2024.12.17"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -12691,12 +12246,9 @@ This makes it much easier for developers to compare changes between releases of 
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.12.13">
             <h2>
-              
-                v.2024.12.13
-              
+              v.2024.12.13
               <a class="headerlink" href="#2024.12.13"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -12801,12 +12353,9 @@ This makes it much easier for developers to compare changes between releases of 
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.12.09">
             <h2>
-              
-                v.2024.12.09
-              
+              v.2024.12.09
               <a class="headerlink" href="#2024.12.09"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13297,12 +12846,9 @@ solve possible solr errors during <code>index_package</code></p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.30">
             <h2>
-              
-                v.2024.11.30
-              
+              v.2024.11.30
               <a class="headerlink" href="#2024.11.30"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13371,12 +12917,9 @@ solve possible solr errors during <code>index_package</code></p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.28">
             <h2>
-              
-                v.2024.11.28
-              
+              v.2024.11.28
               <a class="headerlink" href="#2024.11.28"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13509,12 +13052,9 @@ solve possible solr errors during <code>index_package</code></p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.26">
             <h2>
-              
-                v.2024.11.26
-              
+              v.2024.11.26
               <a class="headerlink" href="#2024.11.26"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13660,12 +13200,9 @@ solve possible solr errors during <code>index_package</code></p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.22">
             <h2>
-              
-                v.2024.11.22
-              
+              v.2024.11.22
               <a class="headerlink" href="#2024.11.22"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13724,12 +13261,9 @@ Add missing translations for validation:
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.20">
             <h2>
-              
-                v.2024.11.20
-              
+              v.2024.11.20
               <a class="headerlink" href="#2024.11.20"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13805,12 +13339,9 @@ Add missing translations for validation:
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.14">
             <h2>
-              
-                v.2024.11.14
-              
+              v.2024.11.14
               <a class="headerlink" href="#2024.11.14"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -13879,12 +13410,9 @@ Add missing translations for validation:
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.11.12">
             <h2>
-              
-                v.2024.11.12
-              
+              v.2024.11.12
               <a class="headerlink" href="#2024.11.12"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -14192,12 +13720,9 @@ This behaviour is new in PHP8.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.10.15">
             <h2>
-              
-                v.2024.10.15
-              
+              v.2024.10.15
               <a class="headerlink" href="#2024.10.15"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -14413,12 +13938,9 @@ The Open Data search is excluded and will continue to have a custom breadcrumb t
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.10.01">
             <h2>
-              
-                v.2024.10.01
-              
+              v.2024.10.01
               <a class="headerlink" href="#2024.10.01"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -14544,12 +14066,9 @@ These modifications support changes to the data in order to incorporate multi-ye
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.09.26">
             <h2>
-              
-                v.2024.09.26
-              
+              v.2024.09.26
               <a class="headerlink" href="#2024.09.26"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -14808,12 +14327,9 @@ Add filters for service inventory tables for populating the following fields:</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.09.23">
             <h2>
-              
-                v.2024.09.23
-              
+              v.2024.09.23
               <a class="headerlink" href="#2024.09.23"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -14889,12 +14405,9 @@ Add filters for service inventory tables for populating the following fields:</p
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.09.13">
             <h2>
-              
-                v.2024.09.13
-              
+              v.2024.09.13
               <a class="headerlink" href="#2024.09.13"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15001,12 +14514,9 @@ https://design.canada.ca/common-design-patterns/breadcrumb-trail.html</li>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.08.23">
             <h2>
-              
-                v.2024.08.23
-              
+              v.2024.08.23
               <a class="headerlink" href="#2024.08.23"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15067,12 +14577,9 @@ https://design.canada.ca/common-design-patterns/breadcrumb-trail.html</li>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.08.16">
             <h2>
-              
-                v.2024.08.16
-              
+              v.2024.08.16
               <a class="headerlink" href="#2024.08.16"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15168,12 +14675,9 @@ case-insensitive matching. Intended for key fields like Reference Numbers or oth
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.08.15">
             <h2>
-              
-                v.2024.08.15
-              
+              v.2024.08.15
               <a class="headerlink" href="#2024.08.15"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15217,12 +14721,9 @@ case-insensitive matching. Intended for key fields like Reference Numbers or oth
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.08.14">
             <h2>
-              
-                v.2024.08.14
-              
+              v.2024.08.14
               <a class="headerlink" href="#2024.08.14"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15357,12 +14858,9 @@ Result is fewer indexing errors reported during loading of contracts data.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.08.08">
             <h2>
-              
-                v.2024.08.08
-              
+              v.2024.08.08
               <a class="headerlink" href="#2024.08.08"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15470,12 +14968,9 @@ Result is fewer indexing errors reported during loading of contracts data.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.08.07">
             <h2>
-              
-                v.2024.08.07
-              
+              v.2024.08.07
               <a class="headerlink" href="#2024.08.07"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -15801,12 +15296,9 @@ PD types will be added at a later date.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.07.16">
             <h2>
-              
-                v.2024.07.16
-              
+              v.2024.07.16
               <a class="headerlink" href="#2024.07.16"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -16040,12 +15532,9 @@ PD types will be added at a later date.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.07.09">
             <h2>
-              
-                v.2024.07.09
-              
+              v.2024.07.09
               <a class="headerlink" href="#2024.07.09"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -16184,12 +15673,9 @@ PD types will be added at a later date.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.07.02">
             <h2>
-              
-                v.2024.07.02
-              
+              v.2024.07.02
               <a class="headerlink" href="#2024.07.02"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -16312,12 +15798,9 @@ PD types will be added at a later date.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.06.25">
             <h2>
-              
-                v.2024.06.25
-              
+              v.2024.06.25
               <a class="headerlink" href="#2024.06.25"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -16452,12 +15935,9 @@ PD types will be added at a later date.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.06.18">
             <h2>
-              
-                v.2024.06.18
-              
+              v.2024.06.18
               <a class="headerlink" href="#2024.06.18"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -16701,12 +16181,9 @@ PD types will be added at a later date.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.06.11">
             <h2>
-              
-                v.2024.06.11
-              
+              v.2024.06.11
               <a class="headerlink" href="#2024.06.11"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -16957,12 +16434,9 @@ explaining how to use Boolean search terms including:</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.06.04">
             <h2>
-              
-                v.2024.06.04
-              
+              v.2024.06.04
               <a class="headerlink" href="#2024.06.04"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -17285,12 +16759,9 @@ removed title capitalization styling on dataset titles.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.05.28">
             <h2>
-              
-                v.2024.05.28
-              
+              v.2024.05.28
               <a class="headerlink" href="#2024.05.28"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -17421,12 +16892,9 @@ removed title capitalization styling on dataset titles.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.05.21">
             <h2>
-              
-                v.2024.05.21
-              
+              v.2024.05.21
               <a class="headerlink" href="#2024.05.21"><i class="fa-solid fa-link"></i></a>
             </h2>
             
@@ -17662,12 +17130,9 @@ CKAN will continue to receive the expected basic list.</p>
             
           </div>
         
-          
           <div class="release-wrapper" id="2024.05.13">
             <h2>
-              
-                v.2024.05.13
-              
+              v.2024.05.13
               <a class="headerlink" href="#2024.05.13"><i class="fa-solid fa-link"></i></a>
             </h2>
             
