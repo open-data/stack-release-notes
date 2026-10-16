@@ -1,0 +1,89 @@
+{
+    "ckan": {
+        "ckan": {
+            "Bugfixes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the `datastore purge` command deleting custom Reference Tables.\n",
+                    "hash": "24975df83123c1503e24d1925582e8aa7b63e840"
+                }
+            ],
+            "Changes": [
+                {
+                    "canada_only": true,
+                    "backport": false,
+                    "change_log": "Allow `datastore_info` for custom DataStore tables.\n",
+                    "hash": "4278e3d773457f70310207c2e9cf35c3eda6cf00"
+                }
+            ]
+        },
+        "ckanext-canada": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Reworked the `set-datastore-false-for-invalid-resources`, `delete-invalid-datastore-tables`, and `delete-table-view-from-non-datastore-resources` commands into the two commands `purge-datastore-tables` and `purge-datatables-views`. Made the commands a lot less destructive, and more clear as to what they do. Added extra fail-safes and warnings when running the new commands.\n",
+                    "hash": "e8282a4c356808cee188e8239e3905f94d6ad65f"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Renamed Service Inventory Reference Table Names to start with an underscore, to avoid problems with datastore triggers being applied by set-permissions and to be consistent with other datastore system tables.\n",
+                    "hash": "611aed12d4251b7b775c79ba96cf667ea8263f04"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Changed format type for Service Inventory's `volume_meeting_target` and `total_volume` fields from \"Decimal\" to \"Whole number\"\n",
+                    "hash": "0c90fb182a2c4f956e54589dca77dffccbb54794"
+                },
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Update label and translation for field `Briefing Note Number` in the briefingt PD.\n",
+                    "hash": "ef7456c47b30b21ed1ea5c0b0e7e84f15727aaea"
+                }
+            ],
+            "Removals": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Removed the `resolve-duplicate-emails` command as it is no longer needed.\n",
+                    "hash": "4f020204fb8d6e70d4a91a4ad45264cacf1b79a8"
+                }
+            ],
+            "Bugfixes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Fixed an issue with the main content width when there is no secondary content.\n",
+                    "hash": "94107156493b036dd07027fd6def5671e6285a52"
+                }
+            ]
+        },
+        "ckanext-recombinant": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Aligned the UI for published resources' Data Dictionary accordions with the CKAN core UI.\n",
+                    "hash": "263896b0627de30ac803aa13eb8dfe2c8d63f0d8"
+                }
+            ]
+        }
+    },
+    "django": {
+        "oc_search": {
+            "Changes": [
+                {
+                    "canada_only": false,
+                    "backport": false,
+                    "change_log": "Refactor handling on empty values for multivalued fields.\n\n",
+                    "hash": "17cd7b7fd7150daa0a68ccaab5a297e7d46d4681"
+                }
+            ]
+        }
+    },
+    "drupal": {}
+}
