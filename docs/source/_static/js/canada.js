@@ -43,6 +43,7 @@ window.addEventListener('load', function(){
           checkout main
           branch release
           commit id: "Start New Release"
+          checkout main
           branch "feature/*"
           commit id: "Code Changes" type: HIGHLIGHT
           checkout main
