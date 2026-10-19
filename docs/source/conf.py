@@ -5,6 +5,7 @@ import os
 import subprocess
 import requests
 import copy
+import math
 from datetime import date, datetime, timedelta
 from markupsafe import Markup
 from markdown import markdown
@@ -81,6 +82,12 @@ STACK_ORDER = {
 for r, b in STACK['ckan'].items():
     repo_name = r.split('/')[-1].replace('.git', '')
     STACK_ORDER['ckan'].append(repo_name)
+for r, b in STACK['django'].items():
+    repo_name = r.split('/')[-1].replace('.git', '')
+    STACK_ORDER['django'].append(repo_name)
+for r, b in STACK['drupal'].items():
+    repo_name = r.split('/')[-1].replace('.git', '')
+    STACK_ORDER['drupal'].append(repo_name)
 
 RELEASE_TRACK = {
     'ckan': {
@@ -627,13 +634,13 @@ release_tags, release_hashes, latest_releas_hashes = get_filled_releases()
 today_date = date.today()
 start_date = datetime.strptime('2026.10.15', '%Y.%m.%d').date()
 
-if start_date < today_date:
+if today_date > start_date:
     days_passed = (today_date - start_date).days
-    intervals = (days_passed + 13)
+    intervals = math.ceil(days_passed / 14)
     start_date += timedelta(days=intervals * 14)
 
 dates = [
-    (start_date + timedelta(weeks=2 * i)).strftime('%Y.%m.%d')
+    (start_date + timedelta(days=14 * i)).strftime('%Y.%m.%d')
     for i in range(10)
 ]
 

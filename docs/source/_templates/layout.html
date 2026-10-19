@@ -117,6 +117,8 @@
                   <div class="panel-body">
                     {% if 'github.com/ckan/' in info.uri %}
                       <p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>
+                    {% elif not info.prev %}
+                      <p><i class="fas fa-info-circle"></i>&nbsp;<em>This is the beginning of change log tracking for this repository.</em></p>
                     {% elif info.change_logs %}
                       {% for type, changes in info.change_logs.items() %}
                         <h4 class="change-canada-type-title"><i class="fa {{ type_icons.get(type) }} change-canada-type-icon"></i>&nbsp;&nbsp;{{ type }}</h4>

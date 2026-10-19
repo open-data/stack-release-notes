@@ -183,6 +183,8 @@ window.addEventListener('load', function(){
           const head_small = head.slice(0, 12);
           if( repo_uri.includes('github.com/ckan/') ){
             _notes_html = '<p><i class="fas fa-info-circle"></i>&nbsp;<em>This repository is only tracked from upstream.</em></p>';
+          }else if( typeof prev == 'undefined' || prev == null || ! prev ){
+            _notes_html = '<p><i class="fas fa-info-circle"></i>&nbsp;<em>This is the beginning of change log tracking for this repository.</em></p>';
           }
           build_html += `
             <div class="panel panel-info project-panel project-panel-${_project}" id="release-track-${_repo}">
@@ -201,9 +203,10 @@ window.addEventListener('load', function(){
           `;
         });
       });
+      const dates = RELEASE_TRACK_DATES.slice(1).join('&#13;&#10;');
       const template = `
         <div class="release-wrapper" id="release-track">
-          <h2><i class="fas fa-calendar"></i>&nbsp;&nbsp;Release Track for: ${VERSION_PREFIX}${RELEASE_TRACK_DATES[0]}</h2>
+          <h2><i class="fas fa-calendar" style="cursor: help;" title="Release Schedule:&#13;&#10;${dates}"></i>&nbsp;&nbsp;Release Track for: ${VERSION_PREFIX}${RELEASE_TRACK_DATES[0]}</h2>
           ${build_html}
         </div>
       `;
@@ -351,7 +354,6 @@ window.addEventListener('load', function(){
             return true;  // could not gather code change info, continue
           }
         });
-        return false;
       });
 
       setTimeout(function(){
