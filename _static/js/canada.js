@@ -135,7 +135,7 @@ window.addEventListener('load', function(){
         if( Object.keys(_repos).length == 0 ){
           build_html = msg;
           console.debug('Was unable to compile change logs for ' + _project + '. None available?');
-          return false;  // no release notes, break
+          return true;  // no release notes, continue
         }
         let sorted_repos = Object.fromEntries(
           STACK_ORDER[_project].filter(key => Object.hasOwn(_repos, key))
@@ -203,10 +203,17 @@ window.addEventListener('load', function(){
           `;
         });
       });
-      const dates = RELEASE_TRACK_DATES.slice(1).join('&#13;&#10;');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const upcomingReleases = RELEASE_TRACK_DATES.filter(_date => {
+        const [year, month, day] = _date.split('.').map(Number);
+        return new Date(year, month - 1, day) >= today;
+      });
+      const dates = upcomingReleases.slice(1).join('&#13;&#10;');
+      const nextRelease = upcomingReleases[0];
       const template = `
         <div class="release-wrapper" id="release-track">
-          <h2><i class="fas fa-calendar" style="cursor: help;" title="Release Schedule:&#13;&#10;${dates}"></i>&nbsp;&nbsp;Release Track for: ${VERSION_PREFIX}${RELEASE_TRACK_DATES[0]}</h2>
+          <h2><i class="fas fa-calendar" style="cursor: help;" title="Release Schedule:&#13;&#10;${dates}"></i>&nbsp;&nbsp;Release Track for: ${VERSION_PREFIX}${nextRelease}</h2>
           ${build_html}
         </div>
       `;
