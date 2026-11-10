@@ -133,7 +133,6 @@ window.addEventListener('load', function(){
       }
       $.each(PRE_RELEASE_NOTES, function(_project, _repos){
         if( Object.keys(_repos).length == 0 ){
-          build_html = msg;
           console.debug('Was unable to compile change logs for ' + _project + '. None available?');
           return true;  // no release notes, continue
         }
